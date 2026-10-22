@@ -23,7 +23,3 @@ Expected project-site URL: `https://jktembiwa.github.io/JKTembiwa/`.
 
 GitHub Pages guide: https://docs.github.com/en/pages/quickstart
 
-## Important for future use
-This repository is public. Only publish information intended for public viewing. The lab wiki pages describe the lab’s values and working approach; they are not an authenticated internal wiki or official institutional policy. Keep private ELN records, unpublished findings, sensitive incident reports, credentials, and restricted datasets in appropriate institution-approved systems. Store large microscopy and sequencing data in suitable institutional storage or repositories, linking to approved records rather than committing raw datasets here.
-
-The wiki distinguishes principles, practices, and formal policies. Any formal lab procedures must be consistent with applicable institutional requirements. Before announcing the site, check publication metadata, affiliation wording, and contact details.
