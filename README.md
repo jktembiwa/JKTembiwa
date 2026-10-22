@@ -1,30 +1,26 @@
 # Microbial Mosaic — Karen Tembiwa
 
-A responsive static academic website for Karen Tembiwa. The visual identity is warm and nature-inspired, and the pages use plain HTML and CSS with no build tools.
+A responsive static academic website built with plain HTML and CSS.
 
 ## Pages
-- `index.html` — Home
-- `about.html` — Academic background
+- `index.html` — About / homepage
 - `research.html` — Research background and developing interests
 - `publications.html` — Selected publications and dissertation
-- `resources.html` — Public scientific resources
-- `lab-portal.html` — Public statement of future lab-system principles; not a working portal
-- `404.html` — Not-found page
+- `news.html` — News and occasional updates
+- `lab-wiki.html` — Lab culture and operations starter pages
+- `culture.html` — Culture and values
+- `handbook.html` — Communication, meetings, authorship, safety, onboarding, and offboarding
+- `contact.html` — Contact information
 - `assets/style.css` — Shared styling
 
 ## Publish with GitHub Pages
-1. Open this repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, select **Deploy from a branch**.
-4. Choose branch **main** and folder **/(root)**, then save.
-5. Wait for the deployment. Since this is a project repository, the expected URL is `https://jktembiwa.github.io/JKTembiwa/`.
+Open **Settings → Pages**, select **Deploy from a branch**, choose branch `main` and folder `/(root)`, then save.
 
-GitHub's Pages setup guide: https://docs.github.com/en/pages/quickstart
+Expected project-site URL: `https://jktembiwa.github.io/JKTembiwa/`.
 
-## Public information and privacy
-This repository is public. Publish only information you intend to make public and have permission to share. Check publication metadata and affiliation wording before widely distributing the site. Do not upload private electronic lab notebooks, unpublished results, sensitive reports, credentials, or restricted datasets.
+GitHub Pages guide: https://docs.github.com/en/pages/quickstart
 
-The future lab page is a concept page only; it does not implement login or access control. Use an institution-approved authenticated system for private documentation and ELN records, and appropriate institutional or repository storage for large microscopy/sequencing datasets.
+## Important for future use
+This repository is public. Only publish information intended for public viewing. The lab wiki pages here are public-facing starter drafts, not an authenticated internal wiki or official institutional policy. Keep private ELN records, unpublished findings, sensitive incident reports, credentials, and restricted datasets in appropriate institution-approved systems. Store large microscopy and sequencing data in suitable institutional storage or repositories, linking to approved records rather than committing raw datasets here.
 
-## Updating
-Edit the relevant HTML file through GitHub's web interface. For colors and layout, edit `assets/style.css`. Commit the changes and check the published page after Pages finishes rebuilding.
+Before announcing the site, check publication metadata, affiliation wording, and contact details.
