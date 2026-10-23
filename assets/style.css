@@ -195,6 +195,11 @@ p { margin: .75rem 0 1rem; }
 }
 .footer-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .footer-row a { color: var(--sage-dark); }
+/* Long-form project cards read as a single editorial sequence, not cramped columns. */
+.section.soft .grid-2 { grid-template-columns: minmax(0, 1fr); }
+.section.soft .grid-2 > .card { width: 100%; max-width: 980px; }
+.section.soft .grid-2 > .card p { max-width: 82ch; }
+
 @media (min-width: 1000px) {
   .hero-grid { gap: 7rem; }
   .section.soft .grid-2 > .card { padding: 2rem 2.15rem; }
