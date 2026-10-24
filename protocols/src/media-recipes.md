@@ -50,8 +50,8 @@ Adjust pH to 7.4 with 1 M NaOH. **Filter sterilize** (autoclaving destroys aspar
 A defined medium for *M. smegmatis* with growth similar to 7H9, useful for starvation experiments. Follow the order below to avoid a precipitate.
 
 1. Add 10 mL of 100X M-stock to dH₂O.
-2. Add the nitrogen source, 2 g (NH₄)₂SO₄ (15 mM), or omit for nitrogen starvation.
-3. Add the carbon source, 2 mL glycerol (27.4 mM), or omit for carbon starvation.
+2. Add the nitrogen source, 2 g (NH₄)₂SO₄ (15 mM), or 0.02 g (0.15 mM) for nitrogen starvation.
+3. Add the carbon source, 2 mL glycerol (27.4 mM), or 0.8 mL (11 mM) for carbon starvation.
 4. Bring to 990 mL with dH₂O and autoclave.
 5. Add 10 mL sterile 100X P-stock (or 100X P-starve stock for phosphate starvation).
 6. For carbon starvation, add Tween 80 or tyloxapol to 0.05% (2.5 mL of a 20% sterile stock). Filter sterilize.

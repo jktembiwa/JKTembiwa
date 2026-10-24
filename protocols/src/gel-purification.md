@@ -23,6 +23,14 @@ Recover a PCR product or digested vector from an agarose gel for cloning. Expect
 4. Follow the kit protocol for the remaining steps.
 5. To elute, add 30–50 µL elution buffer or nuclease-free water to the filter, leave 10 minutes, and centrifuge at 16,000 × g for 1 minute.
 
+## PCR products and digests, and changes from the manufacturer's protocol
+
+For PCR products, add an equal volume of Membrane Binding Solution to the reaction. The manufacturer's instructions are in Promega Technical Bulletin TB308 (www.promega.com). The lab changes to that protocol are:
+
+- After adding the dissolved gel mixture or prepared sample to the minicolumn, incubate at room temperature for **10 minutes** (the printed protocol says 1 minute).
+- For elution, add 50 µL nuclease-free water, incubate at room temperature for **10 minutes** (printed: 1 minute), then centrifuge at 16,000 × g for 1 minute.
+- [For a vector digest: add Membrane Binding Solution directly to the overnight digestion (5 µL, including 1 µL from the phosphatase step), resuspend very well, and add to the column straight away.]{.tbc}
+
 ## Where it usually fails
 
 - [**Very low yield.** Expected losses are high; the low-melt method is faster for Gibson assembly, and eluting in 30 µL rather than 50 µL gives a more concentrated product.]{.tbc}

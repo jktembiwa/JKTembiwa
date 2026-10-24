@@ -9,6 +9,17 @@ version: Draft 0.1
 
 Detect cells in phase or fluorescence images, curate the detections, export per-cell measurements, and plot fluorescence profiles and demographs.
 
+## Getting started
+
+1. Open ImageJ (Fiji) and open the MicrobeJ plugin.
+2. For hyperstacks, go to the **Images** tab and switch to **Folder**, then import your whole folder of images.
+3. Go to **Bacteria** and set the channel and background. Choose the options you need: exclude on edges, shape descriptors, segmentation, intensity, shape, profile and polarity (for poles and sides, choose intensity > channel > max).
+4. Set the threshold. [The example threshold used was −116; this depends on the images.]{.tbc}
+5. To show stained colors, use ImageJ **Image > Color > Arrange Channels** and assign colors (for example channel 1 = GFP green, channel 2 = DAPI blue).
+6. In the **Maxima** tab, tick the box to edit. Choose the channel and background, change the tolerance, and choose options (exclude on edges, shape descriptors, segmentation, intensity, profile) and associations (inside, location, localization).
+7. Run the current settings on the active image to check they are appropriate.
+8. If they are, click the pencil icon at the bottom right to detect cells and load the manual editing interface.
+
 ## Set detection parameters
 
 Set the ranges that define a cell. The values below were used for [*M. smegmatis*]{.tbc}; choose ranges appropriate to your organism and magnification.

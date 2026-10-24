@@ -38,7 +38,7 @@
 <section class="section"><div class="container">
 <label class="sr-only" for="q">Search protocols</label>
 <input id="q" class="search" type="search" placeholder="Search protocols (e.g. PCR, conjugation, plates)">
-<div class="chips" role="group" aria-label="Filter by tag"><button type="button" class="chip" data-tag="bcg">BCG</button><button type="button" class="chip" data-tag="e. coli">E. coli</button><button type="button" class="chip" data-tag="gibson assembly">Gibson assembly</button><button type="button" class="chip" data-tag="m. smegmatis">M. smegmatis</button><button type="button" class="chip" data-tag="pcr">PCR</button><button type="button" class="chip" data-tag="cloning">cloning</button><button type="button" class="chip" data-tag="competent cells">competent cells</button><button type="button" class="chip" data-tag="media">media</button><button type="button" class="chip" data-tag="mycobacteria">mycobacteria</button><button type="button" class="chip" data-tag="reference">reference</button><button type="button" class="chip" data-tag="restriction digest">restriction digest</button><button type="button" class="chip" data-tag="strains">strains</button><button type="button" class="chip" data-tag="transformation">transformation</button></div>
+<div class="chips" role="group" aria-label="Filter by tag"><button type="button" class="chip" data-tag="7h9">7H9</button><button type="button" class="chip" data-tag="bcg">BCG</button><button type="button" class="chip" data-tag="e. coli">E. coli</button><button type="button" class="chip" data-tag="gibson assembly">Gibson assembly</button><button type="button" class="chip" data-tag="m. smegmatis">M. smegmatis</button><button type="button" class="chip" data-tag="m. tuberculosis">M. tuberculosis</button><button type="button" class="chip" data-tag="pcr">PCR</button><button type="button" class="chip" data-tag="sauton&#x27;s">Sauton&#x27;s</button><button type="button" class="chip" data-tag="assays">assays</button><button type="button" class="chip" data-tag="cloning">cloning</button><button type="button" class="chip" data-tag="competent cells">competent cells</button><button type="button" class="chip" data-tag="heat shock">heat shock</button><button type="button" class="chip" data-tag="media">media</button><button type="button" class="chip" data-tag="mycobacteria">mycobacteria</button><button type="button" class="chip" data-tag="reference">reference</button><button type="button" class="chip" data-tag="restriction digest">restriction digest</button><button type="button" class="chip" data-tag="strains">strains</button><button type="button" class="chip" data-tag="transformation">transformation</button></div>
 <p id="empty" class="meta" hidden>No protocols match.</p>
 <div id="list">
 <section class="proto-group"><h2 class="group-title">Media and reagents</h2><div class="grid-2">
@@ -50,6 +50,11 @@
 <article class="card proto-card" data-tags="buffers|tae|pbs|sds-page|laemmli|reagents" data-text="common buffers and solutions standard buffers for gels, blotting and sample loading, including a 6x laemmli recipe. buffers tae pbs sds-page laemmli reagents">
 <h3><a href="buffers-and-solutions.html">Common buffers and solutions</a></h3>
 <p>Standard buffers for gels, blotting and sample loading, including a 6X Laemmli recipe.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
+<article class="card proto-card" data-tags="media|sauton&#x27;s|carbon source|m. tuberculosis|defined medium" data-text="carbon-defined sauton&#x27;s medium sauton&#x27;s medium modified so that the carbon source is defined and set by you, with 20% carbon-source stocks. media sauton&#x27;s carbon source m. tuberculosis defined medium">
+<h3><a href="carbon-defined-sautons.html">Carbon-defined Sauton&#x27;s medium</a></h3>
+<p>Sauton&#x27;s medium modified so that the carbon source is defined and set by you, with 20% carbon-source stocks.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
 <article class="card proto-card" data-tags="media|7h9|adc|sauton&#x27;s|hdb|lb" data-text="media recipes for e. coli and mycobacteria recipes and sterilization notes for lb, 7h9, adc, sauton&#x27;s and hartmans–de bont minimal medium. media 7h9 adc sauton&#x27;s hdb lb">
@@ -101,8 +106,18 @@
 <p>Making electrocompetent E. coli and mycobacteria, and transforming them by electroporation, with settings by organism.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
+<article class="card proto-card" data-tags="competent cells|rubidium chloride|e. coli|heat shock|transformation" data-text="rubidium chloride chemically competent e. coli prepare rubidium chloride chemically competent e. coli, snap-freeze for storage, and transform by heat shock. competent cells rubidium chloride e. coli heat shock transformation">
+<h3><a href="rbcl-competent-cells.html">Rubidium chloride chemically competent E. coli</a></h3>
+<p>Prepare rubidium chloride chemically competent E. coli, snap-freeze for storage, and transform by heat shock.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
 </div></section>
 <section class="proto-group"><h2 class="group-title">Mycobacterial genetics</h2><div class="grid-2">
+<article class="card proto-card" data-tags="cre recombinase|lox|markerless deletion|m. smegmatis|sacb" data-text="removing a lox-flanked antibiotic cassette with cre (m. smegmatis) excise a lox-flanked resistance cassette from a deletion locus using a cre plasmid, then cure the plasmid with sucrose counter-selection. cre recombinase lox markerless deletion m. smegmatis sacb">
+<h3><a href="cre-lox-cassette-removal.html">Removing a lox-flanked antibiotic cassette with Cre (M. smegmatis)</a></h3>
+<p>Excise a lox-flanked resistance cassette from a deletion locus using a Cre plasmid, then cure the plasmid with sucrose counter-selection.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
 <article class="card proto-card" data-tags="induction|depletion|tet|nitrile|acetamide|mycobacteria|reference" data-text="inducible expression and depletion systems for mycobacteria comparison of tetracycline, nitrile and acetamide induction systems and two depletion strategies. induction depletion tet nitrile acetamide mycobacteria reference">
 <h3><a href="induction-and-depletion-systems.html">Inducible expression and depletion systems for mycobacteria</a></h3>
 <p>Comparison of tetracycline, nitrile and acetamide induction systems and two depletion strategies.</p>
@@ -121,6 +136,13 @@
 <article class="card proto-card" data-tags="growth|standardization|cryostocks|assays|reproducibility" data-text="standardizing culture samples for assays reduce day-to-day variance by freezing standardized aliquots of single-cell suspensions at a defined od. growth standardization cryostocks assays reproducibility">
 <h3><a href="standardizing-culture-samples.html">Standardizing culture samples for assays</a></h3>
 <p>Reduce day-to-day variance by freezing standardized aliquots of single-cell suspensions at a defined OD.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
+</div></section>
+<section class="proto-group"><h2 class="group-title">Growth and assays</h2><div class="grid-2">
+<article class="card proto-card" data-tags="growth curve|plate reader|od600|dilution|7h9|assays" data-text="setting up a 96-well growth curve (dilution calculator) calculate culture and medium volumes to start every well at the same od, with a fillable template. growth curve plate reader od600 dilution 7h9 assays">
+<h3><a href="growth-curve-setup.html">Setting up a 96-well growth curve (dilution calculator)</a></h3>
+<p>Calculate culture and medium volumes to start every well at the same OD, with a fillable template.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
 </div></section>

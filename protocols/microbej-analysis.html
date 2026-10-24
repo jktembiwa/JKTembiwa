@@ -38,6 +38,17 @@
 <p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
 <h2 id="purpose">Purpose</h2>
 <p>Detect cells in phase or fluorescence images, curate the detections, export per-cell measurements, and plot fluorescence profiles and demographs.</p>
+<h2 id="getting-started">Getting started</h2>
+<ol type="1">
+<li>Open ImageJ (Fiji) and open the MicrobeJ plugin.</li>
+<li>For hyperstacks, go to the <strong>Images</strong> tab and switch to <strong>Folder</strong>, then import your whole folder of images.</li>
+<li>Go to <strong>Bacteria</strong> and set the channel and background. Choose the options you need: exclude on edges, shape descriptors, segmentation, intensity, shape, profile and polarity (for poles and sides, choose intensity &gt; channel &gt; max).</li>
+<li>Set the threshold. <span class="tbc">The example threshold used was −116; this depends on the images.</span></li>
+<li>To show stained colors, use ImageJ <strong>Image &gt; Color &gt; Arrange Channels</strong> and assign colors (for example channel 1 = GFP green, channel 2 = DAPI blue).</li>
+<li>In the <strong>Maxima</strong> tab, tick the box to edit. Choose the channel and background, change the tolerance, and choose options (exclude on edges, shape descriptors, segmentation, intensity, profile) and associations (inside, location, localization).</li>
+<li>Run the current settings on the active image to check they are appropriate.</li>
+<li>If they are, click the pencil icon at the bottom right to detect cells and load the manual editing interface.</li>
+</ol>
 <h2 id="set-detection-parameters">Set detection parameters</h2>
 <p>Set the ranges that define a cell. The values below were used for <span class="tbc"><em>M. smegmatis</em></span>; choose ranges appropriate to your organism and magnification.</p>
 <ul>

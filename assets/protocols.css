@@ -14,3 +14,9 @@
 .sr-only{position:absolute;left:-999px}
 details.faq{border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin:.8rem 0;background:var(--paper)}
 details.faq summary{cursor:pointer;font-weight:700}
+.gc-calc label{display:inline-block;margin-right:1.2rem;font-weight:600}
+.gc-calc input[type=number],.gc-calc input[type=text]{font:inherit;padding:.3rem .5rem;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);max-width:100%}
+.gc-calc input[type=number]{width:6.5rem}
+.gc-table td:nth-child(2) input{width:100%;min-width:9rem}
+.gc-table td.c,.gc-table td.m{font-variant-numeric:tabular-nums}
+@media(max-width:780px){.gc-calc{overflow-x:auto}}

@@ -31,10 +31,14 @@ Make LB agar plates, with or without antibiotic, for *E. coli* work. A working-c
 | Hygromycin B | 100–150 µg/mL | 50 µg/mL | Use low-salt LB for *E. coli*. |
 | Zeocin | 25 µg/mL | 20 µg/mL | Use low-salt LB for *E. coli*. |
 | Apramycin | 30 µg/mL | 30 µg/mL | Apramycin resistance protects against kanamycin, but not the reverse. |
-| Ampicillin | 100 µg/mL | n/a | Store plates no more than ~1 month. |
-| Carbenicillin | 100 µg/mL | n/a | More stable than ampicillin. |
-| Tetracycline | per stock | n/a | Dissolve in ethanol, store at −20 °C. |
-| Chloramphenicol | per stock | n/a | Dissolve in ethanol, store at 4 °C. |
+| Ampicillin | 100 µg/mL [(140 µg/mL on the lab color-code sheet)]{.tbc} | not used | Store plates no more than ~1 month. |
+| Carbenicillin | 100 µg/mL | not used | More stable than ampicillin. |
+| Tetracycline | 10 µg/mL | not used | Dissolve in ethanol, store at −20 °C. |
+| Chloramphenicol | 25 µg/mL | not used | Dissolve in ethanol, store at 4 °C. |
+| Gentamicin | 15 µg/mL | 5 µg/mL | |
+| Nourseothricin | 40 µg/mL | 20 µg/mL | |
+| Streptomycin | 50 µg/mL | 20 µg/mL | |
+| Anhydrotetracycline (inducer) | n/a | [25–500]{.tbc} (units not stated; typically ng/mL) | See [induction systems](induction-and-depletion-systems.html). |
 
 Rifampicin, isoniazid, trimethoprim, streptomycin, ethionamide, ethambutol, ciprofloxacin and amikacin are used for killing or susceptibility testing of mycobacteria, not for selection. MICs vary between *M. smegmatis* and *M. tuberculosis*.
 

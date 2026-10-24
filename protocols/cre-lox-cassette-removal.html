@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Excise a lox-flanked resistance cassette from a deletion locus using a Cre plasmid, then cure the plasmid with sucrose counter-selection.">
+<meta name="robots" content="noindex">
+<title>Removing a lox-flanked antibiotic cassette with Cre (M. smegmatis) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Removing a lox-flanked antibiotic cassette with Cre (M. smegmatis)</h1>
+<p class="lede">Excise a lox-flanked resistance cassette from a deletion locus using a Cre plasmid, then cure the plasmid with sucrose counter-selection.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Cre recombinase recognizes lox sites and joins the DNA back together, removing the sequence between them. Use this to remove an antibiotic-resistance cassette that is flanked by lox sites, for example one left at a deletion locus after <a href="recombineering.html">recombineering</a>.</p>
+<p>The example below assumes a strain with a lox-flanked zeocin-resistance cassette (zeoR) at the deletion site and a second, different marker elsewhere (nourseothricin resistance, nuoR, on an integrated plasmid), plus a kanamycin-marked Cre plasmid that also carries <em>sacB</em>.</p>
+<h2 id="remove-the-cassette">Remove the cassette</h2>
+<ol type="1">
+<li>Miniprep the Cre-<em>sacB</em> plasmid from <em>E. coli</em> and transform it into the strain (<a href="electrocompetent-cells-and-electroporation.html">electroporation</a>). Plate on kanamycin.</li>
+<li>Patch colonies on both LB + nourseothricin and LB + zeocin plates. You are looking for colonies that are <strong>nuoR and zeoS</strong>, which have lost the cassette.</li>
+</ol>
+<h2 id="cure-the-cre-plasmid">Cure the Cre plasmid</h2>
+<ol type="1">
+<li>Grow nuoR zeoS colonies in 7H9 + nourseothricin 20 µg/mL. <strong>Do not passage the culture to lose the plasmid.</strong> Passaging risks suppressor mutations in the mutants.</li>
+<li>Streak the culture on 10% sucrose plates (counter-selecting <em>sacB</em>).</li>
+<li>Patch colonies on both LB + kanamycin and LB + nourseothricin. You are looking for colonies that are <strong>kanS and nuoR</strong>.</li>
+</ol>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">Cre recombinase</span><span class="tag">lox</span><span class="tag">markerless deletion</span><span class="tag">M. smegmatis</span><span class="tag">sacB</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
