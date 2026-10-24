@@ -2,4 +2,4 @@
 # Inline HTML such as <em>word</em> is allowed. After editing, ask Claude to rebuild (python3 tools/build_protocols.py).
 heading: Common protocols and troubleshooting.
 lede: Practical protocols for everyday molecular microbiology, with notes on where they usually go wrong. Pages marked <em>Draft</em> have not yet been fully reviewed.
-note: These pages draw on the Boutte Lab Beginner&rsquo;s Manual and the work of past lab members; individual credits appear on each page where relevant.
+note: These pages draw on the work of many, many past lab members; individual credits appear on each page where relevant.
