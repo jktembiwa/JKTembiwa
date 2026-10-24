@@ -3,7 +3,8 @@ category: Media and reagents
 tags: media, plates, antibiotics, E. coli
 summary: Make LB agar, pour plates, add antibiotic at the right temperature, and choose working concentrations for E. coli and mycobacteria.
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021) and general lab practice.
-version: Draft 0.1
+version: 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -11,17 +12,17 @@ Make LB agar plates, with or without antibiotic, for *E. coli* work. A working-c
 
 ## Media
 
-- **LB broth:** dissolve [20 g]{.tbc} LB broth powder per 1 L water, then autoclave. LB comes in several formulations: low salt (Lennox or Luria) and high salt (Miller).
+- **LB broth:** dissolve 20 g LB broth powder per 1 L water, then autoclave. LB comes in several formulations: low salt (Lennox or Luria) and high salt (Miller).
 - **Use low-salt LB for hygromycin and zeocin.** They do not work well in high-salt (Miller) LB.
-- **LB agar (500 mL):** [7.5 g LB agar powder + 10 g LB broth powder]{.tbc}, brought to 500 mL with RO water. Autoclave.
+- **LB agar (500 mL):** 7.5 g LB agar powder + 10 g LB broth powder, brought to 500 mL with RO water in a 1L autoclave bottle. **Do not overfill.** Autoclave.
 
 ## Pouring plates
 
 1. Heat the LB agar until it is completely dissolved.
 2. **Without antibiotic:** pour into sterile Petri dishes to about halfway.
-3. **With antibiotic:** let the molten agar cool until the bottle is comfortable to hold for about 10 seconds (commonly [about 50–55 °C]{.tbc}). Antibiotic added to agar that is too hot will be degraded. Add the antibiotic, mix, then pour.
+3. **With antibiotic:** let the molten agar cool until the bottle is comfortable to hold for about 10 seconds with your bare hand. Antibiotic added to agar that is too hot will be degraded. Add the antibiotic, mix by swirling, then pour into sterile Petri dishes.
 4. Immediately after pouring, pass a flame (a fire torch works) quickly over the surface to pop bubbles.
-5. Let plates set and dry on the bench ([3 days]{.tbc} in this lab's practice), then store.
+5. Let plates set and cool on the bench, lids closed, for about 16-24h, then store. Do not leave out longer than 24h or without lids on, as they may dry out or become contaminated.
 
 ## Working concentrations
 
@@ -31,14 +32,14 @@ Make LB agar plates, with or without antibiotic, for *E. coli* work. A working-c
 | Hygromycin B | 100–150 µg/mL | 50 µg/mL | Use low-salt LB for *E. coli*. |
 | Zeocin | 25 µg/mL | 20 µg/mL | Use low-salt LB for *E. coli*. |
 | Apramycin | 30 µg/mL | 30 µg/mL | Apramycin resistance protects against kanamycin, but not the reverse. |
-| Ampicillin | 100 µg/mL [(140 µg/mL on the lab color-code sheet)]{.tbc} | not used | Store plates no more than ~1 month. |
+| Ampicillin | 100 µg/mL or 140 µg/mL depending on the protocol | not used | Store plates no more than ~1 month at 4 °C. |
 | Carbenicillin | 100 µg/mL | not used | More stable than ampicillin. |
 | Tetracycline | 10 µg/mL | not used | Dissolve in ethanol, store at −20 °C. |
 | Chloramphenicol | 25 µg/mL | not used | Dissolve in ethanol, store at 4 °C. |
 | Gentamicin | 15 µg/mL | 5 µg/mL | |
 | Nourseothricin | 40 µg/mL | 20 µg/mL | |
 | Streptomycin | 50 µg/mL | 20 µg/mL | |
-| Anhydrotetracycline (inducer) | n/a | [25–500]{.tbc} (units not stated; typically ng/mL) | See [induction systems](induction-and-depletion-systems.html). |
+| Anhydrotetracycline (inducer) | n/a | 25–500 ng/mL | See [induction systems](induction-and-depletion-systems.html). |
 
 Rifampicin, isoniazid, trimethoprim, streptomycin, ethionamide, ethambutol, ciprofloxacin and amikacin are used for killing or susceptibility testing of mycobacteria, not for selection. MICs vary between *M. smegmatis* and *M. tuberculosis*.
 
