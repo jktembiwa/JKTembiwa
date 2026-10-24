@@ -15,7 +15,7 @@ Handle phenol and chloroform in a fume hood and dispose of them as hazardous was
 4. Spin 14,000 × g, 5 min. Transfer the upper aqueous layer (~150–300 µL; should be colorless) to a new tube.
 5. Add 1 µL 1 mg/mL RNase A; 37 °C for 30 min. (RNA co-precipitates and interferes with A260/280 quantification; skip if this does not matter.)
 6. [Steps 6–7 are missing in the source.]{.tbc}
-7. Add 0.1 volume 3 M sodium acetate (pH ~7), mix.
+7. Add 0.1 volume 3 M sodium acetate (pH 5.2), mix.
 8. Add 1 mL ice-cold ethanol, mix, and keep at –20 °C until you spin. Pellet 5–10 min at 14,000 × g in the cold.
 9. Remove ethanol. Wash the pellet with 1 mL ice-cold 70% ethanol, spin 5 min at room temperature, aspirate. Wash 4–5 more times with 70% ethanol (no spin).
 10. Spin 30 s to remove residual ethanol; dry 30 s to a few minutes. Resuspend in 50 µL water.

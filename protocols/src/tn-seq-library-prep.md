@@ -24,7 +24,6 @@ Per sample: 5 mL 7H9 + OADC + Tween and 5 mL 50% glycerol in a 50 mL tube. Scrap
 7. Spin ~5,000 × g, 10 min, 4 °C; wash 3 × with 5 mL 70% ethanol; dry ~5 min (do not over-dry); resuspend in 500 µL–1 mL nuclease-free water (warm to 37–56 °C if needed).
 8. Quantify by Qubit BR.
 
-[Sodium acetate is pH 5.2 here; the Smash and Grab page lists pH 7.4. Reconcile.]{.tbc} For a smaller prep, the [long M. smegmatis gDNA prep](msmeg-gdna-prep-long.html) is the same family of method.
 
 ## 3. Fragment the DNA (choose one)
 
