@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Set up and sample a growth curve by hand, with notes for M. smegmatis and S. aureus, and how to calculate doubling time.">
+<meta name="robots" content="noindex">
+<title>Manual growth curves (flask or tube, OD600 over time) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Manual growth curves (flask or tube, OD600 over time)</h1>
+<p class="lede">Set up and sample a growth curve by hand, with notes for M. smegmatis and S. aureus, and how to calculate doubling time.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Measure growth of a strain over time by sampling a culture and reading OD₆₀₀ by hand. Use this when you need to sample the culture itself (CFU, protein, RNA, microscopy), when volumes are too large for a plate, or to check a plate-reader result. For many strains in parallel, see <a href="growth-curve-setup.html">Setting up a 96-well growth curve</a>.</p>
+<h2 id="materials">Materials</h2>
+<ul>
+<li>Starter culture in mid-log phase (see <a href="culturing-bacteria.html">Culturing</a>)</li>
+<li>Fresh pre-warmed medium: 7H9 (+ supplements, + Tween 80) for mycobacteria; TSB or LB for <em>S. aureus</em>; LB for <em>E. coli</em></li>
+<li>Flasks (about 5–10× the culture volume) or culture tubes</li>
+<li>Spectrophotometer and cuvettes; medium for blanking</li>
+<li>Antibiotics or inducers as the experiment requires</li>
+</ul>
+<h2 id="procedure">Procedure</h2>
+<ol type="1">
+<li><strong>Prepare the starter.</strong> Grow an overnight (or, for slow mycobacteria, multi-day) culture to mid-log. Check that it is not clumped or contaminated.</li>
+<li><strong>Choose the starting OD.</strong> Dilute into fresh medium to OD₆₀₀ 0.05–0.1 (0.1 is used for the plate-reader template). Culture volume to add = (target OD × final volume) ÷ starter OD.</li>
+<li><strong>Blank</strong> the spectrophotometer with sterile medium (same batch, same Tween/supplements).</li>
+<li><strong>Read time zero</strong> immediately after inoculating. Keep the same cuvette type throughout.</li>
+<li><strong>Incubate</strong> at 37 °C with shaking (see the table for rates).</li>
+<li><strong>Sample at regular intervals</strong> (table below). Mix the culture, remove about 1 mL aseptically, read OD₆₀₀.</li>
+<li><strong>Dilute samples above OD 0.6–0.8</strong> in medium and multiply the reading by the dilution factor, because the spectrophotometer is not linear at high density.</li>
+<li>Continue until the culture plateaus (stationary phase).</li>
+<li>For replicate curves, inoculate each flask from the same starter at the same OD and run at least three biological replicates.</li>
+</ol>
+<h2 id="suggested-sampling-by-organism">Suggested sampling by organism</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>E. coli</em></th>
+<th><em>S. aureus</em></th>
+<th><em>M. smegmatis</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Typical doubling time</td>
+<td><span class="tbc">~20–30 min</span></td>
+<td><span class="tbc">~30–40 min</span></td>
+<td>about 3 h</td>
+</tr>
+<tr class="even">
+<td>Sampling interval</td>
+<td><span class="tbc">every 30–60 min</span></td>
+<td><span class="tbc">every 30–60 min</span></td>
+<td>every 2–3 h</td>
+</tr>
+<tr class="odd">
+<td>Total length</td>
+<td><span class="tbc">8 h</span></td>
+<td><span class="tbc">8–10 h</span></td>
+<td><span class="tbc">24–30 h</span></td>
+</tr>
+<tr class="even">
+<td>Medium</td>
+<td>LB</td>
+<td><span class="tbc">TSB</span></td>
+<td>7H9 + ADC + 0.05% Tween 80</td>
+</tr>
+<tr class="odd">
+<td>Shaking</td>
+<td><span class="tbc">200–250 rpm</span></td>
+<td><span class="tbc">200–250 rpm</span></td>
+<td><span class="tbc">~200 rpm, or roller</span></td>
+</tr>
+</tbody>
+</table>
+<p>BCG and <em>M. tuberculosis</em> double about every 18–24 h (see <a href="strains-and-growth.html">Strains and growth</a>), so sample once or twice daily over one to two weeks. Work with BSL-2 organisms in a biosafety cabinet.</p>
+<h2 id="calculations">Calculations</h2>
+<p>Doubling time from two points in exponential phase:</p>
+<p><span class="math display">$$t_d = \frac{(t_2 - t_1)\,\ln 2}{\ln(\mathrm{OD}_2/\mathrm{OD}_1)}$$</span></p>
+<p>Better: plot ln(OD) against time and fit a line through the exponential portion. Growth rate μ = slope; doubling time = ln 2 ÷ μ.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Plot on a log scale: exponential growth is then a straight line.</li>
+<li>Keep the flask:medium ratio and shaking speed the same between strains; aeration changes growth rate.</li>
+<li>Mycobacteria clump. Pipette the culture up and down (or vortex briefly with beads) before reading, and keep Tween 80 in the medium so that OD reflects cell number.</li>
+<li>When a drug or inducer is added, record the time and OD at the addition.</li>
+<li>Correct for OD if reading in a plate reader, since the path length differs from a 1 cm cuvette.</li>
+<li>OD does not distinguish live from dead cells. Plate for CFU (<a href="serial-dilution-cfu.html">Serial dilution</a>) when viability matters.</li>
+</ul>
+<p><span class="tbc">Reading intervals, flask size and shaking speed are general guidelines and should be replaced with your lab’s usual values.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> General microbiology practice, written up by K. Tembiwa; the 0.1 starting OD matches the plate-reader template in this collection.</p>
+<p class="tag-row"><span class="tag">growth curve</span><span class="tag">OD600</span><span class="tag">spectrophotometer</span><span class="tag">culturing</span><span class="tag">7H9</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ten-fold serial dilutions, plating, and calculating colony-forming units per mL, with notes for fast and slow growers.">
+<meta name="robots" content="noindex">
+<title>Serial dilution and CFU counting | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Serial dilution and CFU counting</h1>
+<p class="lede">Ten-fold serial dilutions, plating, and calculating colony-forming units per mL, with notes for fast and slow growers.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Estimate the number of viable cells (colony-forming units, CFU) per mL of a culture by diluting it until individual colonies can be counted on plates.</p>
+<h2 id="materials">Materials</h2>
+<ul>
+<li>Culture to be counted</li>
+<li>Sterile diluent: PBS or 7H9 for mycobacteria, PBS or saline for <em>E. coli</em> / <em>S. aureus</em>. Add 0.05% Tween 80 for mycobacteria to limit clumping.</li>
+<li>Sterile 1.5 mL tubes (or a 96-well plate for multichannel work)</li>
+<li>Agar plates (7H10/7H11 + supplements for mycobacteria; LB or TSA for <em>E. coli</em> / <em>S. aureus</em>)</li>
+<li>Fresh pipette tips for every transfer</li>
+</ul>
+<h2 id="procedure-tenfold-dilutions">Procedure: tenfold dilutions</h2>
+<ol type="1">
+<li>Label one tube per dilution (10⁻¹ to 10⁻⁷, or as needed) and add 900 µL diluent to each.</li>
+<li>Mix the culture well (vortex, and for mycobacteria pipette up and down to break clumps).</li>
+<li>Transfer 100 µL of culture into the first tube (1:10, 10⁻¹). Mix thoroughly.</li>
+<li>With a fresh tip, transfer 100 µL from the 10⁻¹ tube into the next tube (10⁻²). Mix. Continue down the series with a fresh tip each time.</li>
+<li>Plate each dilution you need (see below). Include a no-culture diluent control.</li>
+<li>Incubate and count (see table).</li>
+</ol>
+<p><strong>Shortcut dilutions:</strong> 1:9 means 1 part sample + 9 parts diluent (a tenfold dilution). 1:99 means 1 part + 99 parts (a 100-fold dilution), e.g. 10 µL + 990 µL.</p>
+<h2 id="plating">Plating</h2>
+<p><strong>Spread plating:</strong> spread 100 µL of a dilution over the plate. Count plates with 30–300 colonies.</p>
+<p><strong>Drop plating (saves plates):</strong> spot 10 µL per dilution in a row on a plate (3 spots per dilution is typical). Let the drops dry before inverting. Count the spots with roughly 3–30 colonies.</p>
+<h2 id="counting-and-calculation">Counting and calculation</h2>
+<p><span class="math display">$$\text{CFU/mL} = \frac{\text{colonies counted}}{\text{volume plated (mL)} \times \text{dilution}}$$</span></p>
+<p>Example: 42 colonies from 100 µL (0.1 mL) of the 10⁻⁵ dilution: 42 / (0.1 × 10⁻⁵) = 4.2 × 10⁷ CFU/mL.</p>
+<p>Where several dilutions give countable plates, calculate each and report the mean.</p>
+<h2 id="incubation-by-organism">Incubation by organism</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><em>E. coli</em></th>
+<th><em>S. aureus</em></th>
+<th><em>M. smegmatis</em></th>
+<th>BCG / <em>M. tuberculosis</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temperature</td>
+<td>37 °C</td>
+<td>37 °C</td>
+<td>37 °C</td>
+<td>37 °C</td>
+</tr>
+<tr class="even">
+<td>Time to countable colonies</td>
+<td>overnight</td>
+<td><span class="tbc">overnight (16–24 h)</span></td>
+<td><span class="tbc">3–4 days</span></td>
+<td><span class="tbc">3–4 weeks</span></td>
+</tr>
+<tr class="odd">
+<td>Plate medium</td>
+<td>LB</td>
+<td><span class="tbc">TSA / LB</span></td>
+<td>7H10/7H11 or LB</td>
+<td>7H10/7H11 + OADC</td>
+</tr>
+</tbody>
+</table>
+<p>Seal mycobacterial plates in a bag so they do not dry out over long incubations. Work with BSL-2 organisms in a biosafety cabinet.</p>
+<h2 id="tips">Tips</h2>
+<ul>
+<li>Always use a fresh tip between dilutions; carry-over inflates the counts at the high dilutions.</li>
+<li>Mix each tube before transferring. Settling or clumping is the biggest source of variation, especially in mycobacteria.</li>
+<li>Plate in duplicate or triplicate.</li>
+<li>For time-course killing assays, take the zero time point before adding drug and plate it at a dilution that can still be counted.</li>
+<li>If plates have no colonies at the lowest dilution you plated, report the result as below the limit of detection (one colony ÷ volume plated), not as zero.</li>
+</ul>
+<p><span class="tbc">Check against your lab’s preferred diluent and drop-plating volume.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> General microbiology practice, written up by K. Tembiwa. Dilution ratios 1:9 and 1:99 as used in the Boutte Lab bootcamp.</p>
+<p class="tag-row"><span class="tag">serial dilution</span><span class="tag">CFU</span><span class="tag">plating</span><span class="tag">viability</span><span class="tag">drop plating</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

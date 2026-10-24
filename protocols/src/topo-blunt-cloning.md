@@ -2,10 +2,10 @@ title: Zero Blunt TOPO PCR cloning
 category: Cloning
 tags: TOPO cloning, blunt-end cloning, PCR, cloning, subcloning
 summary: Clone blunt-end PCR products into pCR-Blunt II-TOPO and transform chemically competent or electrocompetent E. coli.
-source: Summarized from the Zero Blunt TOPO PCR Cloning Kit user guide (Invitrogen / Thermo Fisher Scientific, publication MAN0000062, Rev B.0); see the manufacturer's guide for complete details and the full set of controls. Adapted by K. Tembiwa.
+source: Summarized from the Zero Blunt TOPO PCR Cloning Kit user guide (Invitrogen / Thermo Fisher Scientific, publication MAN0000062, Rev B.0); see the [manufacturer's guide](https://documents.thermofisher.com/TFS-Assets/LSG/manuals/zeroblunttopo_man.pdf) for complete details and the full set of controls. Adapted by K. Tembiwa.
 version: Draft 0.1
 ---
-This is a condensed summary. The manufacturer's user guide (Thermo Fisher Scientific, [thermofisher.com](https://www.thermofisher.com), publication number MAN0000062) is the authoritative source and includes control reactions, vector maps and troubleshooting.
+This is a condensed summary. The manufacturer's user guide (Thermo Fisher Scientific, [full user guide (PDF)](https://documents.thermofisher.com/TFS-Assets/LSG/manuals/zeroblunttopo_man.pdf), publication number MAN0000062) is the authoritative source and includes control reactions, vector maps and troubleshooting.
 
 ## PCR product requirements
 
