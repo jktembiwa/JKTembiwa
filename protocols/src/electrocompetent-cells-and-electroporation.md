@@ -3,7 +3,8 @@ category: Transformation
 tags: electroporation, competent cells, E. coli, M. smegmatis, BCG, transformation
 summary: Making electrocompetent E. coli and mycobacteria, and transforming them by electroporation, with settings by organism.
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## E. coli electrocompetent cells
 
