@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The overall workflow from cloning to concentrated, frozen protein, with notes on Ni columns, EDTA, and packing empty cartridges.">
+<meta name="robots" content="noindex">
+<title>His-tagged protein purification: overview (expression strain, test induction, Ni column, SEC) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">His-tagged protein purification: overview (expression strain, test induction, Ni column, SEC)</h1>
+<p class="lede">The overall workflow from cloning to concentrated, frozen protein, with notes on Ni columns, EDTA, and packing empty cartridges.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="workflow">Workflow</h2>
+<ol type="1">
+<li><strong>Clone</strong> the gene into a vector with a His tag (e.g. pET28 or pET21).</li>
+<li><strong>Transform</strong> an expression strain: BL21 if the gene has no codon bias; BL21 Codon Plus if it has a GC-rich codon bias; a cold-adapted chaperone strain (e.g. Arctic Express Codon Plus) if the protein is still insoluble in BL21 Codon Plus.</li>
+<li><strong>Test induction</strong> (<a href="test-induction-protein-expression.html">Test inductions</a>): pre-induction, post-induction, supernatant and pellet samples on a gel. Adjust conditions until most of the protein is soluble.</li>
+<li><strong>Ni column:</strong> large-scale expression (~1 L), lysis, and loading of the supernatant on a Ni column in low-imidazole buffer. Wash with low-imidazole buffer; elute with high imidazole. Check fractions on a gel. See <a href="his-sumo-purification.html">His-SUMO purification</a> for a worked example.</li>
+<li><strong>Size-exclusion chromatography (SEC)</strong> to separate folded from aggregated or unfolded protein; check fractions on a gel.</li>
+<li><strong>Concentrate</strong>, aliquot and snap-freeze in liquid nitrogen.</li>
+</ol>
+<h2 id="practical-notes">Practical notes</h2>
+<ul>
+<li><strong>EDTA and Ni columns.</strong> EDTA chelates Ni²⁺ and reduces binding, so leave EDTA out of the wash and elution buffers (a low level in the lysis buffer can stabilize some proteins). If a protein precipitates without EDTA after the column, add it back at the dialysis/SEC stage.</li>
+<li><strong>Filter and degas</strong> buffers for FPLC; filter (0.45 µm) or spin lysates twice before loading.</li>
+<li><strong>Bubbles</strong> damage columns. Prime lines whenever you change buffers and set pressure limits for every run.</li>
+<li><strong>Keep both pump lines in liquid.</strong> Store columns in 20% ethanol and flush with water before switching to salt buffers.</li>
+</ul>
+<h2 id="packing-an-empty-cartridge-with-ni-nta-resin">Packing an empty cartridge with Ni-NTA resin</h2>
+<p>(Example: 5 mL empty Bio-Scale Mini cartridges, Bio-Rad.)</p>
+<ol type="1">
+<li>Assemble the cartridge.</li>
+<li>Pour up to 5 mL Ni-NTA resin into the inner cartridge. Draw the liquid through with a peristaltic pump (as vacuum at the bottom) or a vacuum. Add more resin and repeat until the cartridge is full and tightly packed.</li>
+<li>Slide the outer cartridge over the packed inner cartridge, fit the ring, and invert it to connect to the chromatography system.</li>
+<li>Connect “water to water”: run ethanol/water at 2 mL/min, connect the top of the cartridge to the system at the column position (fluid should be dripping from the connector), then connect the bottom. The outlet should be flowing before you connect the bottom.</li>
+</ol>
+<p>See the manufacturer’s manual for your column and instrument.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab).</p>
+<p class="tag-row"><span class="tag">protein purification</span><span class="tag">His-tag</span><span class="tag">Ni-NTA</span><span class="tag">SEC</span><span class="tag">expression</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

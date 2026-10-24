@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Test pairwise or library-scale protein–protein interactions in M. smegmatis by reconstituting dihydrofolate reductase and selecting on trimethoprim.">
+<meta name="robots" content="noindex">
+<title>Mycobacterial protein fragment complementation (M-PFC, DHFR two-hybrid) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Mycobacterial protein fragment complementation (M-PFC, DHFR two-hybrid)</h1>
+<p class="lede">Test pairwise or library-scale protein–protein interactions in M. smegmatis by reconstituting dihydrofolate reductase and selecting on trimethoprim.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>M-PFC is not a magic bullet; it may fail for a given pair of proteins. Host strain: <em>M. smegmatis</em> mc²155.</p>
+<h2 id="vectors">Vectors</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vector</th>
+<th>Type</th>
+<th>Marker</th>
+<th>Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pUAB100</td>
+<td>episomal</td>
+<td>Hyg</td>
+<td>GCN4 homodimerization domain fused to the N-terminus of mDHFR fragment F[1,2] with a glycine linker; insert by replacing GCN4 (MscI/ClaI or BamHI/ClaI)</td>
+</tr>
+<tr class="even">
+<td>pUAB200</td>
+<td>integrative</td>
+<td>Kan</td>
+<td>GCN4 fused to mDHFR fragment F[3]; replace GCN4 with MunI/ClaI</td>
+</tr>
+<tr class="odd">
+<td>pUAB300</td>
+<td>episomal</td>
+<td>Hyg</td>
+<td>mDHFR F[1,2] for in-frame fusion at its C-terminus, multiple cloning sites (preferred for libraries)</td>
+</tr>
+<tr class="even">
+<td>pUAB400</td>
+<td>integrative</td>
+<td>Kan</td>
+<td>mDHFR F[3] for in-frame fusion at its C-terminus</td>
+</tr>
+</tbody>
+</table>
+<p>Clone gene A in pUAB100 or pUAB300 and gene B in pUAB200 or pUAB400, in frame with the complementary DHFR fragment. Verify by sequencing.</p>
+<h2 id="assay">Assay</h2>
+<ol type="1">
+<li>Prepare competent <em>M. smegmatis</em> and check efficiency (10⁴–10⁵ transformants/µg). Electroporate both constructs.</li>
+<li>Recover 3 h at 37 °C in 1 mL 7H9. Plate the whole mix on 7H11 + Kan + Hyg. Incubate 3 days at 37 °C.</li>
+<li>Subculture transformants on 7H11 + Kan + Hyg + <strong>trimethoprim (30–50 µg/mL)</strong>. Alternatively suspend a few colonies in 100 µL PBS and streak 10 µL. Incubate 4–5 days at 37 °C.</li>
+<li><strong>Growth on trimethoprim indicates interaction.</strong> Stronger interactions grow earlier.</li>
+<li>Controls: pUAB100 + pUAB200 (GCN4 domains, strong interaction) as the positive control; any one of the clones with an unrelated partner as the negative control.</li>
+</ol>
+<h2 id="notes-from-the-protocol">Notes from the protocol</h2>
+<ul>
+<li>Use 7H11, <strong>not</strong> 7H10 or 7H9 + agar. Do not change the Kan, Hyg or trimethoprim concentrations.</li>
+<li>For membrane proteins, use pUAB100 and pUAB200 and make sure the DHFR fragments sit in the cytoplasm.</li>
+<li>Some proteins need a free N- or C-terminus; test parallel and antiparallel orientations.</li>
+<li>Interaction strength can be measured with the Alamar Blue assay (Singh et al. 2006).</li>
+<li>Make fresh trimethoprim for plates; do not store trimethoprim plates long at 4 °C.</li>
+</ul>
+<h2 id="library-screening-summary">Library screening (summary)</h2>
+<p>An <em>M. tuberculosis</em> H37Rv library (partial AciI/HpaI digests, 0.5–2 kb, cloned in pUAB300; about 5 × 10⁵ independent clones with more than 90% cloning efficiency) is transformed into <em>M. smegmatis</em> carrying the bait (in pUAB200 or pUAB400). A semi-exhaustive screen needs about 30–60 electroporations (400 µL cells and 2–5 µg DNA each), plated on 7H11 + Kan + Hyg + trimethoprim (30 µg/mL), 4–8 days at 37 °C. Many trimethoprim-resistant colonies carry the <em>M. tuberculosis dfrA</em> gene (Rv2763c) itself; remove them by colony PCR with insert-flanking and <em>dfrA</em> primers. Identify real positives by colony PCR and sequencing, and re-test with an unrelated control.</p>
+<p>See also the <a href="dhfr-two-hybrid-and-ip-turapov.html">DHFR two-hybrid cloning plan</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Summarized from the M-PFC protocol and procedures document from the Steyn laboratory, and Singh A, Mai D, Kumar A, Steyn AJ. Dissecting virulence pathways of Mycobacterium tuberculosis through protein-protein association. Proc Natl Acad Sci USA 103:11346–11351 (2006). Please read the original paper for the authoritative method.</p>
+<p class="tag-row"><span class="tag">two-hybrid</span><span class="tag">M-PFC</span><span class="tag">DHFR</span><span class="tag">trimethoprim</span><span class="tag">protein-protein interaction</span><span class="tag">M. smegmatis</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

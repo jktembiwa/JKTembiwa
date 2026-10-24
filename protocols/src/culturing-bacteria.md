@@ -55,6 +55,21 @@ Follow your institution's biosafety rules. *M. smegmatis* and *E. coli* K-12 str
 - For toxic constructs, grow at 30 °C or lower and avoid long overnights; see the FAQ.
 - For plasmid preps, use a fresh overnight in antibiotic. For competent cells see [Electrocompetent cells](electrocompetent-cells-and-electroporation.html) and [chemical transformation](ecoli-chemical-transformation.html).
 
+### *M. marinum*
+
+Handle at the biosafety level required by your institution.
+
+- **Wild-type strain:** buy the M strain from ATCC. Grow a first passage (P1) and make P1 stocks, then expand to a large P2 culture. Make freezer stocks from P2 and distribute these as the parental strain to lab members. **Do not passage the strain unnecessarily.** It does not lose PDIM, but it can lose its ability to lyse red blood cells, so a new P1 may be needed every few years.
+- **Medium:** 7H9 with Tween 80. OADC can be added, but it is expensive and not required.
+- **Plasmids:** many are derived from pMV306 (L5-integrating); L5 integrating plasmids work. Fast-cloning genes behind the MOP promoter complements well. In general, anything that works in *M. smegmatis* and *M. tuberculosis* works in *M. marinum*.
+- **Transformation:** electroporation as in *Mycobacteria Protocols* (Parish and Roberts, eds.); glycine in the culture improves efficiency. *M. marinum* needs more DNA than *M. tuberculosis* (about 1 µg or more). See [Knockouts in *M. marinum*](marinum-allelic-exchange-p2nil-pgoal.html).
+- **Knockouts:** p2NIL/pGOAL with a UV step for the DNA (essential; without it, plasmids integrate at the wrong site).
+- **Temperature:** *M. marinum* grows best at about 30–32 °C rather than 37 °C. [Confirm growth temperature for your strain.]{.tbc}
+
+## Cryovial labels
+
+To print labels instead of writing on cryovials by hand, use the label template: [download the cryovial label template (.docx)](downloads/cryovial-label-template.docx). Print on the label stock your lab uses (the template is formatted for ToughTag cryovial labels), fill in strain/plasmid, date and initials before printing, and match the information to the freezer-stock database ([Strain annotation and freezing](strain-annotation-and-freezing.html)).
+
 ## Antibiotics
 
 Use the concentrations in [Antibiotic plates](antibiotic-plates.html) for *E. coli* and mycobacteria. Concentrations for *S. aureus* are different and strain-dependent.

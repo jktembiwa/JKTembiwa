@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Batch purification in tubes or 96-well plates, with native elution by biotin.">
+<meta name="robots" content="noindex">
+<title>Strep-tag II / Twin-Strep-tag purification with MagStrep &quot;type3&quot; XT magnetic beads | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Strep-tag II / Twin-Strep-tag purification with MagStrep &quot;type3&quot; XT magnetic beads</h1>
+<p class="lede">Batch purification in tubes or 96-well plates, with native elution by biotin.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p><strong>Beads:</strong> ferrimagnetic spheres coated with 6% agarose and Strep-Tactin XT, supplied as a 5% (v/v) suspension (20 µL = 1 µL beads). Capacity: up to 0.85 nmol tagged protein per µL beads (25.5 µg of a 30 kDa protein). The beads are not meant to be reused.</p>
+<p><strong>Buffers (10× stocks; dilute 1:9 with water):</strong></p>
+<ul>
+<li>Buffer W: 1 M Tris-Cl, 1.5 M NaCl, 10 mM EDTA, pH 8 (10×)</li>
+<li>Buffer BXT: Buffer W with 500 mM biotin (10×)</li>
+</ul>
+<h2 id="batch-purification-in-tubes">Batch purification in tubes</h2>
+<ul>
+<li>Cleared extract volume should not exceed 2.5 mL per µL beads, and the tagged protein should be above 1 mg/mL. If below this, the vendor recommends gravity-flow Strep-Tactin columns instead. 100 mM biotin can give a more concentrated eluate.</li>
+</ul>
+<ol type="1">
+<li>Calculate beads: 1 µL beads per 0.85 nmol protein.</li>
+<li>Place the bead suspension in a tube, collect on a magnet, remove the supernatant.</li>
+<li>Equilibrate with 200 µL 1× Buffer W per µL beads, 3 times.</li>
+<li>Clear the sample (20 min at 10,000 × g, or 4,000 × g for small volumes).</li>
+<li>Resuspend the beads in the cleared sample. Incubate 30 min on ice, vortexing 3–4 times.</li>
+<li>Collect beads on the magnet; remove the supernatant (save the flow-through).</li>
+<li>Wash 3× with 100 µL 1× Buffer W per µL beads.</li>
+<li><strong>Elute.</strong>
+<ul>
+<li><em>Native:</em> 25 µL 1× Buffer BXT per µL beads, 10 min with 2–3 vortexes; transfer the supernatant to a new tube; repeat once. The first elution gives the highest concentration.</li>
+<li><em>Denaturing:</em> SDS sample buffer, 95 °C for 2 min. Strep-Tactin XT also denatures and appears as an extra band at ~13.5 kDa.</li>
+</ul></li>
+<li>Check purity by SDS-PAGE (Coomassie or silver) and quantify by Bradford with BSA as standard.</li>
+</ol>
+<h2 id="batch-purification-in-96-well-plates">Batch purification in 96-well plates</h2>
+<p>For targets up to 90 kDa, at least 0.425 nmol per 200 µL sample. Use at least 40 µL of the 5% suspension per well (2 µL beads), equilibrate with 100 µL 1× Buffer W per µL beads, bind 60 min at room temperature on a plate shaker at 700 rpm, wash 3×, elute with 50 µL 1× Buffer BXT per µL beads (400 rpm, 10 min, twice).</p>
+<h2 id="troubleshooting-vendor">Troubleshooting (vendor)</h2>
+<ul>
+<li>No or weak binding: add protease inhibitors and work at 2–8 °C; use a protease-deficient expression strain; move the tag to the other terminus or use a longer linker or Twin-Strep-tag.</li>
+<li>Contaminants: reduce with reducing agents (disulfide-linked), add salt (up to 5 M NaCl) or mild detergents (up to 2% Triton X-100 or Tween 20) for non-covalent ones, and use biotin blocking solution or avidin for biotinylated proteins.</li>
+</ul>
+<p>See also the <a href="strep-tactin-pulldown-crosslinking.html">Strep-Tactin pulldown</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Summarized from IBA Lifesciences protocol PR83-0011 (March 2022), &quot;MagStrep type3 XT bead-based protein purification&quot; (catalog 2-4090-002 and 2-4090-010). IBA documents are available from the [IBA Lifesciences download area](https://www.iba-lifesciences.com/download-area-protein.html). The vendor protocol is authoritative.</p>
+<p class="tag-row"><span class="tag">Strep-tag</span><span class="tag">Strep-Tactin</span><span class="tag">magnetic beads</span><span class="tag">protein purification</span><span class="tag">vendor manual</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

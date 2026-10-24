@@ -2,7 +2,7 @@ title: Gene knockouts in Mycobacterium marinum with p2NIL / pGOAL
 category: Mycobacterial genetics
 tags: M. marinum, knockout, allelic exchange, p2NIL, pGOAL, electroporation
 summary: Build a p2NIL–pGOAL suicide construct in E. coli, transform M. marinum (with UV-treated DNA), and select single and double crossovers using kanamycin, X-gal and sucrose.
-source: Written by K. Tembiwa from a lab protocol, with context from advice by P. Champion's lab and Talaat & Trucksis, Am J Vet Res (2000). The p2NIL/pGOAL system is from Parish & Stoker. Please check these references before relying on them.
+source: Written by K. Tembiwa from a lab protocol, with context from advice from an experienced *M. marinum* laboratory and from Talaat & Trucksis, Am J Vet Res (2000). The p2NIL/pGOAL system is from Parish & Stoker. Please check these references before relying on them.
 version: Draft 0.1
 ---
 Handle *M. marinum* at the biosafety level required by your institution.
@@ -32,7 +32,7 @@ Handle *M. marinum* at the biosafety level required by your institution.
 5. Dilute 1:20 (10 µL + 190 µL 7H9) and plate 200 µL on sucrose plates (7H11 + X-gal + sucrose + OADC).
 6. Pick **white** colonies (double crossover), grow in 7H9, and confirm the knockout by PCR with confirmation primers.
 
-Advice from experienced *M. marinum* labs: the **UV treatment of the DNA is critical**. Without it *M. marinum* integrates the plasmid at the wrong site, probably because of strong mismatch repair compared with *M. tuberculosis*. The glycine step in preparing competent cells improves transformation.
+Advice from experienced *M. marinum* labs: p2NIL and pGOAL are obtained from Addgene (under a material transfer agreement). The **UV treatment of the DNA is critical**. Without it *M. marinum* integrates the plasmid at the wrong site, probably because of strong mismatch repair compared with *M. tuberculosis*. The glycine step in preparing competent cells improves transformation.
 
 ## Competent cell preparation
 

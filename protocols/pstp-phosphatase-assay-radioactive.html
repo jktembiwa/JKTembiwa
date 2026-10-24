@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Phosphorylate a substrate with its kinase and radiolabeled ATP, add PstP (wild-type or phosphomimetic variants), and follow dephosphorylation over time.">
+<meta name="robots" content="noindex">
+<title>In vitro phosphatase assay with PstP (radiolabeled substrate) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">In vitro phosphatase assay with PstP (radiolabeled substrate)</h1>
+<p class="lede">Phosphorylate a substrate with its kinase and radiolabeled ATP, add PstP (wild-type or phosphomimetic variants), and follow dephosphorylation over time.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p><strong>Radioactivity:</strong> work only in an approved radioisotope area with training and monitoring. See also <a href="in-vitro-kinase-assay-radioactive.html">In vitro kinase assay</a>.</p>
+<h2 id="planning">Planning</h2>
+<p>Take 10 or 20 µL samples before and after ATP at several time points. You may need to load the same kinase-reaction sample (0 min, no PstP) more than once on a gel, so calculate how much substrate and total kinase-reaction volume you need to cover every sample and control. Use kinase:substrate at <strong>1:10 (w/w)</strong>. (5:1 substrate:kinase was used for Wag31.)</p>
+<h2 id="kinase-step-examples">Kinase step (examples)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Substrate</th>
+<th>Kinase</th>
+<th>Conditions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>His-SUMO-CwlM</td>
+<td>His-MBP-PknB</td>
+<td>30 min, room temperature, 0.15 µCi/µL [γ-³²P]ATP, 2 mM MnCl₂, kinase buffer (50 mM Tris pH 7.5, 250 mM NaCl, 10% glycerol, 1 mM DTT)</td>
+</tr>
+<tr class="even">
+<td>His-FhaA</td>
+<td>His-MBP-PknB</td>
+<td>45 min at 37 °C, 0.15 µCi/µL [γ-³²P]ATP, 5 mM MnCl₂, 25 mM Tris pH 7.5, 1 mM DTT</td>
+</tr>
+<tr class="odd">
+<td>His-Wag31</td>
+<td>His-MBP-PknA</td>
+<td>2 h, room temperature, 0.2 µCi/µL [γ-³²P]ATP, 10 mM MnCl₂, 50 mM Tris pH 7.5, 20% glycerol, 150 mM NaCl</td>
+</tr>
+</tbody>
+</table>
+<p>Take a sample at the end of the kinase step (<strong>0 min, no PstP</strong>). Split the remainder equally into tubes: one for a <strong>no-phosphatase control</strong> (phosphatase buffer only) and one for each PstP variant (and each independently purified batch).</p>
+<h2 id="phosphatase-step">Phosphatase step</h2>
+<p>Add PstP (catalytic domain; wild-type or phosphomimetic variants) at one-tenth the mass of substrate, in phosphatase buffer (50 mM Tris pH 7.5, 10 mM MnCl₂, 1 mM DTT). Incubate at room temperature and take samples into 6× Laemmli:</p>
+<ul>
+<li>CwlM: 1, 3, 5, 10, 20 and 40 min</li>
+<li>FhaA: 5, 10, 20, 40, 60 and 80 min</li>
+<li>Wag31: 15, 30, 45, 60, 90 and 120 s</li>
+</ul>
+<p>Use two independently purified batches of each PstP variant as biological replicates.</p>
+<h2 id="gel">Gel</h2>
+<p>Heat samples 95 °C for 10 min, then <strong>load equal amounts of substrate</strong> in each lane. Calculate substrate per µL carefully for this. Run, dry and image as for the <a href="in-vitro-kinase-assay-radioactive.html">kinase assay</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Boutte Lab protocol (as received) used for the PstP phosphorylation-site study; check the published paper for the authoritative version [citation to be added]{.tbc}.</p>
+<p class="tag-row"><span class="tag">phosphatase assay</span><span class="tag">PstP</span><span class="tag">radioactivity</span><span class="tag">PknB</span><span class="tag">PknA</span><span class="tag">kinase</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

@@ -51,3 +51,15 @@ version: Draft 0.1
 4. If background is high, wash 3 × more in TTBS and re-image.
 
 [Antibody dilutions are as written in the original notes. Confirm and express as ratios (e.g. 1:5000) for the public version. The two source protocols differ in details (heat time, DTT, reagent volume), as listed above.]{.tbc}
+
+## Variant: general blot for a Strep-tagged protein
+
+Differences from the protocol above:
+
+- Lyse in 300–500 µL PBS + PMSF; keep the bead-beating pellet in case the protein is a transmembrane protein. Heat 95 °C for 10 min. Storing at –20 °C is fine.
+- Load at least [70–85 µg (source says "mg")]{.tbc} protein on a 12% gel. Run 30 mA for 20 min, then ~35 mA once the sample is past the stacking gel.
+- Transfer at 25 V for 60 min per mini gel; use 75–80 min for a ~28 kDa protein.
+- Block 60 min at room temperature (or overnight at 4 °C) in TTBS + 5% milk. 5% BSA in PBS-Tween can lower background (filter through 0.22 µm first), but **do not block with BSA when detecting a His-tagged protein**.
+- Primary: [10 µL]{.tbc} rabbit anti-Strep antibody in the blocking solution, overnight at 4 °C or 1 h at room temperature. Wash 5 × 10 min with TTBS.
+- Secondary: [2 µL]{.tbc} rabbit secondary, 1 h at room temperature. Wash 5 × 15 min.
+- Develop with 250 µL of each chemiluminescent reagent and image as above.

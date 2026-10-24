@@ -345,3 +345,4 @@ h3 {
 .news-list li p{margin:0}
 .news-tag{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);padding-top:.25rem}
 @media(max-width:560px){.news-list li{grid-template-columns:1fr;gap:.1rem}}
+.news-when{display:inline-block;margin-top:.15rem;font-weight:500;text-transform:none;letter-spacing:0;font-size:.8rem}

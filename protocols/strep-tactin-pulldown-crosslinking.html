@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cross-link cells with formaldehyde, capture a Strep-tagged protein on magnetic Strep-Tactin beads, elute, and prepare samples for analytical and preparative gels.">
+<meta name="robots" content="noindex">
+<title>Strep-Tactin pulldown of cross-linked interactors (for mass spectrometry) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Strep-Tactin pulldown of cross-linked interactors (for mass spectrometry)</h1>
+<p class="lede">Cross-link cells with formaldehyde, capture a Strep-tagged protein on magnetic Strep-Tactin beads, elute, and prepare samples for analytical and preparative gels.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>Use a tagged strain and an <strong>untagged control strain</strong> processed in parallel. Formaldehyde and PFA are toxic; work in a hood.</p>
+<h2 id="cross-link-and-lyse">Cross-link and lyse</h2>
+<ol type="1">
+<li>Grow 500 mL of each strain to OD₆₀₀ ~0.8.</li>
+<li>Pellet and resuspend in 100 mL PBS-Tween 80 + 800 µL 16% PFA. Keep on ice. (The first exposure and wash is to scavenge amine groups.)</li>
+<li>Pellet and resuspend again in 100 mL PBS-Tween 80 + 800 µL 16% PFA; incubate 1 h at 37 °C.</li>
+<li>Pellet and resuspend in 30 mL Buffer W (100 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA) + 0.1% DDM + protease inhibitor tablets.</li>
+<li>Lyse with a French press, 2× at up to 1,400 <span class="tbc">psi</span>.</li>
+<li>Spin in Oakridge tubes at 15,000 × g for 15 min.</li>
+</ol>
+<h2 id="beads">Beads</h2>
+<p>For each sample vortex the bead stock, move 600 µL to a tube, collect on a magnet, remove the supernatant, wash with 1 mL Buffer W, and resuspend in 400 µL Buffer W.</p>
+<h2 id="capture">Capture</h2>
+<ol type="1">
+<li>Pour the supernatant into 50 mL conicals. Save 200 µL as <strong>lysate</strong>.</li>
+<li>Dissolve the pellet in 30 mL denaturing wash buffer (8 M urea) to recover protein still in the membrane. Save 200 µL as <strong>pellet</strong>.</li>
+<li>Add 400 µL beads per sample (optimize for your protein and lysate). Rock for 2 h in the cold room.</li>
+<li>Spin 5,000 rpm, 5 min. Save 200 µL of supernatant as <strong>flow-through</strong>.</li>
+<li>Move the beads to microcentrifuge tubes. Wash 3× with Buffer W (magnet); save 100 µL of the first wash as <strong>wash</strong>.</li>
+</ol>
+<h2 id="elute-and-precipitate">Elute and precipitate</h2>
+<ol type="1">
+<li>Add 160 µL PBS + 40 µL 5× Buffer BX. Vortex; incubate 10 min at room temperature; collect on the magnet and move the eluate to a new tube. Repeat once and combine.</li>
+<li>Add 100 µL 100% TCA to the eluate; keep in the fridge overnight. Add 25 µL 1× Laemmli to the beads (“beads” sample) and keep overnight.</li>
+<li>Spin the precipitate 15 min at 15,000 × g in the cold. Remove the supernatant. Wash with 1 mL acetone for 30–60 min in the fridge. Spin again 15 min. Remove the acetone (leave a little to protect the pellet), short spin, remove the rest, and air-dry 20–30 min.</li>
+<li>Resuspend in 25 µL 1× Laemmli. Add NaOH a microliter at a time until the dye is solid blue (orange or brown means too acidic). To reverse the cross-links, heat the sample at <span class="tbc">temperature and time per your protocol</span>.</li>
+</ol>
+<h2 id="gels-and-mass-spectrometry">Gels and mass spectrometry</h2>
+<ol type="1">
+<li><strong>Analytical gel first:</strong> 5–10 µL of lysate, pellet, flow-through and wash per strain, plus ~0.5 µL concentrated eluate diluted into 10–15 µL buffer. If the pulldown worked, continue.</li>
+<li><strong>Preparative gel:</strong> run the remaining eluates for the tagged and control strains, stain with Coomassie and look for bands unique to the tagged strain. Cut out the whole region around your protein for each sample and send for mass spectrometry.</li>
+<li>Keep only proteins more abundant in the pulldown than in the control in <strong>multiple independent pulldowns</strong>.</li>
+</ol>
+<p>See also <a href="magstrep-xt-bead-purification.html">MagStrep XT purification</a> for the manufacturer’s bead protocol.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Boutte Lab protocol (as received), adapted by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">pulldown</span><span class="tag">Strep-tag</span><span class="tag">cross-linking</span><span class="tag">formaldehyde</span><span class="tag">mass spectrometry</span><span class="tag">interactors</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
