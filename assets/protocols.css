@@ -12,6 +12,8 @@
 .chip{border:1px solid var(--sage-dark);background:transparent;color:var(--sage-dark);border-radius:999px;padding:.3rem .75rem;font:inherit;font-size:.85rem;cursor:pointer}
 .chip[aria-pressed=true]{background:var(--sage-dark);color:#fff}
 .sr-only{position:absolute;left:-999px}
+.proto-snippet{font-size:.88rem;color:var(--muted);border-left:3px solid var(--line);padding-left:.7rem}
+.proto-snippet mark{background:rgba(233,199,124,.55);color:var(--ink);border-radius:2px;padding:0 .1em}
 details.faq{border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin:.8rem 0;background:var(--paper)}
 details.faq summary{cursor:pointer;font-weight:700}
 .gc-calc label{display:inline-block;margin-right:1.2rem;font-weight:600}

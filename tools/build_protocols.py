@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build protocol pages from protocols/src/*.md. Run from the repo root."""
-import glob, html, os, re, subprocess
+import glob, html, json, os, re, subprocess
 BASE="https://jktembiwa.github.io/JKTembiwa/"
 NAV='''<a href="../index.html">About</a>
 <a href="../research.html">Research</a>
@@ -63,7 +63,14 @@ pages=[parse(p) for p in sorted(glob.glob("protocols/src/*.md"))]
 os.makedirs("protocols",exist_ok=True)
 STATUS='<span class="status draft">Draft: not yet reviewed by the author</span>'
 LEGEND='<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>'
+INLINE=r"</?(?:a|b|i|em|strong|span|sub|sup|code|abbr|small)\b[^>]*>"
+def plain(h):
+    """Rendered body as plain text for full-text search."""
+    h=re.sub(r"(?is)<(script|style)\b.*?</\1>"," ",h)
+    h=re.sub(INLINE,"",h)  # keep OD<sub>600</sub> as one word
+    return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",h))).strip()
 for p in pages:
+    p["html"]=md(p["body"])
     # "status: reviewed" in a source header drops the draft badge; the legend then appears only if .tbc spans remain
     reviewed=p.get("status","").lower()=="reviewed"
     status="" if reviewed else STATUS+" "
@@ -76,7 +83,7 @@ for p in pages:
 </div></section>
 <section class="section"><div class="container prose">
 {legend}
-{md(p["body"])}
+{p["html"]}
 <hr>
 <p class="meta"><strong>Source / credit:</strong> {html.escape(p["source"])}</p>
 <p class="tag-row">{''.join(f'<span class="tag">{html.escape(t)}</span>' for t in p["tags"])}</p>
@@ -112,7 +119,7 @@ idx=head("Protocols","Common molecular microbiology protocols and troubleshootin
 </div></section>
 <section class="section"><div class="container">
 <label class="sr-only" for="q">Search protocols</label>
-<input id="q" class="search" type="search" placeholder="Search protocols (e.g. PCR, conjugation, plates)">
+<input id="q" class="search" type="search" placeholder="Search all protocol text (e.g. glycerol wash, hygromycin, OD600)">
 <div class="chips" role="group" aria-label="Filter by tag">{buttons}</div>
 <p id="empty" class="meta" hidden>No protocols match.</p>
 <div id="list">
@@ -121,6 +128,8 @@ idx=head("Protocols","Common molecular microbiology protocols and troubleshootin
 <script src="../assets/protocols.js"></script>
 '''+FOOT
 open("protocols/index.html","w",encoding="utf-8").write(idx)
+# full-text search data, loaded by assets/protocols.js
+json.dump([{"slug":p["slug"],"text":plain(p["html"])} for p in pages],open("protocols/search.json","w",encoding="utf-8"),ensure_ascii=False,separators=(",",":"))
 # FAQ
 faq=[l.strip() for l in open("protocols/faq.txt",encoding="utf-8").read().split("\n===\n") if l.strip()]
 items=""
