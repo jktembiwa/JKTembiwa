@@ -9,7 +9,7 @@ version: Draft 0.1
 
 1. Grow a starter culture. It can include the antibiotic to which the strain is resistant to select out contaminants (for XL1-Blue, tetracycline at 10 µg/mL).
 2. Dilute to an OD of at least 0.05 in LB without antibiotic. Grow to an OD of about 0.8 (up to 1.0 is fine).
-3. Spin at 10,000 rpm in a Sorvall rotor [(rotor-specific; convert to g)]{.tbc} for 10 min at 4 °C and pour off the supernatant.
+3. Spin at 5,000 × g for 10 min at 4 °C and pour off the supernatant.
 4. Wash twice in ice-cold sterile **10% glycerol**: first in half the original volume, then in a quarter. Keep the cells cold.
 5. Resuspend the final pellet in ice-cold 10% glycerol to a final volume of one-hundredth the original (for a 200 mL culture, use 1.5–1.75 mL glycerol to make 2 mL). Aliquot 50 µL.
 6. Use fresh, or snap-freeze for 30 seconds in liquid nitrogen (or a dry ice/95% ethanol bath) and store at −80 °C.
