@@ -1,4 +1,4 @@
 # Intro text for the troubleshooting FAQ page. The questions and answers themselves are in faq.txt.
-# Inline HTML such as <em>word</em> is allowed. After editing, ask Claude to rebuild (python3 tools/build_protocols.py).
+# Inline HTML such as <em>word</em> is allowed. After editing, rebuild (python tools/build_protocols.py), or edit it in the local editor (edit-site.bat), which rebuilds for you.
 heading: Troubleshooting FAQ.
 lede: Common failure points and what usually fixes them. Entries come from lab experience and are marked as drafts until reviewed.
