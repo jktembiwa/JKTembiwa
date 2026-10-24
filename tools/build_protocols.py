@@ -93,7 +93,7 @@ def card(p):
     return f'''<article class="card proto-card" data-tags="{html.escape('|'.join(p['tags']).lower(),quote=True)}" data-text="{html.escape((p['title']+' '+p['summary']+' '+' '.join(p['tags'])).lower(),quote=True)}">
 <h3><a href="{p['slug']}.html">{html.escape(p['title'])}</a></h3>
 <p>{html.escape(p['summary'])}</p>
-<p class="meta">{STATUS}</p>
+<p class="meta">{"" if p.get("status","").lower()=="reviewed" else STATUS}</p>
 </article>
 '''
 cards=""

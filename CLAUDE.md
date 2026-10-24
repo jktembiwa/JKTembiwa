@@ -28,6 +28,13 @@ Rules:
 - Tag chips show only for tags used at least twice.
 - After building, check that no internal links are broken. A clean rebuild with no source change must leave `git status` empty.
 
+## Local editor
+`edit-site.bat` (or `python tools/editor.py [--port N]`) serves the site at http://localhost:8000/ and adds editing tools to protocol pages: edit a protocol's header and markdown body (Draft/Reviewed switch, Mark TBC / Clear highlight, preview), create a new protocol, edit `faq.txt` and the intro files, and Publish (commit `protocols/`, `pull --rebase`, rebuild, push).
+- The tools are injected only by the local server (`tools/editor/editor.js`, `editor.css`); built pages never contain them.
+- Saves go through the build; if the build fails, the old file is restored.
+- The API accepts only localhost Host headers and POSTs with `X-Editor: 1` (blocks other sites in the browser).
+- If Publish reports a conflict, Karen's edits are in a local commit: rebase on `origin/main`, port any generated-HTML edits into sources, rebuild, push.
+
 ## Building on this Windows PC
 - Tools: Git for Windows (`C:\Program Files\Git`, plus Git Bash), Python 3.12 (`%LOCALAPPDATA%\Programs\Python\Python312\python.exe`; `python3` is only the Microsoft Store stub).
 - **Pandoc must be 3.1.3** (`%LOCALAPPDATA%\Programs\pandoc-3.1.3`, on the user PATH). Newer pandoc drops the `odd`/`even`/`header` row classes and outputs MathML instead of `$$` spans, which changes about 28 pages. winget doesn't offer 3.1.3; get it from the pandoc GitHub releases.
