@@ -5,6 +5,8 @@ summary: Clean knockouts by two-step homologous recombination, and gene replacem
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
 version: Draft 0.1
 ---
+**Other recombineering protocols on this site differ from this one**, including in the inducer, induction timing and cell handling: [an alternative M. smegmatis protocol](smeg-recombineering-sundaram.html), [oligo-mediated recombineering](oligo-recombineering.html) and [ORBIT](orbit.html). They have not been reconciled with this page.
+
 ## Homologous recombination (suicide plasmid)
 
 Used for insertional crosses and clean knockouts. Requires at least 1 µg of suicide plasmid per transformation and at least 500 bp of identical sequence between plasmid and target. Yield is usually fewer than 10 colonies per transformation, so do multiple transformations.

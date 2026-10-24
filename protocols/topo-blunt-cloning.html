@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Clone blunt-end PCR products into pCR-Blunt II-TOPO and transform chemically competent or electrocompetent E. coli.">
+<meta name="robots" content="noindex">
+<title>Zero Blunt TOPO PCR cloning | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Zero Blunt TOPO PCR cloning</h1>
+<p class="lede">Clone blunt-end PCR products into pCR-Blunt II-TOPO and transform chemically competent or electrocompetent E. coli.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>This is a condensed summary. The manufacturer’s user guide (Thermo Fisher Scientific, <a href="https://www.thermofisher.com">thermofisher.com</a>, publication number MAN0000062) is the authoritative source and includes control reactions, vector maps and troubleshooting.</p>
+<h2 id="pcr-product-requirements">PCR product requirements</h2>
+<ul>
+<li>The kit is designed for <strong>blunt-end PCR products</strong> from thermostable proofreading polymerases (for example <a href="pcr-polymerases.html">Pfx, Phusion or Q5</a>).</li>
+<li><strong>Do not add 5′ phosphates to your primers</strong>; such products will not ligate into the vector.</li>
+<li>Use a 7–30 minute final extension to make sure products are completely extended.</li>
+<li>Check the product on an agarose gel for a single discrete band of the correct size, or <a href="gel-purification.html">gel-purify it</a>.</li>
+</ul>
+<h2 id="topo-cloning-reaction">TOPO cloning reaction</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Reagent</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Fresh PCR product</td>
+<td>0.5–4 µL</td>
+</tr>
+<tr class="even">
+<td>Salt solution</td>
+<td>1 µL</td>
+</tr>
+<tr class="odd">
+<td>Water</td>
+<td>to a total of 5 µL</td>
+</tr>
+<tr class="even">
+<td>pCR-Blunt II-TOPO vector</td>
+<td>1 µL</td>
+</tr>
+<tr class="odd">
+<td><strong>Final volume</strong></td>
+<td><strong>6 µL</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Mix gently and incubate for 5 minutes at room temperature (22–23 °C), then put on ice. The reaction can be stored at −20 °C overnight. For routine subcloning, 30 seconds may be enough; for products longer than 1 kb, or pools of PCR products, longer incubation gives more colonies (up to 30 minutes). The salt solution (final 200 mM NaCl, 10 mM MgCl₂ for chemical transformation) increases the number of transformants.</p>
+<h2 id="transformation">Transformation</h2>
+<p>Use kanamycin (50 µg/mL) or low-salt LB with zeocin (25 µg/mL) plates, and prewarm the plates at 37 °C for 30 minutes. Use two plates per transformation.</p>
+<p><strong>Chemically competent cells</strong></p>
+<ol type="1">
+<li>Add 2 µL of the TOPO reaction to a vial of competent cells and mix gently (do not pipette up and down).</li>
+<li>Incubate on ice for 5–30 minutes.</li>
+<li>Heat shock for 30 seconds at 42 °C without shaking, then return to ice.</li>
+<li>Add 250 µL room-temperature S.O.C. medium and shake horizontally at 200 rpm and 37 °C for 1 hour.</li>
+<li>Spread 10–50 µL on prewarmed selective plates (two different volumes, with 20 µL S.O.C. added to spread small volumes evenly). Incubate overnight at 37 °C.</li>
+</ol>
+<p><strong>Electrocompetent cells.</strong> Dilute the TOPO reaction 4-fold in water first (6 µL reaction + 18 µL water) to prevent arcing, then add 2 µL to 50 µL of cells, transfer to a chilled 0.1 cm cuvette, electroporate, and add 250 µL S.O.C. Recover for at least 1 hour at 37 °C before plating as above. If arcing is a problem, reduce the voltage by 10%, reduce the load resistance to 100 Ω, or precipitate the reaction and resuspend in water.</p>
+<p>An efficient reaction produces several hundred colonies. Pick about 10 colonies.</p>
+<h2 id="analyzing-transformants">Analyzing transformants</h2>
+<ol type="1">
+<li>Grow 2–6 colonies overnight in LB with the selective antibiotic, saving the original colony by patching to a fresh plate.</li>
+<li>Isolate plasmid DNA and check by restriction digest for the insert and its orientation (use enzymes that cut once in the vector and once in the insert), or sequence with M13 forward and reverse primers.</li>
+<li>Alternatively, screen colonies directly by <a href="colony-pcr-screening.html">colony PCR</a> with an M13 primer and an insert-specific primer; run restriction analysis in parallel the first time.</li>
+<li>For long-term storage, make a glycerol stock (0.85 mL culture + 0.15 mL sterile glycerol) at −80 °C.</li>
+</ol>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Summarized from the Zero Blunt TOPO PCR Cloning Kit user guide (Invitrogen / Thermo Fisher Scientific, publication MAN0000062, Rev B.0); see the manufacturer&#x27;s guide for complete details and the full set of controls. Adapted by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">TOPO cloning</span><span class="tag">blunt-end cloning</span><span class="tag">PCR</span><span class="tag">cloning</span><span class="tag">subcloning</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

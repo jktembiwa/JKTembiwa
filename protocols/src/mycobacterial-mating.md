@@ -1,0 +1,59 @@
+title: Conjugation (mating) between mycobacterial strains
+category: Mycobacterial genetics
+tags: conjugation, mating, M. smegmatis, mycobacteria, filter mating, transconjugants
+summary: Filter mating, mini-mating and microtiter-plate screening matings between mycobacterial donor and recipient strains.
+source: From the Derbyshire lab, shared with the Boutte lab; adapted for this site.
+version: Draft 0.1
+---
+For conjugation from an *E. coli* donor, see [bi-parental conjugation](bi-parental-conjugation.html).
+
+## Filter mating
+
+1. Inoculate TSB or 7H9 broth (with Tween 80) containing the appropriate antibiotic with each strain to be mated. Incubate at 250 rpm and 37 °C overnight. By 18–24 hours the cultures should be near the end of log phase, with A₆₀₀ around 1.5.
+2. Place 0.5 mL each of donor and recipient into a microcentrifuge tube and pellet for 30 s. Resuspend in 1 mL TSB **without Tween** and pellet for 30 s. Wash once more. Resuspend the cells in 100 µL TSB.
+3. Gently spot the whole 100 µL onto the center of a 0.45 µm membrane filter (it need not be sterile) placed on a pre-warmed TSA plate. Four or five filters fit on one plate if labeled carefully.
+4. Incubate the plate right side up for 18–24 h at **30 °C**.
+5. Remove the filter with sterile forceps into a sterile tube. Rinse the cells off with 1 mL TSB + Tween using a pipette, and vortex for 15–30 s. Mycobacteria clump and are hard to resuspend after growth on solid medium; pipetting up and down with a tip helps make the suspension uniform.
+6. Dilute and plate on selective agar:
+    - Dilute to 10⁻⁶ and 10⁻⁷ and plate 0.1 mL of the appropriate dilutions on plates with a single antibiotic selecting for either the donor or the recipient.
+    - Plate 0.1 mL of the original suspension and of the 10⁻¹ and 10⁻² dilutions on plates containing **both** antibiotics, to select transconjugants that carry both resistance genes.
+    - Adjust the dilutions to the growth of the strains.
+    - Incubate at 37 °C. Colonies are visible after 2–3 days and countable from 3–4 days.
+
+## Mini-mating (qualitative)
+
+Generates transconjugants but not quantitative data.
+
+1. Mix 50 µL each of recipient and donor with 1 mL TSB without Tween. Spin for 30 s. Wash with 1 mL and spin for 30 s.
+2. Resuspend the pellet in 25 µL broth and spot onto a TSA plate **without antibiotics**. Incubate at 30 °C for 18–24 h.
+3. Collect the spot with a sterile loop and resuspend in 200 µL TSB with 0.05% Tween 80, mixing with a pipette tip.
+4. Spread on the appropriate antibiotic plates (for example kanamycin + streptomycin): 20 µL on one plate and the remaining 180 µL on another. Incubate at the proper temperature.
+
+*Alternative wash:* put 1 mL TSB (no Tween) in a microcentrifuge tube, add 50 µL each of recipient and donor, spin 30 s, tip off the supernatant, add 1 mL TSB and mix, spin 30 s, and tip off all but the last drop (about 25 µL). Then continue from step 2 above, resuspending in the remaining 25 µL.
+
+## Microtiter-plate matings (for screens)
+
+Use fresh colonies (less than a week old); otherwise transfer efficiencies fall.
+
+**Day 1.** Add 200 µL TSB with appropriate antibiotic to the wells of a microtiter dish using a multichannel pipettor and sterile troughs. In column 1 (rows A–G), include controls: 4 wells of broth only and 4 wells of wild-type donor. Inoculate columns 2–12 (rows A–G) with donor colonies for the screen. Cover with an air-permeable tape sheet and incubate with gentle shaking for 48 h at 37 °C. (The 48 h could probably be reduced with deeper wells that can be shaken more vigorously.)
+
+**Day 2.** Grow 20 mL of the recipient strain (streptomycin resistant). Each well needs 200 µL, so 1 plate needs about 20 mL. A single large flask is fine.
+
+**Day 3.**
+
+1. Add 50 µL TSB with Tween to a new microtiter dish and use a replicator to inoculate wells from the donor plate for glycerol stocks. Grow overnight with gentle shaking at 37 °C. Alternatively, transfer 20 µL into a new dish with 20 µL of 30% glycerol and freeze immediately.
+2. Spin the remaining cells at 2700 rpm for 3 min in a benchtop centrifuge and dump the supernatant by inverting the dish.
+3. Resuspend cells in 200 µL of recipient culture. Controls: add recipient to two wild-type donor wells (donor + recipient, positive control) and to two broth-only wells. Column 1 then contains donor + recipient, donor only, recipient only and broth only.
+4. Spin down and dump the supernatant. Wash twice with TSB **without Tween**. After the second wash, resuspend in 10 µL TSB without Tween.
+5. Spot 5 µL onto a large TSA microtiter dish and incubate colony side up for 48 h at **30 °C**.
+
+**Day 4.** Add another 50 µL TSB + 30% glycerol to the glycerol dish growing at 37 °C and freeze at −70 °C.
+
+**Day 5.** Replica-plate the mating plate with velvet onto TSA + antibiotic + streptomycin (to select transconjugants) and onto TSA + antibiotic (to select donor). Invert and incubate at 37 °C for 4 days. After 4–5 days you will see speckled growth of transconjugants for each spot, generally 20–50 small colonies per spot. Low frequencies generally mean the inoculum was not from fresh colonies.
+
+- Streak positive culture wells onto the appropriate antibiotic plates. Repeat the screen using 4 individual colonies from the streak-out. The microtiter format allows independent positives to be screened in parallel.
+- If cultures are still positive, perform a filter mating to determine the transfer frequency accurately compared to a control.
+- Freeze each clone as a glycerol stock.
+- Careful labeling and tracking of microtiter dishes and clones is essential. Keep a spreadsheet for each dish, photograph each mating plate screen, and track clones by plate, well and date.
+
+[Volumes were given as "ml" in the source where microliters are clearly meant; they have been read as µL.]{.tbc}

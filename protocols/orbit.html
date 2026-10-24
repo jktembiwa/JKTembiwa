@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a Bxb1 attP site, in cells expressing recombinase and Bxb1 integrase.">
+<meta name="robots" content="noindex">
+<title>ORBIT: oligo recombineering followed by Bxb1 integrase targeting | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">ORBIT: oligo recombineering followed by Bxb1 integrase targeting</h1>
+<p class="lede">Insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a Bxb1 attP site, in cells expressing recombinase and Bxb1 integrase.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="overview">Overview</h2>
+<p>An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is recombined into the chromosome, and a payload plasmid is then integrated at the attP site by Bxb1 integrase. <span class="tbc">Organism: the conditions (37 °C, 3 days) suggest <em>M. smegmatis</em>; confirm.</span></p>
+<h2 id="steps">Steps</h2>
+<ol type="1">
+<li><strong>Design and order the oligo.</strong> Include the Bxb1 attP site (<code>GGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACC</code>, 48 nt) flanked by 70 bases of target sequence on each side. For a C-terminal tag, insert attP between the last codon and the stop codon: copy the sequence from 70 bases upstream of the insertion point to 70 bases downstream. Decide whether the oligo is the top strand or its reverse complement (<span class="tbc">see the oligo-directionality guidance for ORBIT</span>). Order the 188 nt oligo as an Ultramer.</li>
+<li><strong>Prepare the payload vector.</strong> Miniprep the appropriate ORBIT vector.</li>
+<li><strong>Grow the recipient strain.</strong> The strain carrying the inducible recombinase and integrase plasmid is grown in 7H9 + kanamycin: 10 mL per transformation, grown to turbidity. The night before, do a calculated dilution so that the culture is at OD about 0.5 the next morning.</li>
+<li><strong>Induce.</strong> In the morning, measure the OD and adjust to 0.5. Induce the integrase with <strong>500 ng/mL anhydrotetracycline (aTc)</strong> and shake or roll for 3 hours.</li>
+<li><strong>Make competent cells.</strong> Wash the induced cells three times in ice-cold 10% glycerol. Cool the centrifuge, pellet the cells at 4000 rpm for 5 min, resuspend in 10 mL cold 10% glycerol, repeat twice, then pellet once more and resuspend in 500 µL cold 10% glycerol for a single transformation.</li>
+<li><strong>Prepare cuvettes</strong> while spinning. For one transformation you need two cuvettes, the transformation and a control with no oligo.
+<ul>
+<li>Control: pipette 0.4 µg of the ORBIT vector onto the side of the cuvette.</li>
+<li>Transformation: pipette 0.4 µg of ORBIT vector and 1 µg of oligo.</li>
+</ul></li>
+<li>Pipette 250 µL of the washed competent cells into each cuvette and tap to remove bubbles.</li>
+<li><strong>Electroporate</strong> at 2500 V, 1000 Ω, 25 µF after drying each cuvette. The time constant should be about 20 ms.</li>
+<li>Transfer the cells into labeled tubes with 1 mL 7H9, tape them to a roller and roll at 37 °C for 3 hours.</li>
+<li>Have at least two LB + hygromycin 50 µg/mL plates ready.</li>
+<li>Spin the tubes for 1 min at maximum speed. Resuspend in 150 µL 7H9. Put beads on the plates, add the 150 µL of cells and spread.</li>
+<li>Incubate at 37 °C for 3 days.</li>
+<li><strong>PCR check</strong> each junction: for the left flank, use an <em>oriE</em> reverse primer with a target-specific forward primer; for the right flank, use a hygromycin-cassette forward primer with a target-specific reverse primer.</li>
+</ol>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> ORBIT method (see Murphy et al., mBio 2018); lab adaptation, shared with the Boutte lab and adapted for this site.</p>
+<p class="tag-row"><span class="tag">ORBIT</span><span class="tag">recombineering</span><span class="tag">Bxb1</span><span class="tag">integrase</span><span class="tag">gene tagging</span><span class="tag">mycobacteria</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

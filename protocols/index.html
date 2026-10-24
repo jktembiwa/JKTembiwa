@@ -38,7 +38,7 @@
 <section class="section"><div class="container">
 <label class="sr-only" for="q">Search protocols</label>
 <input id="q" class="search" type="search" placeholder="Search protocols (e.g. PCR, conjugation, plates)">
-<div class="chips" role="group" aria-label="Filter by tag"><button type="button" class="chip" data-tag="7h9">7H9</button><button type="button" class="chip" data-tag="bcg">BCG</button><button type="button" class="chip" data-tag="e. coli">E. coli</button><button type="button" class="chip" data-tag="gibson assembly">Gibson assembly</button><button type="button" class="chip" data-tag="m. smegmatis">M. smegmatis</button><button type="button" class="chip" data-tag="m. tuberculosis">M. tuberculosis</button><button type="button" class="chip" data-tag="pcr">PCR</button><button type="button" class="chip" data-tag="sauton&#x27;s">Sauton&#x27;s</button><button type="button" class="chip" data-tag="assays">assays</button><button type="button" class="chip" data-tag="cloning">cloning</button><button type="button" class="chip" data-tag="competent cells">competent cells</button><button type="button" class="chip" data-tag="heat shock">heat shock</button><button type="button" class="chip" data-tag="media">media</button><button type="button" class="chip" data-tag="mycobacteria">mycobacteria</button><button type="button" class="chip" data-tag="reference">reference</button><button type="button" class="chip" data-tag="restriction digest">restriction digest</button><button type="button" class="chip" data-tag="strains">strains</button><button type="button" class="chip" data-tag="transformation">transformation</button></div>
+<div class="chips" role="group" aria-label="Filter by tag"><button type="button" class="chip" data-tag="7h9">7H9</button><button type="button" class="chip" data-tag="bcg">BCG</button><button type="button" class="chip" data-tag="e. coli">E. coli</button><button type="button" class="chip" data-tag="gibson assembly">Gibson assembly</button><button type="button" class="chip" data-tag="m. smegmatis">M. smegmatis</button><button type="button" class="chip" data-tag="m. tuberculosis">M. tuberculosis</button><button type="button" class="chip" data-tag="pcr">PCR</button><button type="button" class="chip" data-tag="sauton&#x27;s">Sauton&#x27;s</button><button type="button" class="chip" data-tag="assays">assays</button><button type="button" class="chip" data-tag="cloning">cloning</button><button type="button" class="chip" data-tag="competent cells">competent cells</button><button type="button" class="chip" data-tag="conjugation">conjugation</button><button type="button" class="chip" data-tag="heat shock">heat shock</button><button type="button" class="chip" data-tag="mating">mating</button><button type="button" class="chip" data-tag="media">media</button><button type="button" class="chip" data-tag="mycobacteria">mycobacteria</button><button type="button" class="chip" data-tag="recombineering">recombineering</button><button type="button" class="chip" data-tag="reference">reference</button><button type="button" class="chip" data-tag="restriction digest">restriction digest</button><button type="button" class="chip" data-tag="strains">strains</button><button type="button" class="chip" data-tag="transformation">transformation</button></div>
 <p id="empty" class="meta" hidden>No protocols match.</p>
 <div id="list">
 <section class="proto-group"><h2 class="group-title">Media and reagents</h2><div class="grid-2">
@@ -89,6 +89,11 @@
 <p>Digest, purify, ligate and transform for traditional cloning; Gibson assembly is usually preferred.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
+<article class="card proto-card" data-tags="topo cloning|blunt-end cloning|pcr|cloning|subcloning" data-text="zero blunt topo pcr cloning clone blunt-end pcr products into pcr-blunt ii-topo and transform chemically competent or electrocompetent e. coli. topo cloning blunt-end cloning pcr cloning subcloning">
+<h3><a href="topo-blunt-cloning.html">Zero Blunt TOPO PCR cloning</a></h3>
+<p>Clone blunt-end PCR products into pCR-Blunt II-TOPO and transform chemically competent or electrocompetent E. coli.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
 </div></section>
 <section class="proto-group"><h2 class="group-title">Transformation</h2><div class="grid-2">
 <article class="card proto-card" data-tags="conjugation|plasmid transfer|e. coli|mating" data-text="bi-parental conjugation (e. coli donor to recipient, solid mating) transfer a plasmid from a dap-auxotroph e. coli donor into a recipient strain by spot-mating, then select and verify transconjugants. conjugation plasmid transfer e. coli mating">
@@ -128,9 +133,29 @@
 <p>Phenol–chloroform genomic DNA extraction and TRIzol-based RNA extraction with column cleanup and double DNase treatment.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
+<article class="card proto-card" data-tags="conjugation|mating|m. smegmatis|mycobacteria|filter mating|transconjugants" data-text="conjugation (mating) between mycobacterial strains filter mating, mini-mating and microtiter-plate screening matings between mycobacterial donor and recipient strains. conjugation mating m. smegmatis mycobacteria filter mating transconjugants">
+<h3><a href="mycobacterial-mating.html">Conjugation (mating) between mycobacterial strains</a></h3>
+<p>Filter mating, mini-mating and microtiter-plate screening matings between mycobacterial donor and recipient strains.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
+<article class="card proto-card" data-tags="recombineering|oligo|point mutation|mama-pcr|rpsl|m. smegmatis|m. tuberculosis" data-text="oligo-mediated recombineering (point mutations in mycobacteria) make one or a few base-pair changes with single-stranded oligos in ptet-rect strains, with a control oligo and a co-transformation screening strategy. recombineering oligo point mutation mama-pcr rpsl m. smegmatis m. tuberculosis">
+<h3><a href="oligo-recombineering.html">Oligo-mediated recombineering (point mutations in mycobacteria)</a></h3>
+<p>Make one or a few base-pair changes with single-stranded oligos in Ptet-RecT strains, with a control oligo and a co-transformation screening strategy.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
+<article class="card proto-card" data-tags="orbit|recombineering|bxb1|integrase|gene tagging|mycobacteria" data-text="orbit: oligo recombineering followed by bxb1 integrase targeting insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a bxb1 attp site, in cells expressing recombinase and bxb1 integrase. orbit recombineering bxb1 integrase gene tagging mycobacteria">
+<h3><a href="orbit.html">ORBIT: oligo recombineering followed by Bxb1 integrase targeting</a></h3>
+<p>Insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a Bxb1 attP site, in cells expressing recombinase and Bxb1 integrase.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
 <article class="card proto-card" data-tags="recombineering|homologous recombination|knockout|m. smegmatis|mycobacteria" data-text="homologous recombination and recombineering in m. smegmatis clean knockouts by two-step homologous recombination, and gene replacement by rece/rect recombineering. recombineering homologous recombination knockout m. smegmatis mycobacteria">
 <h3><a href="recombineering.html">Homologous recombination and recombineering in M. smegmatis</a></h3>
 <p>Clean knockouts by two-step homologous recombination, and gene replacement by RecE/RecT recombineering.</p>
+<p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
+</article>
+<article class="card proto-card" data-tags="recombineering|m. smegmatis|pjv53|pnit-recet|sucrose counter-selection" data-text="m. smegmatis recombineering with pjv53 or pnit-recet (alternative protocol) an alternative recombineering protocol for hygromycin-marked constructs, including plasmid curing on sucrose and screening for kanamycin sensitivity. recombineering m. smegmatis pjv53 pnit-recet sucrose counter-selection">
+<h3><a href="smeg-recombineering-sundaram.html">M. smegmatis recombineering with pJV53 or pNIT-recET (alternative protocol)</a></h3>
+<p>An alternative recombineering protocol for hygromycin-marked constructs, including plasmid curing on sucrose and screening for kanamycin sensitivity.</p>
 <p class="meta"><span class="status draft">Draft: not yet reviewed by the author</span></p>
 </article>
 <article class="card proto-card" data-tags="growth|standardization|cryostocks|assays|reproducibility" data-text="standardizing culture samples for assays reduce day-to-day variance by freezing standardized aliquots of single-cell suspensions at a defined od. growth standardization cryostocks assays reproducibility">

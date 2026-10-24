@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Make one or a few base-pair changes with single-stranded oligos in Ptet-RecT strains, with a control oligo and a co-transformation screening strategy.">
+<meta name="robots" content="noindex">
+<title>Oligo-mediated recombineering (point mutations in mycobacteria) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Oligo-mediated recombineering (point mutations in mycobacteria)</h1>
+<p class="lede">Make one or a few base-pair changes with single-stranded oligos in Ptet-RecT strains, with a control oligo and a co-transformation screening strategy.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>The method for pKM402 (Ptet-RecT)-promoted oligo recombineering in <em>M. smegmatis</em> and <em>M. tuberculosis</em> follows the same procedures as <a href="recombineering.html">dsDNA recombineering</a> for growing and preparing cells for electroporation, with the exceptions below.</p>
+<h2 id="differences-from-dsdna-recombineering">Differences from dsDNA recombineering</h2>
+<ol type="1">
+<li>Induce the culture with <strong>50 ng/mL anhydrotetracycline (aTc)</strong>, starting at OD₆₀₀ = 0.5, for 3 hours.</li>
+<li>Electroporate about 1 µg of oligo.</li>
+<li>Resuspend the electroporated cells in 10 mL 7H9 and grow out at 37 °C for 4–7 days (<em>M. tuberculosis</em>) or overnight (<em>M. smegmatis</em>). If there is more than one chromosome copy per cell at electroporation and only one is modified, the culture must be grown out so the modified chromosome segregates. For <em>M. tuberculosis</em> about a week is used.</li>
+<li>Plate on selective medium that you expect to select for the mutation. If you cannot select for your mutation, use the co-transformation strategy below.</li>
+</ol>
+<h2 id="oligo-substrate">Oligo substrate</h2>
+<ul>
+<li>The oligo should be 70 bases, with the mutation(s) in the middle.</li>
+<li>Order the oligo that targets the <strong>lagging-strand template</strong> of the replication fork. Because this is often hard to know, order both the top strand and the bottom strand (each with the change). In most cases one works much better than the other (the lagging-strand oligo); the other often does not work at all, like the no-DNA control.</li>
+<li>Resuspend the oligo to 0.5 µg/µL in 10 mM Tris-HCl, pH 8.0.</li>
+<li>Add 2 µL oligo (1 µg) to 400 µL of electrocompetent <em>M. smegmatis</em> carrying pKM402.</li>
+</ul>
+<h2 id="control-oligo">Control oligo</h2>
+<p>This oligo makes a 1 bp change in the <em>rpsL</em> locus and confers streptomycin resistance. It is specific to <em>M. smegmatis</em>; a different oligo is needed for <em>M. tuberculosis</em>.</p>
+<p><code>CGCGCGCGACCTTCCGGAGGGCCGAGTTCGGCTTCCTCGGAGTGGTGGTGTAAACGCGCGTGCACACGCC</code></p>
+<p>Plate 200 µL of undiluted, 10⁻¹ and 10⁻² dilutions on plates containing <span class="tbc">20 µg/mL</span> streptomycin after overnight growth (<em>M. smegmatis</em>) or one week (<em>M. tuberculosis</em>). Plate 200 µL of the 10⁻⁵ and 10⁻⁶ dilutions for a total cell count. Expect about 10⁴–10⁵ recombinants per 10⁸ total cells for <em>rpsL</em> (the change you want may or may not be in this range). Also do a no-DNA control.</p>
+<h2 id="co-transformation-with-the-rpsl-oligo-when-you-cannot-select-for-your-mutation">Co-transformation with the rpsL oligo (when you cannot select for your mutation)</h2>
+<p>Co-transform the oligo that makes your mutation together with the <em>rpsL</em> oligo and select on streptomycin. Then screen the streptomycin-resistant colonies for your mutation by MAMA-PCR. The idea is that a cell that took up and recombined one oligo is more likely than a random cell to have done so with a second.</p>
+<ol type="1">
+<li>Transform 1 µg of each oligo into the pKM402 strain as above and select on plates with streptomycin.</li>
+<li>Make a plasmid or PCR product containing your desired point mutation (for example by stitch PCR, with the mutation in the middle of the primers). This is needed to optimize the MAMA-PCR. Also have a wild-type version ready.</li>
+<li>Design primers for <strong>MAMA-PCR (mismatch amplification mutation assay)</strong>: primer F upstream of the mutation, primer mutR whose very 3′ end matches only the mutant sequence (a single 3′ mismatch is fine), and primer R downstream of the mutation as a control for the reaction and template.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Primer F + mutR</th>
+<th>Primer F + R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mutant DNA</td>
+<td>product</td>
+<td>product</td>
+</tr>
+<tr class="even">
+<td>Wild-type DNA</td>
+<td>no product</td>
+<td>product</td>
+</tr>
+</tbody>
+</table>
+<ol start="4" type="1">
+<li>Optimize the MAMA-PCR by gradient PCR using mutant and wild-type DNA, finding an annealing temperature at which F + mutR gives product only on mutant template.</li>
+<li>Pick 96 streptomycin-resistant colonies into a 96-well PCR plate with 10 µL DMSO per well, and patch the colonies on an agar plate. Boil at 95 °C for 1 hour. Pool 12 samples at a time, giving 8 pooled samples per plate. Run MAMA-PCR on the pools, replacing the DMSO in the PCR mix with DMSO from the samples. Choose one or two pools giving a product with F + mutR and repeat un-pooled. Depending on the target, expect about 5–20% of streptomycin-resistant colonies to carry the second mutation.</li>
+<li>Sequence PCR-positive mutants. Sequence the PCR product from primers F and R, <strong>not</strong> mutR.</li>
+</ol>
+<p><span class="tbc">The source gives streptomycin as “20 mg/mL”; this is read as 20 µg/mL.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Protocol by Kenan Murphy, based on van Kessel and Hatfull (2008) Mol Microbiol 67:1094–1107. Co-transformation and MAMA-PCR section by Marte Dragset (2012). Adapted for this site.</p>
+<p class="tag-row"><span class="tag">recombineering</span><span class="tag">oligo</span><span class="tag">point mutation</span><span class="tag">MAMA-PCR</span><span class="tag">rpsL</span><span class="tag">M. smegmatis</span><span class="tag">M. tuberculosis</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
