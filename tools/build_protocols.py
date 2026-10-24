@@ -64,14 +64,18 @@ os.makedirs("protocols",exist_ok=True)
 STATUS='<span class="status draft">Draft: not yet reviewed by the author</span>'
 LEGEND='<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>'
 for p in pages:
+    # "status: reviewed" in a source header drops the draft badge; the legend then appears only if .tbc spans remain
+    reviewed=p.get("status","").lower()=="reviewed"
+    status="" if reviewed else STATUS+" "
+    legend=LEGEND if not reviewed or "{.tbc}" in p["body"] else ""
     out=head(p["title"],p["summary"])+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1 class="proto-title">{html.escape(p["title"])}</h1>
 <p class="lede">{html.escape(p["summary"])}</p>
-<p class="proto-meta">{STATUS} <span class="meta">{html.escape(p["version"])}</span></p>
+<p class="proto-meta">{status}<span class="meta">{html.escape(p["version"])}</span></p>
 </div></section>
 <section class="section"><div class="container prose">
-{LEGEND}
+{legend}
 {md(p["body"])}
 <hr>
 <p class="meta"><strong>Source / credit:</strong> {html.escape(p["source"])}</p>
