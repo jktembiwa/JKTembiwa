@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: recombineering, M. smegmatis, pJV53, pNIT-recET, sucrose counter-selection
 summary: An alternative recombineering protocol for hygromycin-marked constructs, including plasmid curing on sucrose and screening for kanamycin sensitivity.
 source: Protocol from Sundaram (Sassetti lab), shared with the Boutte lab; adapted for this site.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 **This protocol is different from the one on the [recombineering page](recombineering.html), including the inducer, induction timing and cell handling. The two have not been reconciled.**
 
