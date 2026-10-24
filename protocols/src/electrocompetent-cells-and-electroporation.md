@@ -37,11 +37,11 @@ Cells made this way have an efficiency of about 10⁴–10⁵ CFU/µg DNA. One v
 
 | Organism | Voltage | Resistance | Capacitance |
 |---|---|---|---|
-| *E. coli* and *M. smegmatis* | 2500 V | [125 Ω]{.tbc} | 25 µF |
+| *E. coli* and *M. smegmatis* (standard transformation) | 2500 V | 125 Ω | 25 µF |
 | BCG | 2500 V | 725 Ω | 50 µF |
-| *M. smegmatis* recombineering (linear DNA) | 2500 V | [1000 Ω]{.tbc} | 25 µF |
+| *M. smegmatis* recombineering (linear DNA) | 2500 V | 1000 Ω | 25 µF |
 
-[The manual gives two different resistances for *M. smegmatis* (125 Ω and 1000 Ω). They may be intended for different uses; confirm the settings for your instrument.]{.tbc} For recombineering, the time constant should be 20–30 ms.
+Standard transformation and recombineering use different resistances. For standard transformation the desired pulse time is about 3 ms; for recombineering the time constant should be 20–30 ms.
 
 ## Where it usually fails
 

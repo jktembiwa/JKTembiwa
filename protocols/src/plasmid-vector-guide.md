@@ -44,6 +44,6 @@ Carry a mycobacteriophage integrase that integrates at a specific tRNA locus.
 |---|---|---|
 | pBluescript (+), pUC19, pUC57 | Subcloning, difficult cloning reactions | Ampicillin/carbenicillin; *lacZα* for blue/white screening. A pUC57 "Simple" form has no multiple cloning site. |
 | pET41a | GST fusion (N-terminal) expression | Kanamycin; IPTG-inducible |
-| pGEX 4T-1 | GST fusion (N-terminal) expression | [Kanamycin]{.tbc}; IPTG-inducible |
+| pGEX 4T-1 | GST fusion (N-terminal) expression | Ampicillin/carbenicillin; IPTG-inducible |
 | pBAD24 | Arabinose-inducible expression | Ampicillin/carbenicillin; strong induction |
 | pET28 | His-tag (N- or C-terminal) expression | Kanamycin; strong IPTG induction |
