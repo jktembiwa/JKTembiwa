@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Clean knockouts by two-step homologous recombination, and gene replacement by RecE/RecT recombineering.">
+<meta name="robots" content="noindex">
+<title>Homologous recombination and recombineering in M. smegmatis | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Homologous recombination and recombineering in M. smegmatis</h1>
+<p class="lede">Clean knockouts by two-step homologous recombination, and gene replacement by RecE/RecT recombineering.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="homologous-recombination-suicide-plasmid">Homologous recombination (suicide plasmid)</h2>
+<p>Used for insertional crosses and clean knockouts. Requires at least 1 µg of suicide plasmid per transformation and at least 500 bp of identical sequence between plasmid and target. Yield is usually fewer than 10 colonies per transformation, so do multiple transformations.</p>
+<ul>
+<li><strong>Single insertion:</strong> clone about 500 bp of the target gene into a suicide plasmid.</li>
+<li><strong>Clean knockout:</strong> clone about 1 kb upstream and 1 kb downstream of the target gene into pJM1 or another <em>sacB</em>-containing vector.
+<ol type="1">
+<li>Transform the suicide vector into <em>M. smegmatis</em> and select on the appropriate antibiotic.</li>
+<li>Grow cells without antibiotic to allow the second recombination event.</li>
+<li>Select for loss of <em>sacB</em> on 10% sucrose. Ideally about 50% of the survivors are knockouts.</li>
+</ol></li>
+</ul>
+<h2 id="recombineering-recerect">Recombineering (RecE/RecT)</h2>
+<p>Uses mycobacteriophage RecE and RecT homologues, in a lambda-Red-like system.</p>
+<ol type="1">
+<li>Flank an antibiotic cassette with about 500 bp of sequence upstream and downstream of the target gene. Two cassettes with lox sites on both sides are available. Generate the linear fragment by stitch PCR or Gibson; you need about 1 µg per transformation.</li>
+<li>Grow cells carrying the RecE/RecT plasmid (see <a href="plasmid-vector-guide.html">vector guide</a>). Induce overnight with IVN (light sensitive) at a <span class="tbc">10⁻⁷–10⁻⁸ dilution of the stock</span> to mid-log phase (OD 0.4–0.6). <span class="tbc">The induction section gives 10⁻⁶–10⁻⁷; confirm.</span></li>
+<li>Make competent cells as usual (<a href="electrocompetent-cells-and-electroporation.html">protocol</a>) but resuspend at <span class="tbc">1/20 of the usual final volume</span>, and use 400 µL per transformation.</li>
+<li>Transform about 1000 ng of linear DNA. Settings: 2500 V, 1000 Ω, 25 µF. The time constant should be 20–30 ms.</li>
+<li>Outgrow for 2–3 hours in 7H9. If knocking out an essential gene, include aTc when a tet-inducible second copy is at the L5 site.</li>
+<li>Select on the appropriate antibiotic (usually fewer than 10 colonies per transformation).</li>
+</ol>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Adapted by K. Tembiwa from the Boutte Lab Beginner&#x27;s Manual (v2.0, 2021).</p>
+<p class="tag-row"><span class="tag">recombineering</span><span class="tag">homologous recombination</span><span class="tag">knockout</span><span class="tag">M. smegmatis</span><span class="tag">mycobacteria</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

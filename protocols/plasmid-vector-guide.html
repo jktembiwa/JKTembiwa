@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A guide to commonly used episomal, integrating, recombineering and E. coli vectors, with promoters, markers and cautions.">
+<meta name="robots" content="noindex">
+<title>Plasmid and vector guide (mycobacteria and E. coli) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Plasmid and vector guide (mycobacteria and E. coli)</h1>
+<p class="lede">A guide to commonly used episomal, integrating, recombineering and E. coli vectors, with promoters, markers and cautions.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="episomal-mycobacterial-vectors">Episomal mycobacterial vectors</h2>
+<p>Carry a mycobacterial origin, usually about 5–10 copies per cell.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vector</th>
+<th>Promoter</th>
+<th>Features</th>
+<th>Marker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pSE100 / pTetO</td>
+<td>Tet-inducible</td>
+<td>No TetR on the plasmid; promoter lacks a ribosome binding site.</td>
+<td>Usually hygromycin</td>
+</tr>
+<tr class="even">
+<td>pTetOR / pUV15TetOR</td>
+<td>Tet-inducible</td>
+<td>TetR expressed from an intermediate-strength promoter. A Gateway form exists (pTetSG).</td>
+<td>Usually hygromycin</td>
+</tr>
+<tr class="odd">
+<td>pMV762 / pMV261</td>
+<td>Constitutive, intermediate (Mtb GroEL2)</td>
+<td>Promoter includes a ribosome binding site. <strong>pMV261 is toxic in mycobacteria; avoid.</strong></td>
+<td>Usually hygromycin (zeocin forms used for complementation)</td>
+</tr>
+<tr class="even">
+<td>pNIT</td>
+<td>Nitrile-inducible</td>
+<td>Includes the NitA activator (positive feedback).</td>
+<td>Usually kanamycin</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integrating-vectors">Integrating vectors</h2>
+<p>Carry a mycobacteriophage integrase that integrates at a specific tRNA locus.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vector</th>
+<th>Integrase / site</th>
+<th>Promoter</th>
+<th>Marker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pJeb402</td>
+<td>L5, attB at a glycine tRNA</td>
+<td>Mycobacterial optimized promoter (MOP), constitutive; no RBS</td>
+<td>Usually kanamycin</td>
+</tr>
+<tr class="even">
+<td>pMC1</td>
+<td>L5</td>
+<td>Expresses TetR (strong in pMC1s, intermediate in pMC1O)</td>
+<td>Usually kanamycin</td>
+</tr>
+<tr class="odd">
+<td>pKK216</td>
+<td>L5</td>
+<td>UV15 (<em>rpsA</em>) promoter with tet operator; no TetR, so expression is constitutive unless TetR is present elsewhere. Versions with other markers and fusions exist. Made by Karen Kieser.</td>
+<td>Kanamycin (KK158 is a nourseothricin version)</td>
+</tr>
+<tr class="even">
+<td>pTweety</td>
+<td>Tweety integrase, a lysine tRNA locus</td>
+<td>No promoter</td>
+<td>Kanamycin or hygromycin</td>
+</tr>
+<tr class="odd">
+<td>pGH</td>
+<td>Giles integrase, a proline tRNA locus in <em>M. smegmatis</em></td>
+<td>No promoter</td>
+<td>Kanamycin or hygromycin (a zeocin form exists)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recombination-and-recombineering-vectors">Recombination and recombineering vectors</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vector</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pJM1</td>
+<td>Suicide vector (no mycobacterial origin) for clean knockouts by homologous recombination; hygromycin marked; carries <em>sacB</em> for sucrose counter-selection. Made by Jeff Murry.</td>
+</tr>
+<tr class="even">
+<td>pKM342</td>
+<td>Recombineering vector: hygromycin cassette flanked by lox sites; no mycobacterial origin; homologous sequence must be placed around the cassette. A zeocin form exists.</td>
+</tr>
+<tr class="odd">
+<td>pUC57</td>
+<td>Backbone for synthesized homologous flanks; ampicillin resistance for <em>E. coli</em>. Used for PCR only; <strong>do not transform into mycobacteria.</strong></td>
+</tr>
+<tr class="even">
+<td>pNIT-ET</td>
+<td>Inducible vector expressing phage RecE/RecT homologues for recombineering; episomal with an unstable origin (lost without selection); kanamycin or zeocin forms. The host strain for recombineering transformations.</td>
+</tr>
+<tr class="odd">
+<td>pJV53</td>
+<td>Acetamide-inducible recombinase plasmid, kanamycin marked. <span class="tbc">Origin credit to be confirmed.</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="e.-coli-vectors">E. coli vectors</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vector</th>
+<th>Use</th>
+<th>Marker and features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pBluescript (+), pUC19, pUC57</td>
+<td>Subcloning, difficult cloning reactions</td>
+<td>Ampicillin/carbenicillin; <em>lacZα</em> for blue/white screening. A pUC57 “Simple” form has no multiple cloning site.</td>
+</tr>
+<tr class="even">
+<td>pET41a</td>
+<td>GST fusion (N-terminal) expression</td>
+<td>Kanamycin; IPTG-inducible</td>
+</tr>
+<tr class="odd">
+<td>pGEX 4T-1</td>
+<td>GST fusion (N-terminal) expression</td>
+<td><span class="tbc">Kanamycin</span>; IPTG-inducible</td>
+</tr>
+<tr class="even">
+<td>pBAD24</td>
+<td>Arabinose-inducible expression</td>
+<td>Ampicillin/carbenicillin; strong induction</td>
+</tr>
+<tr class="odd">
+<td>pET28</td>
+<td>His-tag (N- or C-terminal) expression</td>
+<td>Kanamycin; strong IPTG induction</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Adapted by K. Tembiwa from the Boutte Lab Beginner&#x27;s Manual (v2.0, 2021). Vector credits are given where known.</p>
+<p class="tag-row"><span class="tag">plasmids</span><span class="tag">vectors</span><span class="tag">integrating</span><span class="tag">episomal</span><span class="tag">reference</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

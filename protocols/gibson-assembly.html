@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Primer design, PCR, vector preparation, purification and assembly for Gibson cloning, including multi-insert strategies.">
+<meta name="robots" content="noindex">
+<title>Gibson assembly cloning | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Gibson assembly cloning</h1>
+<p class="lede">Primer design, PCR, vector preparation, purification and assembly for Gibson cloning, including multi-insert strategies.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="overview">Overview</h2>
+<ol type="1">
+<li>PCR and gel purification of the insert.</li>
+<li>Restriction digest and column purification of the vector.</li>
+<li>Add insert and vector to a 5 µL Gibson master-mix aliquot for a final volume of 10 µL.</li>
+<li>Incubate at 50 °C for 1 hour.</li>
+<li>Transform 5 µL of the reaction into chemically competent <em>E. coli</em> (<a href="ecoli-chemical-transformation.html">protocol</a>).</li>
+<li>Plate and screen colonies (<a href="colony-pcr-screening.html">colony PCR</a>).</li>
+</ol>
+<p>Gibson assembly uses an exonuclease to create long, thermodynamically stable single-stranded overhangs at 50 °C. It is <strong>not</strong> a homologous recombination method.</p>
+<h2 id="primer-design">Primer design</h2>
+<p>The overlap between fragments must be long enough that its melting temperature is above 50 °C. As a fast rule, use 60 nt primers: 20 nt that anneal to the template and 40 nt (including any restriction site) that overlap the vector. This is overkill but works at a very high rate. If you need to add something (an epitope tag, a restriction site), subtract the required bases from the overhang, keeping the overhang melting temperature above 50 °C. Overlaps of about 30 nt work, and some people routinely use about 20 nt. Primers under 60 nt allow the smallest IDT order size; longer primers (up to 90 nt) have also worked.</p>
+<p>For several fragments, design primers so adjacent fragments overlap with a melting temperature above 50 °C; about 40 nt is a good default.</p>
+<h2 id="pcr-q5-polymerase-example">PCR (Q5 polymerase example)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Ingredient</th>
+<th>Amount (µL)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ddH₂O</td>
+<td>25.5</td>
+</tr>
+<tr class="even">
+<td>Primer 1 (100 µM)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Primer 2 (100 µM)</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>dNTPs (10 mM each)</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>Q5 reaction buffer</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Q5 GC enhancer</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Template</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Q5 polymerase</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<p>Primer amounts can be reduced substantially; extra does no harm. Program: 98 °C 0:30; 35 cycles of 98 °C 0:30, 60 °C 0:30, 72 °C 0:30 per kb of product; 72 °C 2:00; hold at 4 °C.</p>
+<h2 id="vector-restriction-digest">Vector restriction digest</h2>
+<p>Use standard methods with any suitable enzyme(s). A single-enzyme digest works for Gibson without phosphatase treatment. Overnight digestion is preferred; a couple of hours has worked in a pinch.</p>
+<h2 id="purification">Purification</h2>
+<p>Column-purify the vector with a standard PCR/enzyme clean-up kit. Gel-purify the PCR product, or see <a href="gel-purification.html">gel purification</a>.</p>
+<h2 id="gibson-reaction">Gibson reaction</h2>
+<p>The reaction tolerates a wide range of vector and insert amounts. Aliquot the Gibson reagent (NEB) into 5 µL 2X reactions in PCR tubes. A typical reaction adds 2 µL vector and 3 µL insert for 10 µL total. The nominal ideal is 100 ng vector with a 3:1 insert:vector ratio, but measuring this exactly is usually unnecessary. Include a negative control with vector only (water in place of insert) to control for residual restriction and ligation.</p>
+<p>Incubate 1 hour at 50 °C. Transform 5 µL of the raw reaction directly into chemically competent <em>E. coli</em>, recover and plate. There should be several-fold more colonies with insert than in the negative control. Pick about 3 colonies and screen by restriction digest or colony PCR.</p>
+<h2 id="multiple-inserts">Multiple inserts</h2>
+<p>Efficiency falls with each additional insert. Up to three inserts at once has worked, though one or two is best. With more inserts (or after a failed multi-insert reaction), first do a Gibson reaction with all inserts but no vector. Add 1 µL of the raw reaction to a new PCR with the two terminal primers to make a single pre-assembled fragment, purify it as for a single insert, then use it in the final Gibson reaction with vector.</p>
+<h2 id="where-it-usually-fails">Where it usually fails</h2>
+<ul>
+<li><strong>PCR fails.</strong> Run a gradient PCR with 8 tubes (one strip) across annealing temperatures of 50–70 °C.</li>
+<li><strong>Few or no colonies with more than two fragments.</strong> Pre-assemble the inserts as described above.</li>
+<li><span class="tbc"><strong>Insert and vector-only control have similar colony counts.</strong> The vector may not be fully cut or purified; check the digest.</span></li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Original protocol by Jeff Wagner (May 2015), adapted by K. Tembiwa from the Boutte Lab Beginner&#x27;s Manual (v2.0, 2021). Reference: Gibson et al. (2009) Nat Methods 6:343–345.</p>
+<p class="tag-row"><span class="tag">Gibson assembly</span><span class="tag">cloning</span><span class="tag">primer design</span><span class="tag">PCR</span><span class="tag">restriction digest</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

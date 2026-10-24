@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Transfer a plasmid from a DAP-auxotroph E. coli donor into a recipient strain by spot-mating, then select and verify transconjugants.">
+<meta name="robots" content="noindex">
+<title>Bi-parental conjugation (E. coli donor to recipient, solid mating) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Bi-parental conjugation (E. coli donor to recipient, solid mating)</h1>
+<p class="lede">Transfer a plasmid from a DAP-auxotroph E. coli donor into a recipient strain by spot-mating, then select and verify transconjugants.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Move a plasmid from a diaminopimelic acid (DAP) auxotroph <em>E. coli</em> donor into a recipient strain by mating cells on solid medium, then select recipients that received the plasmid. Because the donor cannot grow without DAP, plating the mating mixture on medium lacking DAP counter-selects the donor.</p>
+<h2 id="before-you-start">Before you start</h2>
+<ul>
+<li><strong>Donor:</strong> <em>E. coli</em> DAP auxotroph carrying the plasmid to be transferred (kanamycin-marked in this example). Grow with DAP.</li>
+<li><strong>Recipient:</strong> the strain that will receive the plasmid. Grow without antibiotic.</li>
+<li><strong>Media and reagents:</strong> <span class="tbc">YG</span> broth and agar, LB broth, DAP stock (<span class="tbc">60 mM</span>), kanamycin, 1X PBS.</li>
+<li><strong>Plates:</strong> YG + DAP (mating plates) and YG + kanamycin 30 µg/mL (selection plates).</li>
+<li>Set up every donor × recipient combination you want. This example uses 2 donors × 2 recipients = 4 combinations.</li>
+</ul>
+<h2 id="day-1-overnight-cultures">Day 1: overnight cultures</h2>
+<ol type="1">
+<li><strong>Recipient:</strong> 10 mL YG broth, no antibiotic, in a 125 mL flask. Shake at 225 rpm, 28 °C.</li>
+<li><strong>Donor:</strong> 10 mL LB + kanamycin 50 µg/mL + DAP (<span class="tbc">50 µL of 60 mM stock</span>, about <span class="tbc">0.3 mM</span> final). Grow in a roller drum at 37 °C.</li>
+</ol>
+<h2 id="day-2-mating">Day 2: mating</h2>
+<ol type="1">
+<li>In the afternoon, transfer 1 mL of each overnight culture to a separate microcentrifuge tube.</li>
+<li>Wash each pellet twice with 1X PBS: spin <span class="tbc">3000 rpm</span> for 5 min, resuspend in 500 µL PBS each time.</li>
+<li>After the second wash, resuspend in 500 µL 1X PBS.</li>
+<li>In new tubes, combine donor and recipient to a total of 100 µL. <strong>Mix by pipetting, not vortexing.</strong> Volumes used:
+<ul>
+<li>50 µL donor + 50 µL recipient (1:1)</li>
+<li>10 µL donor + 90 µL recipient (a 1:9 donor:recipient ratio by volume)</li>
+<li>1 µL donor + 99 µL recipient (a 1:99 donor:recipient ratio by volume)</li>
+</ul></li>
+<li><strong>Spot</strong> the entire 100 µL onto a YG + DAP plate. <strong>Do not spread.</strong> Use one plate per donor × recipient combination, with the three ratios spotted on the same plate.</li>
+<li>Let the spots dry, then incubate at 28 °C overnight.</li>
+</ol>
+<h2 id="day-3-onward-recover-transconjugants">Day 3 onward: recover transconjugants</h2>
+<ol type="1">
+<li>Check for growth in the spots the next morning. If none, check again later that day, then the following morning.</li>
+<li>When growth appears, scrape the spot and suspend in 1 mL 1X PBS. Spin and wash twice more in 1 mL PBS (same spin as above).</li>
+<li>Resuspend the final pellet in 100 µL PBS and spread the entire volume on a YG + kanamycin 30 µg/mL plate (no DAP). Incubate overnight at 28 °C.</li>
+<li>When colonies appear, screen by colony PCR with primers specific to the transferred plasmid. See the <a href="colony-pcr-screening.html">colony PCR protocol</a>. <strong>If you see a lawn rather than single colonies</strong>, take a small amount and streak for single colonies first, then screen.</li>
+<li>Pick 3 single colonies per donor × recipient combination, grow in YG + kanamycin 30 µg/mL, and make freezer stocks.</li>
+</ol>
+<h2 id="where-it-usually-fails">Where it usually fails</h2>
+<ul>
+<li><strong>No growth in the mating spot.</strong> Check again later the same day, then the next morning. <span class="tbc">Confirm DAP was in the mating plates.</span></li>
+<li><strong>A lawn on the selection plate.</strong> Streak out for single colonies before colony PCR, so you do not screen a mixed population.</li>
+<li><span class="tbc"><strong>Donor carry-over.</strong> If donor growth appears on selection plates, confirm they contain no DAP and that the post-mating washes were done twice.</span></li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">conjugation</span><span class="tag">plasmid transfer</span><span class="tag">E. coli</span><span class="tag">mating</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

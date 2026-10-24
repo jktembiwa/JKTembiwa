@@ -1,0 +1,16 @@
+.status{display:inline-block;border-radius:999px;padding:.2rem .65rem;font-size:.78rem;font-weight:700}
+.status.draft{background:#f3e3c9;color:#6b4a14}
+.tbc{background:rgba(233,199,124,.45);border-radius:3px;padding:0 .15em}
+.tbc-legend{font-size:.9rem;color:var(--muted);border-left:3px solid var(--gold);padding-left:.8rem}
+.proto-title{font-size:clamp(2rem,4.2vw,3.1rem)}
+.proto-meta{display:flex;gap:.8rem;align-items:center;flex-wrap:wrap}
+.prose table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+.prose th,.prose td{border:1px solid var(--line);padding:.5rem .7rem;text-align:left;vertical-align:top}
+.prose th{background:var(--sage)}
+.search{width:100%;max-width:520px;padding:.8rem 1rem;border:1px solid var(--line);border-radius:999px;font:inherit;background:var(--paper);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin:1rem 0 1.4rem}
+.chip{border:1px solid var(--sage-dark);background:transparent;color:var(--sage-dark);border-radius:999px;padding:.3rem .75rem;font:inherit;font-size:.85rem;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--sage-dark);color:#fff}
+.sr-only{position:absolute;left:-999px}
+details.faq{border:1px solid var(--line);border-radius:14px;padding:.8rem 1rem;margin:.8rem 0;background:var(--paper)}
+details.faq summary{cursor:pointer;font-weight:700}

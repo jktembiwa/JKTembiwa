@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Heat-shock transformation of chemically competent E. coli, tips for toxic constructs, and how to measure competent-cell efficiency.">
+<meta name="robots" content="noindex">
+<title>Chemical transformation of E. coli, with efficiency test | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Chemical transformation of E. coli, with efficiency test</h1>
+<p class="lede">Heat-shock transformation of chemically competent E. coli, tips for toxic constructs, and how to measure competent-cell efficiency.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Introduce a plasmid or assembly reaction (for example a Gibson or ligation product) into chemically competent <em>E. coli</em>, and test how competent a new batch of cells is.</p>
+<h2 id="transformation">Transformation</h2>
+<p>Competent cells (DH5α, Mach1, TOP10 or XL1-Blue) are stored in 100 µL aliquots at −80 °C. Split one tube between two or three transformations if you are doing several at a time.</p>
+<ol type="1">
+<li>Thaw competent cells on ice.</li>
+<li>Add 5–10 µL of assembly or ligation reaction.</li>
+<li>Incubate on ice 15–20 min.</li>
+<li>Heat shock at 42 °C for 45–60 seconds.</li>
+<li>Return to ice for 2 min.</li>
+<li>Add 1 mL LB and incubate at 37 °C for 45–60 min.</li>
+<li>Spin the tube and remove the LB. Resuspend the pellet in 100 µL LB and spread on an LB plate with the appropriate antibiotic. Incubate at 37 °C overnight.</li>
+</ol>
+<h2 id="if-your-gene-may-be-toxic">If your gene may be toxic</h2>
+<p>Grow the recovery at 30 °C for about 1.5 hours and incubate the plate at 30 °C overnight. Colonies take 24+ hours but are often correct, with little background. TOP10 and XL1-Blue (which carries a tet repressor) tend to suit toxic cloning, but both grow more slowly than DH5α.</p>
+<h2 id="testing-transformation-efficiency">Testing transformation efficiency</h2>
+<p>Use a control plasmid with a known concentration, aliquoted at 100 ng.</p>
+<ol type="1">
+<li>Transform 100 ng of plasmid into chemically competent cells with the heat-shock protocol above.</li>
+<li>Add 200 µL LB and recover for 45 min at 37 °C.</li>
+<li>Make a 10-fold dilution series (tubes labeled 10⁻¹ to 10⁻⁶), each with 270 µL LB. Move 30 µL from the transformation into the 10⁻¹ tube, mix by pipetting, and continue down the series with a fresh tip each time.</li>
+<li>Plate about 270 µL of the remaining undiluted transformation and of each dilution on separate selection plates.</li>
+<li>Count colonies on the lowest-dilution plate with individual, countable colonies.</li>
+<li>Colonies per aliquot = colonies × 10^(dilution). For example, 57 colonies on the 10⁻⁵ plate gives 57 × 10⁵. This ignores the fraction of the transformation plated: if the total volume after recovery is about 310 µL (100 µL cells + 10 µL plasmid + 200 µL LB) and you plate 270 µL, multiply by about 1.15 for an exact value. <span class="tbc">The correction is small relative to the order-of-magnitude efficiency usually reported.</span></li>
+<li>Transformants per µg = total colonies × 10 (because 100 ng was used).</li>
+</ol>
+<p>Good competent cells give about 10⁶ colonies per µg or higher.</p>
+<h2 id="where-it-usually-fails">Where it usually fails</h2>
+<ul>
+<li><strong>No or very few colonies.</strong> Test the efficiency of your competent cells with a control plasmid (above).</li>
+<li><strong>Suspected toxic gene.</strong> Use the 30 °C recovery and incubation above, and a strain such as TOP10 or XL1-Blue.</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Adapted by K. Tembiwa from the Boutte Lab Beginner&#x27;s Manual (v2.0, 2021).</p>
+<p class="tag-row"><span class="tag">transformation</span><span class="tag">E. coli</span><span class="tag">competent cells</span><span class="tag">heat shock</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

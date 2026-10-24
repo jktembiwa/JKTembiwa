@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Set cell-detection parameters, curate detected cells, export results, and generate profile and demograph plots in MicrobeJ.">
+<meta name="robots" content="noindex">
+<title>Single-cell image analysis in MicrobeJ | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Single-cell image analysis in MicrobeJ</h1>
+<p class="lede">Set cell-detection parameters, curate detected cells, export results, and generate profile and demograph plots in MicrobeJ.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="purpose">Purpose</h2>
+<p>Detect cells in phase or fluorescence images, curate the detections, export per-cell measurements, and plot fluorescence profiles and demographs.</p>
+<h2 id="set-detection-parameters">Set detection parameters</h2>
+<p>Set the ranges that define a cell. The values below were used for <span class="tbc"><em>M. smegmatis</em></span>; choose ranges appropriate to your organism and magnification.</p>
+<ul>
+<li>Area: <span class="tbc">1–8</span></li>
+<li>Length: <span class="tbc">0.5–10</span></li>
+<li>Width: <span class="tbc">0.2–2</span></li>
+</ul>
+<p>(Units are not stated in the original notes; confirm they are µm² and µm.)</p>
+<p>For fluorescence images, tick the box next to <strong>polarity</strong> and set the options as in your analysis template. <strong>Choose the correct channel</strong> for the signal you are measuring (for example, the HADA channel). The channel number changes between experiments.</p>
+<h2 id="detect-curate-and-save">Detect, curate and save</h2>
+<ol type="1">
+<li>Use the blue arrow to test your parameters on the image. Once they are good, use the pencil to generate the list of cells.</li>
+<li>In the experiment editor list, remove bad detections and cut touching cells apart.</li>
+<li>When all good cells are highlighted green, click <strong>save</strong> in the experiment editor. The experiment file should go in the experiment folder with the same name as the image file.</li>
+<li>In the experiment editor, click the <strong>graphs</strong> button (4th from the left) to open the results file.</li>
+<li>In the results file, click <strong>Bacteria</strong> to see the data for each good cell. Right-click column headings to add sub-columns. Use the same set of columns for every image.</li>
+<li>Copy the data into your spreadsheet, in a tab named for the image folder.</li>
+</ol>
+<p>Keep an organized system for naming and storing experiment and results files, and a consistent way of exporting to a spreadsheet.</p>
+<h2 id="fluorescence-profile">Fluorescence profile</h2>
+<ol type="1">
+<li>Open the results file in MicrobeJ and click <strong>Bacteria</strong>.</li>
+<li>Click the <strong>Profile</strong> icon.</li>
+<li>In <strong>Plot</strong>, choose <em>XStat Profile</em>; in <strong>Stat</strong>, choose <em>mean</em>.</li>
+<li>In <strong>Y axis</strong>, choose <em>Medial → Intensity →</em> the channel you measured.</li>
+<li>Click the play button.</li>
+</ol>
+<h2 id="demograph">Demograph</h2>
+<ol type="1">
+<li>Open the results file and click <strong>Bacteria</strong>.</li>
+<li>Click the <strong>Demograph</strong> icon.</li>
+<li>In <strong>Plot</strong>, choose <em>Profile</em>; in <strong>Profiles</strong>, choose <em>medial → Intensity →</em> your channel.</li>
+<li>In <strong>Sorting</strong>, choose <em>shape.length</em>.</li>
+<li>Click the play button.</li>
+</ol>
+<h2 id="where-it-usually-fails">Where it usually fails</h2>
+<ul>
+<li><strong>Wrong channel.</strong> Check the channel assignment before every analysis.</li>
+<li><span class="tbc"><strong>Merged or split cells.</strong> Tighten the shape ranges and curate manually in the experiment editor.</span></li>
+<li><strong>Inconsistent columns between images.</strong> Use the same set of columns for every image so exported data can be combined.</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">imaging</span><span class="tag">MicrobeJ</span><span class="tag">Fiji</span><span class="tag">quantitative analysis</span><span class="tag">microscopy</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
