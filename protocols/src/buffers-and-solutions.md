@@ -2,7 +2,7 @@ title: Common buffers and solutions
 category: Media and reagents
 tags: buffers, TAE, PBS, SDS-PAGE, Laemmli, reagents
 summary: Standard buffers for gels, blotting and sample loading, including a 6X Laemmli recipe.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
+source: Adapted by K. Tembiwa.
 version: Draft 0.1
 ---
 ## Stock dilutions
