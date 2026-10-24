@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bead-beating in TRIzol, column purification, DNase treatment, a no-RT-style PCR control for DNA contamination, and a one-step SYBR RT-qPCR reaction.">
+<meta name="robots" content="noindex">
+<title>RNA extraction (TRIzol, Direct-zol) and one-step RT-qPCR set-up for M. smegmatis | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">RNA extraction (TRIzol, Direct-zol) and one-step RT-qPCR set-up for M. smegmatis</h1>
+<p class="lede">Bead-beating in TRIzol, column purification, DNase treatment, a no-RT-style PCR control for DNA contamination, and a one-step SYBR RT-qPCR reaction.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>Work in an RNase-free area. Wipe benches, pipettes and gloves with an RNase-decontaminating wipe. Have everything ready first and move quickly.</p>
+<h2 id="harvest">Harvest</h2>
+<ol type="1">
+<li>Cool a centrifuge to 4 °C. Use 20–30 mL culture at OD ~0.5–1 per biological replicate. Note RNA yield against starting OD the first time you do this.</li>
+<li><strong>Optional RNAlater</strong> (to freeze the transcriptome and process many samples together; <span class="tbc">steps unverified in the source</span>): add an equal volume of RNAlater, mix, wait a few minutes at room temperature, then add water or PBS equal to ¼ of the current volume so the cells pellet. Store at 4 °C short-term or –20 °C for up to a month.</li>
+<li>Without RNAlater: chill cultures on ice.</li>
+<li>Spin 4,000 rpm, 10 min, 4 °C (20 °C if RNAlater was used). Remove all supernatant; with RNAlater it is essential to remove all of it. If the pellet is disturbed, re-spin.</li>
+</ol>
+<h2 id="lysis">Lysis</h2>
+<ol type="1">
+<li>Resuspend the pellet in 750 µL TRIzol and transfer to a bead-beating tube.</li>
+<li>Bead-beat 45 s, rest 5 min at room temperature (TRIzol stabilizes the sample); bead-beat 30 s, rest 5 min.</li>
+<li>Spin 15,000 rpm for 1 min.</li>
+</ol>
+<h2 id="purification-direct-zol-rna-kit-follow-the-kit-manual">Purification (Direct-zol RNA kit; follow the kit manual)</h2>
+<p>All at room temperature, spins 30 s at 10,000–16,000 × g.</p>
+<ol type="1">
+<li>Move the supernatant to an RNase-free 2 mL tube. Add an equal volume of 95–100% ethanol and mix.</li>
+<li>Load 700 µL at a time on a column; spin; discard flow-through.</li>
+<li><strong>On-column DNase</strong> (kit DNase): wash with 400 µL RNA wash buffer; add 5 µL DNase I + 75 µL digestion buffer; 15 min at room temperature. (Skip if using DNase Turbo afterwards.)</li>
+<li>Wash twice with 400 µL Direct-zol PreWash.</li>
+<li>Wash with 700 µL RNA wash buffer, 2 min spin, twice.</li>
+<li>Elute with 100 µL DNase/RNase-free water.</li>
+</ol>
+<p>Keep RNA on ice if used the same day, –20 °C for days, –80 °C for weeks. Avoid freeze-thaw cycles.</p>
+<h2 id="quality-and-dnase-treatment">Quality and DNase treatment</h2>
+<ol type="1">
+<li>NanoDrop with kit water as blank. 260/280 and 260/230 should be near 2.0–2.2.</li>
+<li>If you did not use on-column DNase: add 1/10 volume DNase buffer and 1 µL DNase Turbo, 30 min at 37 °C; add 1 µL more DNase Turbo (no extra buffer), another 30 min; add 1/10 volume DNase inactivation reagent, 5 min at room temperature with occasional flicking.</li>
+<li><strong>Control PCR:</strong> use a few µL of each RNA as template for a normal PCR with primers you have used before (small product), plus a positive control with plasmid or genomic DNA. No product means no contaminating DNA. If there is product, repeat the DNase treatment. Do not skip this control.</li>
+<li>Re-measure concentration (it commonly drops after DNase). Optionally run ~8 µL on an RNA gel.</li>
+</ol>
+<h2 id="one-step-rt-qpcr-20-µl-reaction">One-step RT-qPCR (20 µL reaction)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Volume</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One-step SYBR green master mix</td>
+<td>10 µL</td>
+</tr>
+<tr class="even">
+<td>Forward primer (5 µM)</td>
+<td>1 µL</td>
+</tr>
+<tr class="odd">
+<td>Reverse primer (5 µM)</td>
+<td>1 µL</td>
+</tr>
+<tr class="even">
+<td>Nuclease-free water</td>
+<td>4.5 µL</td>
+</tr>
+<tr class="odd">
+<td>One-step RT enzyme</td>
+<td>0.5 µL</td>
+</tr>
+<tr class="even">
+<td>RNA</td>
+<td>3 µL</td>
+</tr>
+</tbody>
+</table>
+<p>For 8 reactions make a master mix of 80 µL master mix, 8 µL of each primer, 36 µL water, 4 µL RT enzyme; aliquot 17 µL per well and add 3 µL RNA last. Keep the plate and samples on ice. <span class="tbc">Cycling conditions were not recorded in the source; use the master-mix manufacturer’s settings.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab, 2023 version).</p>
+<p class="tag-row"><span class="tag">RNA extraction</span><span class="tag">qPCR</span><span class="tag">TRIzol</span><span class="tag">DNase</span><span class="tag">M. smegmatis</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

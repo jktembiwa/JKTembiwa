@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fit log-phase data to an exponential growth equation, extract doubling times per replicate, and compare strains with one-way ANOVA.">
+<meta name="robots" content="noindex">
+<title>Calculating doubling times from growth curves in GraphPad Prism | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Calculating doubling times from growth curves in GraphPad Prism</h1>
+<p class="lede">Fit log-phase data to an exponential growth equation, extract doubling times per replicate, and compare strains with one-way ANOVA.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<ol type="1">
+<li>Enter data in Prism: X = elapsed time; Y = three replicate values in side-by-side sub-columns.</li>
+<li>Make a new table with a single replicate per data set, called “singles”, and copy the data and times into it.</li>
+<li>Plot the singles data and set the Y axis to <strong>log₂ scale</strong>.</li>
+<li><strong>Exclude the non-linear parts</strong> (lag and stationary phase). Only log-phase measurements should be used to calculate doubling time. Look at each biological replicate separately, note which time points are linear, and exclude the rest (highlight, Cmd+E; the table must be frozen).</li>
+<li>Fit each replicate: <em>Analyze → Nonlinear regression → Exponential growth equation</em>.</li>
+<li>Take the doubling times from the results table into a new column table (replicates in columns; use “paste transpose” if needed). Aim for at least 3 biological replicates per strain or condition.</li>
+<li>Compare strains: <em>Analyze → Ordinary one-way ANOVA → Multiple comparisons → compare the mean of each column with the mean of a control column</em> (set the control to wild type).</li>
+</ol>
+<p>Use biological, not technical, replicates as <em>n</em>. See <a href="growth-curve-setup.html">Growth curve setup</a> and <a href="manual-growth-curves.html">Manual growth curves</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab).</p>
+<p class="tag-row"><span class="tag">growth curve</span><span class="tag">doubling time</span><span class="tag">Prism</span><span class="tag">statistics</span><span class="tag">ANOVA</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

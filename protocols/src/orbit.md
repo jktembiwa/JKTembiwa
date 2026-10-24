@@ -26,3 +26,23 @@ An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is
 11. Spin the tubes for 1 min at maximum speed. Resuspend in 150 µL 7H9. Put beads on the plates, add the 150 µL of cells and spread.
 12. Incubate at 37 °C for 3 days.
 13. **PCR check** each junction: for the left flank, use an *oriE* reverse primer with a target-specific forward primer; for the right flank, use a hygromycin-cassette forward primer with a target-specific reverse primer.
+
+## Which strand to order (oligo directionality)
+
+Which strand you order depends on both the **position** and the **direction** of the gene on the chromosome. [The underlying reason (annealing to the lagging-strand template) is general knowledge, not from the source note; confirm.]{.tbc}
+
+- Take the gene sequence in the 5′→3′ coding orientation (the "top" strand in a sequence file; databases such as Tuberculist always give the gene reading 5′→3′ regardless of orientation on the chromosome). Its reverse complement is the "bottom" strand.
+- Insert the attP site into the sequence **before** choosing the strand (not critical for deletions, critical for fusions).
+- Find the replicore:
+  - *M. smegmatis*: right replicore ~0–3.4 Mb, left replicore ~3.5–6.9 Mb (the note gives 0–3.3 and 3.3–6.4 Mb in places; confirm)
+  - *M. tuberculosis*: right replicore 0–2.2 Mb, left replicore 2.3–4.4 Mb
+- **Rule of thumb:** if the gene reads **toward the origin**, order the sequence as it appears in your file (top strand). If it reads **away from the origin**, order the **reverse complement**.
+
+| Replicore | Gene reads | Order |
+|---|---|---|
+| Right | toward origin (counterclockwise) | top strand (as in file) |
+| Right | away from origin (clockwise) | reverse complement |
+| Left | away from origin (counterclockwise) | reverse complement |
+| Left | toward origin (clockwise) | top strand (as in file) |
+
+[Source and author of this directionality note are not recorded in the file; add credit if known. Replicore boundaries differ between the paragraphs in the original.]{.tbc}

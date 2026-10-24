@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Build a p2NIL–pGOAL suicide construct in E. coli, transform M. marinum (with UV-treated DNA), and select single and double crossovers using kanamycin, X-gal and sucrose.">
+<meta name="robots" content="noindex">
+<title>Gene knockouts in Mycobacterium marinum with p2NIL / pGOAL | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Gene knockouts in Mycobacterium marinum with p2NIL / pGOAL</h1>
+<p class="lede">Build a p2NIL–pGOAL suicide construct in E. coli, transform M. marinum (with UV-treated DNA), and select single and double crossovers using kanamycin, X-gal and sucrose.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>Handle <em>M. marinum</em> at the biosafety level required by your institution.</p>
+<h2 id="clone-the-flanks-into-p2nil">1. Clone the flanks into p2NIL</h2>
+<ol type="1">
+<li>Combine 0.5 µL DpnI-treated p2NIL vector, 0.5 µL PCR upstream flank and 0.5 µL PCR downstream flank. Add 50 µL DH5α competent cells, keep on ice at least 30 min.</li>
+<li>Heat shock 45 s at 42 °C; add 200 µL LB; 1 h at 37 °C. Spin 1 min, resuspend, plate on LB + kanamycin (p2NIL is KanR).</li>
+<li>Pick 4–8 colonies into 5 mL LB + kanamycin overnight. Miniprep.</li>
+<li>Diagnostic digest (10 µL: 1 µL 10× buffer, 2 µL DNA, 0.5 µL enzyme, 6.5 µL water; 1 h at 37 °C) with an enzyme that gives at least two bands. Check on a gel.</li>
+</ol>
+<h2 id="add-the-pgoal-cassette-paci">2. Add the pGOAL cassette (PacI)</h2>
+<ol type="1">
+<li>Digest p2NIL clone with PacI (same 10 µL recipe). Dephosphorylate with Antarctic phosphatase (1.5 µL buffer, 1 µL enzyme; 37 °C 30 min; 80 °C 2 min).</li>
+<li>“Cut/kill” empty pGOAL with PacI (37 °C 60 min, 65 °C 20 min, hold 25 °C).</li>
+<li>Ligate: 1 µL p2NIL, 0.5 µL water, 0.5 µL ligase buffer, 2.5 µL digested pGOAL, 0.5 µL ligase; overnight at 4 °C.</li>
+<li>Transform the whole ligation into 50 µL DH5α. Plate on LB + kanamycin + X-gal (to add X-gal to existing plates: warm, add beads and ~100 µL LB, 20 µL X-gal, shake, soak in at 37 °C).</li>
+<li>Pick <strong>blue</strong> colonies (pGOAL carries <em>lacZ</em>), grow in LB + kanamycin, miniprep.</li>
+<li>Check with AflII + PacI: three bands expected (two near 5 and 7 kb, one near 2 kb; use your construct map for exact sizes).</li>
+</ol>
+<h2 id="transform-m.-marinum">3. Transform <em>M. marinum</em></h2>
+<ol type="1">
+<li>Use <strong>~3 µg</strong> DNA for p2NIL/pGOAL constructs (UV-treat the DNA) and ~0.5 µg for complementation plasmids (no UV). <em>M. marinum</em> needs more DNA than <em>M. tuberculosis</em>; about 1 µg is the minimum for success.</li>
+<li>Spin 500 µL competent cells (13,000 rpm, 2 min). Wash three times with glycerol buffer (80 mL water, 20 mL 50% glycerol, 500 µL 20% Tween 80). Resuspend in 500 µL, add DNA, electroporate, and immediately add to 2 mL 7H9.</li>
+<li>Recover at 32 °C. Plate the next day on KO plates (7H11 + X-gal + kanamycin + OADC) (complementation constructs on 7H11 + hygromycin as appropriate).</li>
+<li>Pick <strong>blue</strong> colonies (single crossover); grow in 3 mL 7H9.</li>
+<li>Dilute 1:20 (10 µL + 190 µL 7H9) and plate 200 µL on sucrose plates (7H11 + X-gal + sucrose + OADC).</li>
+<li>Pick <strong>white</strong> colonies (double crossover), grow in 7H9, and confirm the knockout by PCR with confirmation primers.</li>
+</ol>
+<p>Advice from experienced <em>M. marinum</em> labs: the <strong>UV treatment of the DNA is critical</strong>. Without it <em>M. marinum</em> integrates the plasmid at the wrong site, probably because of strong mismatch repair compared with <em>M. tuberculosis</em>. The glycine step in preparing competent cells improves transformation.</p>
+<h2 id="competent-cell-preparation">Competent cell preparation</h2>
+<ol type="1">
+<li>Grow a colony in 5 mL 7H9 for 3–5 days; expand to 25 mL for 24–48 h.</li>
+<li>Add 2 mL 2 M glycine; grow 24 h.</li>
+<li>Spin the whole culture 4,000 rpm, 5 min. Wash three times with the glycerol buffer above.</li>
+<li>Resuspend in 5 mL buffer; freeze 500 µL aliquots at –80 °C.</li>
+</ol>
+<p>Keep wild-type stocks low-passage; avoid unnecessary passaging (the strain can lose haemolytic activity).</p>
+<p><span class="tbc">Temperatures (32 °C vs 30 °C), UV dose and plate recipes should be checked against the original protocol.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa from a lab protocol, with context from advice by P. Champion&#x27;s lab and Talaat &amp; Trucksis, Am J Vet Res (2000). The p2NIL/pGOAL system is from Parish &amp; Stoker. Please check these references before relying on them.</p>
+<p class="tag-row"><span class="tag">M. marinum</span><span class="tag">knockout</span><span class="tag">allelic exchange</span><span class="tag">p2NIL</span><span class="tag">pGOAL</span><span class="tag">electroporation</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

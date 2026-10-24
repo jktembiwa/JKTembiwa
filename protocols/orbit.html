@@ -58,6 +58,50 @@
 <li>Incubate at 37 °C for 3 days.</li>
 <li><strong>PCR check</strong> each junction: for the left flank, use an <em>oriE</em> reverse primer with a target-specific forward primer; for the right flank, use a hygromycin-cassette forward primer with a target-specific reverse primer.</li>
 </ol>
+<h2 id="which-strand-to-order-oligo-directionality">Which strand to order (oligo directionality)</h2>
+<p>Which strand you order depends on both the <strong>position</strong> and the <strong>direction</strong> of the gene on the chromosome. <span class="tbc">The underlying reason (annealing to the lagging-strand template) is general knowledge, not from the source note; confirm.</span></p>
+<ul>
+<li>Take the gene sequence in the 5′→3′ coding orientation (the “top” strand in a sequence file; databases such as Tuberculist always give the gene reading 5′→3′ regardless of orientation on the chromosome). Its reverse complement is the “bottom” strand.</li>
+<li>Insert the attP site into the sequence <strong>before</strong> choosing the strand (not critical for deletions, critical for fusions).</li>
+<li>Find the replicore:
+<ul>
+<li><em>M. smegmatis</em>: right replicore ~0–3.4 Mb, left replicore ~3.5–6.9 Mb (the note gives 0–3.3 and 3.3–6.4 Mb in places; confirm)</li>
+<li><em>M. tuberculosis</em>: right replicore 0–2.2 Mb, left replicore 2.3–4.4 Mb</li>
+</ul></li>
+<li><strong>Rule of thumb:</strong> if the gene reads <strong>toward the origin</strong>, order the sequence as it appears in your file (top strand). If it reads <strong>away from the origin</strong>, order the <strong>reverse complement</strong>.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Replicore</th>
+<th>Gene reads</th>
+<th>Order</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Right</td>
+<td>toward origin (counterclockwise)</td>
+<td>top strand (as in file)</td>
+</tr>
+<tr class="even">
+<td>Right</td>
+<td>away from origin (clockwise)</td>
+<td>reverse complement</td>
+</tr>
+<tr class="odd">
+<td>Left</td>
+<td>away from origin (counterclockwise)</td>
+<td>reverse complement</td>
+</tr>
+<tr class="even">
+<td>Left</td>
+<td>toward origin (clockwise)</td>
+<td>top strand (as in file)</td>
+</tr>
+</tbody>
+</table>
+<p><span class="tbc">Source and author of this directionality note are not recorded in the file; add credit if known. Replicore boundaries differ between the paragraphs in the original.</span></p>
 
 <hr>
 <p class="meta"><strong>Source / credit:</strong> ORBIT method (see Murphy et al., mBio 2018); lab adaptation, shared with the Boutte lab and adapted for this site.</p>
