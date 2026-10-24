@@ -40,6 +40,12 @@ FOOT='''</main>
 </body>
 </html>
 '''
+def intro(path):
+    d={}
+    for l in open(path,encoding="utf-8"):
+        if l.startswith("#") or ":" not in l: continue
+        k,v=l.split(":",1); d[k.strip()]=v.strip()
+    return d
 def md(text):
     return subprocess.run(["pandoc","-f","markdown+pipe_tables+bracketed_spans","-t","html","--wrap=none"],input=text,capture_output=True,text=True,check=True).stdout
 def parse(path):
@@ -90,12 +96,14 @@ cards=""
 cats=[c for c in ORDER if any(p["category"]==c for p in pages)]+sorted({p["category"] for p in pages}-set(ORDER))
 for c in cats:
     cards+=f'<section class="proto-group"><h2 class="group-title">{html.escape(c)}</h2><div class="grid-2">\n'+"".join(card(p) for p in pages if p["category"]==c)+"</div></section>\n"
+II=intro("protocols/intro-index.txt")
+FI=intro("protocols/intro-faq.txt")
 buttons=''.join(f'<button type="button" class="chip" data-tag="{html.escape(t.lower(),quote=True)}">{html.escape(t)}</button>' for t in alltags)
 idx=head("Protocols","Common molecular microbiology protocols and troubleshooting notes.")+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow">Protocols</div>
-<h1>Common protocols and troubleshooting.</h1>
-<p class="lede">Practical protocols for everyday molecular microbiology, with notes on where they usually go wrong. Pages marked <em>Draft</em> have not yet been fully reviewed.</p>
-<p class="meta">These pages draw on the Boutte Lab Beginner&rsquo;s Manual and the work of past lab members; individual credits appear on each page where relevant.</p>
+<h1>{II["heading"]}</h1>
+<p class="lede">{II["lede"]}</p>
+<p class="meta">{II["note"]}</p>
 <p><a class="button secondary" href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>
 <section class="section"><div class="container">
@@ -119,8 +127,8 @@ for block in faq:
     items+=f'<details class="faq"><summary>{html.escape(q)}</summary>{md(ans)}<p class="meta">Related: <a href="{slug}.html">{html.escape(label)}</a> · {STATUS}</p></details>\n'
 f=head("Troubleshooting FAQ","Common failure points in molecular microbiology protocols.")+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
-<h1>Troubleshooting FAQ.</h1>
-<p class="lede">Common failure points and what usually fixes them. Entries come from lab experience and are marked as drafts until reviewed.</p>
+<h1>{FI["heading"]}</h1>
+<p class="lede">{FI["lede"]}</p>
 </div></section>
 <section class="section"><div class="container prose">
 {LEGEND}
