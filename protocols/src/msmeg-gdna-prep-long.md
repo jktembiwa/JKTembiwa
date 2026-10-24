@@ -29,4 +29,4 @@ Handle phenol, chloroform and methanol in a fume hood and dispose as hazardous w
 18. Spin at maximum speed for 10 min at 4 °C. Wash the pellet 2–3 times with ice-cold 70% ethanol.
 19. Air-dry briefly and dissolve in 50–100 µL TE.
 
-[Sodium acetate pH is given as both 5.2 (materials) and 7.4 (step 17) in the source; check. Original step 1 also has details not carried over here.]{.tbc}
+Sodium acetate is pH 5.2. [Original step 1 also has details not carried over here.]{.tbc}
