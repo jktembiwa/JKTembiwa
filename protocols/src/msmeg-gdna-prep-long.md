@@ -3,11 +3,12 @@ category: Mycobacterial genetics
 tags: genomic DNA, DNA extraction, M. smegmatis, phenol-chloroform
 summary: A long, higher-yield genomic DNA prep with chloroform:methanol delipidation and overnight lysozyme treatment.
 source: Flavia Sorrentino, adapted by Hesper Rego (as received). Reproduced with credit; the original source is the authoritative version.
-version: Draft 0.1
+version: 1.0
+status: reviewed
 ---
-Handle phenol, chloroform and methanol in a fume hood and dispose as hazardous waste. For a fast, lower-yield alternative see [Smash & Grab](smash-and-grab-genomic-dna.html).
+Handle phenol, chloroform and methanol in a fume hood and dispose as hazardous waste. For a fast, lower-yield and lower-purity alternative see [Smash & Grab](smash-and-grab-genomic-dna.html).
 
-**Reagents:** TE (10 mM Tris-HCl pH 8, 1 mM EDTA); 1× TBS; phenol:chloroform:isoamyl alcohol (25:24:1); chloroform:methanol (2:1); 1 M Tris base pH 9; lysozyme 10 mg/mL; 10% SDS; proteinase K; chloroform; chloroform:isoamyl alcohol (24:1); DNase-free RNase A; 3 M sodium acetate; 100% and 70% ethanol (ice-cold); 55 °C water bath.
+**Reagents:** TE (10 mM Tris-HCl pH 8, 1 mM EDTA); 1× TBS; phenol:chloroform:isoamyl alcohol (25:24:1); chloroform:methanol (2:1); 1 M Tris base pH 9; lysozyme 10 mg/mL; 10% SDS; proteinase K; chloroform; chloroform:isoamyl alcohol (24:1); DNase-free RNase A; 3 M sodium acetate pH 5.2; 100% and 70% ethanol (ice-cold); 55 °C water bath or thermostat (eppendorf).
 
 1. Harvest 5–10 mL saturated culture, up to 60 mL log-phase culture. Optional: freeze the pellet at –80 °C for at least 4 h (weakens the cell wall; not required).
 2. Resuspend in 500 µL TE (EDTA protects DNA from nucleases).
@@ -28,5 +29,3 @@ Handle phenol, chloroform and methanol in a fume hood and dispose as hazardous w
 17. Add 0.1 volume 3 M sodium acetate and mix. Add 2–3 volumes ice-cold 100% ethanol, mix, keep at –20 °C for 10 min to overnight.
 18. Spin at maximum speed for 10 min at 4 °C. Wash the pellet 2–3 times with ice-cold 70% ethanol.
 19. Air-dry briefly and dissolve in 50–100 µL TE.
-
-Sodium acetate is pH 5.2. [Original step 1 also has details not carried over here.]{.tbc}
