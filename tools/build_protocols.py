@@ -75,7 +75,7 @@ for p in pages:
 '''+FOOT
     open(f"protocols/{p['slug']}.html","w",encoding="utf-8").write(out)
 # index
-ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Growth and assays","Imaging and analysis","Reference","Protocols"]
+ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Protein biochemistry","Growth and assays","Imaging and analysis","Reference","Protocols"]
 from collections import Counter
 _c=Counter(t.lower() for p in pages for t in p['tags'])
 alltags=sorted({t for p in pages for t in p['tags'] if _c[t.lower()]>=2})

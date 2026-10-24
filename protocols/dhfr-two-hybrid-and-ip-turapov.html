@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Co-immunoprecipitation of an endogenous mycobacterial protein with an antibody-coupled resin, and a plan for cloning interaction partners into DHFR-fragment two-hybrid vectors.">
+<meta name="robots" content="noindex">
+<title>Immunoprecipitation and mycobacterial DHFR two-hybrid (M-PFC) cloning plan | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Immunoprecipitation and mycobacterial DHFR two-hybrid (M-PFC) cloning plan</h1>
+<p class="lede">Co-immunoprecipitation of an endogenous mycobacterial protein with an antibody-coupled resin, and a plan for cloning interaction partners into DHFR-fragment two-hybrid vectors.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="immunoprecipitation-turapov-et-al.">Immunoprecipitation (Turapov et al.)</h2>
+<ol type="1">
+<li>Couple anti-CwlM antibody to CNBr-activated Sepharose 4B (a resin for immobilizing ligands containing primary amines) following the manufacturer’s coupling protocol.</li>
+<li>Mix 1 mL containing <strong>100 µg protein</strong> from a cell fraction (e.g. membrane or cytosol) with <strong>10 µL</strong> antibody–Sepharose. Rotate for 60 min. Spin 500 × g for 5 min. Discard supernatant and wash the resin 3× with TBS.</li>
+<li>Elute with 40 µL phosphoric acid, pH 2.0. <span class="tbc">The original method does not say how the eluate is neutralized or dried before blotting/mass spec.</span></li>
+<li>Control: the same fraction from a CwlM-depleted mutant.</li>
+<li>To test candidate partners directly, mix recombinant CwlM with 10 µg of each purified candidate in phosphate buffer (20 mM KH₂PO₄ pH 7.0, 100 mM NaCl, 10 mM KCl) with 10 µL antibody–Sepharose, and process as above.</li>
+</ol>
+<p>Suggested gel layout: ladder; CwlM; CwlM + resin FT; CwlM + resin eluate; partner; partner + resin FT; partner + resin eluate; partner + CwlM + resin FT; partner + CwlM + resin eluate.</p>
+<h2 id="dhfr-two-hybrid-m-pfc-plates-and-controls">DHFR two-hybrid (M-PFC): plates and controls</h2>
+<p>M-PFC splits mycobacterial dihydrofolate reductase into fragments fused to the two proteins; if the proteins interact, DHFR is reconstituted and cells grow on trimethoprim (TMP).</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Turapov et al.</th>
+<th>Used here</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plates</td>
+<td>7H10</td>
+<td>7H11 (clearer results than 7H10 in testing)</td>
+</tr>
+<tr class="even">
+<td>Antibiotics</td>
+<td>Hyg 50, Kan 50, TMP 15</td>
+<td>Hyg 50, Kan 25, TMP 50</td>
+</tr>
+</tbody>
+</table>
+<p>Make plates ± TMP. Streak controls on both:</p>
+<ul>
+<li><strong>Negative:</strong> vectors expressing DHFR fragments with no interaction domain. Should grow on –TMP and <strong>not</strong> on +TMP.</li>
+<li><strong>Positive:</strong> vectors carrying GCN4 leucine-zipper domains (which dimerize). Should grow on both.</li>
+<li>Test both 7H10 and 7H11. Proceed with the medium that gives the clearest separation.</li>
+</ul>
+<h2 id="cloning-plan-for-the-test-proteins">Cloning plan for the test proteins</h2>
+<ol type="1">
+<li>Amplify each ORF from <em>M. tuberculosis</em> genomic DNA with primers designed for each vector (separate primer pairs for each of the four vectors).</li>
+<li>Gel-purify the PCR products (<a href="gel-purification.html">Gel purification</a>). A longer incubation of the gel slice in dissolving buffer (1–3 h at ~54 °C) can increase yield.</li>
+<li>Prepare four parent vectors by miniprep and digest (40–50 µg DNA each, then column cleanup, resuspend 30–50 µL, NanoDrop): pUAB100 (BamHI + ClaI), pUAB200 (MfeI + ClaI), pUAB300 (BamHI + HpaI), pUAB400 (MfeI + HpaI).</li>
+<li>Assemble by Gibson (<a href="gibson-assembly.html">Gibson assembly</a>), calculating insert and vector volumes. Letting the reaction proceed overnight at room temperature can help.</li>
+<li>Transform ~5 µL into <em>E. coli</em>. For electrocompetent cells, dialyze the Gibson reaction 15–20 min first and use 1–2 µL. Run the remaining ~5 µL on a TAE gel to judge success.</li>
+<li>Pick 16–32 colonies per plate, patch them, and colony-PCR with check primers (<a href="colony-pcr-screening.html">Colony PCR</a>).</li>
+<li>Sequence 2–3 positive clones. If colony PCR is inconclusive, miniprep 8 colonies and do an analytical digest (0.5–1.5 µg).</li>
+</ol>
+<p><span class="tbc">Strain names and primer names from the working notes have been removed. Expected band sizes were not recorded in the source.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Based on methods in Turapov et al. 2018 (Cell Reports; full citation to be verified), annotated and adapted by K. Tembiwa. Please read the original paper for the authoritative method.</p>
+<p class="tag-row"><span class="tag">immunoprecipitation</span><span class="tag">two-hybrid</span><span class="tag">DHFR</span><span class="tag">M-PFC</span><span class="tag">cloning</span><span class="tag">CwlM</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

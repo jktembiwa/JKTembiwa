@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A two-temperature test induction with normalized pre/post-induction, supernatant and pellet samples; a fillable worksheet for a kinase such as PknA.">
+<meta name="robots" content="noindex">
+<title>Optimizing recombinant kinase expression and lysis (example: PknA) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Optimizing recombinant kinase expression and lysis (example: PknA)</h1>
+<p class="lede">A two-temperature test induction with normalized pre/post-induction, supernatant and pellet samples; a fillable worksheet for a kinase such as PknA.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>For the general method see <a href="test-induction-protein-expression.html">Test inductions for protein expression</a>. This page is the worksheet-style version for two expression temperatures.</p>
+<h2 id="day-1">Day 1</h2>
+<ol type="1">
+<li>Grow a 5 mL starter of the expression strain with the plasmid antibiotics (example: chloramphenicol 25 µg/mL + ampicillin <span class="tbc">140 µg/mL</span>). Record the OD.</li>
+<li>Add 2.5 mL starter to each of two flasks (A, B) of 50 mL LB + ampicillin. Grow at 37 °C to OD₆₀₀ 0.6. Always grow at 37 °C <em>before</em> adding IPTG, then move to the induction temperature.</li>
+<li>Record pre-induction OD for A and B. Save a pre-induction sample: 500 µL culture + 100 µL 6× Laemmli (Pre-A, Pre-B).</li>
+<li>Add 1 mM IPTG to both. Express flask A at 25 °C and flask B at 18 °C for ~16 h.</li>
+</ol>
+<h2 id="day-2">Day 2</h2>
+<ol type="1">
+<li>Read the OD of A and B. To load equal cell equivalents, compute X = OD(post) ÷ OD(pre), then take 500/X µL of culture and make up to 500 µL with water (500 − 500/X µL). Example: post 6, pre 0.6 → X = 10 → 50 µL culture + 450 µL water.</li>
+<li>Store as Post-A / Post-B in 100 µL 6× Laemmli. Heat 95 °C, 10 min.</li>
+<li>Pellet the cultures and freeze at –20 °C.</li>
+<li>Gel: 20 µL each of pre-A, post-A, pre-B, post-B.</li>
+</ol>
+<h2 id="lysis-of-the-pellets">Lysis of the pellets</h2>
+<ol type="1">
+<li>Resuspend each pellet in 30 mL buffer (50 mM Tris pH 7.5, 150 mM NaCl, 20% glycerol). Add 300 µL 100 mM PMSF and a pinch of lysozyme; 30 min on ice.</li>
+<li>Sonicate (<span class="tbc">power 4</span>, 10 pulses of 30 s, 10 s rests).</li>
+<li>Centrifuge 40 min at <span class="tbc">12,000 rpm</span>. Move supernatants to new tubes (sup-25 °C, sup-18 °C).</li>
+<li>Mix 500 µL supernatant with 100 µL 6× Laemmli (Sup-A, Sup-B).</li>
+<li>Resuspend each pellet in 30 mL buffer; mix 500 µL with 100 µL 6× Laemmli (Pellet-A, Pellet-B).</li>
+<li>Heat all samples 90–95 °C for 10 min. Run on a gel to compare soluble and insoluble fractions at each temperature.</li>
+</ol>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab).</p>
+<p class="tag-row"><span class="tag">protein expression</span><span class="tag">IPTG</span><span class="tag">test induction</span><span class="tag">solubility</span><span class="tag">PknA</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Phosphorylate a His-SUMO substrate with a kinase, remove the tag with ULP, and test binding to a second His-SUMO protein on Ni or cobalt resin (gravity column or magnetic beads).">
+<meta name="robots" content="noindex">
+<title>Kinase / protease reaction and Ni or cobalt interaction (pull-down) assay | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Kinase / protease reaction and Ni or cobalt interaction (pull-down) assay</h1>
+<p class="lede">Phosphorylate a His-SUMO substrate with a kinase, remove the tag with ULP, and test binding to a second His-SUMO protein on Ni or cobalt resin (gravity column or magnetic beads).</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="idea">Idea</h2>
+<p>Immobilize a His-SUMO “bait” (e.g. His-SUMO-MurJ ICD) on resin. Pass the untagged “prey” (e.g. CwlM, phosphorylated by PknB or not) over it. Prey that is retained in the elution but not on a bait-free control column interacts with the bait.</p>
+<p><em>Use cobalt resin for the kinase/ULP stage and a 20 mM imidazole wash with no elution buffer when you want only to remove uncleaved tagged protein; use nickel for the pull-down.</em></p>
+<h2 id="part-1-kinase-and-protease-reactions">Part 1: Kinase and protease reactions</h2>
+<ol type="1">
+<li>Thaw His-SUMO-CwlM and PknB. NanoDrop with the kinase buffer as blank. Example: CwlM 0.48 mg/mL; PknB 1.80 mg/mL.</li>
+<li>Use a <strong>1:10 kinase:substrate</strong> mass ratio. Example: 144 µg CwlM in 300 µL needs 14 µg PknB (7.8 µL).</li>
+<li>Set up two tubes, <strong>CwlM~P</strong> (phosphorylated) and <strong>NPC</strong> (no-phosphorylation control): 300 µL CwlM each, PknB in both, MnCl₂ to 1 mM from a 25 mM stock (14 µL in 350 µL), and 0.5 mM ATP (7 µL from 25 mM) <strong>only in CwlM~P</strong>. Keep ATP at –80 °C until needed.</li>
+<li>Incubate 40 min at 25 °C.</li>
+<li>Meanwhile prepare Ni (or cobalt) columns: place a frit at the bottom using a pipette tip, add 500 µL resin slurry (bed ~250 µL), drain, wash with a column of nanopure water, then 3 CV of 20 mM-imidazole wash buffer (50 mM Tris pH 7.5, 350 mM NaCl, 20 mM imidazole, 10% glycerol), pipetting on the side.</li>
+<li>Add <strong>ULP</strong> (SUMO protease) at 1:10 by mass (e.g. 14.4 µg, 16 µL of 0.968 mg/mL) plus 34 µL 10× protease buffer to each tube (400 µL final) <strong>after</strong> the 40 min kinase step. Incubate <span class="tbc">time and temperature to be added</span>.</li>
+<li>Load each reaction onto its column. Collect flow-through; wash twice with 250 µL wash buffer; elute with 250 µL elution buffer (same as wash but with 250 mM imidazole). Cleaved CwlM is in the <strong>flow-through and first wash</strong>; the tag and uncleaved protein stay on the resin.</li>
+<li>Run 25 µL of each fraction + 5 µL warmed 6× Laemmli (95 °C) on a gel (10 µL per lane) with PknB, ULP and the kinase reaction. Pool the flow-through and wash 1 once the gel confirms cleavage.</li>
+<li>NanoDrop. High imidazole can distort readings; if so assume ~90% yield of the cleavage reaction.</li>
+<li>Clean columns: run elution buffer, then water twice, then 20% ethanol (half through); close the column, shake, and pour the resin into a labeled “used resin” container at 4 °C. Do not discard resin.</li>
+</ol>
+<h2 id="part-2-interaction-assay-gravity-columns">Part 2: Interaction assay (gravity columns)</h2>
+<ol type="1">
+<li>Four small columns: NPC experiment, NPC control, CwlM~P experiment, CwlM~P control. Each prey sample is split in two (one bait, one no-bait control).</li>
+<li>Thaw His-SUMO-MurJ ICD (example 1.082 mg/mL); use a <strong>1:1 molar/mass ratio</strong> with the prey in the column.</li>
+<li>Prepare 250 µL-bed columns, wash with 750 µL water and 750 µL 20 mM imidazole wash buffer.</li>
+<li>Control column: load 250 µL wash buffer (tube A). Experimental column: load bait in wash buffer (tube 1).</li>
+<li>Wash with 250 µL wash buffer twice (tubes 2 and 3).</li>
+<li>Load 250 µL prey (CwlM~P or NPC) (tube 4).</li>
+<li>Elute with 500 µL elution buffer (50 mM Tris pH 7.4, 350 mM NaCl, 10% glycerol, 250 mM imidazole) (tube 5).</li>
+<li>Mix 50 µL of each fraction with 10 µL pre-warmed 6× Laemmli, heat 95 °C for 10 min, run on a gel.</li>
+</ol>
+<p>Fractions: flow-through, wash 1, prey load, wash 2, elution.</p>
+<h2 id="part-2-alternative-magnetic-beads">Part 2 (alternative): Magnetic beads</h2>
+<ol type="1">
+<li>Pipette 40 µL HisPur Ni-NTA magnetic beads into a tube, add 160 µL wash buffer, vortex 10 s, collect beads on a magnetic stand, discard supernatant. Wash once more in 400 µL.</li>
+<li>Bait: dilute His-SUMO bait to 400 µL in SEC buffer (aim for 1:1 with the prey: e.g. if 190 µg prey is recovered, use 95 µg bait), add to the beads, vortex, and keep on ice for ~15 min with gentle flicking every 5 min.</li>
+<li>Collect beads; save the supernatant (fraction 1, flow-through). Wash with 400 µL wash buffer (fraction 2).</li>
+<li>Add the prey (flow-through and washes from the cobalt step, ~710 µL diluted to 800 µL; split between control and experiment, 400 µL each). Mix, incubate with periodic mixing for 15 min. Save the supernatant (fraction 3).</li>
+<li>Wash with 400 µL wash buffer (fraction 4).</li>
+<li>Resuspend beads in 400 µL buffer, add 80 µL 6× Laemmli, heat 95 °C for 10 min (fraction 5, elution). Run all fractions on a gel.</li>
+</ol>
+<p><span class="tbc">Some volumes and incubation times were left blank in the source drafts. They are marked above and need to be filled in from lab notes.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab), from published CwlM/MurJ interaction work; three lab versions combined.</p>
+<p class="tag-row"><span class="tag">pull-down</span><span class="tag">interaction assay</span><span class="tag">kinase</span><span class="tag">ULP</span><span class="tag">Ni-NTA</span><span class="tag">cobalt</span><span class="tag">CwlM</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

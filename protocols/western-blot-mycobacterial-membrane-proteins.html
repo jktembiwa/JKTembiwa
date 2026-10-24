@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bead-beating lysis of M. smegmatis, SDS-PAGE, wet transfer to PVDF and chemiluminescent detection, with variants for PgfA and an HA/GFP-tagged PonA1.">
+<meta name="robots" content="noindex">
+<title>Western blot of membrane proteins from M. smegmatis (bead-beating lysis) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Western blot of membrane proteins from M. smegmatis (bead-beating lysis)</h1>
+<p class="lede">Bead-beating lysis of M. smegmatis, SDS-PAGE, wet transfer to PVDF and chemiluminescent detection, with variants for PgfA and an HA/GFP-tagged PonA1.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="lysis-about-1.5-h">1. Lysis (about 1.5 h)</h2>
+<ol type="1">
+<li>Grow a 10 mL <em>M. smegmatis</em> culture to late log (OD₆₀₀ 0.6–0.9).</li>
+<li>Pellet 5 min at 4 °C. Resuspend in 500 µL PBS + 1 mM PMSF (add PMSF from a 100 mM stock, 10 µL per mL of PBS). <strong>No Tween in the lysis PBS.</strong></li>
+<li>Transfer to a bead-beating tube pre-filled with beads (to the bevel at the bottom of the tube).</li>
+<li>Bead-beat 2 min (balance the tubes symmetrically), then 5 min on ice. Repeat for 4 rounds in total.</li>
+<li>Spin 10 min at 16,000 <span class="tbc">rpm</span> in the cold.</li>
+<li>Measure A₂₈₀ of a few µL of supernatant by NanoDrop (blank: PBS + PMSF). Record the concentration.</li>
+<li>Vortex supernatant and pellet back together. Add Laemmli to 1× (100 µL if the pellet was in 500 µL PBS).
+<ul>
+<li><strong>PgfA variant:</strong> also add 30 µL fresh 1 M DTT, heat 95 °C for <strong>20 min</strong>.</li>
+<li><strong>PonA1 variant:</strong> heat 95 °C for <strong>10 min</strong>.</li>
+</ul></li>
+<li>Spin 1 min at 16,000 × g, room temperature. Move supernatants to new labeled tubes.</li>
+<li>Normalize all samples to the lowest concentration with PBS + Laemmli. The target is at least <span class="tbc">10 mg/mL</span>.</li>
+<li>Store at –20 °C.</li>
+</ol>
+<h2 id="gel-and-transfer-about-3-h">2. Gel and transfer (about 3 h)</h2>
+<ol type="1">
+<li>Load at least 50–100 µg total protein in 15 µL (PgfA: precast NuPAGE-type gel; PonA1: <span class="tbc">homemade gel</span>).</li>
+<li>Run at 35 mA for 45–60 min in 1× Tris-glycine-SDS buffer.</li>
+<li>Assemble the transfer sandwich, bottom to top: two sponges (pre-wet in transfer buffer), filter paper, gel, PVDF membrane, filter paper, 2–3 sponges.
+<ul>
+<li>Wet PVDF in methanol until it is no longer glossy; handle only with tweezers.</li>
+<li>Cut off the stacking gel and the bottom ridge. Remove all bubbles (a little transfer buffer helps).</li>
+<li>For a tight pack use a third sponge or thick filter paper.</li>
+</ul></li>
+<li>Fill the tank with transfer buffer (below the screws) and the outer chamber with cold water. <strong>Put the whole unit in an ice bucket.</strong></li>
+<li>Run at about 25 V for 60 min for one mini gel. Larger proteins need longer time or more voltage.</li>
+</ol>
+<h2 id="blocking-and-antibodies-about-2.5-h">3. Blocking and antibodies (about 2.5 h)</h2>
+<ol type="1">
+<li>Disassemble, keeping track of lane order. Cut the top right corner off the membrane on the side that touched the gel, so you know which side to image.</li>
+<li>Block 30 min at room temperature in 10 mL TTBS + 5% milk (use a box that never held Coomassie).</li>
+<li>Wash 3 × 5 min with plain TTBS.</li>
+<li>Primary antibody in 10 mL TTBS:
+<ul>
+<li><strong>PgfA:</strong> <span class="tbc">2 µL</span> rabbit anti-PgfA, 1 h at room temperature (or overnight at 4 °C). Used dilutions can be saved at –20 °C and re-used.</li>
+<li><strong>PonA1-tagged:</strong> cut the membrane so the upper part can be probed for a loading control (RpoB). Anti-GFP polyclonal at <span class="tbc">33.3 µL per 10 mL</span>; anti-RpoB re-used from a previous dilution. Save primary dilutions in labeled tubes at –20 °C.</li>
+</ul></li>
+<li>Wash 3 × 5 min with TTBS; leave 10 mL plain TTBS on the blot.</li>
+<li>Add <span class="tbc">3 µL</span> of secondary antibody (rabbit for the target, mouse for RpoB), 1 h at room temperature.</li>
+<li>Wash 3–5 × 5 min with TTBS.</li>
+</ol>
+<h2 id="detection">4. Detection</h2>
+<ol type="1">
+<li>Add chemiluminescent reagent (PgfA: 500 µL of each component; PonA1: 250 µL of each in ~1 mL TTBS) and image <strong>immediately</strong>.</li>
+<li>Image the ladder with the colorimetric setting (auto exposure), then the bands with the chemiluminescence setting (auto or manual exposure).</li>
+<li>Save the raw chemiluminescence and ladder images separately. Merged images are not used for publication; keep raw files.</li>
+<li>If background is high, wash 3 × more in TTBS and re-image.</li>
+</ol>
+<p><span class="tbc">Antibody dilutions are as written in the original notes. Confirm and express as ratios (e.g. 1:5000) for the public version. The two source protocols differ in details (heat time, DTT, reagent volume), as listed above.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa from lab protocols used for PgfA and PonA1-tagged western blots (Boutte Lab).</p>
+<p class="tag-row"><span class="tag">western blot</span><span class="tag">M. smegmatis</span><span class="tag">membrane proteins</span><span class="tag">lysis</span><span class="tag">SDS-PAGE</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
