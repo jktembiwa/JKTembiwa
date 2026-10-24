@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Isolate a temperature-sensitive plaque, amplify it on plates and titer it; two versions (Murry 2008-based and M. smegmatis-optimized).">
+<meta name="robots" content="noindex">
+<title>Mycobacteriophage stock preparation for Tn-seq (φMycoMarT7) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Mycobacteriophage stock preparation for Tn-seq (φMycoMarT7)</h1>
+<p class="lede">Isolate a temperature-sensitive plaque, amplify it on plates and titer it; two versions (Murry 2008-based and M. smegmatis-optimized).</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>Part of the <a href="tn-seq-overview.html">Tn-seq workflow</a>. The phage stock for a library must come from a <strong>single temperature-sensitive clone</strong> (forms plaques at 30 °C, not at 37 °C). Work with phage in a tissue-culture hood; wipe everything with bleach and ethanol, and put waste in biohazard bags.</p>
+<p><strong>MP buffer:</strong> 50 mM Tris pH 7.5, 150 mM NaCl, 10 mM MgSO₄, 2 mM CaCl₂. <strong>Top agar(ose):</strong> 0.6% agarose; add 2 mM CaCl₂ after autoclaving; hold at 38–42 °C.</p>
+<h2 id="steps">Steps</h2>
+<ol type="1">
+<li><strong>Plaque isolation.</strong> Wash stationary <em>M. smegmatis</em> (OD 0.5–6 all work) three times in MP buffer (6,000 × g, 2 min), resuspend in ~1/4 of the volume. Make 10-fold dilutions (10⁻¹–10⁻⁵) of the phage in MP buffer. Mix 4 mL top agar, 50 µL cells and 100 µL phage dilution, pour onto LB plates, incubate at 30 °C for 36–48 h. (Skip to step 3 if a temperature-sensitive isolate was prepared within the last two weeks.)</li>
+<li><strong>Identify temperature-sensitive plaques.</strong> Make a cell lawn (4 mL top agar + 50 µL washed cells) on two LB plates; let dry ≥30 min (do not over-dry). Pick 8 plaques into 100 µL MP buffer each, spot 10–20 µL of each on both plates (one quadrant per plaque). Incubate one plate at 30 °C and one at 37 °C for 2 days. Use a plaque that grew <strong>only at 30 °C</strong>.</li>
+<li><strong>Prepare the clone.</strong> Crush the agar plug of a temperature-sensitive plaque in 400 µL MP buffer, spin 5 min at high speed (parafilm the tube before taking it out of the hood), and pass the supernatant through a 0.2 µm filter. This is the new phage stock. Make 10-fold dilutions (10⁻¹–10⁻⁸), plate as in step 1 and incubate 2 days at 30 °C.</li>
+<li><strong>Amplify.</strong> Choose the dilution that gives “lacy” (nearly confluent) plates. Pour 5 plates at that dilution; incubate 2 days at 30 °C. Because stocks degrade, it is safer to pour 10 plates: five at the lacy dilution and five at a 5-fold higher dilution.</li>
+<li><strong>Collect.</strong> Flood each plate with 3 mL MP buffer and rock overnight at 4 °C. Collect, spin at high speed in the cold, and filter through 0.2 µm (change filters when they clog).</li>
+<li><strong>Titer.</strong> Make 10-fold dilutions (10⁻¹–10⁻¹³). Spot 2 × 5 µL of each on lawn plates, let dry at least 30 min, incubate 2 days at 30 °C.</li>
+<li><strong>Calculate.</strong> PFU/mL = average plaques per spot × 200 × 10^(dilution factor). For transduction you want about <strong>5×10¹⁰ to 2×10¹¹ PFU/mL</strong>.</li>
+</ol>
+<p>Use amplified phage within about 3 days; make a fresh stock for each transduction.</p>
+<h2 id="versions">Versions</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Murry 2008-based</th>
+<th><em>M. smegmatis</em>-optimized</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Host wash</td>
+<td>7H9 + glycerol + ADC, no Tween</td>
+<td>MP buffer</td>
+</tr>
+<tr class="even">
+<td>Plates</td>
+<td>7H10 (amplification, 10 cm) or LB</td>
+<td>LB throughout</td>
+</tr>
+<tr class="odd">
+<td>Amplification plates</td>
+<td>5 × 10 cm 7H10, ~2 days at 30 °C</td>
+<td>5–10 plates, 2 days at 30 °C</td>
+</tr>
+<tr class="even">
+<td>Collection</td>
+<td>3 mL MP per plate, 0.2 µm filter</td>
+<td>same, overnight at 4 °C</td>
+</tr>
+<tr class="odd">
+<td>Shelf life</td>
+<td>not stated</td>
+<td>use within 3 days</td>
+</tr>
+</tbody>
+</table>
+<p>The Fortune-lab Benchling version (2022) differs in detail: host <em>M. smegmatis</em> mc²155, 3.5 mL top agarose with 200 µL washed cells and 50 µL phage dilution on 7H10 + glycerol + ADC (no Tween), 2 mL MP buffer per plate rocked ~4 h at room temperature, 10 µL spots for titering; “a good stock is &gt;5×10¹⁰ PFU/mL”. Dry lawn plates well before spotting or the spots run together.</p>
+<p><span class="tbc">Centrifuge speeds are given as rpm in some sources and ×g in others; convert for your rotor.</span></p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Murry et al., Methods Mol Biol 2008;416:45–59, as adapted in protocols from the Rego and Rubin lab lineage and later optimized for M. smegmatis (2015). Received through the Boutte lab. Condensed and reorganized by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">Tn-seq</span><span class="tag">phage</span><span class="tag">transduction</span><span class="tag">M. smegmatis</span><span class="tag">plaque assay</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

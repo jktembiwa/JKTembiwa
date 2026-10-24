@@ -2,7 +2,7 @@ title: Sucrose gradient fractionation of mycobacterial membranes (nitrogen cavit
 category: Protein biochemistry
 tags: sucrose gradient, membrane fractionation, nitrogen cavitation, ultracentrifugation, western blot
 summary: Lyse M. smegmatis by nitrogen cavitation, separate membrane domains on a 20–50% sucrose gradient, collect fractions and analyze by western blot.
-source: Protocol dated 1/20/2023, as received. [Original author or source is not recorded; add credit if known.]{.tbc}
+source: Protocol dated 1/20/2023, as received, plus a more detailed step-by-step (last updated 9/13/2020) from the Morita lab that matches it closely and likely is its origin. [Confirm the lineage before crediting.]{.tbc}
 version: Draft 0.1
 ---
 ## Cell lysate
@@ -22,6 +22,27 @@ version: Draft 0.1
 3. Centrifuge in an SW40 swing-bucket rotor at 35,000 rpm (~218,000 × g) for 6 h at 4 °C.
 4. Collect fractions with a gradient fractionator (about 14 fractions, 0.5 speed, 6.67 mm per fraction) on an ice-water chamber. Wash the system with 50% ethanol then water afterwards.
 5. Aliquot 450 µL of each fraction into two tubes, snap-freeze in liquid nitrogen, and store at –80 °C. Keep ~100 µL for analysis.
+
+## Practical details (step-by-step version)
+
+These come from the more detailed 2020 step-by-step and fill in handling steps the short version omits. Instrument specifics (BioComp Gradient Master and fractionator, SW40 rotor) are named as in the source; adapt to your equipment.
+
+**Before the run**
+- Start cooling the ultracentrifuge and rotor early (>1 h), with all buckets (and their gaskets) on the rotor, at 4 °C under vacuum. Run the pre-cool during the second cavitation.
+- Inspect the buckets: clean and dry, with the black gaskets in place; screw caps on unused buckets.
+
+**Pouring the gradient (gradient maker)**
+- Level the plate. Use ~6.5 mL of 20% sucrose and ~6.5 mL of 50% sucrose, both in 25 mM HEPES pH 7.4. Load the 20% first, then the 50% underneath; no bubbles anywhere in the syringe or tip (a bubble while applying the 50% will ruin the 20% layer). Fill above the centerline mark with your eye at the same height.
+- Do not wash the syringe or needle between uses (water dilutes the sucrose); wipe the outside of the needle before drawing a second 50% sucrose.
+- Cap the tube at an angle so all air escapes, remove excess sucrose from the cap, and run the 20–50% w/v program for your rotor (long program, SW40). Place finished gradients on ice in a pre-made hole.
+
+**Loading and balancing**
+- Position the tube on ice with the top of the gradient visible. Load 1.2 mL lysate as 200 µL aliquots, very slowly at first (the first aliquot is the hardest) so the gradient is not disturbed.
+- Balance on a balance in tube holders to within **10 mg**; add lysate (or sucrose-buffer to a balance tube) to the lighter tube. Carry the uncovered ice bucket slowly. Wipe the tube exteriors, place in buckets, and hang all buckets (including empty ones) on the rotor.
+
+**Collecting fractions**
+- After the run, confirm the rotor has stopped, remove the tube gently with tweezers, check buckets for leaks, and carry the tube on ice to the fractionator.
+- Fractionator settings used: speed 0.5, distance 6.67 mm, 14 fractions in single mode; lower the suction cap to just before the first drop (fill the line with gradient solution; leftover water may come out first). The last fraction is ~0.5 mL; push the remaining gradient with air.
 
 ## Analysis
 

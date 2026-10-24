@@ -42,3 +42,17 @@ $$\text{culture to take} = \frac{\text{desired OD}}{\text{current OD}} \times \t
 Load pre-induction, then post-induction, supernatant and pellet lanes for each condition (about 10–12 µL each; ~5 µL ladder). Run a [Tris-tricine SDS-PAGE gel at constant current, 30 mA for the first 15 min, then ~38 mA until the dye reaches the bottom]{.tbc}. Stain with Coomassie (30 s in a microwave inside a closed box, then 30 min gentle shaking; or 3 h to overnight at room temperature), destain, and photograph.
 
 Compare the band at the expected size between supernatant and pellet at each condition.
+
+## Lysis by French press (variant)
+
+A second, narrative version of this protocol used a French press for lysis:
+
+1. Resuspend cell pellets in ~25 mL of 50 mM Tris pH 7.9 (try different buffers; most proteins are soluble near neutral pH and ~150 mM NaCl) and keep on ice.
+2. Grease the gasket on the plunger, head piece and screw with vacuum grease. Put the plunger in the cell, invert it in the stand, pour in the suspension, leave the screw open so air can escape, fit the head piece while holding the plunger up, then close the screw fully.
+3. Turn the cell right-side up in the press, set the dial to high, and start the pump with a collection tube under the outlet. Watch the pressure; you want it to reach ~1000 before much suspension has flowed out. [Units of "1000" not given in the source.]{.tbc}
+4. When dripping stops, turn the pump off, switch to medium while still collecting, open the screw to drain the rest, then lower the plunger.
+5. Pass the cells through a second time if the pressure did not build or the suspension is not clear.
+6. Clean thoroughly: rinse so water runs through all holes in the head piece, then wipe and dry.
+7. Balance in Oakridge tubes (to within about a tenth of a gram, in pairs) and spin 20,000 rpm, 20 min, 4 °C. [Convert to ×g for your rotor.]{.tbc}
+
+Worked example for loading: if the lysate is concentrated 2× relative to the induction culture (resuspended in half the volume), double each OD to estimate its OD-equivalent, then adjust: a sample at OD-equivalent 4.2 needs 5/4.2 × 10 µL ≈ 12 µL instead of 10 µL on the gel (maximum ~15 µL per lane).

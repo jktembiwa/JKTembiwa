@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Transduce mycobacteria with φMycoMarT7, plate on kanamycin, scrape and freeze the library; three versions compared.">
+<meta name="robots" content="noindex">
+<title>Making a transposon library by phage transduction | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Making a transposon library by phage transduction</h1>
+<p class="lede">Transduce mycobacteria with φMycoMarT7, plate on kanamycin, scrape and freeze the library; three versions compared.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p>Part of the <a href="tn-seq-overview.html">Tn-seq workflow</a>. Start from a titered phage stock (<a href="tn-seq-phage-stock-prep.html">phage stock preparation</a>). Add <strong>Tween 80 to the selection plates</strong>: it inhibits the lytic cycle, so you avoid recovering mostly phage DNA. Include a no-phage control to measure kanamycin background. Aim for <strong>at least ~200,000 independent colonies</strong> per library; too-crowded plates lose signal from some mutants.</p>
+<h2 id="common-core">Common core</h2>
+<ol type="1">
+<li>Grow cells to the OD in the table; wash with MP buffer (50 mM Tris pH 7.5, 150 mM NaCl, 10 mM MgSO₄, 2 mM CaCl₂).</li>
+<li>Resuspend in warm (37 °C) MP buffer; warm the phage to 37 °C too (the Benchling version pre-warms wash and resuspension media and the centrifuge to 37 °C so the temperature-sensitive phage does not become lytic at the 30 °C permissive temperature).</li>
+<li>Mix cells and phage, incubate at 37 °C.</li>
+<li>Plate on kanamycin + Tween 80, incubate, scrape, freeze in aliquots with glycerol; titer one thawed aliquot.</li>
+</ol>
+<h2 id="versions">Versions</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>A. Mtb-style (Murry/Rego edits)</th>
+<th>B. <em>M. smegmatis</em>-optimized</th>
+<th>C. Benchling (Fortune lab, 2022)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Culture</td>
+<td>100 mL, OD₆₀₀ 0.6–1.0, 7H9 + glycerol + OADC (ADC for smeg/BCG) + 0.05% Tween</td>
+<td>50 mL (up to 200 mL for bigger libraries) at OD₆₀₀ 2–3; late log/stationary is critical</td>
+<td>100 mL Mtb, OD 1.0–1.5, 7H9 + OADC + Tween</td>
+</tr>
+<tr class="even">
+<td>Wash</td>
+<td>2 × 10–25 mL MP</td>
+<td>3 × MP</td>
+<td>2 × 50 mL 7H9 + glycerol + OADC without Tween, pre-warmed to 37 °C</td>
+</tr>
+<tr class="odd">
+<td>Resuspend</td>
+<td>10 mL warm MP</td>
+<td>~5 mL MP to a 6 mL final volume after phage</td>
+<td>5 mL medium without Tween</td>
+</tr>
+<tr class="even">
+<td>Phage</td>
+<td>~2×10¹¹</td>
+<td>2–3×10¹² (1×10¹¹ per OD unit); ~5 mL if stock is only ~10¹¹ PFU/mL</td>
+<td>~2.5 mL high-titer phage</td>
+</tr>
+<tr class="odd">
+<td>Incubation</td>
+<td>3–4 h (generic) or overnight (Mtb), 37 °C</td>
+<td>4 h, 37 °C, shaking</td>
+<td>~18 h, 37 °C, <strong>no shaking</strong></td>
+</tr>
+<tr class="even">
+<td>After</td>
+<td>Spin, resuspend, plate (or freeze and titer first)</td>
+<td>Plate at once</td>
+<td>Optional PBS + Tween wash, resuspend in 2 mL</td>
+</tr>
+<tr class="odd">
+<td>Plates</td>
+<td>10 × 150 mm 7H10 + Tween + Kan 25 µg/mL, 250 µL each</td>
+<td>~20 × 15 cm LB + Kan + 0.1% Tween 80, 600 µL each, glass beads; square plates also work</td>
+<td>10 × 150 mm or 3 × 225 mm 7H10 + OADC + Tween + Kan 50 µg/mL</td>
+</tr>
+<tr class="even">
+<td>Growth</td>
+<td>~3 weeks, 37 °C</td>
+<td>3 days, 37 °C</td>
+<td>~21 days, agar side up, foil-wrapped</td>
+</tr>
+<tr class="odd">
+<td>Harvest</td>
+<td>scrape, prep gDNA</td>
+<td>scrape into 7H9 + 15% glycerol, pool, aliquot at −80 °C</td>
+<td>scrape into buffer or 7H9 + glycerol</td>
+</tr>
+<tr class="even">
+<td>Yield target</td>
+<td>~200,000</td>
+<td>≥200,000–300,000</td>
+<td>dense, nearly a lawn</td>
+</tr>
+</tbody>
+</table>
+<p>Notes: - Kanamycin differs between sources (20, 25 and 50 µg/mL). <span class="tbc">The <em>M. smegmatis</em> source writes “20 ml/ml”; this is assumed to mean 20 µg/mL.</span> - Phage titers above 5×10¹¹ PFU/mL are not always obtained; scale phage volume to the titer. - “Lacy” phage plates are hard to get; test a dilution series and then scale up the best dilution to 5–10 plates. - Mtb work is BSL3. Wrap and incubate plates for the full time.</p>
+<p>For scraping, freezing and DNA extraction, continue with <a href="tn-seq-library-prep.html">library prep and sequencing</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Murry et al., Methods Mol Biol 2008;416:45–59; Mtb-style edits (2015); M. smegmatis-optimized protocol for Tn-seq (12/2015); Fortune-lab Benchling protocol (2022). Condensed by K. Tembiwa.</p>
+<p class="tag-row"><span class="tag">Tn-seq</span><span class="tag">transposon library</span><span class="tag">phage transduction</span><span class="tag">M. smegmatis</span><span class="tag">M. tuberculosis</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>
