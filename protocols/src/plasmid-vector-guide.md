@@ -2,8 +2,9 @@ title: Plasmid and vector guide (mycobacteria and E. coli)
 category: Reference
 tags: plasmids, vectors, integrating, episomal, reference
 summary: A guide to commonly used episomal, integrating, recombineering and E. coli vectors, with promoters, markers and cautions.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021). Vector credits are given where known.
-version: Draft 0.1
+source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021). Vector credits are given where known.
+version: Version 1.0
+status: reviewed
 ---
 ## Episomal mycobacterial vectors
 
@@ -36,7 +37,7 @@ Carry a mycobacteriophage integrase that integrates at a specific tRNA locus.
 | pKM342 | Recombineering vector: hygromycin cassette flanked by lox sites; no mycobacterial origin; homologous sequence must be placed around the cassette. A zeocin form exists. |
 | pUC57 | Backbone for synthesized homologous flanks; ampicillin resistance for *E. coli*. Used for PCR only; **do not transform into mycobacteria.** |
 | pNIT-ET | Inducible vector expressing phage RecE/RecT homologues for recombineering; episomal with an unstable origin (lost without selection); kanamycin or zeocin forms. The host strain for recombineering transformations. |
-| pJV53 | Acetamide-inducible recombinase plasmid, kanamycin marked. [Origin credit to be confirmed.]{.tbc} |
+| pJV53 | Acetamide-inducible recombinase plasmid, kanamycin marked. |
 
 ## E. coli vectors
 

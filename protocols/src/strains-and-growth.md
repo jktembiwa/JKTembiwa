@@ -2,8 +2,9 @@ title: Strains and growth characteristics (E. coli and mycobacteria)
 category: Reference
 tags: strains, E. coli, M. smegmatis, BCG, M. tuberculosis, reference
 summary: Quick reference to common E. coli cloning and expression strains and the mycobacterial strains used in cell-envelope work, with resistance markers and growth rates.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
+version: Version 1.0
+status: reviewed
 ---
 Follow your institution's biosafety rules for every organism below, and work with BSL-2 mycobacteria (BCG and auxotrophic *M. tuberculosis*) in a biosafety cabinet.
 

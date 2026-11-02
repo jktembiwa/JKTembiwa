@@ -3,7 +3,8 @@ category: Transformation
 tags: conjugation, plasmid transfer, E. coli, mating
 summary: Transfer a plasmid from a DAP-auxotroph E. coli donor into a recipient strain by spot-mating, then select and verify transconjugants.
 source: Written by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -13,14 +14,14 @@ Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a
 
 - **Donor:** *E. coli* DAP auxotroph carrying the plasmid to be transferred (kanamycin-marked in this example). Grow with DAP.
 - **Recipient:** the strain that will receive the plasmid. Grow without antibiotic.
-- **Media and reagents:** [YG]{.tbc} broth and agar, LB broth, DAP stock ([60 mM]{.tbc}), kanamycin, 1X PBS.
+- **Media and reagents:** YG broth and agar, LB broth, DAP stock (60 mM), kanamycin, 1X PBS.
 - **Plates:** YG + DAP (mating plates) and YG + kanamycin 30 µg/mL (selection plates).
 - Set up every donor × recipient combination you want. This example uses 2 donors × 2 recipients = 4 combinations.
 
 ## Day 1: overnight cultures
 
 1. **Recipient:** 10 mL YG broth, no antibiotic, in a 125 mL flask. Shake at 225 rpm, 28 °C.
-2. **Donor:** 10 mL LB + kanamycin 50 µg/mL + DAP ([50 µL of 60 mM stock]{.tbc}, about [0.3 mM]{.tbc} final). Grow in a roller drum at 37 °C.
+2. **Donor:** 10 mL LB + kanamycin 50 µg/mL + DAP (50 µL of 60 mM stock, about 0.3 mM final). Grow in a roller drum at 37 °C.
 
 ## Day 2: mating
 
@@ -44,6 +45,6 @@ Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a
 
 ## Where it usually fails
 
-- **No growth in the mating spot.** Check again later the same day, then the next morning. [Confirm DAP was in the mating plates.]{.tbc}
+- **No growth in the mating spot.** Check again later the same day, then the next morning. Confirm DAP was in the mating plates.
 - **A lawn on the selection plate.** Streak out for single colonies before colony PCR, so you do not screen a mixed population.
-- [**Donor carry-over.** If donor growth appears on selection plates, confirm they contain no DAP and that the post-mating washes were done twice.]{.tbc}
+- **Donor carry-over.** If donor growth appears on selection plates, confirm they contain no DAP and that the post-mating washes were done twice.

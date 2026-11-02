@@ -3,7 +3,8 @@ category: Imaging and analysis
 tags: growth curve, doubling time, Prism, statistics, ANOVA
 summary: Fit log-phase data to an exponential growth equation, extract doubling times per replicate, and compare strains with one-way ANOVA.
 source: Written by K. Tembiwa (Boutte Lab).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 1. Enter data in Prism: X = elapsed time; Y = three replicate values in side-by-side sub-columns.
 2. Make a new table with a single replicate per data set, called "singles", and copy the data and times into it.

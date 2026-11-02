@@ -32,10 +32,10 @@
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1 class="proto-title">Single-cell image analysis in MicrobeJ</h1>
 <p class="lede">Set cell-detection parameters, curate detected cells, export results, and generate profile and demograph plots in MicrobeJ.</p>
-<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+<p class="proto-meta"><span class="meta">Version 1.0</span></p>
 </div></section>
 <section class="section"><div class="container prose">
-<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+
 <h2 id="purpose">Purpose</h2>
 <p>Detect cells in phase or fluorescence images, curate the detections, export per-cell measurements, and plot fluorescence profiles and demographs.</p>
 <h2 id="getting-started">Getting started</h2>
@@ -43,18 +43,18 @@
 <li>Open ImageJ (Fiji) and open the MicrobeJ plugin.</li>
 <li>For hyperstacks, go to the <strong>Images</strong> tab and switch to <strong>Folder</strong>, then import your whole folder of images.</li>
 <li>Go to <strong>Bacteria</strong> and set the channel and background. Choose the options you need: exclude on edges, shape descriptors, segmentation, intensity, shape, profile and polarity (for poles and sides, choose intensity &gt; channel &gt; max).</li>
-<li>Set the threshold. <span class="tbc">The example threshold used was −116; this depends on the images.</span></li>
+<li>Set the threshold. The example threshold used was −116; this depends on the images.</li>
 <li>To show stained colors, use ImageJ <strong>Image &gt; Color &gt; Arrange Channels</strong> and assign colors (for example channel 1 = GFP green, channel 2 = DAPI blue).</li>
 <li>In the <strong>Maxima</strong> tab, tick the box to edit. Choose the channel and background, change the tolerance, and choose options (exclude on edges, shape descriptors, segmentation, intensity, profile) and associations (inside, location, localization).</li>
 <li>Run the current settings on the active image to check they are appropriate.</li>
 <li>If they are, click the pencil icon at the bottom right to detect cells and load the manual editing interface.</li>
 </ol>
 <h2 id="set-detection-parameters">Set detection parameters</h2>
-<p>Set the ranges that define a cell. The values below were used for <span class="tbc"><em>M. smegmatis</em></span>; choose ranges appropriate to your organism and magnification.</p>
+<p>Set the ranges that define a cell. The values below were used for <em>M. smegmatis</em>; choose ranges appropriate to your organism and magnification.</p>
 <ul>
-<li>Area: <span class="tbc">1–8</span></li>
-<li>Length: <span class="tbc">0.5–10</span></li>
-<li>Width: <span class="tbc">0.2–2</span></li>
+<li>Area: 1–8</li>
+<li>Length: 0.5–10</li>
+<li>Width: 0.2–2</li>
 </ul>
 <p>(Units are not stated in the original notes; confirm they are µm² and µm.)</p>
 <p>For fluorescence images, tick the box next to <strong>polarity</strong> and set the options as in your analysis template. <strong>Choose the correct channel</strong> for the signal you are measuring (for example, the HADA channel). The channel number changes between experiments.</p>
@@ -87,7 +87,7 @@
 <h2 id="where-it-usually-fails">Where it usually fails</h2>
 <ul>
 <li><strong>Wrong channel.</strong> Check the channel assignment before every analysis.</li>
-<li><span class="tbc"><strong>Merged or split cells.</strong> Tighten the shape ranges and curate manually in the experiment editor.</span></li>
+<li><strong>Merged or split cells.</strong> Tighten the shape ranges and/or curate manually in the experiment editor.</li>
 <li><strong>Inconsistent columns between images.</strong> Use the same set of columns for every image so exported data can be combined.</li>
 </ul>
 

@@ -2,8 +2,9 @@ title: Strain annotation and freezing down strains
 category: Reference
 tags: strains, nomenclature, annotation, glycerol stocks, reference
 summary: A consistent way to name genetically modified strains, and how to make freezer stocks.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
+version: Version 1.0
+status: reviewed
 ---
 ## Naming strains
 

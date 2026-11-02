@@ -3,7 +3,8 @@ category: Cloning
 tags: PCR, colony PCR, screening, E. coli, mycobacteria
 summary: Quickly check colonies for an insert or plasmid with a Taq master mix, including template prep for E. coli and for mycobacteria.
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -25,14 +26,14 @@ Make a master mix for the number of colonies **plus 2** to allow for pipetting e
 
 ## E. coli
 
-1. Use a sterile tip to pick a colony.
+1. Use a sterile tip or sterile wooden pick to pick a colony.
 2. Patch the colony onto a numbered spot on a plate with the correct antibiotic, then put the same tip into the PCR tube with the matching number.
-3. Run the colony PCR program on the thermocycler.
+3. Run the Gotaq colony PCR program on the thermocycler.
 
 ## Mycobacteria
 
 1. Pick a colony onto a plate to keep it, then transfer some into **10 µL water**. Do not boil. Use 1 µL of this per reaction.
-2. An older approach is to suspend the colony in 10 µL DMSO and heat in a thermocycler for an hour to lyse the cells. This can release too much DNA and inhibit the reaction, so water without boiling is preferred.
+2. Another approach is to suspend the colony in 10 µL DMSO and heat in a thermocycler for an hour to lyse the cells. However, this can release too much DNA and inhibit the reaction, so water without boiling is preferred.
 3. Add 1 µL of lysate to the reaction and run as for *E. coli*.
 
 ## Where it usually fails

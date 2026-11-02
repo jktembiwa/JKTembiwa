@@ -3,7 +3,8 @@ category: Cloning
 tags: Gibson assembly, cloning, primer design, PCR, restriction digest
 summary: Primer design, PCR, vector preparation, purification and assembly for Gibson cloning, including multi-insert strategies.
 source: Original protocol by Jeff Wagner (May 2015), adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021). Reference: Gibson et al. (2009) Nat Methods 6:343–345.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Overview
 
@@ -59,4 +60,4 @@ Efficiency falls with each additional insert. Up to three inserts at once has wo
 
 - **PCR fails.** Run a gradient PCR with 8 tubes (one strip) across annealing temperatures of 50–70 °C.
 - **Few or no colonies with more than two fragments.** Pre-assemble the inserts as described above.
-- [**Insert and vector-only control have similar colony counts.** The vector may not be fully cut or purified; check the digest.]{.tbc}
+- **Insert and vector-only control have similar colony counts.** The vector may not be fully cut or purified; check the digest.

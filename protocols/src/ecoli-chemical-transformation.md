@@ -2,8 +2,9 @@ title: Chemical transformation of E. coli, with efficiency test
 category: Transformation
 tags: transformation, E. coli, competent cells, heat shock
 summary: Heat-shock transformation of chemically competent E. coli, tips for toxic constructs, and how to measure competent-cell efficiency.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+source: Written by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -34,7 +35,7 @@ Use a control plasmid with a known concentration, aliquoted at 100 ng.
 3. Make a 10-fold dilution series (tubes labeled 10⁻¹ to 10⁻⁶), each with 270 µL LB. Move 30 µL from the transformation into the 10⁻¹ tube, mix by pipetting, and continue down the series with a fresh tip each time.
 4. Plate about 270 µL of the remaining undiluted transformation and of each dilution on separate selection plates.
 5. Count colonies on the lowest-dilution plate with individual, countable colonies.
-6. Colonies per aliquot = colonies × 10^(dilution). For example, 57 colonies on the 10⁻⁵ plate gives 57 × 10⁵. This ignores the fraction of the transformation plated: if the total volume after recovery is about 310 µL (100 µL cells + 10 µL plasmid + 200 µL LB) and you plate 270 µL, multiply by about 1.15 for an exact value. [The correction is small relative to the order-of-magnitude efficiency usually reported.]{.tbc}
+6. Colonies per aliquot = colonies × 10^(dilution). For example, 57 colonies on the 10⁻⁵ plate gives 57 × 10⁵. This ignores the fraction of the transformation plated: if the total volume after recovery is about 310 µL (100 µL cells + 10 µL plasmid + 200 µL LB) and you plate 270 µL, multiply by about 1.15 for an exact value. The correction is small relative to the order-of-magnitude efficiency usually reported.
 7. Transformants per µg = total colonies × 10 (because 100 ng was used).
 
 Good competent cells give about 10⁶ colonies per µg or higher.

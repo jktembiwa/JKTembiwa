@@ -3,7 +3,8 @@ category: Media and reagents
 tags: DNA ladder, agarose gel, aliquots
 summary: Dilute a stock DNA ladder with TE and loading dye so it is ready to load.
 source: Written by K. Tembiwa (Boutte Lab).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Mix:
 

@@ -3,7 +3,8 @@ category: Media and reagents
 tags: media, 7H9, ADC, Sauton's, HdB, LB
 summary: Recipes and sterilization notes for LB, 7H9, ADC, Sauton's and Hartmans–de Bont minimal medium.
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021). See also the [plate-pouring protocol](antibiotic-plates.html).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## LB
 
@@ -25,7 +26,7 @@ Use ADC for *M. smegmatis* and OADC for *M. tuberculosis*.
 
 Supplies carbon (dextrose), toxin absorption (BSA) and radical scavenging (catalase). **Filter sterilize. Do not autoclave.**
 
-- 50 g BSA fraction V ([Sigma brand]{.tbc})
+- 50 g BSA fraction V (Sigma brand)
 - 20 g dextrose (D-glucose)
 - 8.5 g NaCl
 - 0.03 g catalase

@@ -3,7 +3,8 @@ category: Imaging and analysis
 tags: click chemistry, CuAAC, metabolic labeling, TMM, D-alanine, M. smegmatis, fluorescence
 summary: Pulse M. smegmatis with an alkyne-modified probe, fix, and attach a fluorescent azide with a TBTA-ligand click reaction.
 source: Boutte Lab protocol (as received; reagent suppliers named in the original). For a BTTP-based live-cell version see the page on azide labeling and CuAAC.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Before you start
 
@@ -45,4 +46,4 @@ Add the reagents **in this order**, mixing between additions:
 
 TBTA and picolyl-azide dyes are available from Click Chemistry Tools; sodium ascorbate from Sigma (A7631). Green picolyl azide 488 is the usual choice; TAMRA also works when green is not available. Include a no-probe control and a no-dye control.
 
-[Check that the picolyl azide quantity (40 µL of 1 mM into ~1 mL, 40 µM) matches the total volume used.]{.tbc}
+Check that the picolyl azide quantity (40 µL of 1 mM into ~1 mL, 40 µM) matches the total volume used.

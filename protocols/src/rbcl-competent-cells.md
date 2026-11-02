@@ -3,17 +3,55 @@ category: Transformation
 tags: competent cells, rubidium chloride, E. coli, heat shock, transformation
 summary: Prepare rubidium chloride chemically competent E. coli, snap-freeze for storage, and transform by heat shock.
 source: Rubidium chloride method (after Hanahan, 1983); adapted by K. Tembiwa from a lab protocol.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Buffers and media
 
-**LB (1 L):** 10 g tryptone, 10 g NaCl, 5 g yeast extract. For plates add 20 g agar. Autoclave; add antibiotic after the medium cools.
+**LB (1 L):** Autoclave; add antibiotic after the medium cools.
 
-**Φ broth (500 mL):** 10 g tryptone (2%), 2.5 g yeast extract (0.5%), [2.5 g MgSO₄ (listed as 0.4%)]{.tbc}, 0.37 g KCl (10 mM). Autoclave.
+| Component | Amount |
+|---|---|
+| Tryptone | 10 g |
+| NaCl | 10 g |
+|Yeast extract | 5 g |
+| Agar (for plates) | 20 g |
 
-**TJB1 (250 mL):** 3.0 g RbCl (100 mM), 2.47 g MnCl₂·4H₂O (50 mM), 0.74 g potassium acetate (30 mM), 0.36 g CaCl₂·2H₂O (10 mM), 37.5 mL glycerol (15%) or 75 mL of 50% glycerol. Adjust to **pH 5.8** with HCl, slowly and without overshooting; adding NaOH to correct will precipitate salts. Filter sterilize and store at 4 °C.
+---
 
-**TJB2 (100 mL):** 1.10 g CaCl₂·2H₂O (75 mM), 0.20 g MOPS (10 mM), 0.12 g RbCl (10 mM), 15 mL glycerol (15%) or 30 mL of 50% glycerol. Adjust to **pH 7.0** with NaOH. Filter sterilize and store at 4 °C.
+**Φ broth (500 mL):** Autoclave.
+
+| Component | Amount | Concentration |
+|---|---|---|
+| Tryptone | 10 g | 2% |
+| KCl | 0.37 g | 10 mM |
+| Yeast extract | 2.5 g | 0.5% |
+| MgSO₄ | 2.5 g | 0.4% |
+
+---
+
+**TJB1 (250 mL):** Adjust to **pH 5.8** with HCl, slowly and without overshooting; adding NaOH to correct will precipitate salts. Filter sterilize and store at 4 °C.
+
+| Component | Amount | Concentration |
+|---|---|---|
+| RbCl | 3.0 g | 100 mM |
+| MnCl₂·4H₂O | 2.47 g | 50 mM |
+| Potassium acetate | 0.74 g | 30 mM |
+| CaCl₂·2H₂O | 0.36 g | 10 mM |
+| Glycerol 100% | 37.5 mL | 15% |
+
+---
+
+**TJB2 (100 mL):** Adjust to **pH 7.0** with NaOH. Filter sterilize and store at 4 °C.
+
+| Component | Amount | Concentration |
+|---|---|---|
+| RbCl | 0.12 g | 10 mM |
+| MOPS | 0.20 g | 10 mM |
+| CaCl₂·2H₂O | 1.10 g | 75 mM |
+| Glycerol 100% | 15 mL | 15% |
+
+---
 
 ## Preparing the cells
 

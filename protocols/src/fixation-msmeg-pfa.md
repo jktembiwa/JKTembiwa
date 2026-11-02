@@ -3,7 +3,8 @@ category: Imaging and analysis
 tags: fixation, PFA, microscopy, M. smegmatis
 summary: Quick PFA fixation for trial imaging, with warnings about artefacts.
 source: Boutte Lab protocol (as received), adapted by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 **Warning:** fixation can alter cell shape and the distribution of fluorophore-tagged molecules. For a final experiment, test that fixation does not affect the phenomenon you are studying. Fixation is best for trial runs or when live imaging is not possible. Do not leave fixed cells in the fridge for more than one night; they fall apart.
 

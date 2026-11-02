@@ -2,8 +2,9 @@ title: Azide metabolic labeling and CuAAC "click" staining in M. smegmatis
 category: Imaging and analysis
 tags: click chemistry, CuAAC, metabolic labeling, trehalose, fluorescence, M. smegmatis
 summary: Pulse-label cells with an azide-modified metabolite (e.g. 6-azido-trehalose or D-Ala-azide), then attach a fluorescent alkyne by copper-catalyzed click chemistry.
-source: Based on the revised Buonomo Lab SOP (azide metabolic engineering and CuAAC, non-infection protocol), modified by K. Tembiwa. Credit: Buonomo Lab; follow the original SOP for the authoritative version.
-version: Draft 0.1
+source: Based on the revised Buonomo Lab SOP (azide metabolic engineering and CuAAC, non-infection protocol), modified by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 *M. smegmatis* doubles in about 2.75 h, so pulses range from 10 min (short) to 90 min (long). Do the whole workflow in one day.
 

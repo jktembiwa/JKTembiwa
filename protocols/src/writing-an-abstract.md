@@ -2,8 +2,9 @@ title: Six-sentence structure for an abstract
 category: Reference
 tags: writing, abstract
 summary: A six-sentence template for a scientific abstract.
-source: Lab handout (author not recorded). [Add credit if known.]{.tbc}
-version: Draft 0.1
+source: Adapted by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 1. **Background** and why it matters.
 2. **Gap:** the question you are addressing.

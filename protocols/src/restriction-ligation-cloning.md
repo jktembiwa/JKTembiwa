@@ -2,12 +2,13 @@ title: Standard restriction–ligation cloning
 category: Cloning
 tags: cloning, restriction digest, ligation, T4 ligase
 summary: Digest, purify, ligate and transform for traditional cloning; Gibson assembly is usually preferred.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
+version: Version 1.0
+status: reviewed
 ---
 Not the preferred approach: [Gibson assembly](gibson-assembly.html) is easier and usually better.
 
-1. Digest 1 µg of vector and the PCR product.
+1. Digest 1 µg of vector and prepare the PCR product.
 2. Gel-purify the vector backbone ([gel purification](gel-purification.html)). The PCR product can be column-purified. Elute in 30 µL water for higher yields.
 3. Ligate with fresh T4 ligase buffer at a 3:1 insert:vector molar ratio. Ng insert = 3 × (kb insert) ÷ (kb vector) × 50 ng vector.
 4. Ligate in 10 µL with 0.5 µL T4 ligase, overnight at 16 °C or 3 hours at room temperature.

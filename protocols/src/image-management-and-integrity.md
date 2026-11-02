@@ -2,8 +2,9 @@ title: Image management and integrity for microscopy
 category: Imaging and analysis
 tags: microscopy, image analysis, figures, reproducibility
 summary: Rules for acquiring, saving, processing and assembling microscopy images so comparisons are fair and figures are honest.
-source: Boutte Lab guideline (as received), adapted by K. Tembiwa.
-version: Draft 0.1
+source: Adapted by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 ## Taking images
 

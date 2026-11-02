@@ -3,7 +3,8 @@ category: Cloning
 tags: CopyCutter, toxic genes, copy number, E. coli, transformation, vendor manual
 summary: Using low-copy-number competent cells (and the induction solution) to clone toxic or unstable sequences, then raising copy number for plasmid preps.
 source: Summarized from the Lucigen manual MA219E (12/2016), CopyCutter EPI400 Electrocompetent and Chemically Competent E. coli and CopyCutter Induction Solution (catalog C400EL10, C400CH10, CIS40025; now sold by Biosearch Technologies). The [Biosearch product page](https://www.biosearchtech.com/competent-cells-for-transformation/large-or-difficult-cloning/copycutter-epi400-competent-cells/p/COMCEL-010) lists the product; the manual accompanies the product. The manufacturer's manual is authoritative.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## What they are
 

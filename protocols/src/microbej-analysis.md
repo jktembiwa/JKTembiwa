@@ -3,7 +3,8 @@ category: Imaging and analysis
 tags: imaging, MicrobeJ, Fiji, quantitative analysis, microscopy
 summary: Set cell-detection parameters, curate detected cells, export results, and generate profile and demograph plots in MicrobeJ.
 source: Written by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -14,7 +15,7 @@ Detect cells in phase or fluorescence images, curate the detections, export per-
 1. Open ImageJ (Fiji) and open the MicrobeJ plugin.
 2. For hyperstacks, go to the **Images** tab and switch to **Folder**, then import your whole folder of images.
 3. Go to **Bacteria** and set the channel and background. Choose the options you need: exclude on edges, shape descriptors, segmentation, intensity, shape, profile and polarity (for poles and sides, choose intensity > channel > max).
-4. Set the threshold. [The example threshold used was −116; this depends on the images.]{.tbc}
+4. Set the threshold. The example threshold used was −116; this depends on the images.
 5. To show stained colors, use ImageJ **Image > Color > Arrange Channels** and assign colors (for example channel 1 = GFP green, channel 2 = DAPI blue).
 6. In the **Maxima** tab, tick the box to edit. Choose the channel and background, change the tolerance, and choose options (exclude on edges, shape descriptors, segmentation, intensity, profile) and associations (inside, location, localization).
 7. Run the current settings on the active image to check they are appropriate.
@@ -22,11 +23,11 @@ Detect cells in phase or fluorescence images, curate the detections, export per-
 
 ## Set detection parameters
 
-Set the ranges that define a cell. The values below were used for [*M. smegmatis*]{.tbc}; choose ranges appropriate to your organism and magnification.
+Set the ranges that define a cell. The values below were used for *M. smegmatis*; choose ranges appropriate to your organism and magnification.
 
-- Area: [1–8]{.tbc}
-- Length: [0.5–10]{.tbc}
-- Width: [0.2–2]{.tbc}
+- Area: 1–8
+- Length: 0.5–10
+- Width: 0.2–2
 
 (Units are not stated in the original notes; confirm they are µm² and µm.)
 
@@ -62,5 +63,5 @@ Keep an organized system for naming and storing experiment and results files, an
 ## Where it usually fails
 
 - **Wrong channel.** Check the channel assignment before every analysis.
-- [**Merged or split cells.** Tighten the shape ranges and curate manually in the experiment editor.]{.tbc}
+- **Merged or split cells.** Tighten the shape ranges and/or curate manually in the experiment editor.
 - **Inconsistent columns between images.** Use the same set of columns for every image so exported data can be combined.
