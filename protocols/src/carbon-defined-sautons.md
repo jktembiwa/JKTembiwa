@@ -3,7 +3,8 @@ category: Media and reagents
 tags: media, Sauton's, carbon source, M. tuberculosis, defined medium
 summary: Sauton's medium modified so that the carbon source is defined and set by you, with 20% carbon-source stocks.
 source: Sauton's formula from Allen (1998), Methods in Molecular Biology 101 (Mycobacteria Protocols, Parish and Stoker, eds), p. 22; modified to be carbon-defined. Adapted by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Medium
 
