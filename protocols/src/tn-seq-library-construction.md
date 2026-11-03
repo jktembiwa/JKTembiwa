@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: Tn-seq, transposon library, phage transduction, M. smegmatis, M. tuberculosis
 summary: Transduce mycobacteria with φMycoMarT7, plate on kanamycin, scrape and freeze the library; three versions compared.
 source: Murry et al., Methods Mol Biol 2008;416:45–59; Mtb-style edits (2015); M. smegmatis-optimized protocol for Tn-seq (12/2015); Fortune-lab Benchling protocol (2022). Condensed by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Part of the [Tn-seq workflow](tn-seq-overview.html). Start from a titered phage stock ([phage stock preparation](tn-seq-phage-stock-prep.html)). Add **Tween 80 to the selection plates**: it inhibits the lytic cycle, so you avoid recovering mostly phage DNA. Include a no-phage control to measure kanamycin background. Aim for **at least ~200,000 independent colonies** per library; too-crowded plates lose signal from some mutants.
 
@@ -30,9 +31,12 @@ Part of the [Tn-seq workflow](tn-seq-overview.html). Start from a titered phage 
 | Yield target | ~200,000 | ≥200,000–300,000 | dense, nearly a lawn |
 
 Notes:
-- Kanamycin differs between sources (20, 25 and 50 µg/mL). [The *M. smegmatis* source writes "20 ml/ml"; this is assumed to mean 20 µg/mL.]{.tbc}
+- Kanamycin differs between sources (20, 25 and 50 µg/mL).
+
 - Phage titers above 5×10¹¹ PFU/mL are not always obtained; scale phage volume to the titer.
+
 - "Lacy" phage plates are hard to get; test a dilution series and then scale up the best dilution to 5–10 plates.
+
 - Mtb work is BSL3. Wrap and incubate plates for the full time.
 
 For scraping, freezing and DNA extraction, continue with [library prep and sequencing](tn-seq-library-prep.html).

@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: Tn-seq, phage, transduction, M. smegmatis, plaque assay
 summary: Isolate a temperature-sensitive plaque, amplify it on plates and titer it; two versions (Murry 2008-based and M. smegmatis-optimized).
 source: Murry et al., Methods Mol Biol 2008;416:45–59, as adapted in protocols from the Rego and Rubin lab lineage and later optimized for M. smegmatis (2015). Received through the Boutte lab. Condensed and reorganized by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Part of the [Tn-seq workflow](tn-seq-overview.html). The phage stock for a library must come from a **single temperature-sensitive clone** (forms plaques at 30 °C, not at 37 °C). Work with phage in a tissue-culture hood; wipe everything with bleach and ethanol, and put waste in biohazard bags.
 
@@ -34,4 +35,4 @@ Use amplified phage within about 3 days; make a fresh stock for each transductio
 
 The Fortune-lab Benchling version (2022) differs in detail: host *M. smegmatis* mc²155, 3.5 mL top agarose with 200 µL washed cells and 50 µL phage dilution on 7H10 + glycerol + ADC (no Tween), 2 mL MP buffer per plate rocked ~4 h at room temperature, 10 µL spots for titering; "a good stock is >5×10¹⁰ PFU/mL". Dry lawn plates well before spotting or the spots run together.
 
-[Centrifuge speeds are given as rpm in some sources and ×g in others; convert for your rotor.]{.tbc}
+Centrifuge speeds are given as rpm in some sources and ×g in others; convert for your rotor.

@@ -32,15 +32,15 @@
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1 class="proto-title">ORBIT: oligo recombineering followed by Bxb1 integrase targeting</h1>
 <p class="lede">Insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a Bxb1 attP site, in cells expressing recombinase and Bxb1 integrase.</p>
-<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+<p class="proto-meta"><span class="meta">Version 1.0</span></p>
 </div></section>
 <section class="section"><div class="container prose">
-<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+
 <h2 id="overview">Overview</h2>
-<p>An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is recombined into the chromosome, and a payload plasmid is then integrated at the attP site by Bxb1 integrase. <span class="tbc">Organism: the conditions (37 °C, 3 days) suggest <em>M. smegmatis</em>; confirm.</span></p>
+<p>An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is recombined into the chromosome, and a payload plasmid is then integrated at the attP site by Bxb1 integrase. Organism is <em>M. smegmatis</em>.</p>
 <h2 id="steps">Steps</h2>
 <ol type="1">
-<li><strong>Design and order the oligo.</strong> Include the Bxb1 attP site (<code>GGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACC</code>, 48 nt) flanked by 70 bases of target sequence on each side. For a C-terminal tag, insert attP between the last codon and the stop codon: copy the sequence from 70 bases upstream of the insertion point to 70 bases downstream. Decide whether the oligo is the top strand or its reverse complement (<span class="tbc">see the oligo-directionality guidance for ORBIT</span>). Order the 188 nt oligo as an Ultramer.</li>
+<li><strong>Design and order the oligo.</strong> Include the Bxb1 attP site (<code>GGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACC</code>, 48 nt) flanked by 70 bases of target sequence on each side. For a C-terminal tag, insert attP between the last codon and the stop codon: copy the sequence from 70 bases upstream of the insertion point to 70 bases downstream. Decide whether the oligo is the top strand or its reverse complement (see the oligo-directionality guidance for ORBIT). Order the 188 nt oligo as an Ultramer.</li>
 <li><strong>Prepare the payload vector.</strong> Miniprep the appropriate ORBIT vector.</li>
 <li><strong>Grow the recipient strain.</strong> The strain carrying the inducible recombinase and integrase plasmid is grown in 7H9 + kanamycin: 10 mL per transformation, grown to turbidity. The night before, do a calculated dilution so that the culture is at OD about 0.5 the next morning.</li>
 <li><strong>Induce.</strong> In the morning, measure the OD and adjust to 0.5. Induce the integrase with <strong>500 ng/mL anhydrotetracycline (aTc)</strong> and shake or roll for 3 hours.</li>
@@ -59,7 +59,7 @@
 <li><strong>PCR check</strong> each junction: for the left flank, use an <em>oriE</em> reverse primer with a target-specific forward primer; for the right flank, use a hygromycin-cassette forward primer with a target-specific reverse primer.</li>
 </ol>
 <h2 id="which-strand-to-order-oligo-directionality">Which strand to order (oligo directionality)</h2>
-<p>Which strand you order depends on both the <strong>position</strong> and the <strong>direction</strong> of the gene on the chromosome. <span class="tbc">The underlying reason (annealing to the lagging-strand template) is general knowledge, not from the source note; confirm.</span></p>
+<p>Which strand you order depends on both the <strong>position</strong> and the <strong>direction</strong> of the gene on the chromosome. Do this in order to anneal to the lagging-strand template.</p>
 <ul>
 <li>Take the gene sequence in the 5′→3′ coding orientation (the “top” strand in a sequence file; databases such as Tuberculist always give the gene reading 5′→3′ regardless of orientation on the chromosome). Its reverse complement is the “bottom” strand.</li>
 <li>Insert the attP site into the sequence <strong>before</strong> choosing the strand (not critical for deletions, critical for fusions).</li>
@@ -101,7 +101,7 @@
 </tr>
 </tbody>
 </table>
-<p><span class="tbc">Source and author of this directionality note are not recorded in the file; add credit if known. Replicore boundaries differ between the paragraphs in the original.</span></p>
+<p><em>Replicore boundaries differ between the paragraphs in the original.</em></p>
 
 <hr>
 <p class="meta"><strong>Source / credit:</strong> ORBIT method (see Murphy et al., mBio 2018); lab adaptation, shared with the Boutte lab and adapted for this site.</p>

@@ -2,10 +2,11 @@ title: Genomic DNA and RNA extraction from M. smegmatis
 category: Mycobacterial genetics
 tags: DNA extraction, RNA extraction, M. smegmatis, TRIzol, phenol
 summary: Phenol–chloroform genomic DNA extraction and TRIzol-based RNA extraction with column cleanup and double DNase treatment.
-source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
-version: Draft 0.1
+source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
+version: Version 1.0
+status: reviewed
 ---
-Both protocols use hazardous reagents (chloroform, phenol, TRIzol). Work in a fume hood with appropriate protective equipment.
+Both protocols use hazardous reagents (chloroform, phenol, TRIzol). Work in a fume hood with gloves and face mask is recommended.
 
 ## Genomic DNA
 

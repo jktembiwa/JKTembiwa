@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: Tn-seq, library prep, Illumina, Covaris, AMPure, PCR
 summary: Extract gDNA from the scraped library, fragment, ligate barcoded adapters, amplify transposon junctions by two PCRs, size-select and submit for paired-end sequencing; enzymatic and acoustic variants compared.
 source: Tn-seq library prep protocols from the Rego/Fortune/Rubin lineage (v8, 2015), a revised enzymatic version (2019–2020), the Fortune-lab Benchling protocol (2024 export) and later lab edits. Condensed by K. Tembiwa. Assembled from several versions; see tables for where they disagree.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Part of the [Tn-seq workflow](tn-seq-overview.html). Start from the frozen library from [library construction](tn-seq-library-construction.html).
 
@@ -44,7 +45,7 @@ Kit reference: NEBNext Ultra II FS DNA Library Prep Kit for Illumina (NEB E7805)
 
 Adapter 1 (short, 3′-NH₂): 5′-TAC CAC GAC CA-NH₂-3′. Adapter 2 (barcoded): 5′-ATG ATG GCC GGT GGA TTT GTG NNA NNA NNN TGG TCG TGG TAT-3′. (The different sources name these 1.1/1.2 and 2.1/2.2/3.1; the sequences are the same.)
 
-2 µL 2 mM MgCl₂ + 24 µL adapter 1 (100 µM) + 24 µL adapter 2 (100 µM). Anneal: 95 °C 4–5 min, then −1 °C/min to 20 °C, hold at 20 °C. Do not let annealed adapters warm up again (keep at 20 °C or on ice). Aliquot and freeze at −20 °C; thaw on ice and discard leftovers. Dilute to ~20 µM in 10 mM Tris + 10 mM NaCl before ligation if your ligase module requires 15–25 µM (e.g., 20 µL adapters + 30 µL buffer). [One version lists adapter stocks as 1 mM rather than 100 µM; the 100 µM figure is used in the two later versions.]{.tbc}
+2 µL 2 mM MgCl₂ + 24 µL adapter 1 (100 µM) + 24 µL adapter 2 (100 µM). Anneal: 95 °C 4–5 min, then −1 °C/min to 20 °C, hold at 20 °C. Do not let annealed adapters warm up again (keep at 20 °C or on ice). Aliquot and freeze at −20 °C; thaw on ice and discard leftovers. Dilute to ~20 µM in 10 mM Tris + 10 mM NaCl before ligation if your ligase module requires 15–25 µM (e.g., 20 µL adapters + 30 µL buffer).
 
 ## 5. End repair/A-tail and adapter ligation
 
@@ -92,7 +93,7 @@ Clean up with AMPure (0.8–0.9×; elute 30 µL and take 26 µL). Run on a gel: 
 
 ## 9. Pool and submit for sequencing
 
-Pool equal volumes of each indexed library (≥10 µL total required by many cores; lo-bind tubes). Typical order: Illumina paired-end, medium kit, **Read 1 = 78 cycles, index = 10, Read 2 = 78 cycles**, 20% PhiX spike-in, at least ~130 million reads per lane; list the library as an amplicon/custom Tn-seq library, and request TapeStation and qPCR QC. Enter the **reverse complement** of the index sequence if the core asks for "Index Read 1" (the index is read in its own cycle with the Read 2 primer). The reason for 20% PhiX is not stated in the source; it is thought to offset the low-diversity and high-GC content. [Library submission details are written for one sequencing core; check your own core's form.]{.tbc}
+Pool equal volumes of each indexed library (≥10 µL total required by many cores; lo-bind tubes). Typical order: Illumina paired-end, medium kit, **Read 1 = 78 cycles, index = 10, Read 2 = 78 cycles**, 20% PhiX spike-in, at least ~130 million reads per lane; list the library as an amplicon/custom Tn-seq library, and request TapeStation and qPCR QC. Enter the **reverse complement** of the index sequence if the core asks for "Index Read 1" (the index is read in its own cycle with the Read 2 primer). The reason for 20% PhiX is not stated in the source; it is thought to offset the low-diversity and high-GC content. *Library submission details are written for one sequencing core; check your own core's form.*
 
 ## 10. Analysis
 

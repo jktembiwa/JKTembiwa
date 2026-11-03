@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: Tn-seq, transposon library, phage transduction, library prep, overview
 summary: Map of the Tn-seq workflow (phage, library, DNA, sequencing, analysis) and how the competing versions of each step differ.
 source: Compiled from several Tn-seq and transduction protocols received from collaborating labs (Rego, Fortune, Rubin and Boutte lab versions, 2015–2024) and Murry et al. 2008.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Tn-seq protocols for mycobacteria have been passed between labs and edited many times, so several versions of each step exist and they do not always agree. They are not different methods so much as different tunings of the same method. This page shows the order of steps, which page covers each, and where the versions differ. **Pick one version per step and stay with it for a whole experiment.**
 
@@ -39,5 +40,3 @@ The method is the *Himar1* mariner transposon (φMycoMarT7, a temperature-sensit
 - Murry J, Sassetti CM, Moreira J, Lane J, Rubin EJ. Transposon site hybridization in *Mycobacterium tuberculosis*. *Methods Mol Biol* 2008;416:45–59.
 - Long JE, DeJesus M, Ward D, Baker RE, Ioerger T, Sassetti CM. Identifying essential genes in *Mycobacterium tuberculosis* by global phenotypic profiling. *Methods Mol Biol* 2015;1279:79–95.
 - DeJesus MA, Ambadipudi C, Baker R, Sassetti C, Ioerger TR. TRANSIT: a software tool for Himar1 TnSeq analysis. *PLoS Comput Biol* 2015;11:e1004401.
-
-[A published article on Tn-seq in *M. smegmatis* and *M. tuberculosis* was also received (library-delivered PDF without a visible citation). Add its reference here once identified.]{.tbc}

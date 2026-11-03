@@ -3,9 +3,10 @@ category: Mycobacterial genetics
 tags: Tn-seq, transposon mutant, insertion mapping, cloning
 summary: Recover the transposon–genome junction from one mutant by digesting gDNA, self-ligating, transforming into a pir+ E. coli strain and sequencing out of the transposon.
 source: Protocol from the Rego lab, itself adapted from an earlier lab protocol (Mike Chao); received through the Boutte lab. Condensed by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
-For an individual mutant from a φMycoMarT7 library (see the [Tn-seq overview](tn-seq-overview.html)). The idea is that a SacII-cut, re-ligated fragment containing the transposon can replicate as a plasmid in a *pir*+ host and carry the flanking genomic sequence with it. [Presumably the transposon carries an R6K origin and kanamycin marker; confirm against the phMycoMarT7 map.]{.tbc}
+For an individual mutant from a φMycoMarT7 library (see the [Tn-seq overview](tn-seq-overview.html)). The idea is that a SacII-cut, re-ligated fragment containing the transposon can replicate as a plasmid in a *pir*+ host and carry the flanking genomic sequence with it. Presumably the transposon carries an R6K origin and kanamycin marker; confirm against the phMycoMarT7 map.
 
 1. Prepare genomic DNA with a quick prep that includes RNase (so the A₂₆₀ reading reflects DNA; see [Smash and Grab](smash-and-grab-genomic-dna.html) or the [long gDNA prep](msmeg-gdna-prep-long.html)).
 2. Digest **2 µg** gDNA with 3 µL SacII in 1× CutSmart buffer (3 µL), water to 30 µL, overnight at 37 °C.

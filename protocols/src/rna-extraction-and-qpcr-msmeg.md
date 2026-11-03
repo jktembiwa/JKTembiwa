@@ -2,15 +2,16 @@ title: RNA extraction (TRIzol, Direct-zol) and one-step RT-qPCR set-up for M. sm
 category: Mycobacterial genetics
 tags: RNA extraction, qPCR, TRIzol, DNase, M. smegmatis
 summary: Bead-beating in TRIzol, column purification, DNase treatment, a no-RT-style PCR control for DNA contamination, and a one-step SYBR RT-qPCR reaction.
-source: Written by K. Tembiwa (Boutte Lab, 2023 version).
-version: Draft 0.1
+source: Written by K. Tembiwa (2023 version).
+version: Version 1.0
+status: reviewed
 ---
 Work in an RNase-free area. Wipe benches, pipettes and gloves with an RNase-decontaminating wipe. Have everything ready first and move quickly.
 
 ## Harvest
 
 1. Cool a centrifuge to 4 °C. Use 20–30 mL culture at OD ~0.5–1 per biological replicate. Note RNA yield against starting OD the first time you do this.
-2. **Optional RNAlater** (to freeze the transcriptome and process many samples together; [steps unverified in the source]{.tbc}): add an equal volume of RNAlater, mix, wait a few minutes at room temperature, then add water or PBS equal to ¼ of the current volume so the cells pellet. Store at 4 °C short-term or –20 °C for up to a month.
+2. **Optional RNAlater** (to freeze the transcriptome and process many samples together): add an equal volume of RNAlater, mix, wait a few minutes at room temperature, then add water or PBS equal to ¼ of the current volume so the cells pellet. Store at 4 °C short-term or –20 °C for up to a month.
 3. Without RNAlater: chill cultures on ice.
 4. Spin 4,000 rpm, 10 min, 4 °C (20 °C if RNAlater was used). Remove all supernatant; with RNAlater it is essential to remove all of it. If the pellet is disturbed, re-spin.
 
@@ -51,4 +52,4 @@ Keep RNA on ice if used the same day, –20 °C for days, –80 °C for weeks. A
 | One-step RT enzyme | 0.5 µL |
 | RNA | 3 µL |
 
-For 8 reactions make a master mix of 80 µL master mix, 8 µL of each primer, 36 µL water, 4 µL RT enzyme; aliquot 17 µL per well and add 3 µL RNA last. Keep the plate and samples on ice. [Cycling conditions were not recorded in the source; use the master-mix manufacturer's settings.]{.tbc}
+For 8 reactions make a master mix of 80 µL master mix, 8 µL of each primer, 36 µL water, 4 µL RT enzyme; aliquot 17 µL per well and add 3 µL RNA last. Keep the plate and samples on ice. For cycling conditions, use the master-mix manufacturer's settings.

@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: M. marinum, knockout, allelic exchange, p2NIL, pGOAL, electroporation
 summary: Build a p2NIL–pGOAL suicide construct in E. coli, transform M. marinum (with UV-treated DNA), and select single and double crossovers using kanamycin, X-gal and sucrose.
 source: Written by K. Tembiwa from a lab protocol, with context from advice from an experienced *M. marinum* laboratory and from Talaat & Trucksis, Am J Vet Res (2000). The p2NIL/pGOAL system is from Parish & Stoker. Please check these references before relying on them.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Handle *M. marinum* at the biosafety level required by your institution.
 
@@ -43,4 +44,4 @@ Advice from experienced *M. marinum* labs: p2NIL and pGOAL are obtained from Add
 
 Keep wild-type stocks low-passage; avoid unnecessary passaging (the strain can lose haemolytic activity).
 
-[Temperatures (32 °C vs 30 °C), UV dose and plate recipes should be checked against the original protocol.]{.tbc}
+Temperatures, UV dose and plate recipes should be checked against established and tested protocols.

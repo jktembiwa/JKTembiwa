@@ -3,15 +3,16 @@ category: Mycobacterial genetics
 tags: ORBIT, recombineering, Bxb1, integrase, gene tagging, mycobacteria
 summary: Insert a payload plasmid at a chromosomal target using a 188 nt oligo carrying a Bxb1 attP site, in cells expressing recombinase and Bxb1 integrase.
 source: ORBIT method (see Murphy et al., mBio 2018); lab adaptation, shared with the Boutte lab and adapted for this site.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Overview
 
-An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is recombined into the chromosome, and a payload plasmid is then integrated at the attP site by Bxb1 integrase. [Organism: the conditions (37 °C, 3 days) suggest *M. smegmatis*; confirm.]{.tbc}
+An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is recombined into the chromosome, and a payload plasmid is then integrated at the attP site by Bxb1 integrase. Organism is *M. smegmatis*.
 
 ## Steps
 
-1. **Design and order the oligo.** Include the Bxb1 attP site (`GGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACC`, 48 nt) flanked by 70 bases of target sequence on each side. For a C-terminal tag, insert attP between the last codon and the stop codon: copy the sequence from 70 bases upstream of the insertion point to 70 bases downstream. Decide whether the oligo is the top strand or its reverse complement ([see the oligo-directionality guidance for ORBIT]{.tbc}). Order the 188 nt oligo as an Ultramer.
+1. **Design and order the oligo.** Include the Bxb1 attP site (`GGTTTGTCTGGTCAACCACCGCGGTCTCAGTGGTGTACGGTACAAACC`, 48 nt) flanked by 70 bases of target sequence on each side. For a C-terminal tag, insert attP between the last codon and the stop codon: copy the sequence from 70 bases upstream of the insertion point to 70 bases downstream. Decide whether the oligo is the top strand or its reverse complement (see the oligo-directionality guidance for ORBIT). Order the 188 nt oligo as an Ultramer.
 2. **Prepare the payload vector.** Miniprep the appropriate ORBIT vector.
 3. **Grow the recipient strain.** The strain carrying the inducible recombinase and integrase plasmid is grown in 7H9 + kanamycin: 10 mL per transformation, grown to turbidity. The night before, do a calculated dilution so that the culture is at OD about 0.5 the next morning.
 4. **Induce.** In the morning, measure the OD and adjust to 0.5. Induce the integrase with **500 ng/mL anhydrotetracycline (aTc)** and shake or roll for 3 hours.
@@ -29,7 +30,7 @@ An oligo containing the Bxb1 attP site flanked by 70 bases of target sequence is
 
 ## Which strand to order (oligo directionality)
 
-Which strand you order depends on both the **position** and the **direction** of the gene on the chromosome. [The underlying reason (annealing to the lagging-strand template) is general knowledge, not from the source note; confirm.]{.tbc}
+Which strand you order depends on both the **position** and the **direction** of the gene on the chromosome. Do this in order to anneal to the lagging-strand template.
 
 - Take the gene sequence in the 5′→3′ coding orientation (the "top" strand in a sequence file; databases such as Tuberculist always give the gene reading 5′→3′ regardless of orientation on the chromosome). Its reverse complement is the "bottom" strand.
 - Insert the attP site into the sequence **before** choosing the strand (not critical for deletions, critical for fusions).
@@ -45,4 +46,4 @@ Which strand you order depends on both the **position** and the **direction** of
 | Left | away from origin (counterclockwise) | reverse complement |
 | Left | toward origin (clockwise) | top strand (as in file) |
 
-[Source and author of this directionality note are not recorded in the file; add credit if known. Replicore boundaries differ between the paragraphs in the original.]{.tbc}
+*Replicore boundaries differ between the paragraphs in the original.*

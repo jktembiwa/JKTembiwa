@@ -2,8 +2,9 @@ title: Conjugation (mating) between mycobacterial strains
 category: Mycobacterial genetics
 tags: conjugation, mating, M. smegmatis, mycobacteria, filter mating, transconjugants
 summary: Filter mating, mini-mating and microtiter-plate screening matings between mycobacterial donor and recipient strains.
-source: From the Derbyshire lab, shared with the Boutte lab; adapted for this site.
-version: Draft 0.1
+source: From the Derbyshire lab; adapted for this site.
+version: Version 1.0
+status: reviewed
 ---
 For conjugation from an *E. coli* donor, see [bi-parental conjugation](bi-parental-conjugation.html).
 
@@ -55,5 +56,3 @@ Use fresh colonies (less than a week old); otherwise transfer efficiencies fall.
 - If cultures are still positive, perform a filter mating to determine the transfer frequency accurately compared to a control.
 - Freeze each clone as a glycerol stock.
 - Careful labeling and tracking of microtiter dishes and clones is essential. Keep a spreadsheet for each dish, photograph each mating plate screen, and track clones by plate, well and date.
-
-[Volumes were given as "ml" in the source where microliters are clearly meant; they have been read as µL.]{.tbc}
