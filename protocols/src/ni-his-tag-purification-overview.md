@@ -2,8 +2,9 @@ title: His-tagged protein purification: overview (expression strain, test induct
 category: Protein biochemistry
 tags: protein purification, His-tag, Ni-NTA, SEC, expression
 summary: The overall workflow from cloning to concentrated, frozen protein, with notes on Ni columns, EDTA, and packing empty cartridges.
-source: Written by K. Tembiwa (Boutte Lab).
-version: Draft 0.1
+source: Written by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 ## Workflow
 

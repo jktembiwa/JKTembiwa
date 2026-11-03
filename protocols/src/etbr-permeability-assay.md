@@ -3,7 +3,8 @@ category: Growth and assays
 tags: ethidium bromide, permeability, efflux, plate reader, fluorescence, M. smegmatis, antibiotics
 summary: Measure ethidium bromide uptake over time in a plate reader, with or without antibiotic pre-treatment.
 source: Developed by K. Tembiwa (Boutte Lab). Final paragraph adapted from earlier lab notes (N. Islam).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Day 1
 
@@ -23,7 +24,7 @@ Set up overnight cultures in 5 mL 7H9, diluted so that they reach OD₆₀₀ ~0
 
 1. Thaw a 10 mg/mL meropenem stock and vortex.
 2. Overnight cultures at OD ~0.4. Dilute to OD 0.1 in 10 mL fresh 7H9.
-3. Prepare two sets, (+) and (−) antibiotic. Add meropenem at [½ MIC of the wild-type strain: value to be filled in]{.tbc} to (+). Incubate at 37 °C on a roller.
+3. Prepare two sets, (+) and (−) antibiotic. Add meropenem (at ½ MIC of the wild-type strain) to (+). Incubate at 37 °C on a roller.
 4. Run the permeability assay (steps 1–6) at 0, 3 and 6 h. At each time point take 1 mL, wash three times, **normalize all resuspensions to the same OD** (measure each time), and scale the EtBr volume to the final resuspension volume.
 
 ## Alternative settings (filter-based reader)

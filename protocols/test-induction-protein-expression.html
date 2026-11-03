@@ -32,21 +32,29 @@
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1 class="proto-title">Test inductions for recombinant protein expression (E. coli)</h1>
 <p class="lede">Find conditions (temperature, time, IPTG, buffer) that give soluble protein, with normalized pre/post-induction, supernatant and pellet samples.</p>
-<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Draft 0.1</span></p>
+<p class="proto-meta"><span class="meta">Version 1.0</span></p>
 </div></section>
 <section class="section"><div class="container prose">
-<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+
 <h2 id="purpose">Purpose</h2>
 <p>Identify induction conditions that produce a <strong>soluble</strong> protein of interest. Vary one variable at a time: temperature, induction time, IPTG concentration, lysis buffer, or medium.</p>
 <h2 id="procedure">Procedure</h2>
 <ol type="1">
-<li>Inoculate 10 mL LB (+ antibiotic, e.g. ampicillin <span class="tbc">140 µg/mL</span>) with the transformant (expression strain such as BL21). Grow overnight.</li>
+<li>Inoculate 10 mL LB (+ antibiotic, e.g. ampicillin 140 µg/mL) with the transformant (expression strain such as BL21). Grow overnight.</li>
 <li>Next morning, take the OD₆₀₀. Inoculate 220 mL LB + antibiotic in a 250 mL flask to a starting OD of 0.1–0.25.</li>
 <li>Shake at 37 °C. Check the OD every 30–45 min and stop at OD₆₀₀ ~1–1.2.</li>
 <li><strong>Pre-induction sample.</strong> Standardize to OD 5:</li>
 </ol>
 <p><span class="math display">$$\text{culture to take} = \frac{\text{desired OD}}{\text{current OD}} \times \text{final volume}$$</span></p>
-<p>Example: culture at OD 1.0, final volume 100 µL: (5 / 1.0) × 100 µL = 500 µL. Spin 16,000 × g for 1 min, discard supernatant, resuspend in 100 µL 1× PBS, add 20 µL warmed 6× Laemmli, mix. Label “pre-induction”. 5. Split into four flasks of ~50 mL. 6. Induce with IPTG (usually 0.3–1.5 mM; 1 mM is the default; stock typically 500 mM). Volume = (final mM ÷ stock mM) × culture volume. Example: 0.8 mM in 55 mL = (0.8/500) × 55 mL = 88 µL. 7. Incubate at different temperatures (e.g. 20, 25, 37 °C) for <span class="tbc">4 h</span>. Lower temperatures usually give less protein but more of it soluble, and need longer induction. Some strains (e.g. cold-adapted chaperone strains) are only for very low temperatures. 8. Dilute each culture 1:9 (100 µL + 900 µL LB) to read OD accurately (the spectrophotometer is not linear above ~1), multiply by 10. 9. Make a normalized <strong>post-induction</strong> sample for each condition as in step 4 (e.g. OD 4.2: (5/4.2) × 100 = 119 µL). <strong>Label tubes with the condition before adding anything.</strong> 10. Spin the remaining culture 20 min at 4 °C (<span class="tbc">4,000 rpm</span>); discard supernatant; freeze the pellet at –20 °C.</p>
+<p>Example: culture at OD 1.0, final volume 100 µL: (5 / 1.0) × 100 µL = 500 µL. Spin 16,000 × g for 1 min, discard supernatant, resuspend in 100 µL 1× PBS, add 20 µL warmed 6× Laemmli, mix. Label “pre-induction”.</p>
+<ol start="5" type="1">
+<li>Split into four flasks of ~50 mL.</li>
+<li>Induce with IPTG (usually 0.3–1.5 mM; 1 mM is the default; stock typically 500 mM). Volume = (final mM ÷ stock mM) × culture volume. Example: 0.8 mM in 55 mL = (0.8/500) × 55 mL = 88 µL.</li>
+<li>Incubate at different temperatures (e.g. 20, 25, 37 °C) for 4 h. Lower temperatures usually give less protein but more of it soluble, and need longer induction. Some strains (e.g. cold-adapted chaperone strains) are only for very low temperatures.</li>
+<li>Dilute each culture 1:9 (100 µL + 900 µL LB) to read OD accurately (the spectrophotometer is not linear above ~1), multiply by 10.</li>
+<li>Make a normalized <strong>post-induction</strong> sample for each condition as in step 4 (e.g. OD 4.2: (5/4.2) × 100 = 119 µL). <strong>Label tubes with the condition before adding anything.</strong></li>
+<li>Spin the remaining culture 20 min at 4 °C (4,000 rpm, Eppendorf Centrifuge 5810 R); discard supernatant; freeze the pellet at –20 °C.</li>
+</ol>
 <h2 id="lysis">Lysis</h2>
 <ol type="1">
 <li>Resuspend each pellet in 25–30 mL buffer without imidazole, plus 1 mM DTT (example: 50 mM Tris pH 7.9, 150 mM NaCl, 10% glycerol). Most proteins are more soluble near neutral pH and ~150 mM NaCl; glycerol can help but may affect downstream assays.</li>
@@ -59,23 +67,23 @@
 <li><strong>Pellet:</strong> resuspend in 5 mL 5 M urea to unfold the protein (pipette, vortex, or warm at 56 °C), then bring to the same volume as the supernatant with water or PBS. Make 100 µL samples the same way. For real purifications the soluble protein is in the supernatant and the pellet is only a diagnostic.</li>
 </ul>
 <h2 id="gel">Gel</h2>
-<p>Load pre-induction, then post-induction, supernatant and pellet lanes for each condition (about 10–12 µL each; ~5 µL ladder). Run a <span class="tbc">Tris-tricine SDS-PAGE gel at constant current, 30 mA for the first 15 min, then ~38 mA until the dye reaches the bottom</span>. Stain with Coomassie (30 s in a microwave inside a closed box, then 30 min gentle shaking; or 3 h to overnight at room temperature), destain, and photograph.</p>
+<p>Load pre-induction, then post-induction, supernatant and pellet lanes for each condition (about 10–12 µL each; ~5 µL ladder). Run a Tris-glycine SDS-PAGE gel at constant current, 30 mA for the first 15 min, then ~42 mA until the dye reaches the bottom. Stain with Coomassie (30 s in a microwave inside a closed box, then 30 min to 3 h at RT with gentle shaking, destain for 1 h to O/N at RT, and photograph using light box or geldoc.</p>
 <p>Compare the band at the expected size between supernatant and pellet at each condition.</p>
 <h2 id="lysis-by-french-press-variant">Lysis by French press (variant)</h2>
 <p>A second, narrative version of this protocol used a French press for lysis:</p>
 <ol type="1">
 <li>Resuspend cell pellets in ~25 mL of 50 mM Tris pH 7.9 (try different buffers; most proteins are soluble near neutral pH and ~150 mM NaCl) and keep on ice.</li>
 <li>Grease the gasket on the plunger, head piece and screw with vacuum grease. Put the plunger in the cell, invert it in the stand, pour in the suspension, leave the screw open so air can escape, fit the head piece while holding the plunger up, then close the screw fully.</li>
-<li>Turn the cell right-side up in the press, set the dial to high, and start the pump with a collection tube under the outlet. Watch the pressure; you want it to reach ~1000 before much suspension has flowed out. <span class="tbc">Units of “1000” not given in the source.</span></li>
+<li>Turn the cell right-side up in the press, set the dial to high, and start the pump with a collection tube under the outlet. Watch the pressure; you want it to reach ~1000 psi before much suspension has flowed out.</li>
 <li>When dripping stops, turn the pump off, switch to medium while still collecting, open the screw to drain the rest, then lower the plunger.</li>
 <li>Pass the cells through a second time if the pressure did not build or the suspension is not clear.</li>
 <li>Clean thoroughly: rinse so water runs through all holes in the head piece, then wipe and dry.</li>
-<li>Balance in Oakridge tubes (to within about a tenth of a gram, in pairs) and spin 20,000 rpm, 20 min, 4 °C. <span class="tbc">Convert to ×g for your rotor.</span></li>
+<li>Balance in Oakridge tubes (to within about a tenth of a gram, in pairs) and spin 20,000 rpm, 20 min, 4 °C. <em>Convert to ×g for your rotor.</em></li>
 </ol>
 <p>Worked example for loading: if the lysate is concentrated 2× relative to the induction culture (resuspended in half the volume), double each OD to estimate its OD-equivalent, then adjust: a sample at OD-equivalent 4.2 needs 5/4.2 × 10 µL ≈ 12 µL instead of 10 µL on the gel (maximum ~15 µL per lane).</p>
 
 <hr>
-<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa (Boutte Lab).</p>
+<p class="meta"><strong>Source / credit:</strong> Written by K. Tembiwa.</p>
 <p class="tag-row"><span class="tag">protein expression</span><span class="tag">IPTG</span><span class="tag">test induction</span><span class="tag">solubility</span><span class="tag">SDS-PAGE</span></p>
 <p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>

@@ -2,8 +2,9 @@ title: MIC determination in 96-well plates with Alamar Blue (resazurin)
 category: Growth and assays
 tags: MIC, Alamar Blue, resazurin, antibiotics, 96-well, M. smegmatis
 summary: Two-fold drug dilutions across a 96-well plate, inoculation at OD 0.002, and a resazurin colour readout after 48 h.
-source: Written by K. Tembiwa (Boutte Lab); based on the microplate Alamar Blue assay of Franzblau et al., J. Clin. Microbiol. 36:362–366 (1998).
-version: Draft 0.1
+source: Written by K. Tembiwa; based on the microplate Alamar Blue assay of Franzblau et al., J. Clin. Microbiol. 36:362–366 (1998).
+version: Version 1.0
+status: reviewed
 ---
 ## Layout
 
@@ -27,4 +28,4 @@ Use rows B–G and columns 2–11. Fill the outer wells with 200 µL sterile wat
 9. Make 0.02% Alamar Blue: 0.8 mg resazurin in 4 mL water. Add 20 µL to every well except the water-filled edge wells. Reseal.
 10. Re-incubate 7–18 h for *M. smegmatis*. **Blue = no growth; pink = growth.** Violet wells at 24 h usually turn pink after another day and count as growth. MIC = lowest drug concentration that stays blue.
 
-[Confirm incubation times and OD for slow-growing species; these values are for *M. smegmatis*.]{.tbc}
+Confirm incubation times and OD for different species; these values are for *M. smegmatis*.

@@ -3,9 +3,10 @@ category: Protein biochemistry
 tags: ZipTip, mass spectrometry, peptide clean-up, proteomics
 summary: Desalt and concentrate a peptide digest on a µ-C18 ZipTip and elute in 4 µL for MALDI-TOF or ESI-Q-TOF.
 source: Lab handout (author not recorded); uses the Millipore ZipTip product. See the manufacturer's ZipTip user guide for the full protocol.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
-Use µ-C18 ZipTips to clean up peptide samples. [Add link to the manufacturer's ZipTip user guide.]{.tbc}
+Use [µ-C18 ZipTips](https://www.sigmaaldrich.com/US/en/product/mm/ztc18s) to clean up peptide samples.
 
 **Before starting**
 - The sample must be aqueous. If dry, rehydrate in 1% formic acid / 2% acetonitrile.

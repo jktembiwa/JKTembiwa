@@ -3,7 +3,8 @@ category: Mycobacterial genetics
 tags: Cre recombinase, lox, markerless deletion, M. smegmatis, sacB
 summary: Excise a lox-flanked resistance cassette from a deletion locus using a Cre plasmid, then cure the plasmid with sucrose counter-selection.
 source: Written by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 

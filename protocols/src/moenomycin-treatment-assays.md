@@ -3,7 +3,8 @@ category: Growth and assays
 tags: moenomycin, kill curve, CFU, growth curve, microscopy, depletion, HADA
 summary: Three assay formats for testing the effect of moenomycin on mycobacteria in which a target (here MurJ) is depleted with anhydrotetracycline.
 source: Developed by K. Tembiwa (Boutte Lab).
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Moenomycin is a transglycosylase (PBP1-type) inhibitor. These assays combine it with anhydrotetracycline (aTc)-induced depletion of a target, so that drug sensitivity can be compared with and without depletion. See [Induction and depletion systems](induction-and-depletion-systems.html).
 
@@ -21,7 +22,7 @@ Moenomycin is a transglycosylase (PBP1-type) inhibitor. These assays combine it 
 ## Microscopy
 
 1. Add aTc **first** to start depletion.
-2. At each depletion time point (**4, 8, 14 and 20 h**): add 100 µg/mL moenomycin and roll 45 min, then add HADA and roll 15 min more at 37 °C. Wash and fix with 16% paraformaldehyde ([final concentration to be confirmed]{.tbc}).
+2. At each depletion time point (**4, 8, 14 and 20 h**): add 100 µg/mL moenomycin and roll 45 min, then add HADA and roll 15 min more at 37 °C. Wash and fix with 16% paraformaldehyde (final concentration should be 1.6% PFA).
 3. Image within 24 h of fixation.
 
-[Plate, vehicle and fixation details to be confirmed by the author.]{.tbc}
+These are very general protocols and details should be ironed out prior to starting.

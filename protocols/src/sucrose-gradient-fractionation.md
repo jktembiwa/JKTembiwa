@@ -2,8 +2,9 @@ title: Sucrose gradient fractionation of mycobacterial membranes (nitrogen cavit
 category: Protein biochemistry
 tags: sucrose gradient, membrane fractionation, nitrogen cavitation, ultracentrifugation, western blot
 summary: Lyse M. smegmatis by nitrogen cavitation, separate membrane domains on a 20–50% sucrose gradient, collect fractions and analyze by western blot.
-source: Protocol dated 1/20/2023, as received, plus a more detailed step-by-step (last updated 9/13/2020) from the Morita lab that matches it closely and likely is its origin. [Confirm the lineage before crediting.]{.tbc}
-version: Draft 0.1
+source: Protocol dated 1/20/2023, as received (adapted or written by A. Freeman), plus a more detailed step-by-step (last updated 9/13/2020) from the Morita lab that matches it closely and likely is its origin.
+version: Version 1.0
+status: reviewed
 ---
 ## Cell lysate
 

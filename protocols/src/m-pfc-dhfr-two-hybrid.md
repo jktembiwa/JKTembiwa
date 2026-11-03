@@ -3,7 +3,8 @@ category: Protein biochemistry
 tags: two-hybrid, M-PFC, DHFR, trimethoprim, protein-protein interaction, M. smegmatis
 summary: Test pairwise or library-scale protein–protein interactions in M. smegmatis by reconstituting dihydrofolate reductase and selecting on trimethoprim.
 source: Summarized from the M-PFC protocol and procedures document from the Steyn laboratory, and Singh A, Mai D, Kumar A, Steyn AJ. Dissecting virulence pathways of Mycobacterium tuberculosis through protein-protein association. Proc Natl Acad Sci USA 103:11346–11351 (2006). Please read the original paper for the authoritative method.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 M-PFC is not a magic bullet; it may fail for a given pair of proteins. Host strain: *M. smegmatis* mc²155.
 

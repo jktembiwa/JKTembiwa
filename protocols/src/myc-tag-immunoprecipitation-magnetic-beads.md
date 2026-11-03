@@ -2,8 +2,9 @@ title: Manual immunoprecipitation of c-Myc-tagged proteins (magnetic beads)
 category: Protein biochemistry
 tags: immunoprecipitation, co-IP, c-Myc, magnetic beads, elution
 summary: Capture a c-Myc-tagged protein from lysate on anti-c-Myc magnetic beads and elute gently, with peptide, acid, base or SDS buffer.
-source: Based on the Thermo Scientific Pierce Anti-c-Myc Magnetic Beads instructions; adapted by K. Tembiwa. Follow the manufacturer's current user guide for the authoritative version.
-version: Draft 0.1
+source: Based on the Thermo Scientific Pierce Anti-c-Myc Magnetic Beads instructions; adapted by K. Tembiwa.
+version: Version 1.0
+status: reviewed
 ---
 ## Materials
 

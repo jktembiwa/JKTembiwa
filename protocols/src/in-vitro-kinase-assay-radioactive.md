@@ -3,7 +3,8 @@ category: Protein biochemistry
 tags: kinase assay, radioactivity, PknA, PknB, phosphorylation, SDS-PAGE
 summary: Phosphorylate purified substrates with PknA and/or PknB in the presence of radiolabeled ATP, resolve on SDS-PAGE, and detect by phosphorimaging.
 source: Written by K. Tembiwa (Boutte Lab), version 3. Example protein concentrations belong to specific lab preparations.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 **Radioactivity:** work only in an approved radioisotope area, with training, shielding, monitoring and waste procedures from your institution's radiation safety office.
 
@@ -20,7 +21,7 @@ Kinase buffer: 50 mM Tris pH 7.5, 250 mM NaCl, 10% glycerol. Use a kinase:substr
    - PknA + PknB + test substrate
 3. Add MnCl₂ to 1 mM final (0.8 µL of a 25 mM stock into 20 µL).
 4. Add the volume of each protein that gives the desired mass (µg ÷ mg/mL = µL) and kinase buffer to **20 µL** total. Worked example: 5 µg of substrate at 10 mg/mL = 0.5 µL; 0.5 µg of kinase at 4.2 mg/mL = 0.12 µL.
-5. In the radioactive area, add hot ATP at **0.182 µCi/µL** final: prepare a mixture of 3 µL hot ATP + 5.5 µL kinase buffer and add 1 µL to each tube. [Isotope, stock activity and µCi per reaction need to be filled in.]{.tbc} Incubate 30 min at room temperature.
+5. In the radioactive area, add hot ATP at **0.182 µCi/µL** final: prepare a mixture of 3 µL hot ATP + 5.5 µL kinase buffer and add 1 µL to each tube. *Isotope, stock activity and µCi per reaction need to be filled in.* Incubate 30 min at room temperature.
 6. Immediately add 5 µL 6× Laemmli. **Do not heat.**
 
 ## Gel and imaging

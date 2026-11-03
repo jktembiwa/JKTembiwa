@@ -3,7 +3,8 @@ category: Growth and assays
 tags: growth curve, OD600, spectrophotometer, culturing, 7H9
 summary: Set up and sample a growth curve by hand, with notes for M. smegmatis and S. aureus, and how to calculate doubling time.
 source: General microbiology practice, written up by K. Tembiwa; the 0.1 starting OD matches the plate-reader template in this collection.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -33,11 +34,11 @@ Measure growth of a strain over time by sampling a culture and reading OD₆₀�
 
 | | *E. coli* | *S. aureus* | *M. smegmatis* |
 |---|---|---|---|
-| Typical doubling time | [~20–30 min]{.tbc} | [~30–40 min]{.tbc} | about 3 h |
-| Sampling interval | [every 30–60 min]{.tbc} | [every 30–60 min]{.tbc} | every 2–3 h |
-| Total length | [8 h]{.tbc} | [8–10 h]{.tbc} | [24–30 h]{.tbc} |
-| Medium | LB | [TSB]{.tbc} | 7H9 + ADC + 0.05% Tween 80 |
-| Shaking | [200–250 rpm]{.tbc} | [200–250 rpm]{.tbc} | [~200 rpm, or roller]{.tbc} |
+| Typical doubling time | ~20–30 min | ~30–40 min | about 3 h |
+| Sampling interval | every 60 min | every 60 min | every 3 h |
+| Total length | 8 h | 10 h | 24–30 h |
+| Medium | LB | TSB | 7H9 + ADC + 0.05% Tween 80 |
+| Shaking | 200–250 rpm | 200–250 rpm | ~200 rpm, or roller |
 
 BCG and *M. tuberculosis* double about every 18–24 h (see [Strains and growth](strains-and-growth.html)), so sample once or twice daily over one to two weeks. Work with BSL-2 organisms in a biosafety cabinet.
 
@@ -58,4 +59,4 @@ Better: plot ln(OD) against time and fit a line through the exponential portion.
 - Correct for OD if reading in a plate reader, since the path length differs from a 1 cm cuvette.
 - OD does not distinguish live from dead cells. Plate for CFU ([Serial dilution](serial-dilution-cfu.html)) when viability matters.
 
-[Reading intervals, flask size and shaking speed are general guidelines and should be replaced with your lab's usual values.]{.tbc}
+Reading intervals, flask size and shaking speed are general guidelines and should be replaced with your lab's usual values.

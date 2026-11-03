@@ -2,14 +2,15 @@ title: Immunoprecipitation and mycobacterial DHFR two-hybrid (M-PFC) cloning pla
 category: Protein biochemistry
 tags: immunoprecipitation, two-hybrid, DHFR, M-PFC, cloning, CwlM
 summary: Co-immunoprecipitation of an endogenous mycobacterial protein with an antibody-coupled resin, and a plan for cloning interaction partners into DHFR-fragment two-hybrid vectors.
-source: Based on methods in Turapov et al. 2018 (Cell Reports; full citation to be verified), annotated and adapted by K. Tembiwa. Please read the original paper for the authoritative method.
-version: Draft 0.1
+source: Based on methods in Turapov et al. 2018 (Cell Reports, annotated and adapted by K. Tembiwa. Please read the original paper for the authoritative method.
+version: Version 1.0
+status: reviewed
 ---
 ## Immunoprecipitation (Turapov et al.)
 
 1. Couple anti-CwlM antibody to CNBr-activated Sepharose 4B (a resin for immobilizing ligands containing primary amines) following the manufacturer's coupling protocol.
 2. Mix 1 mL containing **100 µg protein** from a cell fraction (e.g. membrane or cytosol) with **10 µL** antibody–Sepharose. Rotate for 60 min. Spin 500 × g for 5 min. Discard supernatant and wash the resin 3× with TBS.
-3. Elute with 40 µL phosphoric acid, pH 2.0. [The original method does not say how the eluate is neutralized or dried before blotting/mass spec.]{.tbc}
+3. Elute with 40 µL phosphoric acid, pH 2.0. The original method does not say how the eluate is neutralized or dried before blotting/mass spec.
 4. Control: the same fraction from a CwlM-depleted mutant.
 5. To test candidate partners directly, mix recombinant CwlM with 10 µg of each purified candidate in phosphate buffer (20 mM KH₂PO₄ pH 7.0, 100 mM NaCl, 10 mM KCl) with 10 µL antibody–Sepharose, and process as above.
 
@@ -40,4 +41,4 @@ Make plates ± TMP. Streak controls on both:
 6. Pick 16–32 colonies per plate, patch them, and colony-PCR with check primers ([Colony PCR](colony-pcr-screening.html)).
 7. Sequence 2–3 positive clones. If colony PCR is inconclusive, miniprep 8 colonies and do an analytical digest (0.5–1.5 µg).
 
-[Strain names and primer names from the working notes have been removed. Expected band sizes were not recorded in the source.]{.tbc}
+Strain names and primer names from the working notes have been removed. Expected band sizes were not recorded in the source.

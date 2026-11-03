@@ -2,8 +2,9 @@ title: Peptidoglycan isolation and peptidoglycan-binding (sedimentation) assay
 category: Protein biochemistry
 tags: peptidoglycan, binding assay, E. coli, protein purification
 summary: Purify peptidoglycan from E. coli by hot SDS and protease treatment, then test binding of a purified His-tagged protein by co-sedimentation.
-source: Written by K. Tembiwa (Boutte Lab); protein-expression conditions follow the lab's His-tagged MurJ intracellular-domain purification.
-version: Draft 0.1
+source: Written by K. Tembiwa; protein-expression conditions follow my bespoke His-tagged MurJ intracellular-domain purification.
+version: Version 1.0
+status: reviewed
 ---
 ## A. Isolate peptidoglycan (PG) from *E. coli*
 
@@ -11,10 +12,10 @@ version: Draft 0.1
 2. Add dropwise to 80 mL **boiling 5% SDS** and boil 30 min with vigorous stirring. Cool to room temperature (**not on ice**; SDS precipitates). Optional: leave overnight at room temperature.
 3. Pellet and wash:
    - **Ultracentrifuge:** 100,000 × g, 1 h, 25 °C. Wash 3× with water, 1 h spin each.
-   - **Floor centrifuge:** 14,000 [rpm]{.tbc}, 1 h, 25 °C. Wash at least 6× with 50 mL water.
+   - **Floor centrifuge:** 14,000 rpm (find equivalent for your machine!), 1 h, 25 °C. Wash at least 6× with 50 mL water.
 4. Resuspend in 1 mL PBS with α-chymotrypsin (100 µL of 3 mg/mL in 50% glycerol; Sigma C3142) to remove cell-wall-attached protein. Shake at 37 °C overnight, add another 100 µL, and incubate 3–4 h more.
 5. Add 1% SDS and incubate 1–2 h at 95 °C. Cool to room temperature.
-6. Pellet (14,000 rpm, 25 °C, 1 h) and wash at least 4× with 25 mL water to remove SDS. [A 1 mL wash was also noted as a possible alternative; not confirmed.]{.tbc}
+6. Pellet (14,000 rpm, 25 °C, 1 h) and wash at least 4× with 25 mL water to remove SDS. *A 1 mL wash is also a possible alternative.*
 7. Resuspend purified PG in 500 µL 0.02% sodium azide (Sigma S2002). Stable at 4 °C for up to about 1 month.
 
 ## B. Purify the His-tagged protein (example: His-SBD)
@@ -22,7 +23,7 @@ version: Draft 0.1
 Express in *E. coli* BL21 and purify following your standard His-tag protocol (see [Test inductions](test-induction-protein-expression.html) and [His-SUMO purification](his-sumo-purification.html)).
 
 - Buffer: 50 mM Tris pH 7.5, 150 mM NaCl, 10% glycerol, 20 mM imidazole (wash) / 250 mM imidazole (elution).
-- Induction: 5–6 h at 25 °C, [220 rpm]{.tbc}.
+- Induction: 5–6 h at 25 °C, 220 rpm (from ThermoSci MaxQ 600 shaker).
 - Size on gel for the example construct: 19.3 kDa (with TM) and 17.3 kDa (without TM).
 
 ## C. Binding assay

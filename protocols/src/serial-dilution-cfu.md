@@ -3,7 +3,8 @@ category: Growth and assays
 tags: serial dilution, CFU, plating, viability, drop plating
 summary: Ten-fold serial dilutions, plating, and calculating colony-forming units per mL, with notes for fast and slow growers.
 source: General microbiology practice, written up by K. Tembiwa. Dilution ratios 1:9 and 1:99 as used in the Boutte Lab bootcamp.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -47,8 +48,8 @@ Where several dilutions give countable plates, calculate each and report the mea
 | | *E. coli* | *S. aureus* | *M. smegmatis* | BCG / *M. tuberculosis* |
 |---|---|---|---|---|
 | Temperature | 37 °C | 37 °C | 37 °C | 37 °C |
-| Time to countable colonies | overnight | [overnight (16–24 h)]{.tbc} | [3–4 days]{.tbc} | [3–4 weeks]{.tbc} |
-| Plate medium | LB | [TSA / LB]{.tbc} | 7H10/7H11 or LB | 7H10/7H11 + OADC |
+| Time to countable colonies | overnight | overnight (16–24 h) | 3–4 days | 3–4 weeks |
+| Plate medium | LB | TSA / LB | 7H10/7H11 or LB | 7H10/7H11 + OADC |
 
 Seal mycobacterial plates in a bag so they do not dry out over long incubations. Work with BSL-2 organisms in a biosafety cabinet.
 
@@ -60,4 +61,4 @@ Seal mycobacterial plates in a bag so they do not dry out over long incubations.
 - For time-course killing assays, take the zero time point before adding drug and plate it at a dilution that can still be counted.
 - If plates have no colonies at the lowest dilution you plated, report the result as below the limit of detection (one colony ÷ volume plated), not as zero.
 
-[Check against your lab's preferred diluent and drop-plating volume.]{.tbc}
+Check against your preferred diluent and drop-plating volume.

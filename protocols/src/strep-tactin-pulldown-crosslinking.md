@@ -3,7 +3,8 @@ category: Protein biochemistry
 tags: pulldown, Strep-tag, cross-linking, formaldehyde, mass spectrometry, interactors
 summary: Cross-link cells with formaldehyde, capture a Strep-tagged protein on magnetic Strep-Tactin beads, elute, and prepare samples for analytical and preparative gels.
 source: Boutte Lab protocol (as received), adapted by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 Use a tagged strain and an **untagged control strain** processed in parallel. Formaldehyde and PFA are toxic; work in a hood.
 
@@ -13,7 +14,7 @@ Use a tagged strain and an **untagged control strain** processed in parallel. Fo
 2. Pellet and resuspend in 100 mL PBS-Tween 80 + 800 µL 16% PFA. Keep on ice. (The first exposure and wash is to scavenge amine groups.)
 3. Pellet and resuspend again in 100 mL PBS-Tween 80 + 800 µL 16% PFA; incubate 1 h at 37 °C.
 4. Pellet and resuspend in 30 mL Buffer W (100 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA) + 0.1% DDM + protease inhibitor tablets.
-5. Lyse with a French press, 2× at up to 1,400 [psi]{.tbc}.
+5. Lyse with a French press, 2× at up to 1,400 psi.
 6. Spin in Oakridge tubes at 15,000 × g for 15 min.
 
 ## Beads
@@ -33,7 +34,7 @@ For each sample vortex the bead stock, move 600 µL to a tube, collect on a magn
 1. Add 160 µL PBS + 40 µL 5× Buffer BX. Vortex; incubate 10 min at room temperature; collect on the magnet and move the eluate to a new tube. Repeat once and combine.
 2. Add 100 µL 100% TCA to the eluate; keep in the fridge overnight. Add 25 µL 1× Laemmli to the beads ("beads" sample) and keep overnight.
 3. Spin the precipitate 15 min at 15,000 × g in the cold. Remove the supernatant. Wash with 1 mL acetone for 30–60 min in the fridge. Spin again 15 min. Remove the acetone (leave a little to protect the pellet), short spin, remove the rest, and air-dry 20–30 min.
-4. Resuspend in 25 µL 1× Laemmli. Add NaOH a microliter at a time until the dye is solid blue (orange or brown means too acidic). To reverse the cross-links, heat the sample at [temperature and time per your protocol]{.tbc}.
+4. Resuspend in 25 µL 1× Laemmli. Add NaOH a microliter at a time until the dye is solid blue (orange or brown means too acidic). To reverse the cross-links, heat the sample at 95°C for 10 minutes.
 
 ## Gels and mass spectrometry
 

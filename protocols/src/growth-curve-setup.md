@@ -3,7 +3,8 @@ category: Growth and assays
 tags: growth curve, plate reader, OD600, dilution, 7H9, assays
 summary: Calculate culture and medium volumes to start every well at the same OD, with a fillable template.
 source: Template by K. Tembiwa.
-version: Draft 0.1
+version: Version 1.0
+status: reviewed
 ---
 ## Purpose
 
@@ -43,4 +44,4 @@ Start every well of a plate-reader growth curve at the same initial OD₆₀₀ 
 
 Culture volume = (initial OD × final volume) ÷ culture OD. Medium volume = final volume − culture volume. If a culture's OD is below the target, it cannot be diluted to the target and the row shows "OD too low".
 
-[Plate reader settings (temperature, shaking, reading interval, duration) and plate layout notes to be added.]{.tbc}
+Plate reader settings (temperature, shaking, reading interval, duration) and plate layout notes should be specified for each experiment.

@@ -1,9 +1,10 @@
 title: In vitro phosphatase assay with PstP (radiolabeled substrate)
 category: Protein biochemistry
 tags: phosphatase assay, PstP, radioactivity, PknB, PknA, kinase
-summary: Phosphorylate a substrate with its kinase and radiolabeled ATP, add PstP (wild-type or phosphomimetic variants), and follow dephosphorylation over time.
-source: Boutte Lab protocol (as received) used for the PstP phosphorylation-site study; check the published paper for the authoritative version [citation to be added]{.tbc}.
-version: Draft 0.1
+summary: Phosphorylate a substrate with its kinase and radiolabeled ATP, add PstP (wild-type or phospho-variants), and follow dephosphorylation over time.
+source: Shamma protocol (as received) as developed for the PstP phosphorylation-site study; check the published paper for the authoritative version.
+version: Version 1.0
+status: reviewed
 ---
 **Radioactivity:** work only in an approved radioisotope area with training and monitoring. See also [In vitro kinase assay](in-vitro-kinase-assay-radioactive.html).
 
@@ -23,7 +24,7 @@ Take a sample at the end of the kinase step (**0 min, no PstP**). Split the rema
 
 ## Phosphatase step
 
-Add PstP (catalytic domain; wild-type or phosphomimetic variants) at one-tenth the mass of substrate, in phosphatase buffer (50 mM Tris pH 7.5, 10 mM MnCl₂, 1 mM DTT). Incubate at room temperature and take samples into 6× Laemmli:
+Add PstP (catalytic domain; wild-type or phospho variants) at one-tenth the mass of substrate, in phosphatase buffer (50 mM Tris pH 7.5, 10 mM MnCl₂, 1 mM DTT). Incubate at room temperature and take samples into 6× Laemmli:
 
 - CwlM: 1, 3, 5, 10, 20 and 40 min
 - FhaA: 5, 10, 20, 40, 60 and 80 min

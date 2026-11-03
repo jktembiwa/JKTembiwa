@@ -2,8 +2,9 @@ title: Kinase / protease reaction and Ni or cobalt interaction (pull-down) assay
 category: Protein biochemistry
 tags: pull-down, interaction assay, kinase, ULP, Ni-NTA, cobalt, CwlM
 summary: Phosphorylate a His-SUMO substrate with a kinase, remove the tag with ULP, and test binding to a second His-SUMO protein on Ni or cobalt resin (gravity column or magnetic beads).
-source: Written by K. Tembiwa (Boutte Lab), from published CwlM/MurJ interaction work; three lab versions combined.
-version: Draft 0.1
+source: Written by K. Tembiwa, from published CwlM/MurJ interaction work; three lab versions combined.
+version: Version 1.0
+status: reviewed
 ---
 ## Idea
 
@@ -13,12 +14,12 @@ Immobilize a His-SUMO "bait" (e.g. His-SUMO-MurJ ICD) on resin. Pass the untagge
 
 ## Part 1: Kinase and protease reactions
 
-1. Thaw His-SUMO-CwlM and PknB. NanoDrop with the kinase buffer as blank. Example: CwlM 0.48 mg/mL; PknB 1.80 mg/mL.
+1. Thaw His-SUMO-CwlM and PknB. NanoDrop with the kinase buffer (50 mM Tris pH 7.5, 250 mM NaCl, 10% glycerol) as blank. Example: CwlM 0.48 mg/mL; PknB 1.80 mg/mL.
 2. Use a **1:10 kinase:substrate** mass ratio. Example: 144 µg CwlM in 300 µL needs 14 µg PknB (7.8 µL).
 3. Set up two tubes, **CwlM~P** (phosphorylated) and **NPC** (no-phosphorylation control): 300 µL CwlM each, PknB in both, MnCl₂ to 1 mM from a 25 mM stock (14 µL in 350 µL), and 0.5 mM ATP (7 µL from 25 mM) **only in CwlM~P**. Keep ATP at –80 °C until needed.
 4. Incubate 40 min at 25 °C.
 5. Meanwhile prepare Ni (or cobalt) columns: place a frit at the bottom using a pipette tip, add 500 µL resin slurry (bed ~250 µL), drain, wash with a column of nanopure water, then 3 CV of 20 mM-imidazole wash buffer (50 mM Tris pH 7.5, 350 mM NaCl, 20 mM imidazole, 10% glycerol), pipetting on the side.
-6. Add **ULP** (SUMO protease) at 1:10 by mass (e.g. 14.4 µg, 16 µL of 0.968 mg/mL) plus 34 µL 10× protease buffer to each tube (400 µL final) **after** the 40 min kinase step. Incubate [time and temperature to be added]{.tbc}.
+6. Add **ULP** (SUMO protease) at 1:10 by mass (e.g. 14.4 µg, 16 µL of 0.968 mg/mL) plus 34 µL 10× protease buffer to each tube (400 µL final) **after** the 40 min kinase step. Incubate 40 min at 25 °C.
 7. Load each reaction onto its column. Collect flow-through; wash twice with 250 µL wash buffer; elute with 250 µL elution buffer (same as wash but with 250 mM imidazole). Cleaved CwlM is in the **flow-through and first wash**; the tag and uncleaved protein stay on the resin.
 8. Run 25 µL of each fraction + 5 µL warmed 6× Laemmli (95 °C) on a gel (10 µL per lane) with PknB, ULP and the kinase reaction. Pool the flow-through and wash 1 once the gel confirms cleavage.
 9. NanoDrop. High imidazole can distort readings; if so assume ~90% yield of the cleavage reaction.
@@ -45,5 +46,3 @@ Fractions: flow-through, wash 1, prey load, wash 2, elution.
 4. Add the prey (flow-through and washes from the cobalt step, ~710 µL diluted to 800 µL; split between control and experiment, 400 µL each). Mix, incubate with periodic mixing for 15 min. Save the supernatant (fraction 3).
 5. Wash with 400 µL wash buffer (fraction 4).
 6. Resuspend beads in 400 µL buffer, add 80 µL 6× Laemmli, heat 95 °C for 10 min (fraction 5, elution). Run all fractions on a gel.
-
-[Some volumes and incubation times were left blank in the source drafts. They are marked above and need to be filled in from lab notes.]{.tbc}
