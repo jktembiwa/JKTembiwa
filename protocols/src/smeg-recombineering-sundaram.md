@@ -5,6 +5,7 @@ summary: An alternative recombineering protocol for hygromycin-marked constructs
 source: Protocol from Sundaram (Sassetti lab), shared with the Boutte lab; adapted for this site.
 version: Version 1.0
 status: reviewed
+related: recombineering | Clean knockouts by two-step homologous recombination, or gene replacement by RecE/RecT. || oligo-recombineering | Point mutations (one or a few base pairs) with single-stranded oligos in Ptet-RecT strains. || orbit | Insert a payload plasmid at a chromosomal target using an oligo carrying a Bxb1 attP site.
 ---
 **This protocol is different from the one on the [recombineering page](recombineering.html), including the inducer, induction timing and cell handling. The two have not been reconciled.**
 

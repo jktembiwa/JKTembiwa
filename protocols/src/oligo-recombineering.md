@@ -5,6 +5,7 @@ summary: Make one or a few base-pair changes with single-stranded oligos in Ptet
 source: Protocol by Kenan Murphy, based on van Kessel and Hatfull (2008) Mol Microbiol 67:1094–1107. Co-transformation and MAMA-PCR section by Marte Dragset (2012). Adapted for this site.
 version: Version 1.0
 status: reviewed
+related: recombineering | Clean knockouts by two-step homologous recombination, or gene replacement by RecE/RecT. || smeg-recombineering-sundaram | Alternative recombineering protocol for hygromycin-marked constructs, with plasmid curing on sucrose. || orbit | Insert a payload plasmid at a chromosomal target using an oligo carrying a Bxb1 attP site.
 ---
 The method for pKM402 (Ptet-RecT)-promoted oligo recombineering in *M. smegmatis* and *M. tuberculosis* follows the same procedures as [dsDNA recombineering](recombineering.html) for growing and preparing cells for electroporation, with the exceptions below.
 

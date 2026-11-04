@@ -19,12 +19,12 @@ Personal academic site "Microbial Mosaic" for Karen Tembiwa (mycobacterial cell 
 | `protocols/intro-index.txt`, `intro-faq.txt` | Intro text for the index and FAQ pages, one `key: value` per line |
 | `protocols/downloads/` | Downloadable files (e.g. `cryovial-label-template.docx`) |
 
-Source header keys: `title`, `category`, `tags`, `summary`, `source`, `version`. Optional: `status: reviewed` removes the draft badge, and the highlight legend then appears only if `{.tbc}` spans remain.
+Source header keys: `title`, `category`, `tags`, `summary`, `source`, `version`. Optional: `status: reviewed` removes the draft badge, and the highlight legend then appears only if `{.tbc}` spans remain. Optional: `related: slug | note || slug | note` adds a "Which one should I use?" box at the top of the page (used for overlapping protocols; list the other versions, each with a one-line note on when to use it; the build fails on an unknown slug).
 
 Rules:
 - **Never edit generated `.html` by hand.** Edit the source, rebuild from the repo root, and commit source and output together.
 - Karen sometimes edits generated pages on GitHub. If a rebase conflicts in `protocols/*.html`, move her change into `protocols/src/*.md`, rebuild, and continue.
-- Category order is the `ORDER` list in the script. Categories: Media and reagents, Cloning, Transformation, Mycobacterial genetics, Protein biochemistry, Growth and assays, Imaging and analysis, Reference.
+- Category order is the `ORDER` list in the script. Categories: Media and reagents, Cloning, Transformation, Mycobacterial genetics, Protein biochemistry, Growth and assays, Imaging, Analysis, Reference.
 - Tag chips show only for tags used at least twice.
 - After building, check that no internal links are broken. A clean rebuild with no source change must leave `git status` empty.
 

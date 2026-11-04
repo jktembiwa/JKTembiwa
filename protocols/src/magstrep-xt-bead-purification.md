@@ -5,6 +5,7 @@ summary: Batch purification in tubes or 96-well plates, with native elution by b
 source: Summarized from IBA Lifesciences protocol PR83-0011 (March 2022), "MagStrep type3 XT bead-based protein purification" (catalog 2-4090-002 and 2-4090-010). IBA documents are available from the [IBA Lifesciences download area](https://www.iba-lifesciences.com/download-area-protein.html). The vendor protocol is authoritative.
 version: Version 1.0
 status: reviewed
+related: ni-his-tag-purification-overview | General His-tag workflow from cloning to concentrated, frozen protein. || his-sumo-purification | Worked example (His-SUMO-CwlM): Ni-NTA by FPLC, dialysis, then size-exclusion. || gst-purification-econofit-profinity | GST-tagged proteins on EconoFit Profinity GST columns.
 ---
 **Beads:** ferrimagnetic spheres coated with 6% agarose and Strep-Tactin XT, supplied as a 5% (v/v) suspension (20 µL = 1 µL beads). Capacity: up to 0.85 nmol tagged protein per µL beads (25.5 µg of a 30 kDa protein). The beads are not meant to be reused.
 

@@ -5,6 +5,7 @@ summary: The overall workflow from cloning to concentrated, frozen protein, with
 source: Written by K. Tembiwa.
 version: Version 1.0
 status: reviewed
+related: his-sumo-purification | Worked example (His-SUMO-CwlM): Ni-NTA by FPLC, dialysis, then size-exclusion. || gst-purification-econofit-profinity | GST-tagged proteins on EconoFit Profinity GST columns. || magstrep-xt-bead-purification | Strep-tag II / Twin-Strep-tag proteins on MagStrep XT magnetic beads.
 ---
 ## Workflow
 

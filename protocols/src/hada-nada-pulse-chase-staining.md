@@ -1,5 +1,5 @@
 title: HADA / NADA pulse-chase staining of peptidoglycan (PCP)
-category: Imaging and analysis
+category: Imaging
 tags: HADA, NADA, microscopy, peptidoglycan, pulse-chase, M. smegmatis
 summary: Label old peptidoglycan with HADA, let cells grow, label new peptidoglycan with NADA, and image.
 source: Written by K. Tembiwa.

@@ -5,6 +5,7 @@ summary: Co-immunoprecipitation of an endogenous mycobacterial protein with an a
 source: Based on methods in Turapov et al. 2018 (Cell Reports, annotated and adapted by K. Tembiwa. Please read the original paper for the authoritative method.
 version: Version 1.0
 status: reviewed
+related: m-pfc-dhfr-two-hybrid | Test pairwise or library-scale interactions by DHFR reconstitution and trimethoprim selection.
 ---
 ## Immunoprecipitation (Turapov et al.)
 

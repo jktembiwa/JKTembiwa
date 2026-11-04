@@ -5,6 +5,7 @@ summary: Insert a payload plasmid at a chromosomal target using a 188 nt oligo c
 source: ORBIT method (see Murphy et al., mBio 2018); lab adaptation, shared with the Boutte lab and adapted for this site.
 version: Version 1.0
 status: reviewed
+related: recombineering | Clean knockouts by two-step homologous recombination, or gene replacement by RecE/RecT. || smeg-recombineering-sundaram | Alternative recombineering protocol for hygromycin-marked constructs, with plasmid curing on sucrose. || oligo-recombineering | Point mutations (one or a few base pairs) with single-stranded oligos in Ptet-RecT strains.
 ---
 ## Overview
 

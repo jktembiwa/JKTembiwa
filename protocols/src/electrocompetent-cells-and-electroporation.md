@@ -5,6 +5,7 @@ summary: Making electrocompetent E. coli and mycobacteria, and transforming them
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021).
 version: Version 1.0
 status: reviewed
+related: ecoli-electrocompetent-cells | Make frozen electrocompetent E. coli aliquots (glycerol washes). || rbcl-competent-cells | Chemically competent E. coli made with rubidium chloride, for heat-shock transformation. || ecoli-chemical-transformation | Heat-shock transformation of chemically competent E. coli, with tips for toxic constructs and an efficiency test.
 ---
 ## E. coli electrocompetent cells
 

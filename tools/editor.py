@@ -14,7 +14,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "protocols", "src")
 BUILD = os.path.join(ROOT, "tools", "build_protocols.py")
 TEXTS = {"faq": "protocols/faq.txt", "intro-index": "protocols/intro-index.txt", "intro-faq": "protocols/intro-faq.txt"}
-KEYS = ["title", "category", "tags", "summary", "source", "version", "status"]
+KEYS = ["title", "category", "tags", "summary", "source", "version", "status", "related"]
 REQUIRED = ["title", "category", "tags", "summary", "source", "version"]
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{0,80}$")
 LINK_RE = re.compile(r'(?:href|src)="([^"#?]+)')

@@ -1,10 +1,11 @@
 title: Calculating doubling times from growth curves in GraphPad Prism
-category: Imaging and analysis
+category: Analysis
 tags: growth curve, doubling time, Prism, statistics, ANOVA
 summary: Fit log-phase data to an exponential growth equation, extract doubling times per replicate, and compare strains with one-way ANOVA.
 source: Written by K. Tembiwa (Boutte Lab).
 version: Version 1.0
 status: reviewed
+related: growth-curve-setup | 96-well plate-reader growth curve with a dilution calculator. || manual-growth-curves | Growth curve by hand in flasks or tubes, measuring OD600 over time.
 ---
 1. Enter data in Prism: X = elapsed time; Y = three replicate values in side-by-side sub-columns.
 2. Make a new table with a single replicate per data set, called "singles", and copy the data and times into it.

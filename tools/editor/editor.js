@@ -88,6 +88,7 @@
       summary: el("input", { type: "text", value: m.summary || "" }),
       source: el("input", { type: "text", value: m.source || "" }),
       version: el("input", { type: "text", value: m.version || "" }),
+      related: el("input", { type: "text", value: m.related || "" }),
     };
     if (m.category && !info.categories.includes(m.category)) f.category.append(el("option", { value: m.category, selected: true }, m.category));
     const draftR = el("input", { type: "radio", name: "ed-status", value: "draft", checked: !reviewed });
@@ -160,7 +161,8 @@
       el("div", { class: "ed-grid" },
         field("Title", f.title), field("Category", f.category),
         field("Summary", f.summary), field("Tags", f.tags, "Comma-separated"),
-        field("Source / credit", f.source), field("Version", f.version), status),
+        field("Source / credit", f.source), field("Version", f.version), status,
+        field("Which one to use (optional)", f.related, "slug | note || slug | note")),
       el("div", { class: "ed-toolbar" }, tabMd, tabPv,
         el("span", { class: "ed-sp" }),
         el("button", { type: "button", class: "ed-btn", onclick: markTbc, title: "Wrap the selected text in a yellow highlight" }, "Mark TBC"),

@@ -5,6 +5,7 @@ summary: Clean knockouts by two-step homologous recombination, and gene replacem
 source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
 version: Version 1.0
 status: reviewed
+related: smeg-recombineering-sundaram | Alternative recombineering protocol for hygromycin-marked constructs, with plasmid curing on sucrose. || oligo-recombineering | Point mutations (one or a few base pairs) with single-stranded oligos in Ptet-RecT strains. || orbit | Insert a payload plasmid at a chromosomal target using an oligo carrying a Bxb1 attP site.
 ---
 **Other recombineering protocols on this site differ from this one**, including in the inducer, induction timing and cell handling: [an alternative M. smegmatis protocol](smeg-recombineering-sundaram.html), [oligo-mediated recombineering](oligo-recombineering.html) and [ORBIT](orbit.html). They have not been reconciled with this page.
 

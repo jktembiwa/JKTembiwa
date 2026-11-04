@@ -346,3 +346,7 @@ h3 {
 .news-tag{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:var(--muted);padding-top:.25rem}
 @media(max-width:560px){.news-list li{grid-template-columns:1fr;gap:.1rem}}
 .news-when{display:inline-block;margin-top:.15rem;font-weight:500;text-transform:none;letter-spacing:0;font-size:.8rem}
+
+.profile-photo{margin:0;max-width:420px;width:100%;margin-inline:auto}
+.profile-photo img{display:block;width:100%;height:auto;border-radius:18px;border:1px solid var(--line);box-shadow:var(--shadow);object-fit:cover}
+@media (max-width:760px){.profile-photo{max-width:320px}}

@@ -1,10 +1,11 @@
 title: Metabolic probe labeling (alkDD, Oalk-TMM, alkD-Ala) with CuAAC click detection (TBTA)
-category: Imaging and analysis
+category: Imaging
 tags: click chemistry, CuAAC, metabolic labeling, TMM, D-alanine, M. smegmatis, fluorescence
 summary: Pulse M. smegmatis with an alkyne-modified probe, fix, and attach a fluorescent azide with a TBTA-ligand click reaction.
 source: Boutte Lab protocol (as received; reagent suppliers named in the original). For a BTTP-based live-cell version see the page on azide labeling and CuAAC.
 version: Version 1.0
 status: reviewed
+related: cuaac-click-labeling | Pulse with an azide-modified metabolite, then label with a fluorescent alkyne by copper-catalyzed click chemistry.
 ---
 ## Before you start
 

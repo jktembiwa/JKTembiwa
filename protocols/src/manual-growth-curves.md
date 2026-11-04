@@ -5,6 +5,7 @@ summary: Set up and sample a growth curve by hand, with notes for M. smegmatis a
 source: General microbiology practice, written up by K. Tembiwa; the 0.1 starting OD matches the plate-reader template in this collection.
 version: Version 1.0
 status: reviewed
+related: growth-curve-setup | 96-well plate-reader growth curve with a dilution calculator. || growth-curve-doubling-time-prism | Analyze either type of growth curve for doubling time in GraphPad Prism.
 ---
 ## Purpose
 

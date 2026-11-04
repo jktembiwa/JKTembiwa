@@ -5,6 +5,7 @@ summary: Express in BL21, lyse by sonication, purify on Ni-NTA by FPLC, dialyze,
 source: Written by K. Tembiwa, developed for His-SUMO-CwlM.
 version: Version 1.0
 status: reviewed
+related: ni-his-tag-purification-overview | General His-tag workflow from cloning to concentrated, frozen protein. || gst-purification-econofit-profinity | GST-tagged proteins on EconoFit Profinity GST columns. || magstrep-xt-bead-purification | Strep-tag II / Twin-Strep-tag proteins on MagStrep XT magnetic beads.
 ---
 ## Overview
 

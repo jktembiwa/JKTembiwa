@@ -5,6 +5,7 @@ summary: Phenol–chloroform genomic DNA extraction and TRIzol-based RNA extract
 source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
 version: Version 1.0
 status: reviewed
+related: smash-and-grab-genomic-dna | Fast (30–45 min) bead-beating prep; enough genomic DNA for 50–100 PCRs. || msmeg-gdna-prep-long | Longer, higher-yield prep with chloroform:methanol delipidation and overnight lysozyme treatment. || rna-extraction-and-qpcr-msmeg | RNA only: TRIzol bead-beating, column cleanup, DNase treatment and a one-step SYBR RT-qPCR set-up.
 ---
 Both protocols use hazardous reagents (chloroform, phenol, TRIzol). Work in a fume hood with gloves and face mask is recommended.
 

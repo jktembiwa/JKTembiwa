@@ -1,5 +1,5 @@
 title: Single-cell image analysis in MicrobeJ
-category: Imaging and analysis
+category: Analysis
 tags: imaging, MicrobeJ, Fiji, quantitative analysis, microscopy
 summary: Set cell-detection parameters, curate detected cells, export results, and generate profile and demograph plots in MicrobeJ.
 source: Written by K. Tembiwa.

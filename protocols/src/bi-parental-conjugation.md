@@ -5,6 +5,7 @@ summary: Transfer a plasmid from a DAP-auxotroph E. coli donor into a recipient 
 source: Written by K. Tembiwa.
 version: Version 1.0
 status: reviewed
+related: mycobacterial-mating | Conjugation between mycobacterial strains.
 ---
 ## Purpose
 

@@ -1,5 +1,5 @@
 title: Image management and integrity for microscopy
-category: Imaging and analysis
+category: Imaging
 tags: microscopy, image analysis, figures, reproducibility
 summary: Rules for acquiring, saving, processing and assembling microscopy images so comparisons are fair and figures are honest.
 source: Adapted by K. Tembiwa.

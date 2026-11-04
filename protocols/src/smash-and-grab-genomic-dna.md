@@ -5,6 +5,7 @@ summary: A fast (30–45 min) bead-beating and phenol–chloroform prep that giv
 source: Jeremy Rock, adapted by Hesper Rego (as received). Reproduced with credit; please check the original source for the authoritative version.
 version: 1.0
 status: reviewed
+related: msmeg-gdna-prep-long | Longer, higher-yield prep with chloroform:methanol delipidation and overnight lysozyme treatment. || msmeg-nucleic-acid-extraction | Lab-manual phenol–chloroform genomic DNA extraction, plus TRIzol-based RNA extraction.
 ---
 Fast, but yield is lower and DNA more sheared than in longer protocols. Enough for 50–100 PCRs and some downstream uses (e.g. transposon mapping of isolated clones). See also [Nucleic acid extraction from M. smegmatis](msmeg-nucleic-acid-extraction.html).
 

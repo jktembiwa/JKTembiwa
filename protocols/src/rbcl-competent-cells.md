@@ -5,6 +5,7 @@ summary: Prepare rubidium chloride chemically competent E. coli, snap-freeze for
 source: Rubidium chloride method (after Hanahan, 1983); adapted by K. Tembiwa from a lab protocol.
 version: Version 1.0
 status: reviewed
+related: ecoli-electrocompetent-cells | Make frozen electrocompetent E. coli aliquots (glycerol washes). || electrocompetent-cells-and-electroporation | Electrocompetent cells and electroporation settings by organism (E. coli, M. smegmatis, BCG/TB). || ecoli-chemical-transformation | Heat-shock transformation of chemically competent E. coli, with tips for toxic constructs and an efficiency test.
 ---
 ## Buffers and media
 

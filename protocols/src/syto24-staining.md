@@ -1,5 +1,5 @@
 title: SYTO 24 DNA staining of M. smegmatis
-category: Imaging and analysis
+category: Imaging
 tags: SYTO 24, nucleoid, DNA stain, microscopy, M. smegmatis
 summary: A quick live-cell nucleoid stain with no wash step.
 source: Boutte Lab protocol (as received), adapted by K. Tembiwa.

@@ -5,6 +5,7 @@ summary: A long, higher-yield genomic DNA prep with chloroform:methanol delipida
 source: Flavia Sorrentino, adapted by Hesper Rego (as received). Reproduced with credit; the original source is the authoritative version.
 version: 1.0
 status: reviewed
+related: smash-and-grab-genomic-dna | Fast (30–45 min) bead-beating prep; enough genomic DNA for 50–100 PCRs. || msmeg-nucleic-acid-extraction | Lab-manual phenol–chloroform genomic DNA extraction, plus TRIzol-based RNA extraction.
 ---
 Handle phenol, chloroform and methanol in a fume hood and dispose as hazardous waste. For a fast, lower-yield and lower-purity alternative see [Smash & Grab](smash-and-grab-genomic-dna.html).
 

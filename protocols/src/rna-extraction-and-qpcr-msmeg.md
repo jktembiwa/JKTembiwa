@@ -5,6 +5,7 @@ summary: Bead-beating in TRIzol, column purification, DNase treatment, a no-RT-s
 source: Written by K. Tembiwa (2023 version).
 version: Version 1.0
 status: reviewed
+related: msmeg-nucleic-acid-extraction | Lab-manual phenol–chloroform genomic DNA extraction, plus TRIzol-based RNA extraction.
 ---
 Work in an RNase-free area. Wipe benches, pipettes and gloves with an RNase-decontaminating wipe. Have everything ready first and move quickly.
 

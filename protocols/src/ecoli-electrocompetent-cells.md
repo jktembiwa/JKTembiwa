@@ -5,6 +5,7 @@ summary: Overnight starter to frozen electrocompetent aliquots, with glycerol wa
 source: Written by K. Tembiwa; complements the electroporation settings page.
 version: Version 1.0
 status: reviewed
+related: electrocompetent-cells-and-electroporation | Electrocompetent cells and electroporation settings by organism (E. coli, M. smegmatis, BCG/TB). || rbcl-competent-cells | Chemically competent E. coli made with rubidium chloride, for heat-shock transformation. || ecoli-chemical-transformation | Heat-shock transformation of chemically competent E. coli, with tips for toxic constructs and an efficiency test.
 ---
 1. Grow a starter culture overnight (add the appropriate antibiotic if you want to select against contaminants).
 2. In the morning, dilute to OD₆₀₀ of at least 0.05 in LB without antibiotics. Grow to OD₆₀₀ ~0.8 (up to 1.0 is fine).

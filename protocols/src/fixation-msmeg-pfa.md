@@ -1,5 +1,5 @@
 title: Fixing M. smegmatis cells with paraformaldehyde for microscopy
-category: Imaging and analysis
+category: Imaging
 tags: fixation, PFA, microscopy, M. smegmatis
 summary: Quick PFA fixation for trial imaging, with warnings about artefacts.
 source: Boutte Lab protocol (as received), adapted by K. Tembiwa.

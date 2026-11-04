@@ -5,6 +5,7 @@ summary: Calculate culture and medium volumes to start every well at the same OD
 source: Template by K. Tembiwa.
 version: Version 1.0
 status: reviewed
+related: manual-growth-curves | Growth curve by hand in flasks or tubes, measuring OD600 over time. || growth-curve-doubling-time-prism | Analyze either type of growth curve for doubling time in GraphPad Prism.
 ---
 ## Purpose
 

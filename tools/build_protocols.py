@@ -27,7 +27,7 @@ def head(title,desc):
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="container nav-wrap">
-<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span>Microbial Mosaic</span></a>
 <nav class="nav" aria-label="Main navigation">
 {NAV}
 </nav>
@@ -69,6 +69,16 @@ def plain(h):
     h=re.sub(r"(?is)<(script|style)\b.*?</\1>"," ",h)
     h=re.sub(INLINE,"",h)  # keep OD<sub>600</sub> as one word
     return re.sub(r"\s+"," ",html.unescape(re.sub(r"<[^>]+>"," ",h))).strip()
+TITLES={p["slug"]:p["title"] for p in pages}
+def which(p):
+    """'Which version should I use?' box from the optional 'related' header: slug | note || slug | note"""
+    if not p.get("related"): return ""
+    li=""
+    for item in p["related"].split("||"):
+        slug,note=[x.strip() for x in item.split("|",1)]
+        if slug not in TITLES: raise SystemExit(f"{p['slug']}: related page not found: {slug}")
+        li+=f'<li><a href="{slug}.html">{html.escape(TITLES[slug])}</a>: {html.escape(note)}</li>\n'
+    return f'<aside class="which-box"><h2>Which one should I use?</h2><p>Other pages cover related versions or steps:</p><ul>\n{li}</ul></aside>\n'
 for p in pages:
     p["html"]=md(p["body"])
     # "status: reviewed" in a source header drops the draft badge; the legend then appears only if .tbc spans remain
@@ -82,7 +92,7 @@ for p in pages:
 <p class="proto-meta">{status}<span class="meta">{html.escape(p["version"])}</span></p>
 </div></section>
 <section class="section"><div class="container prose">
-{legend}
+{which(p)}{legend}
 {p["html"]}
 <hr>
 <p class="meta"><strong>Source / credit:</strong> {html.escape(p["source"])}</p>
@@ -92,7 +102,7 @@ for p in pages:
 '''+FOOT
     open(f"protocols/{p['slug']}.html","w",encoding="utf-8").write(out)
 # index
-ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Protein biochemistry","Growth and assays","Imaging and analysis","Reference","Protocols"]
+ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Protein biochemistry","Growth and assays","Imaging","Analysis","Reference","Protocols"]
 from collections import Counter
 _c=Counter(t.lower() for p in pages for t in p['tags'])
 alltags=sorted({t for p in pages for t in p['tags'] if _c[t.lower()]>=2})

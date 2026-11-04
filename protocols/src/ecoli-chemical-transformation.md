@@ -5,6 +5,7 @@ summary: Heat-shock transformation of chemically competent E. coli, tips for tox
 source: Written by K. Tembiwa.
 version: Version 1.0
 status: reviewed
+related: ecoli-electrocompetent-cells | Make frozen electrocompetent E. coli aliquots (glycerol washes). || electrocompetent-cells-and-electroporation | Electrocompetent cells and electroporation settings by organism (E. coli, M. smegmatis, BCG/TB). || rbcl-competent-cells | Chemically competent E. coli made with rubidium chloride, for heat-shock transformation.
 ---
 ## Purpose
 

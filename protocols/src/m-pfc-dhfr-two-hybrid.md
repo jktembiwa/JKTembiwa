@@ -5,6 +5,7 @@ summary: Test pairwise or library-scale protein–protein interactions in M. sme
 source: Summarized from the M-PFC protocol and procedures document from the Steyn laboratory, and Singh A, Mai D, Kumar A, Steyn AJ. Dissecting virulence pathways of Mycobacterium tuberculosis through protein-protein association. Proc Natl Acad Sci USA 103:11346–11351 (2006). Please read the original paper for the authoritative method.
 version: Version 1.0
 status: reviewed
+related: dhfr-two-hybrid-and-ip-turapov | Co-immunoprecipitation of an endogenous protein, plus a plan for cloning partners into DHFR two-hybrid vectors.
 ---
 M-PFC is not a magic bullet; it may fail for a given pair of proteins. Host strain: *M. smegmatis* mc²155.
 

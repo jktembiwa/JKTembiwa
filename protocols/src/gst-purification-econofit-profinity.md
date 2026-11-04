@@ -5,6 +5,7 @@ summary: Native purification of GST fusion proteins on prepacked 1 or 5 mL colum
 source: Summarized from the Bio-Rad EconoFit Profinity GST Columns, 1 and 5 ml, Instruction Manual (catalog 12009295, 12009296, 12009297). Full manual: [Bio-Rad instruction manual (PDF)](https://www.bio-rad.com/webroot/web/pdf/lsr/literature/10000105057.pdf). The manual is authoritative; this is a condensed summary.
 version: Version 1.0
 status: reviewed
+related: ni-his-tag-purification-overview | General His-tag workflow from cloning to concentrated, frozen protein. || his-sumo-purification | Worked example (His-SUMO-CwlM): Ni-NTA by FPLC, dialysis, then size-exclusion. || magstrep-xt-bead-purification | Strep-tag II / Twin-Strep-tag proteins on MagStrep XT magnetic beads.
 ---
 These columns are for **native** purification only. They connect to any low-pressure chromatography system with 10-32 fittings. Maximum pressure 72 psi; not autoclavable; storage in 20% ethanol or 2% benzyl alcohol at 4 °C.
 

@@ -1,5 +1,5 @@
 title: Standardizing culture samples for assays
-category: Mycobacterial genetics
+category: Growth and assays
 tags: growth, standardization, cryostocks, assays, reproducibility
 summary: Reduce day-to-day variance by freezing standardized aliquots of single-cell suspensions at a defined OD.
 source: Adapted by K. Tembiwa from the Boutte Lab Manual (v2.0, 2021).
