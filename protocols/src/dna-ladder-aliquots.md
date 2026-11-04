@@ -2,7 +2,7 @@ title: Preparing DNA ladder aliquots
 category: Media and reagents
 tags: DNA ladder, agarose gel, aliquots
 summary: Dilute a stock DNA ladder with TE and loading dye so it is ready to load.
-source: Written by K. Tembiwa (Boutte Lab).
+source: Written by K. Tembiwa.
 version: Version 1.0
 status: reviewed
 ---
@@ -15,4 +15,4 @@ Mix:
 
 Mix gently by pipetting. Make six 1 mL aliquots and store at –20 °C. Load 6 µL per lane.
 
-[Check the dilution against the ladder's concentration; the same recipe may not suit every ladder.]{.tbc}
+Check the dilution against the ladder's concentration; the same recipe may not suit every ladder.

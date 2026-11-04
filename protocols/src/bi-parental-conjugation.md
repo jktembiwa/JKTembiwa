@@ -26,7 +26,7 @@ Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a
 ## Day 2: mating
 
 1. In the afternoon, transfer 1 mL of each overnight culture to a separate microcentrifuge tube.
-2. Wash each pellet twice with 1X PBS: spin [3000 rpm]{.tbc} for 5 min, resuspend in 500 µL PBS each time.
+2. Wash each pellet twice with 1X PBS: spin 3000 rpm (confirm with your machine) for 5 min, resuspend in 500 µL PBS each time.
 3. After the second wash, resuspend in 500 µL 1X PBS.
 4. In new tubes, combine donor and recipient to a total of 100 µL. **Mix by pipetting, not vortexing.** Volumes used:
     - 50 µL donor + 50 µL recipient (1:1)

@@ -2,7 +2,7 @@ title: His-SUMO-tagged protein purification (Ni-NTA, dialysis, SEC), example Cwl
 category: Protein biochemistry
 tags: protein purification, His-SUMO, Ni-NTA, FPLC, SEC, CwlM
 summary: Express in BL21, lyse by sonication, purify on Ni-NTA by FPLC, dialyze, polish by size-exclusion chromatography. Example: His-SUMO-CwlM (~56 kDa).
-source: Written by K. Tembiwa (Boutte Lab), developed for His-SUMO-CwlM.
+source: Written by K. Tembiwa, developed for His-SUMO-CwlM.
 version: Version 1.0
 status: reviewed
 ---
@@ -12,7 +12,9 @@ Plasmid: pET His-SUMO-CwlM, stored in a cloning strain. Miniprep the vector, the
 
 ## 1. Expression
 
-Induce 1L of culture with **1.3 mM IPTG at 18 °C overnight with shaking (220 rpm, in 4L flask)**. Pellet at 5,000 [rpm] for 20 min and store pellets at –20 °C. Record OD₆₀₀ before and after induction and keep 50–100 µL of each in Laemmli buffer to confirm induction on a gel.
+1. Induce 1L of culture with **1.3 mM IPTG at 18 °C overnight with shaking (220 rpm, in 4L flask)**. 
+2. Pellet at 5,000 [rpm] for 20 min and store pellets at –20 °C. 
+3. Record OD₆₀₀ before and after induction and keep 50–100 µL of each in Laemmli buffer to confirm induction on a gel.
 
 ## 2. Lysis (sonication)
 
@@ -40,6 +42,6 @@ Dialyze the eluate overnight against wash/elution buffer with no imidazole.
 
 ## 6. Size-exclusion chromatography (SEC)
 
-NanoDrop the dialyzed protein (blank: dialysis buffer) and keep a gel sample. Load on SEC in 50 mM Tris pH 8, 350 mM NaCl, 10% glycerol, 1 mM DTT (equilibrate 1.25 CV; elute 1.25 CV). Run fractions on a gel, pool the clean ones, concentrate to 1 mg/mL at least, NanoDrop to confirm , adjust glycerol to 10% final, re-measure, flash freeze 10-100 µL aliquots using liquid nitrogen and store at –80 °C.
-
-[Amplitude of sonication, centrifuge speeds as rpm and the aliquot/freezing step need future experimental confirmation.]{.tbc}
+1. NanoDrop the dialyzed protein (blank: dialysis buffer) and keep a gel sample. 
+2. Load on SEC (column should be on SEC buffer: 50 mM Tris pH 8, 350 mM NaCl, 10% glycerol, 1 mM DTT); equilibrate 1.25 CV; elute 1.25 CV. 
+3. Run fractions on a gel, pool the clean ones, concentrate to 1 mg/mL at least, NanoDrop to confirm , adjust glycerol to 10% final, re-measure, flash freeze 10-100 µL aliquots in liquid nitrogen and store at –80 °C.
