@@ -38,6 +38,8 @@ Immobilize a His-SUMO "bait" (e.g. His-SUMO-MurJ ICD) on resin. Pass the untagge
 
 Fractions: flow-through, wash 1, prey load, wash 2, elution.
 
+<figure class="proto-fig" style="max-width:520px"><img src="images/pulldown-gel-annotated.jpg" alt="Coomassie-stained gel with annotated lanes for the control and experiment pull-down: add, wash and elute fractions" width="1200" height="900" loading="lazy"><figcaption>Example gel from the pull-down: bait-only controls and bait plus prey, each loaded as added, wash and elute.</figcaption></figure>
+
 ## Part 2 (alternative): Magnetic beads
 
 1. Pipette 40 µL HisPur Ni-NTA magnetic beads into a tube, add 160 µL wash buffer, vortex 10 s, collect beads on a magnetic stand, discard supernatant. Wash once more in 400 µL.

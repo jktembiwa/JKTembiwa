@@ -46,3 +46,6 @@ Dialyze the eluate overnight against wash/elution buffer with no imidazole.
 1. NanoDrop the dialyzed protein (blank: dialysis buffer) and keep a gel sample. 
 2. Load on SEC (column should be on SEC buffer: 50 mM Tris pH 8, 350 mM NaCl, 10% glycerol, 1 mM DTT); equilibrate 1.25 CV; elute 1.25 CV. 
 3. Run fractions on a gel, pool the clean ones, concentrate to 1 mg/mL at least, NanoDrop to confirm , adjust glycerol to 10% final, re-measure, flash freeze 10-100 µL aliquots in liquid nitrogen and store at –80 °C.
+
+<figure class="proto-fig" style="max-width:520px"><img src="images/sec-trace.jpg" alt="Size-exclusion chromatogram with a small early peak and a larger main peak, with fraction ranges along the top" width="1200" height="657" loading="lazy"><figcaption>Example SEC trace: a small early peak and the main peak; fractions are marked along the top.</figcaption></figure>
+

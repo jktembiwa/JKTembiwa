@@ -350,3 +350,9 @@ h3 {
 .profile-photo{margin:0;width:260px;max-width:70%;margin-inline:auto}
 .profile-photo img{display:block;width:100%;height:auto;aspect-ratio:1/1;border-radius:50%;border:4px solid var(--paper);box-shadow:var(--shadow);object-fit:cover}
 @media (max-width:760px){.profile-photo{width:200px}}
+
+.news-fig{grid-column:2;margin:.6rem 0 0}
+.news-fig-row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:flex-start}
+.news-fig img{display:block;height:auto;max-height:240px;width:auto;max-width:100%;border-radius:8px;box-shadow:var(--shadow)}
+.news-fig figcaption{margin-top:.4rem;font-size:.82rem;color:var(--muted)}
+@media(max-width:560px){.news-fig{grid-column:1}.news-fig img{max-height:200px}}

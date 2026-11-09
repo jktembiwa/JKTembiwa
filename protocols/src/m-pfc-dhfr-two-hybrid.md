@@ -28,6 +28,8 @@ Clone gene A in pUAB100 or pUAB300 and gene B in pUAB200 or pUAB400, in frame wi
 4. **Growth on trimethoprim indicates interaction.** Stronger interactions grow earlier.
 5. Controls: pUAB100 + pUAB200 (GCN4 domains, strong interaction) as the positive control; any one of the clones with an unrelated partner as the negative control.
 
+<figure class="proto-fig" style="max-width:380px"><img src="images/mpfc-sectored-plate.jpg" alt="Agar plate divided into labelled sectors, each streaked with a different pair of constructs" width="900" height="900" loading="lazy"><figcaption>Example M-PFC plate: one sector per pair of constructs, including positive and negative controls.</figcaption></figure>
+
 ## Notes from the protocol
 
 - Use 7H11, **not** 7H10 or 7H9 + agar. Do not change the Kan, Hyg or trimethoprim concentrations.

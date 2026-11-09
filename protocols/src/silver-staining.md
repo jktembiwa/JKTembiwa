@@ -33,3 +33,6 @@ In the published version: fix ≥30 min; wash 2 × 10 min in 20% ethanol, 2 × 1
 For **mass spectrometry** downstream, a single 30 min fix gives the best sequence coverage, and aldehyde-free silver-ammonia variants, plus a ferricyanide–thiosulfate destain of excised bands, are described in the same paper.
 
 Reference: Chevallet M, Luche S, Rabilloud T. Silver staining of proteins in polyacrylamide gels. *Nat Protoc* 2006;1:1852–1858. Free preprint: <https://arxiv.org/abs/0706.4396>
+
+<figure class="proto-fig" style="max-width:520px"><img src="images/silver-gel-annotated.jpg" alt="Silver-stained gel with annotated bands for the bait and prey proteins" width="1200" height="900" loading="lazy"><figcaption>Example silver-stained gel with bands annotated.</figcaption></figure>
+

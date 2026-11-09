@@ -29,3 +29,6 @@ Use rows B–G and columns 2–11. Fill the outer wells with 200 µL sterile wat
 10. Re-incubate 7–18 h for *M. smegmatis*. **Blue = no growth; pink = growth.** Violet wells at 24 h usually turn pink after another day and count as growth. MIC = lowest drug concentration that stays blue.
 
 Confirm incubation times and OD for different species; these values are for *M. smegmatis*.
+
+<figure class="proto-fig" style="max-width:520px"><img src="images/alamar-blue-plate.jpg" alt="96-well plate after Alamar Blue: blue wells where growth is inhibited and pink wells where bacteria grew" width="1200" height="1084" loading="lazy"><figcaption>Example read-out after Alamar Blue: blue wells are inhibited, pink wells show growth.</figcaption></figure>
+

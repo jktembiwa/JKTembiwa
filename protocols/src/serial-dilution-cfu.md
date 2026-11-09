@@ -35,6 +35,8 @@ Estimate the number of viable cells (colony-forming units, CFU) per mL of a cult
 
 **Drop plating (saves plates):** spot 10 µL per dilution in a row on a plate (3 spots per dilution is typical). Let the drops dry before inverting. Count the spots with roughly 3–30 colonies.
 
+<figure class="proto-fig" style="max-width:360px"><img src="images/spot-plate-cfu.jpg" alt="Agar plate with rows of drop-plated spots, colonies thinning out from dense to single across successive dilutions" width="900" height="1200" loading="lazy"><figcaption>Example of drop plating: spots from a dilution series, dense on the left and countable on the right.</figcaption></figure>
+
 ## Counting and calculation
 
 $$\text{CFU/mL} = \frac{\text{colonies counted}}{\text{volume plated (mL)} \times \text{dilution}}$$
