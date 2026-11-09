@@ -22,7 +22,7 @@ def head(title,desc,bar=''):
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/protocols.css">
-<link rel="stylesheet" href="../assets/notebook.css?v=10">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
 </head>
 <body class="ruled">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,7 +38,7 @@ def head(title,desc,bar=''):
 '''+(f'<div class="container entry-bar"><span>{html.escape(bar[0])}</span><span class="entry-date"></span><span>{html.escape(bar[1])}</span></div>\n' if bar else '')
 FOOT='''</main>
 <footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
-<script src="../assets/notebook.js?v=10"></script></body>
+<script src="../assets/notebook.js?v=11"></script></body>
 </html>
 '''
 def intro(path):
@@ -143,12 +143,26 @@ open("protocols/index.html","w",encoding="utf-8").write(idx)
 json.dump([{"slug":p["slug"],"text":plain(p["html"])} for p in pages],open("protocols/search.json","w",encoding="utf-8"),ensure_ascii=False,separators=(",",":"))
 # FAQ
 faq=[l.strip() for l in open("protocols/faq.txt",encoding="utf-8").read().split("\n===\n") if l.strip()]
-items=""
+groups={}; order=[]; cat="General"; nfaq=0
 for block in faq:
     lines=block.split("\n")
+    if lines[0].startswith("@ "):
+        cat=lines[0][2:].strip(); lines=lines[1:]
     q=lines[0]; link=lines[1]; ans="\n".join(lines[2:])
     slug,label=link.split("|")
-    items+=f'<details class="faq"><summary>{html.escape(q)}</summary>{md(ans)}<p class="meta">Related: <a href="{slug}.html">{html.escape(label)}</a> · {STATUS}</p></details>\n'
+    if cat not in groups: groups[cat]=""; order.append(cat)
+    groups[cat]+=f'<details class="faq"><summary>{html.escape(q)}</summary>{md(ans)}<p class="meta">Related: <a href="{slug}.html">{html.escape(label)}</a> · {STATUS}</p></details>\n'
+    nfaq+=1
+def cid(c): return "cat-"+re.sub(r"[^a-z0-9]+","-",c.lower()).strip("-")
+jump=''.join(f'<a class="chip" href="#{cid(c)}">{html.escape(c)}</a> ' for c in order)
+items=''.join(f'<section class="faq-group" id="{cid(c)}"><h2 class="faq-cat">{html.escape(c)}</h2>\n{groups[c]}</section>\n' for c in order)
+items=f'<input id="fq" class="search" type="search" placeholder="Search the FAQ (e.g. smear, precipitate, lawn, Tween)" aria-label="Search the FAQ">\n<p class="faq-jump">{jump}</p>\n<p id="fempty" class="meta" hidden>No questions match.</p>\n'+items
+FAQJS='''<script>
+(function(){var q=document.getElementById("fq");if(!q)return;var items=[].slice.call(document.querySelectorAll("details.faq")),groups=[].slice.call(document.querySelectorAll(".faq-group")),empty=document.getElementById("fempty");
+function run(){var t=q.value.trim().toLowerCase(),n=0;items.forEach(function(d){var m=!t||d.textContent.toLowerCase().indexOf(t)>-1;d.hidden=!m;if(t)d.open=m;else d.open=false;if(m)n++});
+groups.forEach(function(g){g.hidden=!g.querySelector("details.faq:not([hidden])")});empty.hidden=n>0}
+q.addEventListener("input",run)})();
+</script>'''
 f=head("Troubleshooting FAQ","Common failure points in molecular microbiology protocols.",("Protocols · FAQ","Troubleshooting"))+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1>{FI["heading"]}</h1>
@@ -159,6 +173,6 @@ f=head("Troubleshooting FAQ","Common failure points in molecular microbiology pr
 {items}
 <p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>
-'''+FOOT
+'''+FAQJS+FOOT
 open("protocols/faq.html","w",encoding="utf-8").write(f)
-print("built",len(pages),"protocols,",len(faq),"faq entries")
+print("built",len(pages),"protocols,",nfaq,"faq entries")

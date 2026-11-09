@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/protocols.css">
-<link rel="stylesheet" href="../assets/notebook.css?v=10">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
 </head>
 <body class="ruled">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -37,22 +37,130 @@
 </div></section>
 <section class="section"><div class="container prose">
 <p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
-<details class="faq"><summary>My E. coli transformation gives few or no colonies, and my gene may be toxic. What can I change?</summary><p>Recover at 30 °C for about 1.5 hours and incubate the plate at 30 °C overnight. Colonies take 24+ hours to appear but are often correct, with little background. TOP10 and XL1-Blue (which carries a tet repressor) tend to suit toxic cloning, though both grow more slowly than DH5α.</p>
-<p class="meta">Related: <a href="ecoli-chemical-transformation.html">Chemical transformation of *E. coli*</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<input id="fq" class="search" type="search" placeholder="Search the FAQ (e.g. smear, precipitate, lawn, Tween)" aria-label="Search the FAQ">
+<p class="faq-jump"><a class="chip" href="#cat-media-and-plates">Media and plates</a> <a class="chip" href="#cat-cloning-and-pcr">Cloning and PCR</a> <a class="chip" href="#cat-transformation-and-conjugation">Transformation and conjugation</a> <a class="chip" href="#cat-protein-expression-and-purification">Protein expression and purification</a> <a class="chip" href="#cat-gels-and-western-blots">Gels and western blots</a> <a class="chip" href="#cat-mycobacterial-culture-and-genetics">Mycobacterial culture and genetics</a> </p>
+<p id="fempty" class="meta" hidden>No questions match.</p>
+<section class="faq-group" id="cat-media-and-plates"><h2 class="faq-cat">Media and plates</h2>
 <details class="faq"><summary>Why do I get small colonies around my big colonies on ampicillin plates?</summary><p>These are satellite colonies, which appear when plates are incubated longer than about 16–18 hours at 37 °C. Use carbenicillin, which is more stable than ampicillin,.</p>
 <p class="meta">Related: <a href="antibiotic-plates.html">Pouring LB plates, with and without antibiotics</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
 <details class="faq"><summary>My hygromycin or zeocin plates don&#x27;t seem to select for E. coli.</summary><p>Check the salt in your LB. Hygromycin and zeocin do not work well in high-salt (Miller) LB; use low-salt LB (Lennox or Luria). Also make sure the agar had cooled enough before the antibiotic was added.</p>
 <p class="meta">Related: <a href="antibiotic-plates.html">Pouring LB plates, with and without antibiotics</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How hot can the agar be when I add the antibiotic?</summary><p>Let the molten agar cool until the bottle is comfortable to hold for about 10 seconds with your bare hand. Antibiotic added to agar that is too hot is degraded. Add the antibiotic, swirl to mix, then pour.</p>
+<p class="meta">Related: <a href="antibiotic-plates.html">Pouring LB plates, with and without antibiotics</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How long can I leave poured plates on the bench?</summary><p>Let plates set and cool on the bench with the lids closed for about 16–24 h, then store them. Do not leave them out longer than 24 h or without lids, because they may dry out or become contaminated.</p>
+<p class="meta">Related: <a href="antibiotic-plates.html">Pouring LB plates, with and without antibiotics</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Can I autoclave 7H9 or ADC?</summary><p>No. Both 7H9 and 10X ADC are <strong>filter sterilized, not autoclaved</strong>.</p>
+<p class="meta">Related: <a href="media-recipes.html">Media recipes</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My defined (HdB) medium forms a precipitate.</summary><p>Follow the order of additions in the recipe, and make sure the medium is <strong>autoclaved and then filter sterilized</strong>; otherwise a precipitate forms over time.</p>
+<p class="meta">Related: <a href="media-recipes.html">Media recipes</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
+<section class="faq-group" id="cat-cloning-and-pcr"><h2 class="faq-cat">Cloning and PCR</h2>
+<details class="faq"><summary>My PCR fails or gives a smear. What should I check?</summary><p>The usual cause is an annealing temperature that does not suit the primers, so run a gradient PCR across 50–70 °C first. Also check your template amount (it should not exceed 1,000 ng), the age and number of freeze–thaw cycles of your working primers, and your extension time. For smeary bands, make sure you do not add the polymerase until right before the tubes go into the thermocycler.</p>
+<p class="meta">Related: <a href="pcr-polymerases.html">PCR polymerases</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
 <details class="faq"><summary>My colony PCR from mycobacterial colonies gives no band, but my positive control works.</summary><p>Try a few colonies with a high-fidelity polymerase (Phusion) and add a 5–10 minute initial step at 98 °C to lyse the cells. If you lysed colonies by boiling in DMSO, switch to a water suspension without boiling, since DMSO lysates can carry over too much DNA and inhibit the reaction.</p>
 <p class="meta">Related: <a href="colony-pcr-screening.html">Colony PCR screening</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
-<details class="faq"><summary>I see a lawn instead of single colonies on my selection plate after conjugation.</summary><p>Take a small amount of the lawn and streak for single colonies first, then screen single colonies by colony PCR.</p>
+<details class="faq"><summary>Can I use my colony PCR product for cloning?</summary><p>No. Taq has low fidelity, so use the colony PCR master mix for checking only, never for cloning.</p>
+<p class="meta">Related: <a href="colony-pcr-screening.html">Colony PCR screening</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>I get few or no colonies from a Gibson assembly with more than two fragments.</summary><p>Efficiency falls with each additional insert. One or two inserts is best, and up to three has worked. For more, first run a Gibson reaction with all the inserts but no vector, add 1 µL of the raw reaction to a new PCR with the two terminal primers to make a single pre-assembled fragment, purify it as for a single insert, and use that in the final Gibson reaction with the vector.</p>
+<p class="meta">Related: <a href="gibson-assembly.html">Gibson assembly</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My Gibson plate and the vector-only control have similar colony counts.</summary><p>The vector may not be fully cut or purified. Check the digest.</p>
+<p class="meta">Related: <a href="gibson-assembly.html">Gibson assembly</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My gel purification yield is very low.</summary><p>Large losses are expected. Eluting in 30 µL rather than 50 µL gives a more concentrated product, and the low-melt method is faster for Gibson assembly. For a vector, load more of the digestion reaction on the gel, or add more plasmid to the digestion. If the gel slice does not dissolve, keep vortexing at the stated intervals during the 2–3 hour incubation.</p>
+<p class="meta">Related: <a href="gel-purification.html">Gel purification</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
+<section class="faq-group" id="cat-transformation-and-conjugation"><h2 class="faq-cat">Transformation and conjugation</h2>
+<details class="faq"><summary>My E. coli transformation gives few or no colonies, and my gene may be toxic. What can I change?</summary><p>Recover at 30 °C for about 1.5 hours and incubate the plate at 30 °C overnight. Colonies take 24+ hours to appear but are often correct, with little background. TOP10 and XL1-Blue (which carries a tet repressor) tend to suit toxic cloning, though both grow more slowly than DH5α.</p>
+<p class="meta">Related: <a href="ecoli-chemical-transformation.html">Chemical transformation of *E. coli*</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>I get few or no colonies after a chemical transformation, and my gene is not toxic.</summary><p>Test the efficiency of your competent cells with a control plasmid (the efficiency test is described on the protocol page).</p>
+<p class="meta">Related: <a href="ecoli-chemical-transformation.html">Chemical transformation of *E. coli*</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Can I refreeze chemically competent cells?</summary><p>No. Store the cells at –70 °C and do not refreeze them.</p>
+<p class="meta">Related: <a href="copycutter-epi400-cells.html">CopyCutter EPI400 cells</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My electroporation arcs or has low efficiency.</summary><p>For arcing, make BCG and <em>M. tuberculosis</em> competent cells fresh each time. For low efficiency, wash mycobacteria in glycerol, not water, and keep <em>E. coli</em> cells cold throughout.</p>
+<p class="meta">Related: <a href="electrocompetent-cells-and-electroporation.html">Electrocompetent cells and electroporation</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How do I set up and label bi-parental mating plates?</summary>Mix donor and recipient by pipetting (not vortexing) to 100 µL total, at three ratios by volume: 50 µL donor + 50 µL recipient, 10 + 90, and 1 + 99. Spot the entire 100 µL of each ratio onto a YG + DAP plate and <strong>do not spread</strong>. Use one plate per donor × recipient combination, with the three ratios on the same plate, and label each sector with its ratio.
+<figure class="proto-fig" style="max-width:520px">
+<img src="images/conjugation-plates-example.jpg" alt="Two YG + DAP mating plates, each divided into three labelled sectors (1:1, 1:10 and 1:100) with a mating spot in each" width="1400" height="869" loading="lazy">
+<figcaption>
+Example mating plates (YG + DAP), one sector per ratio. The strain label has been blurred.
+</figcaption>
+</figure>
 <p class="meta">Related: <a href="bi-parental-conjugation.html">Bi-parental conjugation</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
 <details class="faq"><summary>I don&#x27;t see growth in my conjugation spots the morning after mating.</summary><p>Check again later that day, then again the next morning, before concluding the mating failed.</p>
 <p class="meta">Related: <a href="bi-parental-conjugation.html">Bi-parental conjugation</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>I see a lawn instead of single colonies on my selection plate after conjugation.</summary><p>Take a small amount of the lawn and streak for single colonies first, then screen single colonies by colony PCR.</p>
+<p class="meta">Related: <a href="bi-parental-conjugation.html">Bi-parental conjugation</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Donor *E. coli* keeps growing on my selection plates after conjugation.</summary><p>Confirm that the selection plates contain no DAP and that the post-mating washes in PBS were done twice.</p>
+<p class="meta">Related: <a href="bi-parental-conjugation.html">Bi-parental conjugation</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My mycobacterial mating efficiency is low.</summary><p>For microtiter-plate matings, use fresh colonies (less than a week old); otherwise transfer efficiencies fall.</p>
+<p class="meta">Related: <a href="mycobacterial-mating.html">Mycobacterial mating</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
+<section class="faq-group" id="cat-protein-expression-and-purification"><h2 class="faq-cat">Protein expression and purification</h2>
+<details class="faq"><summary>My protein precipitates after Ni purification.</summary><p>Imidazole causes precipitation. Analyze the fractions on a gel, pool the ones you want, and buffer exchange to remove the imidazole. Also, after elution run 1.25 CV of elution buffer to wash the column rather than water, because remaining protein can precipitate on the resin.</p>
+<p class="meta">Related: <a href="fplc-ni-sec-workflow.html">FPLC Ni and SEC workflow</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Should I put EDTA in my Ni-NTA buffers?</summary><p>Not in the wash and elution buffers, because EDTA chelates Ni²⁺ and reduces the free Ni available to bind your protein. It depends on the protein, though: DivIVA is strongly stabilized by EDTA, and every attempt to dialyze it into buffer without EDTA ended in precipitation, so EDTA is in its lysis, dialysis and SEC buffers but not in the wash and elution buffers.</p>
+<p class="meta">Related: <a href="diviva-wag31-purification-sec.html">DivIVA purification and SEC</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My lysate is cloudy. Can I load it on the column?</summary><p>Syringe-filter a cloudy supernatant before loading. Particles in the column or tubing raise the pressure, which is why all buffers and lysates are filtered.</p>
+<p class="meta">Related: <a href="his-sumo-purification.html">His-SUMO purification</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My FPLC column lost resolution or the pressure is high.</summary><p>The resin beads are squishable: too much pressure crushes them and they will not recover, after which the column loses resolution and becomes even more sensitive to pressure. Set a pressure limit below the manufacturer’s maximum, with a program override that lowers the flow rate when pressure is too high. Particles raise pressure (filter everything), and glycerol raises pressure too, so lower the flow rate with glycerol buffers.</p>
+<p class="meta">Related: <a href="fplc-ni-sec-workflow.html">FPLC Ni and SEC workflow</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>I see air bubbles or salt precipitate in my FPLC system.</summary><p>For bubbles: prime the lines whenever you change buffers, degas buffers, run a system flush before every run, and keep both pump inlet lines in liquid at all times. For salt: salty buffer plus ethanol can precipitate salt in the column, so always wash with water (1.25 CV) before ethanol (1.25 CV). If you want a different buffer the next day, mix the two buffers in a beaker first and only go straight from one to the other if nothing precipitates.</p>
+<p class="meta">Related: <a href="fplc-ni-sec-workflow.html">FPLC Ni and SEC workflow</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Can I run the EmulsiFlex dry or load a lot of sample?</summary><p>No to both. Without liquid lubrication the plunger can seize in the pump, which shortens seal life, so do not run it dry for more than a few cycles. Too much sample can block the check valves and stop the pump.</p>
+<p class="meta">Related: <a href="emulsiflex-c5-cell-disruption.html">EmulsiFlex C5 cell disruption</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My TCA pellet sample buffer turns yellow.</summary><p>The sample is acidic. Add 0.5 µL saturated NaOH, mix, and repeat until the dye is blue and the pellet dissolves.</p>
+<p class="meta">Related: <a href="membrane-lysate-ddm-tca.html">Lysate preparation for membrane proteins</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
+<section class="faq-group" id="cat-gels-and-western-blots"><h2 class="faq-cat">Gels and western blots</h2>
+<details class="faq"><summary>My protein ladder is smeared and the colours run together on the membrane. What went wrong?</summary><strong>Catch this on the gel, not after the transfer.</strong> A pre-stained ladder should already be resolved into separate coloured bands on the gel before you assemble the sandwich. If it is smeared at that point, the problem is in the electrophoresis, and you can fix it before spending a membrane and an hour on a transfer. <span class="tbc">Things to check: a ladder that is overloaded or has gone off (old, many freeze–thaw cycles), a gel that ran too hot or too fast, old or wrongly diluted running buffer, or a gel that did not polymerize well.</span>
+<figure class="proto-fig" style="max-width:420px">
+<img src="images/western-ladder-smear.jpg" alt="A white PVDF membrane after transfer, with the two ladder lanes smeared into vertical coloured streaks, next to the open transfer cassette" width="1200" height="1056" loading="lazy">
+<figcaption>
+A membrane after transfer (left) with a smeared ladder, beside the open transfer cassette. This would have been visible on the gel.
+</figcaption>
+</figure>
+<p class="meta">Related: <a href="western-blot-mycobacterial-membrane-proteins.html">Western blot of membrane proteins</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>What does a good SDS-PAGE gel look like, and what went wrong with mine?</summary>The example below is nearly perfect, with two flaws. The lane edges are “melted” <span class="tbc">(distorted at the sides, usually a sign that the gel got too warm during the run)</span>, and the ladder did not separate properly because the gel did not run long enough. Run until the dye front reaches the bottom of the gel. For reference, the test-induction protocol runs at constant current, 30 mA for the first 15 min and then about 42 mA until the dye reaches the bottom, and the western protocol runs at about 35 mA for 45–60 min.
+<figure class="proto-fig" style="max-width:560px">
+<img src="images/sds-page-coomassie-example.jpg" alt="Coomassie-stained SDS-PAGE gel with several samples and four ladder lanes; the ladder bands are bunched toward the top and the outer lane edges look distorted" width="1400" height="1050" loading="lazy">
+<figcaption>
+Coomassie-stained gel: nearly perfect, but with melted edges and a ladder that has not separated.
+</figcaption>
+</figure>
+<p class="meta">Related: <a href="test-induction-protein-expression.html">Test induction of protein expression</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How long should I transfer?</summary><p>For a wet transfer, run at about 25 V for 60 min per mini gel, with the whole unit in an ice bucket and all bubbles removed from the sandwich. Larger proteins need a longer time or more voltage. The protocol uses 75–80 min for a ~28 kDa protein.</p>
+<p class="meta">Related: <a href="western-blot-mycobacterial-membrane-proteins.html">Western blot of membrane proteins</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Should I add SDS to the transfer buffer or adjust the pH of the running buffer?</summary><p>Normally no to both. Do not add SDS to transfer buffer unless you need extra help moving a protein; if you do, add 0.5–1 g SDS to the 1X buffer and mix until dissolved. Do not adjust the pH of conventional Tris-glycine-SDS running buffer unless your electrophoresis system requires it.</p>
+<p class="meta">Related: <a href="buffers-and-solutions.html">Common buffers and solutions</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How long should I heat my samples in sample buffer?</summary><p>A common starting point is 95 °C for 10 minutes, but some proteins need other conditions. For example, the radioactive kinase assay protocol says not to heat after adding Laemmli.</p>
+<p class="meta">Related: <a href="buffers-and-solutions.html">Common buffers and solutions</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My blot or fluorescence images have saturated pixels.</summary><p>Do not take saturated images. Check several images across a comparison set when choosing settings, use the same settings (bit depth, exposure time, light intensity) for samples you will compare, and use 16-bit images if some samples saturate.</p>
+<p class="meta">Related: <a href="image-management-and-integrity.html">Image management and integrity</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
+<section class="faq-group" id="cat-mycobacterial-culture-and-genetics"><h2 class="faq-cat">Mycobacterial culture and genetics</h2>
+<details class="faq"><summary>My mycobacterial cultures clump. Should I add Tween?</summary><p>Tween 80 (or tyloxapol) prevents clumping in liquid culture, but it slightly changes the cell surface, so keep the concentration constant between comparisons. Do not add Tween to plates, and only use tyloxapol for carbon-starvation experiments. For click labeling, keep OD₆₀₀ below 1.0 to avoid clumping.</p>
+<p class="meta">Related: <a href="culturing-bacteria.html">Culturing bacteria</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My low-density mycobacterial culture will not grow.</summary><p>Do not over-dilute: very low-density cultures grow poorly. Inoculate at OD₆₀₀ 0.01–0.05 or more, and plan multi-day cultures (a dense preculture the day before lets you set up experiments with log-phase cells).</p>
+<p class="meta">Related: <a href="culturing-bacteria.html">Culturing bacteria</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>How do I avoid contamination in long mycobacterial incubations?</summary><p>Contamination from faster-growing bacteria is the biggest risk. Antibiotics for the plasmid can protect against it, cycloheximide or other additions are sometimes used, and plates should be sealed in bags for long incubations.</p>
+<p class="meta">Related: <a href="culturing-bacteria.html">Culturing bacteria</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Should I passage my strains to lose a plasmid or keep them going?</summary><p>Avoid it. Do not passage a culture to lose the plasmid, because passaging risks suppressor mutations in the mutants. Likewise, keep wild-type stocks low-passage: <em>M. marinum</em>, for example, can lose its ability to lyse red blood cells, so make P1 and P2 stocks and a new P1 may be needed every few years.</p>
+<p class="meta">Related: <a href="cre-lox-cassette-removal.html">Cre-lox cassette removal</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>My M-PFC (DHFR two-hybrid) plates are not working.</summary><p>Check the medium and drug: use 7H11 (not 7H10 or 7H9 + agar), do not change the Kan, Hyg or trimethoprim concentrations, make fresh trimethoprim for plates, and do not store trimethoprim plates long at 4 °C. For membrane proteins use pUAB100 and pUAB200 and make sure the DHFR fragments sit in the cytoplasm; some proteins need a free N- or C-terminus, so test parallel and antiparallel orientations. M-PFC may also simply fail for a given pair of proteins.</p>
+<p class="meta">Related: <a href="m-pfc-dhfr-two-hybrid.html">M-PFC (DHFR two-hybrid)</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>Does fixation change where my protein localizes?</summary><p>It can. Fixation can alter cell shape and the distribution of fluorophore-tagged molecules, so for a final experiment test that fixation does not affect the phenomenon you are studying. It is best for trial runs or when live imaging is not possible.</p>
+<p class="meta">Related: <a href="fixation-msmeg-pfa.html">Fixation of *M. smegmatis* with PFA</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+<details class="faq"><summary>MicrobeJ merges or splits my cells, or the wrong channel is analyzed.</summary><p>Check the channel assignment before every analysis. For merged or split cells, tighten the shape ranges and/or curate manually in the experiment editor. Use the same set of columns for every image so the exported data can be combined.</p>
+<p class="meta">Related: <a href="microbej-analysis.html">MicrobeJ analysis</a> · <span class="status draft">Draft: not yet reviewed by the author</span></p></details>
+</section>
 
 <p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>
-</main>
+<script>
+(function(){var q=document.getElementById("fq");if(!q)return;var items=[].slice.call(document.querySelectorAll("details.faq")),groups=[].slice.call(document.querySelectorAll(".faq-group")),empty=document.getElementById("fempty");
+function run(){var t=q.value.trim().toLowerCase(),n=0;items.forEach(function(d){var m=!t||d.textContent.toLowerCase().indexOf(t)>-1;d.hidden=!m;if(t)d.open=m;else d.open=false;if(m)n++});
+groups.forEach(function(g){g.hidden=!g.querySelector("details.faq:not([hidden])")});empty.hidden=n>0}
+q.addEventListener("input",run)})();
+</script></main>
 <footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
-<script src="../assets/notebook.js?v=10"></script></body>
+<script src="../assets/notebook.js?v=11"></script></body>
 </html>

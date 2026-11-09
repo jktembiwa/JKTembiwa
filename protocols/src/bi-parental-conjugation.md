@@ -36,6 +36,8 @@ Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a
 5. **Spot** the entire 100 µL onto a YG + DAP plate. **Do not spread.** Use one plate per donor × recipient combination, with the three ratios spotted on the same plate.
 6. Let the spots dry, then incubate at 28 °C overnight.
 
+<figure class="proto-fig" style="max-width:520px"><img src="images/conjugation-plates-example.jpg" alt="Two YG + DAP mating plates, each divided into three labelled sectors (1:1, 1:10 and 1:100) with a mating spot in each" width="1400" height="869" loading="lazy"><figcaption>Example mating plates (YG + DAP), one sector per donor:recipient ratio (labelled 1:1, 1:10 and 1:100). The strain label has been blurred.</figcaption></figure>
+
 ## Day 3 onward: recover transconjugants
 
 1. Check for growth in the spots the next morning. If none, check again later that day, then the following morning.

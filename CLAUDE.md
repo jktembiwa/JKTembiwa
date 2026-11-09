@@ -15,7 +15,7 @@ Personal academic site "Microbial Mosaic" for Karen Tembiwa (mycobacterial cell 
 |---|---|
 | `protocols/src/*.md` | Sources. Header lines `key: value`, then `---`, then a pandoc-markdown body (pipe tables, bracketed spans) |
 | `tools/build_protocols.py` | Build script. Writes `protocols/*.html`, `protocols/index.html`, `protocols/faq.html` |
-| `protocols/faq.txt` | FAQ questions and answers |
+| `protocols/faq.txt` | FAQ entries separated by `===`: optional `@ Category` line (applies to the entries after it), question, `slug\|Label` link line, then a markdown answer (raw `<figure class="proto-fig">` allowed) |
 | `protocols/intro-index.txt`, `intro-faq.txt` | Intro text for the index and FAQ pages, one `key: value` per line |
 | `protocols/downloads/` | Downloadable files (e.g. `cryovial-label-template.docx`) |
 

@@ -243,3 +243,16 @@ body.ruled .page-hero+.section{padding-top:0}
 body.ruled .container.prose{max-width:none}
 body.ruled .container.prose>*{max-width:790px}
 body.ruled .container.prose>table,body.ruled .container.prose>.news-wrap,body.ruled .container.prose>.news-year{max-width:none}
+
+/* FAQ */
+.faq-jump{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 var(--L,2rem)}
+.faq-jump .chip{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;border:1.5px solid var(--blue);color:var(--blue);padding:.2rem .6rem;border-radius:3px;text-decoration:none;line-height:22px}
+.faq-jump .chip:hover{background:var(--hl);color:var(--ink)}
+h2.faq-cat{margin-top:0}
+body.ruled h2.faq-cat{font-size:30px}
+details.faq{border:0;border-radius:0;background:transparent;padding:0;margin:0}
+details.faq summary{cursor:pointer;font-weight:600;list-style:none}
+details.faq[open] summary{color:var(--blue)}
+body.ruled details.faq{margin:0}
+body.ruled details.faq>summary{line-height:var(--L);padding:0;margin:0}
+body.ruled details.faq[open]{padding-bottom:0}
