@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Orientation for P. aeruginosa work: biosafety, common strains, the PA14 non-redundant transposon library and its caveats, and what to check before starting genetics.">
+<meta name="robots" content="noindex">
+<title>Pseudomonas aeruginosa quick-start (strains, PA14 library, genetics) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Organism quick-starts</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Pseudomonas aeruginosa quick-start (strains, PA14 library, genetics)</h1>
+<p class="lede">Orientation for P. aeruginosa work: biosafety, common strains, the PA14 non-redundant transposon library and its caveats, and what to check before starting genetics.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page is an orientation for working with <em>Pseudomonas aeruginosa</em>. It has not yet been run in this lab, so follow a published protocol for your strain. Highlighted text has not been checked against a source.</p>
+<h2 id="biosafety">Biosafety</h2>
+<p><span class="tbc"><em>P. aeruginosa</em> is normally handled at biosafety level 2. Check your institution’s rules and the risk assessment for your strain.</span></p>
+<h2 id="common-strains">Common strains</h2>
+<ul>
+<li><strong>PA14</strong> is a clinical isolate from a burn patient that is pathogenic in several model hosts and in mice (PA14 resource site).</li>
+<li><span class="tbc"><strong>PAO1</strong> is the other widely used reference strain. The two differ in genome content and virulence, so state which one you used and do not assume results transfer.</span></li>
+</ul>
+<h2 id="the-pa14-non-redundant-transposon-library">The PA14 non-redundant transposon library</h2>
+<ul>
+<li>The PA14NR set contains <strong>5,459</strong> mutants (version 1.0), drawn from a parental library of 38,976 mutants, and covers <strong>4,596</strong> predicted PA14 genes, about 77% of the 5,962 predicted (Liberati et al. 2006).</li>
+<li>The main transposon is MAR2xT7, a <em>mariner</em>-family derivative of <em>Himar1</em>. Those mutants were selected on gentamicin (15 µg/mL). Some mutants carry TnphoA instead, selected on neomycin and maintained on kanamycin (Liberati et al. 2006).</li>
+<li><strong>Caveats</strong> (Liberati et al. 2006):
+<ul>
+<li>Coverage is incomplete, with insertion-site hot spots and some genes not targeted.</li>
+<li>The list of 335 candidate essential genes may include non-essential genes.</li>
+<li>Insertions near the 5′ end of a gene can give functional fusion proteins, and insertions can affect downstream genes.</li>
+<li>About 2.8% of mutants are expected to be mislabeled. In a test of 109 mutants, 106 had the expected insertion.</li>
+<li>Small colony variants arose under static growth, so culture conditions were adjusted.</li>
+</ul></li>
+<li><strong>Good practice:</strong> verify the insertion by PCR before relying on a mutant, and complement it. See also <a href="tn-seq-data-analysis.html">Tn-seq data analysis</a> for pooled screens with <em>mariner</em>-type transposons.</li>
+</ul>
+<h2 id="culture-and-genetics">Culture and genetics</h2>
+<ol type="1">
+<li><span class="tbc">Grow on LB at 37 °C. <em>P. aeruginosa</em> grows quickly and is often recognized by its smell and by green pigment.</span></li>
+<li><span class="tbc"><em>P. aeruginosa</em> is intrinsically resistant to many antibiotics, so antibiotic concentrations used for <em>E. coli</em> will not necessarily work. Check published concentrations for your strain and marker.</span></li>
+<li><span class="tbc">Gene deletions are commonly made by conjugation from an <em>E. coli</em> donor with a suicide plasmid and <em>sacB</em> sucrose counter-selection. Use a published protocol for your strain.</span> The <a href="bi-parental-conjugation.html">bi-parental conjugation page</a> is a model for the donor/counter-selection design only, since it was written for a different recipient.</li>
+</ol>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Liberati NT, Urbach JM, Miyata S, et al. 2006. An ordered, nonredundant library of <em>Pseudomonas aeruginosa</em> strain PA14 transposon insertion mutants. <em>Proc Natl Acad Sci USA</em> 103:2833–2838. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1413827">PMC1413827</a></li>
+<li><a href="https://pa14.mgh.harvard.edu/cgi-bin/pa14/home.cgi">PA14 resource site</a> (Massachusetts General Hospital and Harvard Medical School).</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Liberati et al. 2006 (PA14 library) and the PA14 resource site; other statements are general knowledge and highlighted. Summary of published methods; not yet run in this lab.</p>
+<p class="tag-row"><span class="tag">P. aeruginosa</span><span class="tag">Pseudomonas</span><span class="tag">PA14</span><span class="tag">transposon library</span><span class="tag">quick-start</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>

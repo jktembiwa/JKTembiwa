@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="From sequencing reads to insertion counts at TA sites, and the TRANSIT methods for calling essential genes and comparing conditions.">
+<meta name="robots" content="noindex">
+<title>Tn-seq data analysis (TPP and TRANSIT) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Computational analysis</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Tn-seq data analysis (TPP and TRANSIT)</h1>
+<p class="lede">From sequencing reads to insertion counts at TA sites, and the TRANSIT methods for calling essential genes and comparing conditions.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page summarizes the TRANSIT analysis software for <em>Himar1</em> Tn-seq data. It has not yet been run in this lab, so follow the TRANSIT documentation for the exact commands. Highlighted text has not been checked against a source. The library and sequencing steps are in the <a href="tn-seq-overview.html">Tn-seq overview</a>.</p>
+<h2 id="what-the-data-look-like">What the data look like</h2>
+<p><em>Himar1</em> inserts at TA dinucleotides. For <em>Himar1</em> libraries TRANSIT uses read counts at every TA site, and for Tn5 libraries it uses counts at every nucleotide (TRANSIT documentation).</p>
+<h2 id="workflow">Workflow</h2>
+<ol type="1">
+<li><strong>Map reads and count insertions</strong> with the TRANSIT preprocessor (TPP), linked from the <a href="tn-seq-overview.html">overview</a>. <span class="tbc">TPP also reports quality metrics for each library, which you should check before going further.</span></li>
+<li><strong>Prepare the inputs.</strong> TRANSIT takes <code>.wig</code> files with counts for every possible insertion site, including sites with zero reads, and an annotation file (<code>.prot_table</code>) that matches the genome used for mapping (TRANSIT documentation).</li>
+<li><strong>Normalize</strong> the datasets. TRANSIT has a normalization method with its own tutorial. <span class="tbc">Check the documentation for which method suits your libraries.</span></li>
+<li><strong>Call essential genes in a single condition</strong> with one of two methods (TRANSIT documentation):
+<ul>
+<li><strong>Gumbel</strong>, which finds stretches of TA sites without insertions.</li>
+<li><strong>HMM</strong>, which finds regions with locally suppressed or increased counts, including growth-defect and growth-advantaged regions.</li>
+</ul></li>
+<li><strong>Compare two conditions</strong> with <strong>Resampling</strong> (a permutation-style test) or the <strong>Mann-Whitney U-test</strong>. For several conditions use <strong>ZINB</strong> (zero-inflated negative binomial regression, which can include covariates) or <strong>ANOVA</strong> (TRANSIT documentation).</li>
+<li><strong>Correct for multiple testing.</strong> TRANSIT often converts p-values to q-values with the Benjamini–Hochberg correction, and a q-value below 0.05 is the typical threshold (TRANSIT documentation).</li>
+<li><strong>Replicates.</strong> TRANSIT supports replicates and most methods use them (TRANSIT documentation).</li>
+</ol>
+<h2 id="reading-the-results">Reading the results</h2>
+<ul>
+<li>A gene with no insertions is <em>consistent with</em> being essential in that condition, not proof. <span class="tbc">Short genes and genes with few TA sites can look essential by chance.</span></li>
+<li>Follow up important hits with an individual mutant or a knockdown, as for any screen.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>TRANSIT documentation. <a href="https://transit.readthedocs.io/en/latest/transit_overview.html">Overview</a>.</li>
+<li>DeJesus MA, Ambadipudi C, Baker R, Sassetti C, Ioerger TR. 2015. TRANSIT: a software tool for <em>Himar1</em> TnSeq analysis. <em>PLoS Comput Biol</em> 11:e1004401.</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> TRANSIT documentation and DeJesus et al. 2015. Summary of published tools; not yet run in this lab. Library construction and sequencing are covered on the linked Tn-seq pages.</p>
+<p class="tag-row"><span class="tag">Tn-seq</span><span class="tag">TRANSIT</span><span class="tag">TPP</span><span class="tag">essentiality</span><span class="tag">Himar1</span><span class="tag">analysis</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>

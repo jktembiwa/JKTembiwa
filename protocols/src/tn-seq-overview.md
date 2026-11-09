@@ -17,7 +17,7 @@ The method is the *Himar1* mariner transposon (φMycoMarT7, a temperature-sensit
 | 1 | Make a high-titer, temperature-sensitive phage stock | [Phage stock preparation](tn-seq-phage-stock-prep.html) |
 | 2 | Transduce, plate on kanamycin, scrape, freeze the library | [Library construction by transduction](tn-seq-library-construction.html) |
 | 3 | Extract genomic DNA, shear, add adapters, amplify junctions, size-select, add Illumina ends | [Library prep and sequencing](tn-seq-library-prep.html) |
-| 4 | Map reads and count insertions at TA sites | Analysis with TPP and Transit (see links below) |
+| 4 | Map reads and count insertions at TA sites | [Tn-seq data analysis](tn-seq-data-analysis.html) (TPP and TRANSIT) |
 | (side) | Find the insertion site of one individual mutant | [Manual insertion mapping](transposon-insertion-mapping.html) |
 
 ## Where the versions differ

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A workflow for bacterial whole-genome data: check reads, assemble with Unicycler, annotate, and call mutations against a reference.">
+<meta name="robots" content="noindex">
+<title>Whole-genome sequencing analysis (assembly, annotation, variant calling) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Computational analysis</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Whole-genome sequencing analysis (assembly, annotation, variant calling)</h1>
+<p class="lede">A workflow for bacterial whole-genome data: check reads, assemble with Unicycler, annotate, and call mutations against a reference.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page outlines a typical analysis of bacterial whole-genome sequencing data. It has not yet been run in this lab, so follow each tool’s documentation for the exact options. Highlighted text has not been checked against a source.</p>
+<h2 id="choose-the-question-first">Choose the question first</h2>
+<ul>
+<li><strong>I need a new genome</strong> (a clinical isolate, a new species): assemble the reads de novo.</li>
+<li><strong>I need to know how a mutant differs from its parent:</strong> map the reads to a reference and call variants. A de novo assembly is not needed.</li>
+</ul>
+<h2 id="de-novo-assembly">De novo assembly</h2>
+<p>Unicycler is an assembly pipeline for bacterial genomes. It can assemble Illumina-only reads by optimizing a SPAdes assembly, assemble long reads (PacBio or Nanopore), or run a short-read-first hybrid assembly. It aims to produce complete, circularized replicons and an assembly graph that can be viewed in Bandage (Wick et al. 2017; Unicycler documentation).</p>
+<ol type="1">
+<li><span class="tbc">Check read quality with FastQC and trim adapters.</span></li>
+<li>Run Unicycler with the reads you have:
+<ul>
+<li>Short reads only: <code>unicycler -1 reads_1.fastq.gz -2 reads_2.fastq.gz -o output_dir</code></li>
+<li>Long reads only: <code>unicycler -l long_reads.fastq.gz -o output_dir</code></li>
+<li>Hybrid: <code>unicycler -1 reads_1.fastq.gz -2 reads_2.fastq.gz -l long_reads.fastq.gz -o output_dir</code></li>
+</ul></li>
+<li>Open the assembly graph in Bandage. A complete genome shows as circular contigs. Many small pieces suggest repeats that the reads could not span. The Unicycler author notes that long-read-first approaches are often preferable when long-read depth is high.</li>
+<li><span class="tbc">Assess the assembly (QUAST for size and contiguity; CheckM for completeness and contamination) and compare the size with what you expect for the species.</span></li>
+</ol>
+<h2 id="annotation">Annotation</h2>
+<p><span class="tbc">Annotate the assembly with Bakta or Prokka to predict genes, rRNAs and tRNAs.</span> Bakta is described in Schwengers et al. 2021. <span class="tbc">For a well-studied species, transfer the annotation from the closest reference genome and check the key genes by hand.</span></p>
+<h2 id="calling-mutations-against-a-reference">Calling mutations against a reference</h2>
+<ol type="1">
+<li>Choose a reference that is as close as possible to the parent strain, ideally the parent’s own genome.</li>
+<li>Run breseq, which predicts mutations from short reads mapped to a reference (Deatherage and Barrick 2014). <span class="tbc">Give it a GenBank-format reference so that mutations are reported with gene names.</span></li>
+<li>Read the output for single-nucleotide changes, small insertions and deletions, and new junctions (which indicate larger rearrangements or insertion sequences).</li>
+<li>Compare mutant and parent. <span class="tbc">Run the parent through the same pipeline, so that differences between the parent and the published reference are not mistaken for new mutations.</span></li>
+<li><strong>Confirm important variants by PCR and Sanger sequencing.</strong> This is also the standard check after allelic exchange (see the <a href="staphylococcus-aureus-quick-start.html"><em>S. aureus</em> quick-start</a>).</li>
+</ol>
+<h2 id="reporting">Reporting</h2>
+<p><span class="tbc">Deposit raw reads in a public archive such as SRA and the assembly in GenBank, and record tool names, versions and settings.</span></p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Wick RR, Judd LM, Gorrie CL, Holt KE. 2017. Unicycler: resolving bacterial genome assemblies from short and long sequencing reads. <em>PLoS Comput Biol</em> 13:e1005595. <a href="https://pubmed.ncbi.nlm.nih.gov/28594827/">PubMed 28594827</a></li>
+<li>Unicycler documentation: <a href="https://github.com/rrwick/Unicycler">github.com/rrwick/Unicycler</a></li>
+<li>Deatherage DE, Barrick JE. 2014. Identification of mutations in laboratory-evolved microbes from next-generation sequencing data using breseq. <em>Methods Mol Biol</em> 1151:165–188.</li>
+<li>Schwengers O, Jelonek L, Dieckmann MA, et al. 2021. Bakta: rapid and standardized annotation of bacterial genomes via alignment-free sequence identification. <em>Microb Genom</em> 7:000685.</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Wick et al. 2017 and the Unicycler documentation; Deatherage and Barrick 2014; Schwengers et al. 2021. Summary of published tools; not yet run in this lab.</p>
+<p class="tag-row"><span class="tag">WGS</span><span class="tag">genome assembly</span><span class="tag">variant calling</span><span class="tag">annotation</span><span class="tag">Unicycler</span><span class="tag">breseq</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>

@@ -24,7 +24,7 @@ Source header keys: `title`, `category`, `tags`, `summary`, `source`, `version`.
 Rules:
 - **Never edit generated `.html` by hand.** Edit the source, rebuild from the repo root, and commit source and output together.
 - Karen sometimes edits generated pages on GitHub. If a rebase conflicts in `protocols/*.html`, move her change into `protocols/src/*.md`, rebuild, and continue.
-- Category order is the `ORDER` list in the script. Categories: Media and reagents, Cloning, Transformation, Mycobacterial genetics, Protein biochemistry, Growth and assays, Imaging, Analysis, Reference.
+- Category order is the `ORDER` list in the script. Categories: Media and reagents, Cloning, Transformation, Mycobacterial genetics, Protein biochemistry, Growth and assays, Imaging, Flow cytometry, Analysis, Computational analysis, Organism quick-starts, Reference. `status: study` shows a "Study notes" badge for literature summaries not yet run by Karen.
 - Tag chips show only for tags used at least twice.
 - After building, check that no internal links are broken. A clean rebuild with no source change must leave `git status` empty.
 
@@ -68,4 +68,4 @@ Rules:
 - Contact page: show contact details without her personal email (an anonymous forwarding address was suggested).
 
 ## How to report to Karen
-Be concise. Say what was added, what was held, and what needs her confirmation. End each round by reminding her to send photos and figures (News pictures; gel or plate images for protocols).
+Be concise. Say what was added, what was held, and what needs her confirmation.

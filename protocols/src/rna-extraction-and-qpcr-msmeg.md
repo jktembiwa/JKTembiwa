@@ -54,3 +54,5 @@ Keep RNA on ice if used the same day, –20 °C for days, –80 °C for weeks. A
 | RNA | 3 µL |
 
 For 8 reactions make a master mix of 80 µL master mix, 8 µL of each primer, 36 µL water, 4 µL RT enzyme; aliquot 17 µL per well and add 3 µL RNA last. Keep the plate and samples on ice. For cycling conditions, use the master-mix manufacturer's settings.
+
+For primer validation and calculating fold changes, see [qPCR design and ΔΔCt analysis](qpcr-design-and-analysis.html).

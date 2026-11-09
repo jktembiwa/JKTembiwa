@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Orientation for E. coli genetics: the Keio deletion collection and its caveats, and the one-step λ Red method for making your own deletions.">
+<meta name="robots" content="noindex">
+<title>Escherichia coli quick-start (strains, deletion collections, λ Red) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Organism quick-starts</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Escherichia coli quick-start (strains, deletion collections, λ Red)</h1>
+<p class="lede">Orientation for E. coli genetics: the Keio deletion collection and its caveats, and the one-step λ Red method for making your own deletions.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page summarizes the Keio collection and the Datsenko–Wanner deletion method for <em>E. coli</em> K-12. It has not yet been run in this lab, so follow the original papers for exact conditions. Highlighted text has not been checked against a source. Routine procedures are on other pages: <a href="ecoli-chemical-transformation.html">chemical transformation</a>, <a href="ecoli-electrocompetent-cells.html">electrocompetent cells</a>, <a href="recombineering.html">recombineering</a>, <a href="colony-pcr-screening.html">colony PCR</a> and <a href="antibiotic-plates.html">antibiotic plates</a>.</p>
+<h2 id="biosafety">Biosafety</h2>
+<p><span class="tbc">Laboratory K-12 strains are normally handled at biosafety level 1. Pathogenic <em>E. coli</em> (for example enterohaemorrhagic strains) are not, so check the risk assessment.</span></p>
+<h2 id="the-keio-collection">The Keio collection</h2>
+<ul>
+<li>Single-gene in-frame deletions in <em>E. coli</em> K-12 strain <strong>BW25113</strong>: 3,985 non-essential gene deletion mutants, from 4,288 genes targeted. About 299 open reading frames were identified as likely essential (Baba et al. 2006; Keio Collection summary).</li>
+<li>Each gene was replaced with a kanamycin-resistance cassette by the λ Red method (Keio Collection summary), so mutants are selected on kanamycin. <span class="tbc">The cassette is flanked by FRT sites and can be removed with FLP recombinase.</span></li>
+<li><strong>Caveats</strong> (Keio Collection summary):
+<ul>
+<li>Spontaneous mutations, including frameshifts, can arise in a stock and be wrongly attributed to the deleted gene.</li>
+<li>Deletions can have polar effects on downstream genes in the same operon.</li>
+<li>Phenotypes can depend on growth conditions.</li>
+<li>A later check found 37 strains incorrect because of gene duplications.</li>
+</ul></li>
+<li><strong>Good practice:</strong> <span class="tbc">verify the deletion by colony PCR, and move it into a clean background by P1 transduction before drawing conclusions. Complement with the gene on a plasmid.</span></li>
+</ul>
+<h2 id="one-step-deletion-with-λ-red-datsenko-and-wanner-2000">One-step deletion with λ Red (Datsenko and Wanner 2000)</h2>
+<p>The method replaces a chromosomal gene with a PCR-made resistance cassette flanked by short homology arms. It uses plasmids that are described in the paper: template plasmids carrying the resistance cassettes (pKD3 and pKD4), a λ Red helper plasmid (pKD46) and an FLP plasmid (pCP20).</p>
+<ol type="1">
+<li><span class="tbc">Make a PCR product from pKD3 or pKD4 using primers with about 40 nt of homology to the target at the 5′ ends.</span></li>
+<li><span class="tbc">Transform the strain carrying pKD46, which has a temperature-sensitive replicon and an arabinose-inducible λ Red. Grow at 30 °C with ampicillin and induce with L-arabinose before making cells electrocompetent.</span></li>
+<li>Electroporate the PCR product (see <a href="ecoli-electrocompetent-cells.html">electrocompetent cells</a>) and select recombinants on the cassette’s antibiotic.</li>
+<li><span class="tbc">Confirm the deletion by colony PCR with primers outside the target.</span></li>
+<li><span class="tbc">To remove the cassette, transform with pCP20 (FLP recombinase, temperature-sensitive) and cure the plasmid by growing at a higher temperature.</span></li>
+</ol>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Baba T, Ara T, Hasegawa M, et al. 2006. Construction of <em>Escherichia coli</em> K-12 in-frame, single-gene knockout mutants: the Keio collection. <em>Mol Syst Biol</em> 2:2006.0008. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1681482">PMC1681482</a></li>
+<li>Datsenko KA, Wanner BL. 2000. One-step inactivation of chromosomal genes in <em>Escherichia coli</em> K-12 using PCR products. <em>Proc Natl Acad Sci USA</em> 97:6640–6645. <a href="https://pubmed.ncbi.nlm.nih.gov/10829079/">PubMed 10829079</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Keio_Collection">Keio Collection (summary)</a>.</li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Baba et al. 2006 (Keio collection); Datsenko and Wanner 2000 (λ Red); the Keio Collection summary. Summary of published methods; not yet run in this lab.</p>
+<p class="tag-row"><span class="tag">E. coli</span><span class="tag">Keio</span><span class="tag">lambda Red</span><span class="tag">gene deletion</span><span class="tag">recombineering</span><span class="tag">quick-start</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>
