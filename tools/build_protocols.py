@@ -22,7 +22,7 @@ def head(title,desc):
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/protocols.css">
-<link rel="stylesheet" href="../assets/notebook.css?v=3">
+<link rel="stylesheet" href="../assets/notebook.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -98,7 +98,7 @@ for p in pages:
 <hr>
 <p class="meta"><strong>Source / credit:</strong> {html.escape(p["source"])}</p>
 <p class="tag-row">{''.join(f'<span class="tag">{html.escape(t)}</span>' for t in p["tags"])}</p>
-<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>
 '''+FOOT
     open(f"protocols/{p['slug']}.html","w",encoding="utf-8").write(out)
@@ -157,7 +157,7 @@ f=head("Troubleshooting FAQ","Common failure points in molecular microbiology pr
 <section class="section"><div class="container prose">
 {LEGEND}
 {items}
-<p><a href="index.html">← All protocols</a></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
 </div></section>
 '''+FOOT
 open("protocols/faq.html","w",encoding="utf-8").write(f)
