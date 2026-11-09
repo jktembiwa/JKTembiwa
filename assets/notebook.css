@@ -164,7 +164,7 @@ body.ruled .section-soft,body.ruled .section.soft{background:transparent}
 }
 @media(max-width:899px){body.ruled:after{display:none}}
 body.ruled .hero h1{position:relative;top:18px}
-body.ruled h2{position:relative;top:10px}
+body.ruled h2{position:relative;top:calc(20.5px - .25em)}
 body.ruled:after{content:"";top:0;bottom:0;background:var(--burgundy);z-index:0}
 body.ruled .section-head{margin-bottom:var(--L);align-items:flex-start}
 body.ruled .section-head p{margin:var(--L) 0 0;color:var(--muted)}
@@ -173,7 +173,6 @@ body.ruled .section-head p{margin:var(--L) 0 0;color:var(--muted)}
 body.ruled .entry-bar{box-shadow:inset 0 1.5px 0 var(--ink)}
 body.ruled .section .entry-bar{padding-top:0}
 body.ruled h2 .h-aside{font-family:var(--mono);font-size:18px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-body.ruled .news-list li{background:linear-gradient(90deg,var(--muted) 50%,transparent 0) 0 0/7px 1px repeat-x}
 body.ruled .news-list li:last-child{box-shadow:inset 0 -1px 0 transparent}
 body.ruled .news-list{border-bottom:0}
 body.ruled .news-tag .news-when{color:var(--muted)}
@@ -192,3 +191,55 @@ body.ruled .news-tag .news-when{color:var(--muted)}
 .proto-foot a{color:var(--muted);text-decoration:none;padding:.3rem 0}
 .proto-foot a:hover{color:var(--orange-ink);text-decoration:underline}
 body.ruled h2+.news-year{margin-top:var(--L)}
+
+/* ===== ruled page: generic content (all pages) ===== */
+body.ruled .page-hero{padding:var(--L) 0 0;background:transparent}
+body.ruled .page-hero h1:not(.proto-title){font-size:52px;line-height:64px;margin:0 0 var(--L);max-width:900px;letter-spacing:-.02em;position:relative;top:8px}
+body.ruled .page-hero h1.proto-title{font-size:30px;line-height:32px;margin:0 0 var(--L);position:relative;top:-3px}
+body.ruled .proto-meta{margin:0 0 var(--L);line-height:var(--L)}
+body.ruled .prose h2{font-size:30px;line-height:64px;margin:0;top:calc(20.5px - .25em)}
+body.ruled h3{font-size:22px;line-height:var(--L);margin:0;position:relative;top:-2px}
+body.ruled ul,body.ruled ol{margin:0 0 var(--L);padding-left:1.4rem}
+body.ruled li{margin:0}
+body.ruled .prose li{margin:0}
+body.ruled .list-clean li{margin:0}
+body.ruled .section.soft{border:0}
+body.ruled .meta,body.ruled .small-note,body.ruled .card p.meta{font-size:15px;line-height:var(--L);margin:0 0 var(--L)}
+body.ruled .card{padding:var(--L) 1.35rem 0}
+body.ruled .card p{margin:0 0 var(--L)}
+body.ruled .card-icon{height:var(--L);width:auto;display:block;line-height:var(--L);font-size:15px;place-items:normal}
+body.ruled .grid-2,body.ruled .grid-3{gap:var(--L)}
+body.ruled .grid-2>.card,body.ruled .grid-3>.card{margin:0}
+body.ruled .tag-row{margin:0 0 var(--L);gap:.5rem}
+body.ruled .tag{line-height:22px}
+body.ruled hr{margin:0 0 calc(var(--L) - 1px);border:0;border-top:1px solid var(--muted)}
+body.ruled table{margin:0 0 var(--L);border-collapse:collapse}
+body.ruled th,body.ruled td{padding:0 .6rem;line-height:var(--L);border:0;box-shadow:inset 0 -1px 0 var(--line)}
+body.ruled .which-box{margin:0 0 var(--L)}
+body.ruled .which-box h2{font-size:24px;line-height:var(--L);top:0}
+body.ruled .which-box p,body.ruled .which-box li{line-height:var(--L)}
+body.ruled .publication{padding:0 0 var(--L);border:0}
+body.ruled .publication p{margin:0}
+body.ruled .proto-foot{margin-top:var(--L)}
+body.ruled .search{height:48px;margin:0 0 var(--L)}
+body.ruled .chips{margin:0 0 var(--L)}
+body.ruled details.faq{margin:0 0 var(--L)}
+body.ruled summary{line-height:var(--L)}
+body.ruled pre,body.ruled code{line-height:var(--L)}
+body.ruled main :is(p,h2,h3,ul,ol){margin-top:0}
+body.ruled .news-year h2{margin:0;padding:0}
+body.ruled .which-box h2{top:0}
+body.ruled .news-year{margin:0 0 var(--L)}
+body.ruled .news-fig{margin:16px 0 0}
+body.ruled figure.proto-fig,body.ruled figure.research-fig,body.ruled table,body.ruled .which-box{margin-top:0;margin-bottom:var(--L)}
+body.ruled figure.proto-fig{margin-left:0}
+body.ruled .prose ol:not(.news-list){list-style:none;counter-reset:step;padding-left:2.4rem}
+body.ruled .prose ol:not(.news-list)>li{counter-increment:step;position:relative}
+body.ruled .prose ol:not(.news-list)>li::before{content:counter(step) ".";position:absolute;left:-2.4rem;width:1.9rem;text-align:right;font-family:var(--hand);font-size:1.35rem;line-height:var(--L);color:var(--penblue);font-weight:600}
+body.ruled h2 .h-aside{line-height:1}
+body.ruled .proto-meta .meta{display:none}
+body.ruled .proto-meta:not(:has(.status)){display:none}
+body.ruled .page-hero+.section{padding-top:0}
+body.ruled .container.prose{max-width:none}
+body.ruled .container.prose>*{max-width:790px}
+body.ruled .container.prose>table,body.ruled .container.prose>.news-wrap,body.ruled .container.prose>.news-year{max-width:none}

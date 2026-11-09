@@ -8,7 +8,7 @@ NAV='''<a href="../index.html">About</a>
 <a href="../publications.html">Publications</a>
 <a href="../news.html">News</a>
 <a href="../contact.html">Contact</a>'''
-def head(title,desc):
+def head(title,desc,bar=''):
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -22,23 +22,23 @@ def head(title,desc):
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/protocols.css">
-<link rel="stylesheet" href="../assets/notebook.css?v=4">
+<link rel="stylesheet" href="../assets/notebook.css?v=10">
 </head>
-<body>
+<body class="ruled">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="container nav-wrap">
-<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
 <nav class="nav" aria-label="Main navigation">
 {NAV}
 </nav>
 </div>
 </header>
 <main id="main">
-'''
+'''+(f'<div class="container entry-bar"><span>{html.escape(bar[0])}</span><span class="entry-date"></span><span>{html.escape(bar[1])}</span></div>\n' if bar else '')
 FOOT='''</main>
 <footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
-</body>
+<script src="../assets/notebook.js?v=10"></script></body>
 </html>
 '''
 def intro(path):
@@ -86,7 +86,7 @@ for p in pages:
     reviewed=p.get("status","").lower()=="reviewed"
     status="" if reviewed else STATUS+" "
     legend=LEGEND if not reviewed or "{.tbc}" in p["body"] else ""
-    out=head(p["title"],p["summary"])+f'''<section class="page-hero"><div class="container">
+    out=head(p["title"],p["summary"],("Protocol · "+p["category"],p["version"]))+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1 class="proto-title">{html.escape(p["title"])}</h1>
 <p class="lede">{html.escape(p["summary"])}</p>
@@ -121,7 +121,7 @@ for c in cats:
 II=intro("protocols/intro-index.txt")
 FI=intro("protocols/intro-faq.txt")
 buttons=''.join(f'<button type="button" class="chip" data-tag="{html.escape(t.lower(),quote=True)}">{html.escape(t)}</button>' for t in alltags)
-idx=head("Protocols","Common molecular microbiology protocols and troubleshooting notes.")+f'''<section class="page-hero"><div class="container">
+idx=head("Protocols","Common molecular microbiology protocols and troubleshooting notes.",("Protocols · Index","All protocols"))+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow">Protocols</div>
 <h1>{II["heading"]}</h1>
 <p class="lede">{II["lede"]}</p>
@@ -149,7 +149,7 @@ for block in faq:
     q=lines[0]; link=lines[1]; ans="\n".join(lines[2:])
     slug,label=link.split("|")
     items+=f'<details class="faq"><summary>{html.escape(q)}</summary>{md(ans)}<p class="meta">Related: <a href="{slug}.html">{html.escape(label)}</a> · {STATUS}</p></details>\n'
-f=head("Troubleshooting FAQ","Common failure points in molecular microbiology protocols.")+f'''<section class="page-hero"><div class="container">
+f=head("Troubleshooting FAQ","Common failure points in molecular microbiology protocols.",("Protocols · FAQ","Troubleshooting"))+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
 <h1>{FI["heading"]}</h1>
 <p class="lede">{FI["lede"]}</p>
