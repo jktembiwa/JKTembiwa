@@ -38,8 +38,8 @@
 </div></section>
 <section class="section"><div class="container prose">
 <p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
-<h2 id="how-to-use-this-page">How to use this page</h2>
-<p>These are <strong>study notes, not a protocol</strong>. They collect what the key papers say so you can plan before the first experiment, and they are meant to be edited as you learn. Numbers are taken from the cited papers. Anything not checked against a source is highlighted. For an actual run, follow the original paper.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page summarizes published methods for working with <em>S. aureus</em>. It has not yet been run in this lab, so use it for orientation and follow the cited papers for the exact procedure. Numbers come from the cited papers; highlighted text has not been checked against a source.</p>
 <h2 id="biosafety">Biosafety</h2>
 <p><em>S. aureus</em> (including MRSA) is <span class="tbc">normally handled at biosafety level 2, but check your institution’s rules and the strain-specific risk assessment before ordering or culturing anything</span>.</p>
 <h2 id="strains-you-will-meet">Strains you will meet</h2>
@@ -64,13 +64,29 @@
 </ol>
 <p>Monk et al. (2015) built <em>E. coli</em> hosts that mimic the methylation of major lineages. <strong>IM08B</strong> (CC8 methylation) and <strong>IM01B</strong> (CC1) are derived from DC10B. In the paper, plasmids from IM08B transformed the CC8 strain NRS384 about 100-fold better (pRAB11) and about 500-fold better (pIMAY-Z) than plasmids from DC10B. IM01B was tested on the CC1 strain MW2. Pick the IMxxB strain that matches the lineage of your target strain, and note that a plasmid from IM01B is not suitable for CC8 targets.</p>
 <h2 id="electroporation-summary-of-monk-and-stinear-2021">Electroporation (summary of Monk and Stinear 2021)</h2>
-<p><strong>Electrocompetent cells.</strong> Overnight culture in 10 mL BHI (37 °C, 200 rpm). Dilute to OD₆₀₀ 0.5 in fresh pre-warmed medium and grow 40 min more. From here keep everything at 4 °C. Spin 7,000 <em>g</em> for 5 min and wash twice with an equal volume of ice-cold water. Wash twice in 1/5 volume of ice-cold 10% glycerol, then resuspend in 1/200 volume. Freeze 50 µL aliquots at −70 °C.</p>
-<p><strong>Electroporation.</strong> Thaw cells on ice for 5 min, spin 5,000 <em>g</em> for 3 min, and resuspend in 80 µL of 10% glycerol + 500 mM sucrose. Add 0.5–1 µg plasmid in up to 10 µL. Pulse in a 1 mm cuvette at room temperature: 21 kV/cm, 100 Ω, 25 µF. Immediately add 1 mL BHI + 500 mM sucrose and recover tilted at 30 °C for 1 h at 200 rpm. Plate on BHI agar with chloramphenicol (10 µg/mL) and X-gal (100 µg/mL): 30 °C for 48 h, or 37 °C overnight for integrants.</p>
+<p><strong>Electrocompetent cells</strong></p>
+<ol type="1">
+<li>Grow an overnight culture in 10 mL <a href="media-recipes.html">BHI</a> in a 50 mL tube at 37 °C, 200 rpm.</li>
+<li>Dilute to OD₆₀₀ 0.5 in fresh pre-warmed BHI and grow 40 min more.</li>
+<li>From here keep everything at 4 °C. Spin at 7,000 <em>g</em> for 5 min and wash twice with an equal volume of ice-cold water.</li>
+<li>Wash twice in 1/5 volume of ice-cold <a href="buffers-and-solutions.html">10% glycerol</a>.</li>
+<li>Resuspend in 1/200 volume of ice-cold 10% glycerol.</li>
+<li>Freeze 50 µL aliquots at −70 °C.</li>
+</ol>
+<p><strong>Electroporation</strong></p>
+<ol type="1">
+<li>Thaw an aliquot on ice for 5 min, then spin at 5,000 <em>g</em> for 3 min.</li>
+<li>Resuspend the pellet in 80 µL of <a href="buffers-and-solutions.html">10% glycerol + 500 mM sucrose</a>.</li>
+<li>Add 0.5–1 µg plasmid in up to 10 µL.</li>
+<li>Transfer to a 1 mm cuvette and pulse at room temperature: 21 kV/cm, 100 Ω, 25 µF.</li>
+<li>Immediately add 1 mL BHIS (<a href="media-recipes.html">BHI + 500 mM sucrose</a>) and recover, tilted, at 30 °C for 1 h at 200 rpm.</li>
+<li>Plate on BHI agar with chloramphenicol (10 µg/mL) and X-gal (100 µg/mL) (<a href="media-recipes.html">plate recipe</a>). Incubate at 30 °C for 48 h, or at 37 °C overnight for integrants.</li>
+</ol>
 <h2 id="allelic-exchange-with-pimay-z-summary-of-monk-and-stinear-2021">Allelic exchange with pIMAY-Z (summary of Monk and Stinear 2021)</h2>
 <p>The plasmid’s replicon is temperature-sensitive and cannot replicate in Gram-positive hosts at 37 °C.</p>
 <ol type="1">
 <li><strong>Integration.</strong> Select integrants at 37 °C on BHI agar + chloramphenicol (10 µg/mL) + X-gal (100 µg/mL). Blue colonies are integrants. For strains that do not integrate directly, a “slow” route is described in the paper.</li>
-<li><strong>Excision.</strong> Grow an integrant in BHI at 30 °C to saturation (about 8 h or overnight). Plate 2 × 10⁻⁵ and 1 × 10⁻⁶ dilutions on BHI agar + X-gal and incubate at 37 °C overnight. White colonies are candidate excision events.</li>
+<li><strong>Excision.</strong> Grow an integrant in BHI at 30 °C to saturation (<span class="tbc">about 8 h or overnight</span>). Plate 2 × 10⁻⁵ and 1 × 10⁻⁶ dilutions on BHI agar + X-gal and incubate at 37 °C overnight. White colonies are candidate excision events.</li>
 <li><strong>Screen</strong> white colonies by colony PCR, re-streak to purify, and confirm by PCR on genomic DNA and by whole-genome sequencing.</li>
 </ol>
 <p>Notes: - The original pIMAY (Monk et al. 2012) used anhydrotetracycline induction of an antisense <em>secY</em> for counter-selection. pIMAY-Z uses <em>lacZ</em> blue/white screening instead (Monk and Stinear 2021). - The Addgene page for pIMAY (#68939) lists two different chloramphenicol concentrations (10 and 25 µg/mL), so verify which applies. The depositor advises checking that the plasmid is still temperature-sensitive in <em>S. aureus</em> before starting. It is available to academic and non-profit users under a UBMTA. - Zeden et al. (2023, <em>Cold Spring Harbor Protocols</em>) give a worked example (a <em>tagO</em> deletion in RN4220) that is a good second source.</p>

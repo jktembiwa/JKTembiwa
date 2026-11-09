@@ -38,8 +38,8 @@
 </div></section>
 <section class="section"><div class="container prose">
 <p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
-<h2 id="how-to-use-this-page">How to use this page</h2>
-<p>These are <strong>study notes, not a protocol</strong>, for planning host-cell flow experiments before the first run. Highlighted statements are standard practice written from general knowledge and are <strong>not yet checked</strong> against a source. The authoritative reference for panel design and controls is the consensus guideline paper (Cossarizza et al. 2021), which is long and worth skimming before you build a panel.</p>
+<h2 id="about-this-page">About this page</h2>
+<p>This page summarizes published guidance for analyzing infected host cells by flow cytometry. It has not yet been run in this lab, so treat it as orientation. The authoritative reference for panel design and controls is the consensus guideline paper (Cossarizza et al. 2021). Highlighted text is standard practice that has not been checked against a source.</p>
 <h2 id="what-flow-can-and-cannot-tell-you-in-an-infection">What flow can and cannot tell you in an infection</h2>
 <p><strong>Can:</strong> the fraction of host cells that carry bacteria, per-cell reporter or probe intensity, and host phenotype (surface or intracellular markers) in infected versus uninfected cells.</p>
 <p><strong>Cannot (reliably): intracellular replication.</strong> Flannagan and Heinrichs (2018) report that attempts to assess bacterial proliferation by flow cytometry failed: a macrophage can hold several phagosomes, and bacteria may replicate in only one of them, so a cell with any signal is simply scored as positive and sorting by GFP intensity can overstate replication. They used fluorescence microscopy of individual cells instead. Their microscopy assay used GFP-expressing <em>S. aureus</em> USA300 labelled with a proliferation dye, a multiplicity of infection of 10, time points at 1.5 h and 12 h, and gentamicin (100 µg/mL for 1 h after a 30 min infection) to remove extracellular bacteria.</p>
@@ -53,7 +53,13 @@
 <li><span class="tbc">Keep one <strong>reference sample</strong> that you stain every time, so you can spot drift between days.</span></li>
 </ul>
 <h2 id="a-typical-gating-order">A typical gating order</h2>
-<p><span class="tbc">1. Cells (FSC-A vs SSC-A), to exclude debris. 2. Single cells (FSC-H vs FSC-A), to exclude doublets. 3. Live cells (viability dye negative). 4. Cell type (lineage markers, for example a macrophage marker). 5. Infected cells (bacterial reporter positive), compared with an uninfected control sample and with cells infected with non-fluorescent bacteria.</span></p>
+<ol type="1">
+<li><span class="tbc">Cells (FSC-A vs SSC-A), to exclude debris.</span></li>
+<li><span class="tbc">Single cells (FSC-H vs FSC-A), to exclude doublets.</span></li>
+<li><span class="tbc">Live cells (viability dye negative).</span></li>
+<li><span class="tbc">Cell type (lineage markers, for example a macrophage marker).</span></li>
+<li><span class="tbc">Infected cells (bacterial reporter positive), compared with an uninfected control sample and with cells infected with non-fluorescent bacteria.</span></li>
+</ol>
 <p>Set gates on the controls and apply the same gates to every sample in the experiment.</p>
 <h2 id="separating-intracellular-from-extracellular-bacteria">Separating intracellular from extracellular bacteria</h2>
 <ul>

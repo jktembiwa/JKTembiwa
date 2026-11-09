@@ -1,7 +1,7 @@
-title: Media recipes for E. coli and mycobacteria
+title: Media recipes for E. coli, mycobacteria and Staphylococcus
 category: Media and reagents
-tags: media, 7H9, ADC, Sauton's, HdB, LB
-summary: Recipes and sterilization notes for LB, 7H9, ADC, Sauton's and Hartmans–de Bont minimal medium.
+tags: media, 7H9, ADC, Sauton's, HdB, LB, BHI, BHIS, X-gal
+summary: Recipes and sterilization notes for LB, 7H9, ADC, Sauton's, Hartmans–de Bont minimal medium, and BHI-based media for Staphylococcus.
 source: Adapted by K. Tembiwa from the Boutte Lab Beginner's Manual (v2.0, 2021). See also the [plate-pouring protocol](antibiotic-plates.html).
 version: Version 1.0
 status: reviewed
@@ -66,4 +66,15 @@ The medium must be autoclaved and then filter sterilized, or a precipitate forms
 **100X P-starve stock (100 mL):** K₂HPO₄ 0.155 g; NaH₂PO₄ 0.085 g; MOPS 10.46 g. Adjust to pH 7.0 and autoclave.
 
 <figure class="proto-fig" style="max-width:320px"><img src="images/ph-meter.jpg" alt="Bench pH meter display reading 6.66" width="600" height="800" loading="lazy"><figcaption>Checking pH with a bench meter.</figcaption></figure>
+
+## BHI, BHI agar and BHIS (Staphylococcus; 1 L)
+
+Brain heart infusion (BHI) is a rich medium used for *S. aureus* (see the [*S. aureus* quick-start](staphylococcus-aureus-quick-start.html)). It is sold as a dehydrated powder.
+
+1. Dissolve dehydrated BHI in dH₂O at the concentration on the manufacturer's label ([commonly about 37 g/L]{.tbc}).
+2. **For agar:** add [15 g/L agar]{.tbc} before autoclaving.
+3. **For BHIS (BHI + 500 mM sucrose):** add 171 g sucrose per litre (500 mM) and mix until dissolved. [Autoclave or filter sterilize, depending on your preference.]{.tbc}
+4. Autoclave. For plates, cool to about 50 °C before adding supplements, then pour.
+
+**Supplements used with pIMAY-Z** (Monk and Stinear 2021): chloramphenicol 10 µg/mL and X-gal 100 µg/mL. Add both to cooled agar. See [X-gal stock](buffers-and-solutions.html) and the [antibiotic table](antibiotic-plates.html).
 

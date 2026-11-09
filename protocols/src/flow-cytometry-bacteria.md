@@ -6,9 +6,9 @@ source: Study notes compiled from published guidance: Aarhus University FACS Cor
 version: Version 0.1
 status: study
 ---
-## How to use this page
+## About this page
 
-These are **study notes, not a protocol**: a checklist of what to set up and test before trusting a bacterial flow experiment, to be edited as you learn your own instrument. Details that are not from a cited source are highlighted. Always check your core facility's own bacterial guidelines first, since the instrument decides which settings work.
+This page summarizes published guidance on running bacteria on a flow cytometer. It has not yet been run in this lab, so treat it as orientation and check your core facility's own bacterial guidelines first, since the instrument decides which settings work. Highlighted text has not been checked against a source.
 
 ## Why bacteria are different
 

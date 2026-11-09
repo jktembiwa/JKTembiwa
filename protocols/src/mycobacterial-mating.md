@@ -5,7 +5,7 @@ summary: Filter mating, mini-mating and microtiter-plate screening matings betwe
 source: From the Derbyshire lab; adapted for this site.
 version: Version 1.0
 status: reviewed
-related: bi-parental-conjugation | E. coli donor to a recipient by solid mating.
+related: bi-parental-conjugation | E. coli donor to Caballeronia by solid mating.
 ---
 For conjugation from an *E. coli* donor, see [bi-parental conjugation](bi-parental-conjugation.html).
 

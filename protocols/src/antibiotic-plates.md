@@ -41,6 +41,8 @@ Make LB agar plates, with or without antibiotic, for *E. coli* work. A working-c
 | Streptomycin | 50 µg/mL | 20 µg/mL | |
 | Anhydrotetracycline (inducer) | n/a | 25–500 ng/mL | See [induction systems](induction-and-depletion-systems.html). |
 
+**Staphylococcus aureus.** Concentrations used in the cited papers: chloramphenicol 10 µg/mL for the pIMAY-Z plasmid (Monk and Stinear 2021); erythromycin 5 µg/mL to maintain Nebraska Transposon Mutant Library strains (Fey et al. 2013). See the [*S. aureus* quick-start](staphylococcus-aureus-quick-start.html) and [BHI media](media-recipes.html).
+
 Rifampicin, isoniazid, trimethoprim, streptomycin, ethionamide, ethambutol, ciprofloxacin and amikacin are used for killing or susceptibility testing of mycobacteria, not for selection. MICs vary between *M. smegmatis* and *M. tuberculosis*.
 
 ## Where it usually fails

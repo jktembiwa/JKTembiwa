@@ -6,9 +6,9 @@ source: Study notes compiled from published guidance: Cossarizza et al. 2021 (fl
 version: Version 0.1
 status: study
 ---
-## How to use this page
+## About this page
 
-These are **study notes, not a protocol**, for planning host-cell flow experiments before the first run. Highlighted statements are standard practice written from general knowledge and are **not yet checked** against a source. The authoritative reference for panel design and controls is the consensus guideline paper (Cossarizza et al. 2021), which is long and worth skimming before you build a panel.
+This page summarizes published guidance for analyzing infected host cells by flow cytometry. It has not yet been run in this lab, so treat it as orientation. The authoritative reference for panel design and controls is the consensus guideline paper (Cossarizza et al. 2021). Highlighted text is standard practice that has not been checked against a source.
 
 ## What flow can and cannot tell you in an infection
 
@@ -27,11 +27,11 @@ These are **study notes, not a protocol**, for planning host-cell flow experimen
 
 ## A typical gating order
 
-[1. Cells (FSC-A vs SSC-A), to exclude debris.
-2. Single cells (FSC-H vs FSC-A), to exclude doublets.
-3. Live cells (viability dye negative).
-4. Cell type (lineage markers, for example a macrophage marker).
-5. Infected cells (bacterial reporter positive), compared with an uninfected control sample and with cells infected with non-fluorescent bacteria.]{.tbc}
+1. [Cells (FSC-A vs SSC-A), to exclude debris.]{.tbc}
+2. [Single cells (FSC-H vs FSC-A), to exclude doublets.]{.tbc}
+3. [Live cells (viability dye negative).]{.tbc}
+4. [Cell type (lineage markers, for example a macrophage marker).]{.tbc}
+5. [Infected cells (bacterial reporter positive), compared with an uninfected control sample and with cells infected with non-fluorescent bacteria.]{.tbc}
 
 Set gates on the controls and apply the same gates to every sample in the experiment.
 

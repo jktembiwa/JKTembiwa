@@ -6,9 +6,9 @@ source: Study notes compiled from published sources (Fey et al. 2013; Monk and F
 version: Version 0.1
 status: study
 ---
-## How to use this page
+## About this page
 
-These are **study notes, not a protocol**. They collect what the key papers say so you can plan before the first experiment, and they are meant to be edited as you learn. Numbers are taken from the cited papers. Anything not checked against a source is highlighted. For an actual run, follow the original paper.
+This page summarizes published methods for working with *S. aureus*. It has not yet been run in this lab, so use it for orientation and follow the cited papers for the exact procedure. Numbers come from the cited papers; highlighted text has not been checked against a source.
 
 ## Biosafety
 
@@ -39,16 +39,30 @@ Monk et al. (2015) built *E. coli* hosts that mimic the methylation of major lin
 
 ## Electroporation (summary of Monk and Stinear 2021)
 
-**Electrocompetent cells.** Overnight culture in 10 mL BHI (37 °C, 200 rpm). Dilute to OD₆₀₀ 0.5 in fresh pre-warmed medium and grow 40 min more. From here keep everything at 4 °C. Spin 7,000 *g* for 5 min and wash twice with an equal volume of ice-cold water. Wash twice in 1/5 volume of ice-cold 10% glycerol, then resuspend in 1/200 volume. Freeze 50 µL aliquots at −70 °C.
+**Electrocompetent cells**
 
-**Electroporation.** Thaw cells on ice for 5 min, spin 5,000 *g* for 3 min, and resuspend in 80 µL of 10% glycerol + 500 mM sucrose. Add 0.5–1 µg plasmid in up to 10 µL. Pulse in a 1 mm cuvette at room temperature: 21 kV/cm, 100 Ω, 25 µF. Immediately add 1 mL BHI + 500 mM sucrose and recover tilted at 30 °C for 1 h at 200 rpm. Plate on BHI agar with chloramphenicol (10 µg/mL) and X-gal (100 µg/mL): 30 °C for 48 h, or 37 °C overnight for integrants.
+1. Grow an overnight culture in 10 mL [BHI](media-recipes.html) in a 50 mL tube at 37 °C, 200 rpm.
+2. Dilute to OD₆₀₀ 0.5 in fresh pre-warmed BHI and grow 40 min more.
+3. From here keep everything at 4 °C. Spin at 7,000 *g* for 5 min and wash twice with an equal volume of ice-cold water.
+4. Wash twice in 1/5 volume of ice-cold [10% glycerol](buffers-and-solutions.html).
+5. Resuspend in 1/200 volume of ice-cold 10% glycerol.
+6. Freeze 50 µL aliquots at −70 °C.
+
+**Electroporation**
+
+1. Thaw an aliquot on ice for 5 min, then spin at 5,000 *g* for 3 min.
+2. Resuspend the pellet in 80 µL of [10% glycerol + 500 mM sucrose](buffers-and-solutions.html).
+3. Add 0.5–1 µg plasmid in up to 10 µL.
+4. Transfer to a 1 mm cuvette and pulse at room temperature: 21 kV/cm, 100 Ω, 25 µF.
+5. Immediately add 1 mL BHIS ([BHI + 500 mM sucrose](media-recipes.html)) and recover, tilted, at 30 °C for 1 h at 200 rpm.
+6. Plate on BHI agar with chloramphenicol (10 µg/mL) and X-gal (100 µg/mL) ([plate recipe](media-recipes.html)). Incubate at 30 °C for 48 h, or at 37 °C overnight for integrants.
 
 ## Allelic exchange with pIMAY-Z (summary of Monk and Stinear 2021)
 
 The plasmid's replicon is temperature-sensitive and cannot replicate in Gram-positive hosts at 37 °C.
 
 1. **Integration.** Select integrants at 37 °C on BHI agar + chloramphenicol (10 µg/mL) + X-gal (100 µg/mL). Blue colonies are integrants. For strains that do not integrate directly, a "slow" route is described in the paper.
-2. **Excision.** Grow an integrant in BHI at 30 °C to saturation (about 8 h or overnight). Plate 2 × 10⁻⁵ and 1 × 10⁻⁶ dilutions on BHI agar + X-gal and incubate at 37 °C overnight. White colonies are candidate excision events.
+2. **Excision.** Grow an integrant in BHI at 30 °C to saturation ([about 8 h or overnight]{.tbc}). Plate 2 × 10⁻⁵ and 1 × 10⁻⁶ dilutions on BHI agar + X-gal and incubate at 37 °C overnight. White colonies are candidate excision events.
 3. **Screen** white colonies by colony PCR, re-streak to purify, and confirm by PCR on genomic DNA and by whole-genome sequencing.
 
 Notes:

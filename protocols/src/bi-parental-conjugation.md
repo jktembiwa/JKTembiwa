@@ -1,20 +1,20 @@
-title: Bi-parental conjugation (E. coli donor to recipient, solid mating)
+title: Bi-parental conjugation (E. coli donor to Caballeronia recipient, solid mating)
 category: Transformation
-tags: conjugation, plasmid transfer, E. coli, mating
-summary: Transfer a plasmid from a DAP-auxotroph E. coli donor into a recipient strain by spot-mating, then select and verify transconjugants.
+tags: conjugation, plasmid transfer, E. coli, Caballeronia, mating
+summary: Transfer a plasmid from a DAP-auxotroph E. coli donor into a Caballeronia recipient strain by spot-mating, then select and verify transconjugants.
 source: Written by K. Tembiwa.
 version: Version 1.0
 status: reviewed
-related: mycobacterial-mating | Conjugation between mycobacterial strains.
+related: mycobacterial-mating | Conjugation between mycobacterial strains (a different system).
 ---
 ## Purpose
 
-Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a recipient strain by mating cells on solid medium, then select recipients that received the plasmid. Because the donor cannot grow without DAP, plating the mating mixture on medium lacking DAP counter-selects the donor.
+Move a plasmid from a diaminopimelic acid (DAP) auxotroph *E. coli* donor into a *Caballeronia* recipient strain by mating cells on solid medium, then select recipients that received the plasmid. Because the donor cannot grow without DAP, plating the mating mixture on medium lacking DAP counter-selects the donor.
 
 ## Before you start
 
 - **Donor:** *E. coli* DAP auxotroph carrying the plasmid to be transferred (kanamycin-marked in this example). Grow with DAP.
-- **Recipient:** the strain that will receive the plasmid. Grow without antibiotic.
+- **Recipient:** the *Caballeronia* strain that will receive the plasmid. Grow without antibiotic.
 - **Media and reagents:** YG broth and agar, LB broth, DAP stock (60 mM), kanamycin, 1X PBS.
 - **Plates:** YG + DAP (mating plates) and YG + kanamycin 30 µg/mL (selection plates).
 - Set up every donor × recipient combination you want. This example uses 2 donors × 2 recipients = 4 combinations.

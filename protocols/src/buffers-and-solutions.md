@@ -294,3 +294,19 @@ For this recipe, the concentrated stock contains Tris and glycine. Methanol is a
 4. Add DI water to bring the final volume to 1L and mix thoroughly. Store at room temperature. 
 4. For 1X, add 50 mL of 20X SSC stock to 950 mL of DI water. 
 5. The resulting 1X solution contains 150mM NaCl and 15mM sodium citrate. 
+
+## Electroporation wash solutions (10% glycerol; 10% glycerol + 500 mM sucrose)
+
+Used to wash and resuspend electrocompetent *S. aureus* (Monk and Stinear 2021; see the [*S. aureus* quick-start](staphylococcus-aureus-quick-start.html)).
+
+1. **10% glycerol:** mix 10 mL glycerol with 90 mL dH₂O.
+2. **10% glycerol + 500 mM sucrose:** dissolve 17.1 g sucrose in 10% glycerol and bring to 100 mL.
+3. [Sterilize by filtration (0.22 µm) and store at 4 °C.]{.tbc}
+4. Use ice-cold.
+
+## X-gal stock (blue/white screening)
+
+1. [Dissolve X-gal at 20 mg/mL in dimethylformamide (DMF).]{.tbc}
+2. [Store at −20 °C protected from light.]{.tbc}
+3. Add to cooled agar to the working concentration. The pIMAY-Z protocol uses 100 µg/mL (Monk and Stinear 2021).
+
