@@ -10,7 +10,6 @@ A responsive static academic website built with plain HTML and CSS.
 - `lab-wiki.html` — Lab wiki home and navigation
 - `philosophy.html` — Scientist identity and research philosophy
 - `mentoring.html` — Mentorship, training, independence, inclusion, and career support
-- `culture.html` — Culture, values, inclusion, and community
 - `handbook.html` — Communication, meetings, authorship, safety, onboarding, and offboarding
 - `resources.html` — Growing library for research practice, mentoring, leadership, inclusion, and career development
 - `contact.html` — Contact information
