@@ -10,6 +10,8 @@ status: reviewed
 
 Use rows B–G and columns 2–11. Fill the outer wells with 200 µL sterile water to limit evaporation. Column 2: highest drug concentration, **no bacteria** (drug-only control). Columns 3–10: two-fold dilution series (column 3 highest). Column 11: bacteria, no drug.
 
+<figure class="proto-fig" style="max-width:520px"><img src="images/plate-map-example.jpg" alt="Hand-drawn plate map on a 96-well plate lid labelling columns with drug concentrations and wells with strains" width="1000" height="750" loading="lazy"><figcaption>Example plate map. Plates should be mapped at least this well before any plate-based experiment, such as an MIC or an automated growth curve.</figcaption></figure>
+
 ## Plan concentrations
 
 1. Estimate the MIC from the literature or earlier experiments and place it in the middle of the series (column 6 or 7). Calculate two-fold steps above and below it and write the values as "actual" concentrations.

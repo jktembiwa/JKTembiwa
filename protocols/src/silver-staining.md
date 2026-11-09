@@ -34,5 +34,5 @@ For **mass spectrometry** downstream, a single 30 min fix gives the best sequenc
 
 Reference: Chevallet M, Luche S, Rabilloud T. Silver staining of proteins in polyacrylamide gels. *Nat Protoc* 2006;1:1852–1858. Free preprint: <https://arxiv.org/abs/0706.4396>
 
-<figure class="proto-fig" style="max-width:520px"><img src="images/silver-gel-annotated.jpg" alt="Silver-stained gel with annotated bands for the bait and prey proteins" width="1200" height="900" loading="lazy"><figcaption>Example silver-stained gel with bands annotated.</figcaption></figure>
+<figure class="proto-fig" style="max-width:520px"><img src="images/silver-gel-low-protein.jpg" alt="Silver-stained gel of an interaction assay with faint bands at very low protein amounts" width="1100" height="825" loading="lazy"><figcaption>Silver-stained gel from an interaction assay. Protein amounts are very low, which is the case silver staining is for.</figcaption></figure>
 

@@ -45,6 +45,10 @@ Load pre-induction, then post-induction, supernatant and pellet lanes for each c
 
 Compare the band at the expected size between supernatant and pellet at each condition.
 
+<figure class="proto-fig" style="max-width:480px"><img src="images/pulldown-gel-annotated.jpg" alt="Coomassie-stained gel that is well destained: sharp bands on a clear background" width="1200" height="900" loading="lazy"><figcaption>Coomassie gel, properly destained: clear background and sharp bands.</figcaption></figure>
+
+<figure class="proto-fig" style="max-width:480px"><img src="images/coomassie-underdestained.jpg" alt="Coomassie-stained gel with a dark blue background obscuring the bands" width="1100" height="825" loading="lazy"><figcaption>Under-destained gel: the dark background hides bands, which is why destaining is worth finishing.</figcaption></figure>
+
 ## Lysis by French press (variant)
 
 A second, narrative version of this protocol used a French press for lysis:

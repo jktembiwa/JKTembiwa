@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Start-up, finding focus at 20X and 100X, Köhler alignment checks, camera settings and saturation checks, ND acquisition, and the installed filter sets.">
+<meta name="robots" content="noindex">
+<title>Nikon Ti-2 widefield fluorescence microscope: use, training and filters | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Nikon Ti-2 widefield fluorescence microscope: use, training and filters</h1>
+<p class="lede">Start-up, finding focus at 20X and 100X, Köhler alignment checks, camera settings and saturation checks, ND acquisition, and the installed filter sets.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Version 1.0</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="training">Training</h2>
+<p>Training is two sessions of 1.5–2 h each: one on brightfield microscopy, one on fluorescence microscopy. Before the first session, watch videos on numerical aperture, Köhler illumination, and preventing objective lens damage. Before the second, watch the fluorescence-microscopy videos your trainer assigns.</p>
+<h2 id="part-1.-turning-it-on">Part 1. Turning it on</h2>
+<ol type="1">
+<li>Camera on (wait until the small white light stops flashing).</li>
+<li>Computer on (wait for it to boot).</li>
+<li>Controller box under the microscope on. Do not wait; go straight to step 4.</li>
+<li>Power switch on the right of the back of the microscope base. You should see an arch of green lights, some flashing, and hear gentle clicking as the filter cubes move. If the lights keep blinking, the cubes grind, or it beeps, turn off switch 4 then switch 3, wait 15 s, and turn them on again.</li>
+</ol>
+<h2 id="part-2a.-finding-cells-at-20x">Part 2a. Finding cells at 20X</h2>
+<p>Use 20X for large objects such as macrophages, and as the objective for Köhler alignment.</p>
+<ol type="1">
+<li>Press <strong>ESC</strong> on the base to lower the objectives before moving them, so they do not get scratched.</li>
+<li>In NIS-Elements, click the 20X icon (top left). The 20X is an <strong>air</strong> objective: do not add oil.</li>
+<li>Put the Phase 1 ring in place on the filter/phase wheel.</li>
+<li>Fit the right holder. For a 96-well plate, swap the slide holder for the plate holder with the small Allen wrenches. If you use a slide, put it <strong>upside down</strong> so the coverslip faces the objective.</li>
+<li>Click <strong>DIA</strong> (diascopic/brightfield) on the top bar, then the green arrow (starts live video and turns the light on). You should see a spot of light on the sample and objective.</li>
+<li>Make sure the eye button on the base is green. Focus through the eyepieces with the focus knobs.</li>
+<li>Check the illumination by closing the field diaphragm: a small octagon of light with crisp edges in the center of the field means the light is adjusted. Otherwise follow the Köhler illumination and phase contrast alignment sheet for the Ti-2.</li>
+</ol>
+<h2 id="part-2b.-finding-cells-at-100x">Part 2b. Finding cells at 100X</h2>
+<p>Use 100X for small objects such as bacteria.</p>
+<ol type="1">
+<li>Put the Phase 3 ring in place and click the 100X icon in NIS-Elements. Install the slide or plate holder.</li>
+<li>The 100X is an <strong>oil</strong> objective. Put a drop of immersion oil on the center of the objective.</li>
+<li>Place the sample (coverslip down). Raise the objective until the oil touches the coverslip, which gets you close to focus.</li>
+<li>Click DIA, then the green arrow. If you cannot see a spot of light on the objective, check that the lamp is on, then open the field diaphragm until light reaches the objective, find focus, and adjust the light.</li>
+<li>Focus through the eyepieces. You can also type a Z-drive value in the Ti-2 box in Elements and press Enter: for a slide with an agarose pad, in-focus values are usually about <strong>1400–1700</strong> (type about 1500, then focus manually); for a 96-well plate holder at 100X, about <strong>4500–5000</strong>.</li>
+<li>Close the field diaphragm completely to check the light. The whole field should be lit, with a blue shadow on one side and an orange shadow on the opposite side.</li>
+<li>If the light is only slightly off (colors not balanced), adjust the condenser focusing knob.</li>
+<li>If that does not fix it, go back to 20X and realign: press ESC, switch to the 20X, put in the Phase 1 ring, press ESC again to bring the objective up, and follow the alignment sheet. When returning to 100X, press ESC first, switch to 100X, and put the Phase 3 ring back in.</li>
+<li>Close the field diaphragm again to check, and tweak the condenser knob slightly until orange and blue are balanced at the edges. Open the diaphragm just enough to illuminate the field evenly with no colored light at the edges.</li>
+</ol>
+<h2 id="part-3.-taking-images">Part 3. Taking images</h2>
+<ol type="1">
+<li>On the base press <strong>L</strong> to send light to the camera instead of the eyepieces. With the light and video on, the image appears on screen.</li>
+<li>Find the camera box (Prime 95B) in Elements. Usually use <strong>no binning</strong> and <strong>12 bit</strong>. For focusing in phase, exposure is typically about 10 ms.</li>
+<li>Adjust the Ti-2 box lights until cells look good and the image is not saturated.</li>
+<li><strong>Fluorescence:</strong> find focus in phase, click the red square to stop the video, choose the channel (GFP, mCherry or DAPI), and take a snapshot with the saved settings.</li>
+<li><strong>Check for saturation.</strong> In a 12-bit image the maximum value is 4095; in a 16-bit image it is <span class="tbc">65,535</span> (the source says 65,536). Hover over the brightest pixels and read the value in the bottom bar; the LUT on the right shows how many pixels have each intensity.</li>
+<li>If pixels are saturated, or many are near the maximum, lower the light intensity (the lamp engine) or the exposure time.</li>
+<li><strong>Use identical settings for everything you will compare</strong>: bit depth, exposure time, light intensity. Make sure the settings do not saturate any sample in the series, and write them in your lab notebook.</li>
+<li><strong>ND acquisition:</strong> choose the image series (for endpoint assays, lambda, with the filter cubes you want). Save to your folder in a dated subfolder with information about the experiment. Name files <code>sample_condition_001.nd2</code>; the <code>_001</code> makes the software number files in series.</li>
+<li>Switch back to DIA, turn on the video, find a new field and focus, then click “Run now” in the ND acquisition box. Repeat until you have enough images of the sample.</li>
+</ol>
+<h2 id="installed-filter-sets">Installed filter sets</h2>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Set</th>
+<th>Catalog no.</th>
+<th>Excitation</th>
+<th>Emission</th>
+<th>Dichroic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GFP (hard coat, high S/N, zero shift)</td>
+<td>96362</td>
+<td>470/40 nm (450–490)</td>
+<td>525/50 nm (500–550)</td>
+<td>495 nm</td>
+</tr>
+<tr class="even">
+<td>Texas Red (hard coat, high S/N, zero shift)</td>
+<td>96365</td>
+<td>560/40 nm (540–580)</td>
+<td>630/70 nm (593–668)</td>
+<td>585 nm</td>
+</tr>
+<tr class="odd">
+<td>DAPI (hard coat, high S/N, zero shift)</td>
+<td>96360</td>
+<td>350/50 nm (325–375)</td>
+<td>460/50 nm (435–485)</td>
+<td>400 nm</td>
+</tr>
+</tbody>
+</table>
+<p>To check whether a fluorophore can be detected with these sets, use the <a href="https://www.thermofisher.com/us/en/home/life-science/cell-analysis/labeling-chemistry/fluorescence-spectraviewer.html">Thermo Fisher Fluorescence SpectraViewer</a>.</p>
+<p>See also <a href="image-management-and-integrity.html">Image management and integrity</a>.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written from the lab&#x27;s Ti-2 use guide, training notes and filter list (unpublished SOPs), generalized. Instrument-specific; follow your facility&#x27;s training and alignment sheet.</p>
+<p class="tag-row"><span class="tag">microscopy</span><span class="tag">widefield</span><span class="tag">fluorescence</span><span class="tag">Nikon Ti-2</span><span class="tag">phase contrast</span><span class="tag">instrument</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

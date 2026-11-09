@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How to design a PAM-based sgRNA, anneal and ligate oligos into a BsmBI-cut CRISPRi backbone, and extend to multiple sgRNAs by Golden Gate cloning.">
+<meta name="robots" content="noindex">
+<title>CRISPRi gene silencing in mycobacteria (Sth1 dCas9): sgRNA design and cloning | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">CRISPRi gene silencing in mycobacteria (Sth1 dCas9): sgRNA design and cloning</h1>
+<p class="lede">How to design a PAM-based sgRNA, anneal and ligate oligos into a BsmBI-cut CRISPRi backbone, and extend to multiple sgRNAs by Golden Gate cloning.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Version 1.0</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<p><strong>Background reading:</strong> Qi et al., <em>Cell</em> 2013 (CRISPR as an RNA-guided platform for sequence-specific gene control). Rock et al., “Programmable transcriptional repression in mycobacteria using an orthogonal CRISPR interference platform,” <em>Nature Microbiology</em> 2017 <span class="tbc">(2:16274, doi:10.1038/nmicrobiol.2016.274)</span>.</p>
+<h2 id="overview">Overview</h2>
+<p>The system uses a catalytically inactive CRISPR1 Cas9 from <em>Streptococcus thermophilus</em> (<strong>Sth1 dCas9</strong>). To silence a gene you need Sth1 dCas9, an Sth1 sgRNA against the gene, and a suitably placed PAM.</p>
+<ul>
+<li>Silencing works when targeting either strand of the promoter, or the <strong>non-template strand</strong> of the 5′UTR and ORF. For the 5′UTR and ORF this means the PAM sits on the template strand; for the promoter the PAM can be on either strand.</li>
+<li>CRISPRi is <strong>polar</strong>: genes downstream in the same operon are silenced too. There is also recent evidence for a minor upstream polar effect (Peters et al., <em>Cell</em> 2016).</li>
+</ul>
+<h2 id="backbones">Backbones</h2>
+<p>Backbones differ mainly in the level of Tet repressor expression, with small changes to the sgRNA and Cas9 promoters. The <em>M. smegmatis</em> backbone is <strong>pLJR962</strong> and the current optimum for <em>M. tuberculosis</em> is <strong>pLJR965</strong>. These may change over time. ATc (the TetR inhibitor) appears to act more strongly in <em>M. smegmatis</em> than in <em>M. tuberculosis</em>, so more TetR can be used in <em>M. smegmatis</em>; more TetR means less leaky expression, which matters when targeting essential genes.</p>
+<h2 id="sgrna-design">sgRNA design</h2>
+<p>Start with a gene in <em>M. smegmatis</em> to confirm that design and cloning work.</p>
+<ol type="1">
+<li><strong>Find PAMs</strong> in the promoter, 5′UTR and ORF.
+<ul>
+<li>The published Sth1 consensus is <strong>5′-NNAGAAW-3′</strong>. The author tested more PAMs in vivo against a Renilla target with an identical sgRNA (a table, not reproduced here), and used 25-fold knockdown as an arbitrary cutoff. That raises the functional PAMs from 2 to 15 and gives roughly one targetable site every 50 bp of the H37Rv genome.</li>
+<li>The strongest PAMs are the ones closest to the consensus. Weaker PAMs can still work well and can be used to <strong>tune</strong> knockdown.</li>
+<li>Unlike published reports, the author sees <strong>no bias</strong> toward targeting near the 5′ end, so use the best PAM wherever it is in the promoter, 5′UTR or ORF.</li>
+</ul></li>
+<li><strong>Extract about 20 nt</strong> of targeting sequence, taking the first 20 nt 5′ of the PAM. Mycobacterial transcription starts most efficiently with A or G, so if the 20th nucleotide is not A or G, extend to 21 nt, and so on until it is.</li>
+</ol>
+<h2 id="cloning-the-sgrna">Cloning the sgRNA</h2>
+<ol type="1">
+<li><p><strong>Prepare the backbone:</strong> amplify the CRISPRi backbone in <em>E. coli</em> (kanamycin), digest with <strong>BsmBI</strong> (NEB), and gel purify. BsmBI is optimal at <strong>55 °C in buffer 3.1</strong>. Digest 2–5 µg of plasmid with 40 U for 4 h in a PCR block; overnight is fine. You cannot over-digest with BsmBI, and shorter, lower-enzyme digests led to un-cut backbone carry-through for other users.</p></li>
+<li><p><strong>Design two oligos.</strong> The forward oligo is the transcribed sgRNA sequence; the reverse oligo is its reverse complement. Add <strong>5′-GGGA-3′ to the forward</strong> oligo and <strong>5′-AAAC-3′ to the reverse</strong> oligo to regenerate the sgRNA promoter and dCas9 handle sequences.</p>
+<p>Example (<em>M. tuberculosis groEL1</em>):</p>
+<ul>
+<li><code>groEL1_F</code> 5′-GGGAGTCGGTAACGAAGTATGCCGA-3′</li>
+<li><code>groEL1_R</code> 5′-AAACTCGGCATACTTCGTTACCGAC-3′</li>
+</ul>
+<p>Positive control for <em>M. smegmatis</em> (<em>mmpL3</em>, Ms0250):</p>
+<ul>
+<li><code>mmpL3_F</code> 5′-GGGAGCGACAGACTGGCTGCCCTCGTC-3′</li>
+<li><code>mmpL3_R</code> 5′-AAACGACGAGGGCAGCCAGTCTGTCGC-3′</li>
+</ul>
+<p>Both control sgRNAs should be lethal with ATc in their respective species, so use them to check cloning and knockdown.</p></li>
+<li><p><strong>Anneal oligos:</strong> mix 4 µL of each oligo (100 µM in water) with 42 µL annealing buffer (50 mM Tris pH 7.5, 50 mM NaCl, 1 mM EDTA; 50 µL total) in an 8-strip PCR tube. Program: 95 °C for 2 min, ramp down at 0.1 °C/s to 25 °C, end.</p></li>
+<li><p><strong>Ligate</strong> (5 µL): 0.5 µL annealed oligos, ~9 ng digested and gel-purified backbone (typically ~0.25 µL), 0.5 µL T4 ligase buffer, 0.25 µL T4 DNA ligase (NEB, 2,000,000 U/mL), 3.5 µL water. Room temperature for 1–3 h, or overnight.</p></li>
+<li><p><strong>Transform</strong> 0.5 µL of the ligation into 5 µL of supercompetent <em>E. coli</em> and plate on LB + kanamycin. Expect 50–500 colonies.</p></li>
+<li><p><strong>Miniprep one clone</strong> per reaction (error-free cloning efficiency is &gt;95% in the author’s hands) and <strong>sequence</strong> with the backbone primer (source: primer 1834, 5′-TTCCTGTGAAGAGCCATTGATAATG-3′).</p></li>
+</ol>
+<h2 id="several-sgrnas-from-one-plasmid">Several sgRNAs from one plasmid</h2>
+<p>Backbones carry a <strong>SapI-based Golden Gate site</strong> 3′ of the first sgRNA scaffold. In principle it accepts 8 more sgRNA cassettes, for 9 sgRNAs on one plasmid. Reading: Engler and Marillonnet, <em>Methods Mol Biol</em> 2014.</p>
+<ol type="1">
+<li>Clone each individual sgRNA into the backbone.</li>
+<li>PCR-amplify each [promoter–sgRNA–terminator] cassette with primers adding SapI sites and overhangs compatible with the Golden Gate handle.</li>
+<li>Golden Gate: digest the parent sgRNA plasmid (with the first sgRNA at the usual site) and the PCR cassettes with SapI and ligate with T4 DNA ligase in one pot. If efficiency is poor, do the digests, gel purification and ligations as separate steps.</li>
+<li>Sequence-confirm the insertions.</li>
+</ol>
+<p>The author notes that multiplexing methods were still being optimized and that details would be added later.</p>
+<p>See also <a href="recombineering.html">Recombineering</a> and <a href="orbit.html">ORBIT</a> for gene deletion and tagging approaches.</p>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Condensed from a shared protocol draft (v4, 3 March 2017) by Jeremy Rock; the method is published in Rock et al., Nature Microbiology (2017). Unpublished draft handout; cite the paper.</p>
+<p class="tag-row"><span class="tag">CRISPRi</span><span class="tag">dCas9</span><span class="tag">sgRNA</span><span class="tag">gene silencing</span><span class="tag">knockdown</span><span class="tag">M. smegmatis</span><span class="tag">M. tuberculosis</span><span class="tag">Golden Gate</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Operating rules, priming, Ni column and SEC runs, clean-up, and column care for a Ni then size-exclusion purification on an NGC chromatography system.">
+<meta name="robots" content="noindex">
+<title>FPLC: Ni column then size-exclusion run (NGC system) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span>Microbial Mosaic</span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">FPLC: Ni column then size-exclusion run (NGC system)</h1>
+<p class="lede">Operating rules, priming, Ni column and SEC runs, clean-up, and column care for a Ni then size-exclusion purification on an NGC chromatography system.</p>
+<p class="proto-meta"><span class="status draft">Draft: not yet reviewed by the author</span> <span class="meta">Version 1.0</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="before-you-start">Before you start</h2>
+<p>These notes assume a Ni column followed by a size-exclusion (SEC) column. They are a reminder for people who have already been trained on the instrument, not a replacement for training.</p>
+<p><strong>Rules to remember</strong></p>
+<ol type="1">
+<li><strong>Do not turn off the NGC (the large unit).</strong> Leave it on, or condensation builds up inside. About once a month it is switched off at the side, unplugged for a hard reset, and turned back on after a few minutes.</li>
+<li><strong>Bubbles are the enemy.</strong> Prime the lines whenever you change buffers, always degas buffers, and run a system flush before every run.</li>
+<li><strong>Always set pressure limits</strong>, for manual and programmed runs. Each column’s limit is listed in a table kept next to the computer.</li>
+<li><strong>Keep both pump inlet lines in liquid</strong> at all times. Never leave them in air.</li>
+</ol>
+<p><strong>Buffers and filtering.</strong> Use filtered, degassed buffers, ultrapure water and 20% ethanol. Filter buffers, water and ethanol with bottle-top filter units (reusable about 5 times; they do not need to stay sterile). Filter lysates (loaded in the DynaLoop) and purified protein (injected on SEC) through a 0.45 µm syringe filter, or spin twice. Spinning twice is usually faster than filtering lysate, which clogs.</p>
+<p>Find a buffer your protein is soluble in by trial and error; a starting point is 50 mM Tris pH 7.5, 150 mM NaCl.</p>
+<h2 id="restarting-the-system">Restarting the system</h2>
+<p>Normally the computer and the fraction collector stay on, and the NGC is never turned off. If the detector screen is white, tap OK on the touchscreen to wake it. If you have connection problems, did maintenance, or the software freezes, do a hard restart:</p>
+<ol type="1">
+<li>Turn off the fraction collector (switch at the back).</li>
+<li>Turn off the NGC (green button on the right), then unplug it.</li>
+<li>Shut down the computer from Windows and wait 2 minutes.</li>
+<li>Turn on the computer, then the fraction collector, then re-plug and turn on the NGC (flat button on the right). Wait for “Detector initializing”.</li>
+</ol>
+<p>If only the fraction collector froze or was turned off, the NGC must be restarted and reconnected.</p>
+<h2 id="priming-and-equilibrating">Priming and equilibrating</h2>
+<p>If the system has been idle for more than a couple of days, one pump is on water and the other on 20% ethanol (here, ethanol on pump B).</p>
+<ol type="1">
+<li>Move the ethanol inlet line into purified water.</li>
+<li><strong>Prime pump B:</strong> unscrew the valve on top of the pump, attach a 10 mL syringe, and draw water through the lines and pump. Discard the liquid and repeat until no bubbles appear, then close the valve.</li>
+<li>Move pump B’s line into the Ni wash buffer and prime again.</li>
+<li><strong>Prime every time you switch buffers.</strong> When changing between two different salty buffers, or between ethanol and a salty buffer, prime with water in between. The purge button on the face plate also works (purge for 2 minutes, ideally right after priming).</li>
+<li>Run a system flush (keep the column valve on bypass), so that the system and column are in the same liquid.</li>
+</ol>
+<p><strong>Put the Ni column into water</strong> (if it was stored in ethanol): run a “System flush pump A” method on water, then in the manual run tool select the Ni column position, tick the maximum column pressure box and enter the limit, and run water at 1 mL/min, isocratic, 0% B, 20 mL. Repeat with Ni wash buffer from pump B, then switch pump A to elution buffer, prime it, and put 10 mL of wash buffer through the column.</p>
+<p>Start manual washes at 1 mL/min and let the pressure settle before raising the flow rate.</p>
+<h2 id="dynaloop-loading-large-lysate-volumes">DynaLoop: loading large lysate volumes</h2>
+<p>The DynaLoop holds up to about 90 mL, so it is used for lysate on the Ni column.</p>
+<ol type="1">
+<li>Remove the loop in the injection valve. Connect the DynaLoop bottom tube to loop port F and the top tube to loop port E.</li>
+<li>Disconnect the tube from the column-switching valve (port 2) from the injection valve’s luer port while loading.</li>
+<li>If the DynaLoop is in ethanol, run the “cleaning dynaloop” program with water first (fill and expel once, up to 40 mL).</li>
+<li>Clear the lysate (0.45 µm filter, or spin twice). Draw it into a luer-lock syringe, remove air, and connect it to the injection valve’s luer port.</li>
+<li>In manual mode, set the injection valve to “Manual load loop”. Inject slowly; it is hard to push, and you will see the plunger rise.</li>
+</ol>
+<h2 id="ni-column-run">Ni column run</h2>
+<ol type="1">
+<li>Find a Ni method and adjust it in the Method Editor. Enter the lysate volume to inject: most of it, but not the top layer where bubbles collect.</li>
+<li>Wash with at least 3 column volumes (CV) of wash buffer (10–20 mM imidazole), then run a gradient up to about 200–500 mM imidazole over 3–7 CV, then elution buffer alone for 1–5 CV. With many contaminants, wash longer and use a longer gradient.</li>
+<li>Turn on fraction collection during elution, and for some of the other steps in case you need to find your protein later.</li>
+<li>Check that buffers are assigned to the correct pumps, save, and press start run. Set up the fraction tubes as shown in the run dialog, name the run with the protein and date, and save to your folder.</li>
+<li>If “start run” is grayed out, cancel, go to manual mode, click the red X (clear), accept resetting the collection state, and start again from the Method Editor.</li>
+</ol>
+<p>Maximum pressure for a Ni column: <span class="tbc">73 psi</span>; the manual-run limit entered in the column box was <span class="tbc">40</span>. These two numbers appear in the source without explanation; check them against the manufacturer’s limit for your column.</p>
+<p><strong>After the run</strong></p>
+<ol type="1">
+<li>Reattach the port-2 tube to the injection valve and remove the syringe.</li>
+<li>Run 1.25 CV of <strong>elution buffer</strong> to wash the column. Do not run water straight after elution, because remaining protein can precipitate on the resin.</li>
+<li>Switch pump A to water, prime, and run a system flush with both pumps on water.</li>
+<li>Run 7 mL of water through the Ni column.</li>
+<li>Run “wash dynaloop” with water twice, filling a bit beyond the lysate volume you used (for 40 mL of lysate, use at least 45 mL of water in one of the washes).</li>
+<li>If the Ni column and DynaLoop will not be used for more than 3 days, store them in 20% ethanol; otherwise water is fine.</li>
+<li>Analyze fractions on a gel, pool the ones you want, and buffer exchange to remove imidazole (which causes precipitation). If you will run SEC, exchange into the SEC buffer.</li>
+</ol>
+<h2 id="sec-run">SEC run</h2>
+<p>Most Ni-purified proteins contain some contaminants and unfolded protein, so the preparative SEC column (the large one) is used as a second step.</p>
+<ol type="1">
+<li><strong>Equilibrate.</strong> In manual mode run 1.25 CV of water, then buffer, through the chosen SEC column. The large column takes several hours; write a program to do this overnight.</li>
+<li>Detach the DynaLoop tubes and connect a loop big enough for your sample into ports E and F.</li>
+<li><strong>Concentrate</strong> the sample (about 5 mL for the large column, 0.25 mL for the small one). Spin 1–2 min at maximum speed in the cold to remove precipitate.</li>
+<li>Copy and edit a method. A typical SEC method is just an injection followed by elution with buffer.
+<ul>
+<li>Flow rate: if the column is clean, about 2 mL/min for the large column and 1 mL/min for the small one. Slower gives better resolution but may be needed for sticky proteins.</li>
+<li>Equilibration step: 1 CV if the column was on water only; delete or shorten it if the column is already in buffer.</li>
+<li>Injection volume must match the loop.</li>
+<li>Elution with the equilibration buffer for at least 1 CV, plus 0.5–1 CV of wash (or wash manually afterwards).</li>
+<li>Fraction collection during elution. Most proteins come off between 0.2 and 0.7 CV.</li>
+</ul></li>
+<li>Set the injection valve to “Manual load loop” and screw in the injection port.</li>
+<li><strong>Load the syringe without bubbles.</strong> For 1 mL or less, draw sample into a 1 mL syringe with the needle on, turn it upright, pull the plunger down to let air rise, tap, and push out the air. For larger volumes, fill the syringe without the needle (finger over the tip), insert the plunger, turn upright, expel air, then add the needle and expel any remaining air.</li>
+<li>Inject without introducing air into the line, start the method, and place the fraction tubes.</li>
+</ol>
+<h2 id="cleaning-up">Cleaning up</h2>
+<ol type="1">
+<li>System flush with water on both pumps (pump A first if it is already on water). Then move line B into the water bottle, prime pump B and flush with pump B.</li>
+<li>Put line B in 20% ethanol and flush with ethanol.</li>
+<li>Run 1.25 CV of water through the SEC column, then 1.25 CV of 20% ethanol for storage.</li>
+<li>Wipe up spills around the fraction collector, NGC and fridge, and tidy the bench.</li>
+<li><strong>Leave the NGC and the computer on.</strong></li>
+</ol>
+<h2 id="column-care">Column care</h2>
+<p><strong>Pressure.</strong> The resin beads are squishable. If too much pressure is applied, they are crushed and will not recover, and the column then loses resolution and becomes even more sensitive to pressure. When writing a method, set a pressure limit at about 85% of the manufacturer’s maximum, with a program override that reduces the flow rate if the pressure is too high. Tick “control the flow rate to avoid overpressure on the column” in the system control/pressure tab. For manual runs, enter the limit in the column-switching valve box yourself. Particles in the column or tubing raise pressure, which is why everything is filtered. Glycerol raises pressure, so lower the flow rate with glycerol buffers. Pre-column pressure is approximately the system pressure; ΔCol is column pressure minus system pressure.</p>
+<p><strong>Storage.</strong> - All columns are stored in 20% ethanol, which is stable and prevents bacterial growth. Put a column in ethanol if it will not be used for more than a week. - Salty buffer plus ethanol can precipitate salt in the column, so always wash with water (1.25 CV) before ethanol (1.25 CV). - Same buffer again the next day: wash with 2–3 CV of buffer and leave it in buffer for one day. - Different buffer the next day: mix the two buffers in a beaker first, and only go straight from one to the other if nothing precipitates. - Next use within a week: wash with water and store in water for up to a week.</p>
+<p><strong>Connecting a new column.</strong> Pick the column valve position, run water through the system with the software showing flow through that position but the column unattached (the top line will leak). Put a drop of water in the column’s top inlet and connect the top while water is flowing (liquid to liquid, to avoid bubbles). When water starts to leak from the bottom after about a minute, connect the bottom lead; this one does not need to be liquid to liquid. Then run 5 mL of water.</p>
+<h2 id="system-parts">System parts</h2>
+<ul>
+<li><strong>Pumps:</strong> A (left) and B (right) pump buffer, water and ethanol. Prime whenever you move an inlet into a different liquid or air gets into the lines.</li>
+<li><strong>Injection valve:</strong> sits between the pumps. Samples are loaded into a loop attached to its two side ports. Loops available: 100 µL, 250 µL <span class="tbc">(source says 259 µL)</span>, 1 mL, 5 mL, and the DynaLoop.</li>
+<li><strong>Column-switching valve:</strong> in our setup, position 1 is an analytical SEC column (ENrich SEC 650), 2 is a HiPrep S200 26/70 preparative SEC column, 3 is a Nuvia IMAC Ni column, and 5 is an ion-exchange column.</li>
+<li><strong>UV detector (four wavelengths):</strong>
+<ul>
+<li>215 nm: peptide backbone. Peaks first and is most useful when you have little protein, or a protein without Phe, Tyr or Trp; least useful with a lot of protein.</li>
+<li>255 nm: nucleic acids.</li>
+<li>280 nm: protein (aromatic side chains such as Trp and Phe).</li>
+<li>495 nm: GFP and sugars; also detergents, which have a characteristic peak here.</li>
+</ul></li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Written from the lab&#x27;s FPLC use outline for trained users (unpublished SOP), generalized. Instrument-specific; use only after being trained on your own system.</p>
+<p class="tag-row"><span class="tag">FPLC</span><span class="tag">Ni-NTA</span><span class="tag">SEC</span><span class="tag">protein purification</span><span class="tag">NGC</span><span class="tag">instrument</span></p>
+<p><a href="index.html">← All protocols</a> · <a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+</body>
+</html>

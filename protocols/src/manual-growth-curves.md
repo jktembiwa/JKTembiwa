@@ -61,3 +61,8 @@ Better: plot ln(OD) against time and fit a line through the exponential portion.
 - OD does not distinguish live from dead cells. Plate for CFU ([Serial dilution](serial-dilution-cfu.html)) when viability matters.
 
 Reading intervals, flask size and shaking speed are general guidelines and should be replaced with your lab's usual values.
+
+- **Take CFU samples alongside OD readings** so you can convert OD to CFU later (OD → CFU calculation).
+
+<figure class="proto-fig" style="max-width:360px"><img src="images/postit-cfu-tip.jpg" alt="Yellow Post-it with handwritten C1V1 = C2V2 working and a reminder to check OD alongside taking CFU samples" width="700" height="680" loading="lazy"><figcaption>A Post-it reminder from the bench: do the C₁V₁ = C₂V₂ dilution, and check OD alongside taking CFU samples.</figcaption></figure>
+

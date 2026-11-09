@@ -37,6 +37,10 @@ Use filtered, degassed buffers. If the supernatant is cloudy, syringe-filter it 
 
 Run flow-through, wash and elution fractions with supernatant and pellet samples on a 12% SDS gel. His-SUMO-CwlM runs at ~56 kDa.
 
+<figure class="proto-fig" style="max-width:560px"><img src="images/fplc-ni-run.jpg" alt="FPLC software screen during the Ni-NTA elution, showing the A280 trace, collected fractions and the flow-path schematic with pressure and UV readings" width="1300" height="975" loading="lazy"><figcaption>Ni-NTA elution on the FPLC: UV trace with collected fractions, and the flow path with pressure and detector readings.</figcaption></figure>
+
+<figure class="proto-fig" style="max-width:480px"><img src="images/gel-post-ni.jpg" alt="Coomassie-stained gel of fractions after the Ni column with heavily overloaded lanes" width="1000" height="750" loading="lazy"><figcaption>Gel after the Ni column (lanes overloaded).</figcaption></figure>
+
 ## 5. Dialysis
 
 Dialyze the eluate overnight against wash/elution buffer with no imidazole.
@@ -48,4 +52,6 @@ Dialyze the eluate overnight against wash/elution buffer with no imidazole.
 3. Run fractions on a gel, pool the clean ones, concentrate to 1 mg/mL at least, NanoDrop to confirm , adjust glycerol to 10% final, re-measure, flash freeze 10-100 µL aliquots in liquid nitrogen and store at –80 °C.
 
 <figure class="proto-fig" style="max-width:520px"><img src="images/sec-trace.jpg" alt="Size-exclusion chromatogram with a small early peak and a larger main peak, with fraction ranges along the top" width="1200" height="657" loading="lazy"><figcaption>Example SEC trace: a small early peak and the main peak; fractions are marked along the top.</figcaption></figure>
+
+<figure class="proto-fig" style="max-width:480px"><img src="images/gel-post-sec.jpg" alt="Coomassie-stained gel of fractions after size-exclusion with cleaner bands" width="1000" height="750" loading="lazy"><figcaption>Gel after SEC: cleaner bands.</figcaption></figure>
 

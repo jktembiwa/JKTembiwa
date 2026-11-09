@@ -49,7 +49,7 @@ Rules:
 ## Content rules for protocols
 - Sources are Karen's and her labs' documents. New pages carry the draft badge ("Draft: not yet reviewed") until she marks them reviewed.
 - Generalize lab-specific details: strain and primer IDs, personal names, rooms, instrument sign-ups. Sequences are fine.
-- Credit sources in the `source:` line. Don't add people's names to credits without asking Karen; at least one contributor's notes are deliberately uncredited by name.
+- Credit sources in the `source:` line. Don't add people's names to credits without asking Karen.
 - Highlight unverified or unsourced values with `[text]{.tbc}` (yellow). Never invent steps or tips; any gloss you add is marked `.tbc`. Note conflicts between protocols; don't silently resolve them.
 - Vendor manuals and published protocols: write a condensed version, cite it, and link the original.
 - Triage new documents:
@@ -57,7 +57,7 @@ Rules:
   - Vendor or published: summary, link and citation.
   - Unpublished drafts from other labs: hold.
   - Duplicates and templates: skip.
-- Hold, don't publish: instrument- or lab-specific SOPs (FPLC, imaging systems, cell disruptors), unpublished drafts from other labs, and internal summaries Karen hasn't cleared. Ask her if unsure.
+- Karen has cleared the earlier holds (FPLC, Nikon Ti-2, EmulsiFlex, CRISPRi draft, DivIVA summary); they are published as draft pages. For any new instrument-specific SOP, unpublished draft from another lab, or internal summary, ask her first if unsure.
 - She may publish project-specific protocols that appear in her papers or dissertation (e.g. the moenomycin and EtBr assays).
 - Tn-seq pages keep their structure: an overview ("which protocol to use") plus phage stock, library construction, library prep/sequencing (variant tables), and insertion mapping. Add new variants to those pages' tables.
 - To find open items, grep `{.tbc}` in `protocols/src`.

@@ -39,6 +39,10 @@ Extension at **68 °C**, not 72 °C, at about 1 min/kb.
 
 This is ideal for amplifying GC-rich templates for downstream applications.
 
+<figure class="proto-fig" style="max-width:420px"><img src="images/kodx-pcr-uv-gel.jpg" alt="Agarose gel imaged on a UV light box showing a single strong KOD Xtreme PCR product band" width="900" height="1200" loading="lazy"><figcaption>An extremely clean, high-yield KOD Xtreme PCR. Imaged on a UV light box rather than a gel-doc, so the signal (especially the ladder) looks faint, but the yield is very good.</figcaption></figure>
+
+**Be careful about prolonged UV exposure:** UV damages the DNA, so keep imaging time short, especially if you plan to use the DNA afterwards.
+
 ## Q5: high fidelity, AT- or GC-rich templates
 
 | Component | Volume |

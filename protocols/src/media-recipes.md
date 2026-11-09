@@ -64,3 +64,6 @@ The medium must be autoclaved and then filter sterilized, or a precipitate forms
 **100X P-stock (100 mL):** K₂HPO₄ 15.5 g; NaH₂PO₄ 8.5 g. Autoclave.
 
 **100X P-starve stock (100 mL):** K₂HPO₄ 0.155 g; NaH₂PO₄ 0.085 g; MOPS 10.46 g. Adjust to pH 7.0 and autoclave.
+
+<figure class="proto-fig" style="max-width:320px"><img src="images/ph-meter.jpg" alt="Bench pH meter display reading 6.66" width="600" height="800" loading="lazy"><figcaption>Checking pH with a bench meter.</figcaption></figure>
+
