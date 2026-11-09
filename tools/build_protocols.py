@@ -63,6 +63,10 @@ def parse(path):
 pages=[parse(p) for p in sorted(glob.glob("protocols/src/*.md"))]
 os.makedirs("protocols",exist_ok=True)
 STATUS='<span class="status draft">Draft: not yet reviewed by the author</span>'
+STUDY='<span class="status draft study">Study notes: not yet run by the author</span>'
+def badge(p):
+    st=p.get("status","").lower()
+    return "" if st=="reviewed" else (STUDY if st=="study" else STATUS)
 LEGEND='<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>'
 INLINE=r"</?(?:a|b|i|em|strong|span|sub|sup|code|abbr|small)\b[^>]*>"
 def plain(h):
@@ -84,7 +88,7 @@ for p in pages:
     p["html"]=md(p["body"])
     # "status: reviewed" in a source header drops the draft badge; the legend then appears only if .tbc spans remain
     reviewed=p.get("status","").lower()=="reviewed"
-    status="" if reviewed else STATUS+" "
+    status=(badge(p)+" ") if badge(p) else ""
     legend=LEGEND if not reviewed or "{.tbc}" in p["body"] else ""
     out=head(p["title"],p["summary"],("Protocol · "+p["category"],p["version"]))+f'''<section class="page-hero"><div class="container">
 <div class="eyebrow"><a href="index.html">Protocols</a></div>
@@ -103,7 +107,7 @@ for p in pages:
 '''+FOOT
     open(f"protocols/{p['slug']}.html","w",encoding="utf-8").write(out)
 # index
-ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Protein biochemistry","Growth and assays","Imaging","Analysis","Reference","Protocols"]
+ORDER=["Media and reagents","Cloning","Transformation","Mycobacterial genetics","Protein biochemistry","Growth and assays","Imaging","Flow cytometry","Analysis","Computational analysis","Organism quick-starts","Reference","Protocols"]
 from collections import Counter
 _c=Counter(t.lower() for p in pages for t in p['tags'])
 alltags=sorted({t for p in pages for t in p['tags'] if _c[t.lower()]>=2})
@@ -111,7 +115,7 @@ def card(p):
     return f'''<article class="card proto-card" data-tags="{html.escape('|'.join(p['tags']).lower(),quote=True)}" data-text="{html.escape((p['title']+' '+p['summary']+' '+' '.join(p['tags'])).lower(),quote=True)}">
 <h3><a href="{p['slug']}.html">{html.escape(p['title'])}</a></h3>
 <p>{html.escape(p['summary'])}</p>
-<p class="meta">{"" if p.get("status","").lower()=="reviewed" else STATUS}</p>
+<p class="meta">{badge(p)}</p>
 </article>
 '''
 cards=""

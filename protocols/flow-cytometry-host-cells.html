@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Study notes on analyzing infected host cells by flow cytometry: panel and control design, a typical gating order, how to separate intracellular from extracellular bacteria, and what flow cannot tell you.">
+<meta name="robots" content="noindex">
+<title>Flow cytometry of host cells and infections | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Flow cytometry</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Flow cytometry of host cells and infections</h1>
+<p class="lede">Study notes on analyzing infected host cells by flow cytometry: panel and control design, a typical gating order, how to separate intracellular from extracellular bacteria, and what flow cannot tell you.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="how-to-use-this-page">How to use this page</h2>
+<p>These are <strong>study notes, not a protocol</strong>, for planning host-cell flow experiments before the first run. Highlighted statements are standard practice written from general knowledge and are <strong>not yet checked</strong> against a source. The authoritative reference for panel design and controls is the consensus guideline paper (Cossarizza et al. 2021), which is long and worth skimming before you build a panel.</p>
+<h2 id="what-flow-can-and-cannot-tell-you-in-an-infection">What flow can and cannot tell you in an infection</h2>
+<p><strong>Can:</strong> the fraction of host cells that carry bacteria, per-cell reporter or probe intensity, and host phenotype (surface or intracellular markers) in infected versus uninfected cells.</p>
+<p><strong>Cannot (reliably): intracellular replication.</strong> Flannagan and Heinrichs (2018) report that attempts to assess bacterial proliferation by flow cytometry failed: a macrophage can hold several phagosomes, and bacteria may replicate in only one of them, so a cell with any signal is simply scored as positive and sorting by GFP intensity can overstate replication. They used fluorescence microscopy of individual cells instead. Their microscopy assay used GFP-expressing <em>S. aureus</em> USA300 labelled with a proliferation dye, a multiplicity of infection of 10, time points at 1.5 h and 12 h, and gentamicin (100 µg/mL for 1 h after a 30 min infection) to remove extracellular bacteria.</p>
+<h2 id="panel-and-control-design">Panel and control design</h2>
+<ul>
+<li><strong>Controls for every run:</strong> unstained cells; single-stain compensation controls (cells or beads) for each fluorochrome; and <span class="tbc">fluorescence-minus-one (FMO) controls to set gates for any marker that does not give a clean positive/negative split</span>.</li>
+<li><span class="tbc"><strong>Titrate</strong> every antibody on the cell type you will use, rather than relying on the datasheet amount.</span></li>
+<li><span class="tbc">Use a <strong>viability dye</strong> compatible with fixation if you will fix, and exclude dead cells, which stick to antibodies non-specifically.</span></li>
+<li><span class="tbc">Block Fc receptors before staining mouse or human immune cells.</span></li>
+<li><span class="tbc">Match fluorochrome brightness to antigen abundance, put bright dyes on low-abundance markers, and avoid combining dyes with heavy spectral overlap.</span></li>
+<li><span class="tbc">Keep one <strong>reference sample</strong> that you stain every time, so you can spot drift between days.</span></li>
+</ul>
+<h2 id="a-typical-gating-order">A typical gating order</h2>
+<p><span class="tbc">1. Cells (FSC-A vs SSC-A), to exclude debris. 2. Single cells (FSC-H vs FSC-A), to exclude doublets. 3. Live cells (viability dye negative). 4. Cell type (lineage markers, for example a macrophage marker). 5. Infected cells (bacterial reporter positive), compared with an uninfected control sample and with cells infected with non-fluorescent bacteria.</span></p>
+<p>Set gates on the controls and apply the same gates to every sample in the experiment.</p>
+<h2 id="separating-intracellular-from-extracellular-bacteria">Separating intracellular from extracellular bacteria</h2>
+<ul>
+<li>Kill extracellular bacteria with an antibiotic that does not enter host cells. Flannagan and Heinrichs used gentamicin. <span class="tbc">Lysostaphin is a common alternative for <em>S. aureus</em>.</span></li>
+<li><span class="tbc">Alternatively, stain extracellular bacteria with an antibody against a surface antigen <em>before</em> permeabilization, so only the unstained, reporter-positive fraction is intracellular.</span></li>
+<li><span class="tbc">pH-sensitive dyes (for example pHrodo) can mark bacteria that have reached the acidic phagolysosome.</span></li>
+<li><em>S. aureus</em> caution: <span class="tbc">protein A binds the Fc region of antibodies, so use Fc-independent reagents or proper isotype and no-primary controls</span> (see the <a href="staphylococcus-aureus-quick-start.html"><em>S. aureus</em> quick-start</a>).</li>
+</ul>
+<h2 id="fixation-and-safety">Fixation and safety</h2>
+<p><span class="tbc">Fix infected cells (for example with paraformaldehyde) before they go on a shared cytometer, check that the fixation protocol inactivates your pathogen, and follow your institution’s biosafety rules and your core facility’s policy for pathogens.</span> Fixation can reduce some fluorescent-protein signals and affect some epitopes, so test it on your reporter and antibodies first.</p>
+<h2 id="reporting">Reporting</h2>
+<p>Record the instrument, configuration, panel, controls and gating, and keep the raw FCS files. MIFlowCyt lists the minimum information to report (Lee et al. 2008). For bacteria on their own, see <a href="flow-cytometry-bacteria.html">flow cytometry of bacteria</a>.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Cossarizza A, Chang HD, Radbruch A, et al. 2021. Guidelines for the use of flow cytometry and cell sorting in immunological studies (third edition). <em>Eur J Immunol</em> 51:2708–3145. <a href="https://eprints.whiterose.ac.uk/id/eprint/184275/">Open-access copy</a></li>
+<li>Flannagan RS, Heinrichs DE. 2018. A fluorescence based-proliferation assay for the identification of replicating bacteria within host cells. <em>Front Microbiol</em> 9:3084. <a href="https://doi.org/10.3389/fmicb.2018.03084">doi:10.3389/fmicb.2018.03084</a></li>
+<li>Lee JA, Spidlen J, Boyce K, et al. 2008. MIFlowCyt: the minimum information about a flow cytometry experiment. <em>Cytometry A</em> 73:926–930. <a href="https://pubmed.ncbi.nlm.nih.gov/18752282/">PubMed 18752282</a></li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Study notes compiled from published guidance: Cossarizza et al. 2021 (flow cytometry guidelines), Flannagan and Heinrichs 2018, and Lee et al. 2008 (MIFlowCyt). Not yet run by the author.</p>
+<p class="tag-row"><span class="tag">flow cytometry</span><span class="tag">host cells</span><span class="tag">macrophages</span><span class="tag">infection</span><span class="tag">gating</span><span class="tag">panel design</span><span class="tag">quick-start</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>

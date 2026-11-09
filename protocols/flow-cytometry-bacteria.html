@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Study notes on running bacteria on a flow cytometer: why bacteria are different from mammalian cells, how to set the threshold and check for swarming, viability stains, controls and reporting.">
+<meta name="robots" content="noindex">
+<title>Flow cytometry of bacteria (acquisition, staining and controls) | Microbial Mosaic</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css?v=11">
+</head>
+<body class="ruled">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="brand" href="../index.html"><span class="brand-mark"><img src="../assets/brand-mark.png" alt="Microbial Mosaic logo" width="42" height="42"></span><span class="brand-text"><small class="brand-kicker">Notebook of Karen Tembiwa · Vol. 1</small><span>Microbial Mosaic</span></span></a>
+<nav class="nav" aria-label="Main navigation">
+<a href="../index.html">About</a>
+<a href="../research.html">Research</a>
+<a href="../methods.html">Methods</a>
+<a href="../publications.html">Publications</a>
+<a href="../news.html">News</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<div class="container entry-bar"><span>Protocol · Flow cytometry</span><span class="entry-date"></span><span>Version 0.1</span></div>
+<section class="page-hero"><div class="container">
+<div class="eyebrow"><a href="index.html">Protocols</a></div>
+<h1 class="proto-title">Flow cytometry of bacteria (acquisition, staining and controls)</h1>
+<p class="lede">Study notes on running bacteria on a flow cytometer: why bacteria are different from mammalian cells, how to set the threshold and check for swarming, viability stains, controls and reporting.</p>
+<p class="proto-meta"><span class="status draft study">Study notes: not yet run by the author</span> <span class="meta">Version 0.1</span></p>
+</div></section>
+<section class="section"><div class="container prose">
+<p class="tbc-legend"><span class="tbc">Highlighted</span> values are awaiting confirmation. Do not rely on them without checking.</p>
+<h2 id="how-to-use-this-page">How to use this page</h2>
+<p>These are <strong>study notes, not a protocol</strong>: a checklist of what to set up and test before trusting a bacterial flow experiment, to be edited as you learn your own instrument. Details that are not from a cited source are highlighted. Always check your core facility’s own bacterial guidelines first, since the instrument decides which settings work.</p>
+<h2 id="why-bacteria-are-different">Why bacteria are different</h2>
+<p>Bacteria are at the lower limit of what most cytometers were built to see: they scatter little light and carry little signal, so instrument noise and debris matter much more than with mammalian cells. The practical consequences below follow from that.</p>
+<h2 id="acquisition-settings-aarhus-facs-core-analyzing-bacteria">Acquisition settings (Aarhus FACS Core, “Analyzing Bacteria”)</h2>
+<ul>
+<li><strong>Use a DNA stain</strong> to tell bacteria apart from background particles.</li>
+<li><strong>Standardize staining.</strong> Incubation temperature and time both change the bacterial count.</li>
+<li><strong>Use height, not area,</strong> for fluorescence and scatter, since bacteria vary less in height.</li>
+<li><strong>Use log scales</strong> for both forward scatter (FSC) and side scatter (SSC).</li>
+<li><strong>Threshold on fluorescence</strong> (the DNA stain) when possible. If you cannot, an SSC threshold is often better than an FSC threshold.</li>
+<li><strong>Run at the slowest speed</strong> to start (slider fully to the left, not just “slow”).</li>
+</ul>
+<h3 id="check-for-swarming-coincidence">Check for swarming (coincidence)</h3>
+<ol type="1">
+<li>Record the median fluorescence intensity (MFI) of the bacterial population.</li>
+<li>Dilute the sample and run it again.</li>
+<li>The count rate should fall while the <strong>MFI stays the same</strong>. If the MFI changes, several cells are being read as one event (“swarming”).</li>
+<li>If so, run a dilution series to find a dilution where single events are detected.</li>
+</ol>
+<p><span class="tbc">Also use filtered sheath fluid and buffers, and run a buffer-only tube so you know the background event rate before adding cells.</span></p>
+<h2 id="viability-and-membrane-integrity-stains">Viability and membrane-integrity stains</h2>
+<ul>
+<li><strong>SYTO 9 + propidium iodide (LIVE/DEAD BacLight).</strong> <span class="tbc">SYTO 9 enters all cells, and propidium iodide only enters cells with damaged membranes and reduces the SYTO 9 signal, so green-only cells are read as intact and red cells as damaged.</span> Take stain concentrations and incubation times from the manufacturer’s manual for your kit rather than from memory.</li>
+<li><strong>Validate before use.</strong> Stiefel et al. (2015) discuss critical aspects of SYTO 9/PI assays, and <span class="tbc">results can depend on the medium, growth phase and staining conditions</span>, so always include a <strong>live control</strong> and a <strong>killed control</strong> (for example heat- or isopropanol-killed cells) and a mixed sample, and confirm against plating.</li>
+<li><span class="tbc">A membrane-integrity stain does not by itself prove a cell is “dead” in the sense of unable to grow. Cultivability still needs a plating (CFU) check, such as the <a href="serial-dilution-cfu.html">serial dilution and CFU protocol</a>.</span></li>
+</ul>
+<h2 id="fluorescent-reporters-and-probes">Fluorescent reporters and probes</h2>
+<ul>
+<li><span class="tbc">Fluorescent proteins such as GFP need oxygen to mature, so signal can lag behind expression and be weak in dense or oxygen-poor cultures.</span></li>
+<li><span class="tbc">Activity-based probes label the enzymes that are active in each cell, so flow cytometry can quantify per-cell probe signal and show population heterogeneity. Test whether fixation or permeabilization changes the signal before relying on it.</span> See also the <a href="staphylococcus-aureus-quick-start.html"><em>S. aureus</em> quick-start</a>.</li>
+</ul>
+<h2 id="controls-checklist">Controls checklist</h2>
+<ul>
+<li>Unstained cells (autofluorescence).</li>
+<li>Single-stain controls for each dye or reporter.</li>
+<li>A strain without the reporter or probe, and (for probes) <span class="tbc">an inhibitor- or competition-treated sample</span>.</li>
+<li>A dilution series (see swarming, above).</li>
+<li><span class="tbc">Calibration beads of a known size, so day-to-day instrument changes can be separated from biology.</span></li>
+<li>Live, killed and mixed controls for viability stains.</li>
+</ul>
+<h2 id="practical-notes-for-clumpy-organisms">Practical notes for clumpy organisms</h2>
+<ul>
+<li><span class="tbc"><em>S. aureus</em> grows in grape-like clusters, and mycobacteria clump without detergent. Disperse by gentle pipetting or a brief low-energy sonication, check by microscopy, and keep the same handling for every sample.</span></li>
+<li><span class="tbc">Fix samples before running them if your facility requires it, and ask the facility about pathogen rules before bringing live cultures to a shared instrument.</span></li>
+</ul>
+<h2 id="reporting">Reporting</h2>
+<p>Record the instrument, configuration, settings and gating, and keep the raw FCS files. The MIFlowCyt standard lists the minimum information to report (Lee et al. 2008).</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>Bohn A. 2020. Analyzing Bacteria. FACS Core Facility guidelines, Aarhus University. <a href="https://biomed.au.dk/fileadmin/www.facs.au.dk/Bacterial_Analysis_in_Flow_Cytometry.pdf">PDF</a></li>
+<li>Stiefel P, Schmidt-Emrich S, Maniura-Weber K, Ren Q. 2015. Critical aspects of using bacterial cell viability assays with the fluorophores SYTO9 and propidium iodide. <em>BMC Microbiol</em> 15:36. <a href="https://scholarhub.vn/publication/Critical-aspects-of-using-bacterial-cell-viability-assays-with-the-fluorophores-SYTO9-and-propidium-iodide/bf6228aa-8397-40c3-9dcd-ccbe06e61119">Search result</a></li>
+<li>Thermo Fisher Scientific. LIVE/DEAD BacLight Bacterial Viability Kit manual (<a href="https://assets.thermofisher.com/TFS-Assets/LSG/manuals/mp07277.pdf">MP 07007</a>).</li>
+<li>Lee JA, Spidlen J, Boyce K, et al. 2008. MIFlowCyt: the minimum information about a flow cytometry experiment. <em>Cytometry A</em> 73:926–930. <a href="https://pubmed.ncbi.nlm.nih.gov/18752282/">PubMed 18752282</a></li>
+</ul>
+
+<hr>
+<p class="meta"><strong>Source / credit:</strong> Study notes compiled from published guidance: Aarhus University FACS Core Facility &quot;Analyzing Bacteria&quot; (Bohn, 2020), the LIVE/DEAD BacLight manufacturer documentation, Stiefel et al. 2015, and Lee et al. 2008 (MIFlowCyt). Not yet run by the author.</p>
+<p class="tag-row"><span class="tag">flow cytometry</span><span class="tag">bacteria</span><span class="tag">single-cell</span><span class="tag">viability</span><span class="tag">SYTO 9</span><span class="tag">propidium iodide</span><span class="tag">quick-start</span></p>
+<p class="proto-foot"><a href="index.html">← All protocols</a><a href="faq.html">Troubleshooting FAQ</a></p>
+</div></section>
+</main>
+<footer class="site-footer"><div class="container footer-row"><span>© 2026 Karen Tembiwa · Microbial Mosaic</span><a href="../contact.html">Contact</a></div></footer>
+<script src="../assets/notebook.js?v=11"></script></body>
+</html>
