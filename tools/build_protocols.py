@@ -22,6 +22,7 @@ def head(title,desc):
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="stylesheet" href="../assets/protocols.css">
+<link rel="stylesheet" href="../assets/notebook.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
